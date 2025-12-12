@@ -1,0 +1,30 @@
+[
+    {
+        "title": "HIMBHOOMI",
+        "desc": "Official computerized Land Records Centre. View Jamabandi online.",
+        "icon": "fa-solid fa-desktop",
+        "bg_color": "bg-blue-100",
+        "hover_color": "group-hover:bg-blue-600"
+    },
+    {
+        "title": "mHimBhoomi",
+        "desc": "Mobile app version. Allows citizens to check land details.",
+        "icon": "fa-solid fa-mobile-screen",
+        "bg_color": "bg-green-100",
+        "hover_color": "group-hover:bg-green-600"
+    },
+    {
+        "title": "PM-KISAN",
+        "desc": "₹6,000/year support. Patwari verifies land cultivator status.",
+        "icon": "fa-solid fa-wheat-awn",
+        "bg_color": "bg-yellow-100",
+        "hover_color": "group-hover:bg-yellow-600"
+    },
+    {
+        "title": "e-Praman",
+        "desc": "Issuance of Himachali Bonafide, Caste certs based on Patwari reports.",
+        "icon": "fa-solid fa-scroll",
+        "bg_color": "bg-purple-100",
+        "hover_color": "group-hover:bg-purple-600"
+    }
+]

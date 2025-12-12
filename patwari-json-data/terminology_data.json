@@ -1,0 +1,14 @@
+[
+    {"id": 1, "term": "Jamabandi", "def": "Record of Rights (RoR). Main ownership register revised every 5 years.", "category": "records", "icon": "📚"},
+    {"id": 2, "term": "Khasra", "def": "Legal agricultural document with crop details. Contains unique Khasra Number (Plot No).", "category": "numbers", "icon": "🌾"},
+    {"id": 3, "term": "Khatauni", "def": "Register of Cultivators/Tenants. Arranged by cultivator holding.", "category": "records", "icon": "🧑‍🌾"},
+    {"id": 4, "term": "Girdawari", "def": "Bi-annual harvest inspection by Patwari. (Rabi & Kharif crops).", "category": "records", "icon": "👁️"},
+    {"id": 5, "term": "Intkaal", "def": "Mutation. Process of changing ownership (Sale, Inheritance, Gift).", "category": "records", "icon": "✍️"},
+    {"id": 6, "term": "Musavi", "def": "Original map drawn on thick paper/cloth during settlement.", "category": "maps", "icon": "🗺️"},
+    {"id": 7, "term": "Latha", "def": "Cloth copy of the map (Musavi) kept by Patwari for field use.", "category": "maps", "icon": "🧵"},
+    {"id": 8, "term": "Tatima", "def": "Map drawn when a Khasra number is divided (e.g., selling half a plot).", "category": "maps", "icon": "✂️"},
+    {"id": 9, "term": "Khewat No", "def": "Account number of the OWNER (Malik) in Jamabandi.", "category": "numbers", "icon": "🔢"},
+    {"id": 10, "term": "Muamla", "def": "Land Revenue (Tax/Laggan).", "category": "records", "icon": "💰"},
+    {"id": 11, "term": "Shajra Nasb", "def": "Genealogical/Family tree of landowners in the village.", "category": "records", "icon": "🌳"},
+    {"id": 12, "term": "Wajib-ul-Arz", "def": "Village Administration Paper recording customs and rights.", "category": "records", "icon": "📜"}
+]

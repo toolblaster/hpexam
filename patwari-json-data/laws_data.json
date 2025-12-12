@@ -1,0 +1,17 @@
+[
+    { 
+        "year": "1954", 
+        "title": "HP Land Revenue Act", 
+        "details": "Governs Revenue Officers (Patwari/Tehsildar) and Revenue Collection. <br><strong>Key Sections:</strong> Sec 32 (RoR), Sec 34 (Report Acquisition), Sec 35 (Mutation), Sec 16 (Partition)." 
+    },
+    { 
+        "year": "1972", 
+        "title": "HP Tenancy & Land Reforms Act", 
+        "details": "Gave rights to tenants. <br><strong>Section 118:</strong> Restricts non-agriculturists from buying land in HP without Govt permission. <br><strong>Reform:</strong> Abolished intermediaries (Zamindars)." 
+    },
+    { 
+        "year": "Misc", 
+        "title": "Other Key Acts", 
+        "details": "<strong>PESA Act 1996:</strong> Tribal rights & Gram Sabha powers. <br><strong>MGNREGA:</strong> 100-120 days wage employment (Patwari verifies land)." 
+    }
+]

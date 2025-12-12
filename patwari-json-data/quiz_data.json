@@ -1,0 +1,32 @@
+[
+    {
+        "q": "What is the difference between 'Min' and 'Salam' numbers in Khasra?",
+        "options": ["Min is full, Salam is part", "Salam is full field, Min is a part", "Both mean the same", "Min is for government land"],
+        "correct": 1,
+        "explanation": "Salam means the whole/intact field number. Min indicates a portion/part of the field."
+    },
+    {
+        "q": "When does the 'Agricultural Year' start in Revenue records?",
+        "options": ["1st January", "1st April", "16th June", "1st October"],
+        "correct": 2,
+        "explanation": "It starts from 16th June and ends on 15th June of the next year."
+    },
+    {
+        "q": "How many Bighas are approximately in 1 Acre in HP?",
+        "options": ["2 Bigha", "5 Bigha", "10 Bigha", "20 Bigha"],
+        "correct": 1,
+        "explanation": "Standard calculation: 1 Acre ≈ 5 Bigha."
+    },
+    {
+        "q": "Who prepares the Jamabandi?",
+        "options": ["Tehsildar", "Kanungo", "Patwari", "DC"],
+        "correct": 2,
+        "explanation": "The Patwari prepares it, and the Revenue Officer attests it."
+    },
+    {
+        "q": "Under which Act is buying land by non-agriculturists restricted?",
+        "options": ["Revenue Act 1954", "Tenancy Act 1972 (Sec 118)", "PESA Act", "Land Ceiling Act"],
+        "correct": 1,
+        "explanation": "Section 118 of the HP Tenancy and Land Reforms Act, 1972."
+    }
+]

@@ -1,0 +1,27 @@
+[
+    { 
+        "role": "Financial Commissioner (Revenue)", 
+        "desc": "Highest Revenue Authority in State", 
+        "color": "bg-blue-600" 
+    },
+    { 
+        "role": "Divisional Commissioner", 
+        "desc": "Mandi, Shimla, Kangra Divisions", 
+        "color": "bg-blue-400" 
+    },
+    { 
+        "role": "Deputy Commissioner (Collector)", 
+        "desc": "District Head", 
+        "color": "bg-blue-300" 
+    },
+    { 
+        "role": "SDM / Tehsildar", 
+        "desc": "Revenue Officers (Class I)", 
+        "color": "bg-slate-300" 
+    },
+    { 
+        "role": "Patwari & Field Kanungo", 
+        "desc": "Village Level - The Foundation", 
+        "color": "bg-green-500" 
+    }
+]
