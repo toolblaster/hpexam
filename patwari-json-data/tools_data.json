@@ -1,30 +1,79 @@
 [
     {
         "title": "HIMBHOOMI",
-        "desc": "Official computerized Land Records Centre. View Jamabandi online.",
+        "desc": "The core software developed by NIC for digitizing HP Land Records (Jamabandi). Allows online mutation entry and ROR generation.",
         "icon": "fa-solid fa-desktop",
         "bg_color": "bg-blue-100",
         "hover_color": "group-hover:bg-blue-600"
     },
     {
         "title": "mHimBhoomi",
-        "desc": "Mobile app version. Allows citizens to check land details.",
+        "desc": "Android app for citizens to view Jamabandi (RoR) and Mutation status on mobile. Search by Khewat, Khatoni, or Khasra number.",
         "icon": "fa-solid fa-mobile-screen",
         "bg_color": "bg-green-100",
         "hover_color": "group-hover:bg-green-600"
     },
     {
+        "title": "SVAMITVA Scheme",
+        "desc": "Central scheme using Drones to survey 'Abadi Deh' (Habitation) areas. Goal: To issue Property Cards (Sampatti Card) to villagers for housing.",
+        "icon": "fa-solid fa-plane-up",
+        "bg_color": "bg-orange-100",
+        "hover_color": "group-hover:bg-orange-600"
+    },
+    {
         "title": "PM-KISAN",
-        "desc": "₹6,000/year support. Patwari verifies land cultivator status.",
+        "desc": "₹6,000/year income support. Patwari verifies land ownership and 'Land Seeding' status (beneficiary must be a cultivator).",
         "icon": "fa-solid fa-wheat-awn",
         "bg_color": "bg-yellow-100",
         "hover_color": "group-hover:bg-yellow-600"
     },
     {
-        "title": "e-Praman",
-        "desc": "Issuance of Himachali Bonafide, Caste certs based on Patwari reports.",
+        "title": "e-Praman / Lok Praman",
+        "desc": "Portal for issuing Himachali Bonafide, Caste, Income, and Legal Heir certificates based on Patwari/Pradhan verification.",
         "icon": "fa-solid fa-scroll",
         "bg_color": "bg-purple-100",
         "hover_color": "group-hover:bg-purple-600"
+    },
+    {
+        "title": "ULPIN",
+        "desc": "Unique Land Parcel Identification Number. A 14-digit 'Aadhaar for Land' containing geo-coordinates of the plot.",
+        "icon": "fa-solid fa-fingerprint",
+        "bg_color": "bg-slate-200",
+        "hover_color": "group-hover:bg-slate-600"
+    },
+    {
+        "title": "RCMS",
+        "desc": "Revenue Court Case Monitoring System. Online portal to track status of partitions, appeals, and mutations in revenue courts.",
+        "icon": "fa-solid fa-gavel",
+        "bg_color": "bg-red-100",
+        "hover_color": "group-hover:bg-red-600"
+    },
+    {
+        "title": "HIMRIS / NGDRS",
+        "desc": "Himachal Registration Information System (now migrating to NGDRS). Used by Sub-Registrars for registering Sale/Mortgage Deeds.",
+        "icon": "fa-solid fa-file-signature",
+        "bg_color": "bg-teal-100",
+        "hover_color": "group-hover:bg-teal-600"
+    },
+    {
+        "title": "Bhu-Naksha",
+        "desc": "Software for digitizing cadastral maps (Musavis). Allows viewing plot maps online integrated with ROR data.",
+        "icon": "fa-solid fa-map-location-dot",
+        "bg_color": "bg-indigo-100",
+        "hover_color": "group-hover:bg-indigo-600"
+    },
+    {
+        "title": "Sugam Centers",
+        "desc": "Single Window Centers at DC/SDM offices where citizens can get Nakal (copies) of Jamabandi and other revenue documents.",
+        "icon": "fa-solid fa-building-columns",
+        "bg_color": "bg-pink-100",
+        "hover_color": "group-hover:bg-pink-600"
+    },
+    {
+        "title": "e-District",
+        "desc": "The overarching state portal integrating revenue services like land record copies and certificate issuance.",
+        "icon": "fa-solid fa-network-wired",
+        "bg_color": "bg-cyan-100",
+        "hover_color": "group-hover:bg-cyan-600"
     }
 ]
