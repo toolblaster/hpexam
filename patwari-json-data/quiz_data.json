@@ -148,5 +148,245 @@
         "options": ["Highly fertile land", "Forest land", "Uncultivable land (Roads/Buildings)", "Orchard land"],
         "correct": 2,
         "explanation": "Gair Mumkin refers to land that is not cultivable because it is occupied by buildings, roads, or riverbeds."
+    },
+    {
+        "q": "In which register are Mutations entered by the Patwari?",
+        "options": ["Register No. 1", "Register No. 4", "Register No. 6", "Register No. 10"],
+        "correct": 2,
+        "explanation": "Mutations are entered in Register No. 6 (Register Haqdaran Zamin is based on this)."
+    },
+    {
+        "q": "What is the maximum area of 'Nautor' land that could be granted?",
+        "options": ["5 Bighas", "10 Bighas", "20 Bighas", "50 Bighas"],
+        "correct": 2,
+        "explanation": "Historically, under the Nautor Rules 1968, the limit was up to 20 Bighas."
+    },
+    {
+        "q": "Who is the 'Malik Kabza'?",
+        "options": ["Tenant", "Owner with share in Shamlat", "Owner WITHOUT share in Shamlat", "Government"],
+        "correct": 2,
+        "explanation": "Malik Kabza owns the land in his possession but has no share in the village common land (Shamlat)."
+    },
+    {
+        "q": "Which officer attests the 'Shajra Nasb' (Genealogy Tree)?",
+        "options": ["Patwari", "Field Kanungo", "Tehsildar/Revenue Officer", "Lambardar"],
+        "correct": 2,
+        "explanation": "The Shajra Nasb is prepared by the Patwari/Kanungo but finally attested by the Revenue Officer."
+    },
+    {
+        "q": "What is 1 Biswa equal to?",
+        "options": ["10 Biswansi", "15 Biswansi", "20 Biswansi", "100 Biswansi"],
+        "correct": 2,
+        "explanation": "1 Biswa = 20 Biswansi."
+    },
+    {
+        "q": "What is the colour of the 'Abadi Deh' (Habitation) line on the map?",
+        "options": ["Blue", "Green", "Red", "Black"],
+        "correct": 2,
+        "explanation": "The habitation area is enclosed by a Red line, hence often called 'Lal Dora'."
+    },
+    {
+        "q": "Under Section 35, who verifies the correctness of mutation entries on the spot?",
+        "options": ["Patwari", "Field Kanungo", "Tehsildar", "Nambardar"],
+        "correct": 1,
+        "explanation": "The Field Kanungo is responsible for 100% verification of mutation entries before they are put up for attestation."
+    },
+    {
+        "q": "What is 'Warabandi'?",
+        "options": ["Division of land", "Rotation of water for irrigation", "Collection of tax", "Village assembly"],
+        "correct": 1,
+        "explanation": "Warabandi is the system of rotational water supply for irrigation."
+    },
+    {
+        "q": "What is the 'Parat Sarkar' copy of Jamabandi?",
+        "options": ["Copy kept by Patwari", "Copy sent to District Record Room", "Copy given to owner", "Copy destroyed"],
+        "correct": 1,
+        "explanation": "Parat Sarkar is the government copy sent to the District Record Room (Muhafiz Khana)."
+    },
+    {
+        "q": "Which Section of HP Land Revenue Act deals with 'Arrest and Detention' of defaulters?",
+        "options": ["Section 68", "Section 69", "Section 70", "Section 75"],
+        "correct": 1,
+        "explanation": "Section 69 of the HP Land Revenue Act 1954 deals with arrest and detention of defaulters."
+    },
+    {
+        "q": "What is 'Sarsahi' in measurement?",
+        "options": ["1 Karam x 1 Karam", "1 Meter x 1 Meter", "1 Foot x 1 Foot", "1 Chain x 1 Chain"],
+        "correct": 0,
+        "explanation": "1 Sarsahi is a square unit equal to 1 Karam x 1 Karam (Square Karam). It is the smallest unit in the Kanal system."
+    },
+    {
+        "q": "What does the term 'Muafi' signify in revenue records?",
+        "options": ["Land with double tax", "Land exempted from land revenue", "Forest land", "Disputed land"],
+        "correct": 1,
+        "explanation": "Muafi means land that has been exempted (forgiven) from the payment of Land Revenue."
+    },
+    {
+        "q": "Who maintains the record of Patwaris' service books and salary at the district level?",
+        "options": ["Field Kanungo", "Sadar (Office) Kanungo", "Tehsildar", "Nambardar"],
+        "correct": 1,
+        "explanation": "The Sadar Kanungo (Office Kanungo) sits at the Tehsil/District HQ and manages records, statistics, and salaries."
+    },
+    {
+        "q": "What is 'Chahi Mustar'?",
+        "options": ["Land irrigated by own well", "Land irrigated by purchased water", "Rain-fed land", "Barren land"],
+        "correct": 1,
+        "explanation": "Chahi means well-irrigated. 'Mustar' implies 'acquired/purchased'. So it is land irrigated by water purchased from another source."
+    },
+    {
+        "q": "How many digits does the ULPIN (Unique Land Parcel Identification Number) have?",
+        "options": ["10", "12", "14", "16"],
+        "correct": 2,
+        "explanation": "ULPIN, often called 'Aadhaar for Land', consists of 14 alphanumeric digits based on geo-coordinates."
+    },
+    {
+        "q": "Who appoints the 'Nambardar' (Village Headman)?",
+        "options": ["Patwari", "Tehsildar", "Collector (DC)", "Divisional Commissioner"],
+        "correct": 2,
+        "explanation": "The Collector (Deputy Commissioner) has the power to appoint and remove the Nambardar."
+    },
+    {
+        "q": "What is 'Kurki' in the context of revenue recovery?",
+        "options": ["Arrest of defaulter", "Attachment/Sale of movable property", "Transfer of holding", "Fine on encroachment"],
+        "correct": 1,
+        "explanation": "Kurki refers to the process of distraint and sale of the defaulter's movable property (like crops) to recover arrears."
+    },
+    {
+        "q": "What is the standard length of a 'Karam' in Himachal (Standard)?",
+        "options": ["50 inches", "54 inches", "57.5 inches", "66 inches"],
+        "correct": 2,
+        "explanation": "While local variations exist, 57.5 inches is the standard Karam length used for conversions in most exams."
+    },
+    {
+        "q": "Where does an appeal lie against the order of a Settlement Officer?",
+        "options": ["Deputy Commissioner", "Divisional Commissioner", "Financial Commissioner", "High Court"],
+        "correct": 1,
+        "explanation": "Appeals against the Settlement Officer typically go to the Divisional Commissioner."
+    },
+    {
+        "q": "What is a 'Maurusi' tenant?",
+        "options": ["Tenant-at-will", "Occupancy Tenant", "Sub-tenant", "Government Lessee"],
+        "correct": 1,
+        "explanation": "Maurusi refers to an Occupancy Tenant who has permanent, heritable rights to cultivate the land."
+    },
+    {
+        "q": "What does 'Ghair Maurusi' mean?",
+        "options": ["Occupancy Tenant", "Tenant-at-will", "Landowner", "Mortgagee"],
+        "correct": 1,
+        "explanation": "Ghair Maurusi means a 'Tenant-at-will' who does not have permanent rights and cultivates on a year-to-year basis."
+    },
+    {
+        "q": "Who is the 'Murtahin' in a land transaction?",
+        "options": ["Seller", "Buyer", "Mortgagor (Borrower)", "Mortgagee (Lender)"],
+        "correct": 3,
+        "explanation": "Murtahin is the Mortgagee (the person/bank who lends money and keeps the land as security)."
+    },
+    {
+        "q": "Who is the 'Rahin' in a land transaction?",
+        "options": ["Mortgagor (Borrower)", "Mortgagee (Lender)", "Tenant", "Landlord"],
+        "correct": 0,
+        "explanation": "Rahin is the Mortgagor (the landowner who pledges their land to take a loan)."
+    },
+    {
+        "q": "What is the 'Hadbast' number?",
+        "options": ["House number", "Khasra number", "Village/Estate boundary number", "Patwari circle number"],
+        "correct": 2,
+        "explanation": "Hadbast number is the serial number assigned to the boundary of a revenue estate (village)."
+    },
+    {
+        "q": "What is recorded in the 'Wajib-ul-Arz'?",
+        "options": ["Daily events", "Village customs and rights", "Crop data", "Mutation fee"],
+        "correct": 1,
+        "explanation": "Wajib-ul-Arz is the Village Administration Paper that records village customs, community rights, and rules."
+    },
+    {
+        "q": "To whom must a report regarding acquisition of land rights be made under Section 34 of the HP Land Revenue Act?",
+        "options": ["Tehsildar", "Patwari", "Kanungo", "Deputy Commissioner"],
+        "correct": 1,
+        "explanation": "Section 34 mandates that any person acquiring a right must report it to the Patwari of the estate."
+    },
+    {
+        "q": "Which Section of the HP Land Revenue Act attaches a 'Presumption of Truth' to entries in the Jamabandi?",
+        "options": ["Section 32", "Section 35", "Section 45", "Section 118"],
+        "correct": 2,
+        "explanation": "Section 45 states that entries in the Record of Rights (Jamabandi) shall be presumed to be true until the contrary is proved."
+    },
+    {
+        "q": "Under the HP Tenancy and Land Reforms Act 1972, which section confers proprietary rights on tenants?",
+        "options": ["Section 90", "Section 104", "Section 118", "Section 163"],
+        "correct": 1,
+        "explanation": "Section 104 is the landmark provision that provided for the automatic vesting of proprietary (ownership) rights in tenants."
+    },
+    {
+        "q": "Who is the competent authority to grant permission under Section 118 for buying land in HP (for non-agriculturists)?",
+        "options": ["Patwari", "District Collector", "Divisional Commissioner", "State Government"],
+        "correct": 3,
+        "explanation": "Permission under Section 118 is generally granted by the State Government (Cabinet), though powers for small plots may be delegated."
+    },
+    {
+        "q": "Under the HP Village Common Lands (Vesting and Utilization) Act 1974, in whom does the 'Shamlat' land vest?",
+        "options": ["Village Panchayat", "State Government", "Landowners", "Forest Department"],
+        "correct": 1,
+        "explanation": "The Act vested all rights, title, and interest in Shamlat lands in the State Government."
+    },
+    {
+        "q": "What is the primary objective of the HP Holdings (Consolidation and Prevention of Fragmentation) Act 1971?",
+        "options": ["To increase tax", "To consolidate scattered plots (Chakbandi)", "To survey forests", "To sell government land"],
+        "correct": 1,
+        "explanation": "The Act aims to provide for the consolidation of agricultural holdings (Chakbandi) to prevent fragmentation."
+    },
+    {
+        "q": "Under the HP Ceiling on Land Holdings Act 1972, what happens to the land held in excess of the permissible limit?",
+        "options": ["Returned to owner", "Sold by auction", "Vested in State Government", "Given to Panchayat"],
+        "correct": 2,
+        "explanation": "Surplus land above the ceiling limit vests in the State Government for utilization/distribution."
+    },
+    {
+        "q": "In Scheduled Areas of HP (under PESA Act 1996), whose consultation is mandatory before land acquisition?",
+        "options": ["Zila Parishad", "Gram Sabha", "Tehsildar", "MLA"],
+        "correct": 1,
+        "explanation": "PESA empowers the Gram Sabha, and its consultation is mandatory before land acquisition in Scheduled Areas."
+    },
+    {
+        "q": "The HP Abolition of Land Revenue on Uneconomic Holdings Act 1977 exempts holdings up to what size from land revenue?",
+        "options": ["1 Acre", "2.5 Acres", "5 Acres", "10 Acres"],
+        "correct": 1,
+        "explanation": "Holdings up to 2.5 Acres (or paying less than ₹5 revenue) are defined as uneconomic and exempt."
+    },
+    {
+        "q": "Which Chapter of the HP Land Records Manual details the duties of a Patwari?",
+        "options": ["Chapter 1", "Chapter 3", "Chapter 9", "Chapter 15"],
+        "correct": 1,
+        "explanation": "Chapter 3 of the HP Land Records Manual specifically lists the duties and functions of the Patwari."
+    },
+    {
+        "q": "What is the time limit for filing an appeal before the Financial Commissioner under the HP Land Revenue Act?",
+        "options": ["30 Days", "60 Days", "90 Days", "180 Days"],
+        "correct": 2,
+        "explanation": "The limitation period for an appeal to the Financial Commissioner is 90 days."
+    },
+    {
+        "q": "Which section of the HP Land Revenue Act deals with the penalty for encroachment on roads?",
+        "options": ["Section 163", "Section 118", "Section 107", "Section 35"],
+        "correct": 1,
+        "explanation": "Section 118 of the HP Land Revenue Act (not to be confused with Tenancy Act) deals with penalties for encroachment on roads."
+    },
+    {
+        "q": "Who decides disputes regarding entries in the Record of Rights under Section 37 of the HP Land Revenue Act?",
+        "options": ["Patwari", "Kanungo", "Revenue Officer", "Nambardar"],
+        "correct": 2,
+        "explanation": "Section 37 empowers the Revenue Officer to determine disputes regarding entries in the records."
+    },
+    {
+        "q": "Who can apply for partition of land under Section 123 of the HP Land Revenue Act?",
+        "options": ["Any tenant", "Any joint owner", "The Patwari", "The Village Pradhan"],
+        "correct": 1,
+        "explanation": "Any joint owner of land may apply to a Revenue Officer for partition of his share."
+    },
+    {
+        "q": "Which of the following is NOT a class of Revenue Officer under Section 7 of the HP Land Revenue Act?",
+        "options": ["Financial Commissioner", "Collector", "Tehsildar", "Patwari"],
+        "correct": 3,
+        "explanation": "While a key official, the Patwari is a village officer/official, not classified as a 'Revenue Officer' under Section 7 (which lists FC, Commissioner, Collector, ACs)."
     }
 ]
