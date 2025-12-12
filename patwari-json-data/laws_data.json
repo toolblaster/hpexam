@@ -2,16 +2,46 @@
     { 
         "year": "1954", 
         "title": "HP Land Revenue Act", 
-        "details": "Governs Revenue Officers (Patwari/Tehsildar) and Revenue Collection. <br><strong>Key Sections:</strong> Sec 32 (RoR), Sec 34 (Report Acquisition), Sec 35 (Mutation), Sec 16 (Partition)." 
+        "details": "The procedural backbone of Revenue Administration. <br><strong>Sec 34:</strong> Duty to report land acquisition/succession within 3 months to Patwari. <br><strong>Sec 35:</strong> Procedure for Mutations attestation. <br><strong>Sec 45:</strong> Presumption of truth attached to entries in Jamabandi. <br><strong>Sec 107:</strong> Power of Revenue Officer to define boundaries (Demarcation). <br><strong>Sec 118:</strong> Penalty for encroachment on roads. <br><strong>Sec 163:</strong> Power to eject encroachers from Govt land." 
     },
     { 
         "year": "1972", 
         "title": "HP Tenancy & Land Reforms Act", 
-        "details": "Gave rights to tenants. <br><strong>Section 118:</strong> Restricts non-agriculturists from buying land in HP without Govt permission. <br><strong>Reform:</strong> Abolished intermediaries (Zamindars)." 
+        "details": "Major social justice legislation. <br><strong>Sec 104:</strong> Automatic vesting of proprietary rights in tenants. <br><strong>Sec 118:</strong> Bans transfer of land to non-agriculturists in HP. Permission only by State Govt (Cabinet) or DC (limited). <br><strong>Objective:</strong> 'Land to the Tiller'." 
+    },
+    { 
+        "year": "1974", 
+        "title": "HP Village Common Lands Act", 
+        "details": "<strong>Vesting & Utilization:</strong> Took 'Shamlat' (Common) land from the village community and vested it in the State Government for distribution to the landless (1 Acre Scheme). <br><strong>Exception:</strong> Land used for common purposes like paths/grazing/cremation was retained." 
+    },
+    { 
+        "year": "1971", 
+        "title": "HP Holdings Consolidation Act", 
+        "details": "<strong>Chakbandi:</strong> Aimed to prevent fragmentation of holdings. Combines scattered plots into a compact block called a 'Chak' for better irrigation and farming efficiency. <br><strong>Killabandi:</strong> Rectangularization of fields during consolidation." 
+    },
+    { 
+        "year": "1972", 
+        "title": "HP Ceiling on Land Holdings Act", 
+        "details": "Limits the maximum land a family can own. <br><strong>Limit:</strong> Approx 10 to 30 Acres (Standard Acres) depending on land quality (irrigated vs barren). Surplus land is vested in the State. <br><strong>Unit:</strong> Family of 5 members." 
+    },
+    { 
+        "year": "1996", 
+        "title": "PESA Act (Tribal Rights)", 
+        "details": "Applies to Scheduled Areas (Kinnaur, Lahaul-Spiti, Pangi). <br><strong>Gram Sabha</strong> is the supreme authority for land alienation and ownership of Minor Forest Produce. <br><strong>Consultation:</strong> Mandatory before land acquisition in these areas." 
+    },
+    { 
+        "year": "1977", 
+        "title": "HP Abolition of Land Revenue Act", 
+        "details": "Abolished land revenue on 'Uneconomic Holdings'. <br><strong>Definition:</strong> Holdings up to 2.5 Acres or paying less than ₹5 revenue are exempt from paying land revenue." 
+    },
+    { 
+        "year": "Rules", 
+        "title": "HP Land Records Manual", 
+        "details": "The 'Bible' for Patwaris. <br><strong>Chapter 3:</strong> Duties of Patwaris. <br><strong>Chapter 4:</strong> Duties of Kanungos. <br><strong>Chapter 9:</strong> Harvest Inspection (Girdawari) procedure."
     },
     { 
         "year": "Misc", 
-        "title": "Other Key Acts", 
-        "details": "<strong>PESA Act 1996:</strong> Tribal rights & Gram Sabha powers. <br><strong>MGNREGA:</strong> 100-120 days wage employment (Patwari verifies land)." 
+        "title": "Limitation Act (Appeals)", 
+        "details": "<strong>Appeal to Collector:</strong> 30 Days. <br><strong>Appeal to Commissioner:</strong> 60 Days. <br><strong>Appeal to Financial Commissioner:</strong> 90 Days. (Section 14 of HP Land Revenue Act)."
     }
 ]
