@@ -3,619 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP Exam Hub | HPPSC & HPSSC Prep Portal</title>
+    <meta name="description" content="Comprehensive preparation for Himachal Pradesh government exams. specialized modules for Revenue (Patwari), HP GK, Math, & Reasoning. High-yield MCQs and notes.">
     
-    <!-- SEO & Meta Tags for hppatwariexam.toolblaster.com -->
-    <title>HP Patwari Exam Prep | Technical Master Guide & GK Hub</title>
-    <meta name="description" content="The #1 resource for HP Patwari Exam preparation. Master the Technical Section (Land Records, Revenue Acts), Surveying, and General Knowledge. Interactive flashcards and quizzes.">
-    <meta name="keywords" content="HP Patwari Exam, Himachal Pradesh Land Records, Patwari Syllabus, HP Revenue Acts, Jamabandi, GK Himachal">
-    <link rel="canonical" href="https://hppatwariexam.toolblaster.com/">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hppatwariexam.toolblaster.com/">
-    <meta property="og:title" content="HP Patwari Exam: Technical Master Guide">
-    <meta property="og:description" content="Master HP Land Records and Revenue Laws with this interactive study guide.">
-
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- Font Awesome CDN -->
+    <script src="js/tailwind-global-css.js"></script>
+    <!-- Header Footer Script -->
+    <script src="js/header-footer.js"></script>
+
+    <!-- Font Awesome & Fonts (Inter & Poppins ONLY) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Chosen Palette: [Himachal Administrative] 
-         Primary: Slate-900 (Text/Dark UI)
-         Secondary: Blue-600 (Govt/Official)
-         Accent: Green-600 (Land/Agriculture)
-         Background: Slate-50 (Paper/Document)
-    -->
-
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f5f9; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-
-        /* Chart Container Utilities */
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 300px;
-            max-height: 400px;
-        }
-        @media (min-width: 768px) {
-            .chart-container { height: 350px; }
-        }
-
-        /* Hierarchy Tree Lines */
-        .tree-line::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            width: 2px;
-            background-color: #cbd5e1;
-            transform: translateX(-50%);
-            z-index: 0;
-        }
-        .tree-node { position: relative; z-index: 10; }
-
-        /* Flip Card Effect */
-        .flip-card { perspective: 1000px; cursor: pointer; }
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-        }
-        .flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
-        .flip-card-front, .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            border-radius: 0.5rem;
-            padding: 1rem;
-        }
-        .flip-card-back { transform: rotateY(180deg); }
-        
-        /* Smooth Scrolling */
-        html { scroll-behavior: smooth; }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen font-sans selection:bg-blue-100 selection:text-blue-900">
 
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-2xl font-bold text-blue-700 tracking-tight">HP Patwari <span class="text-slate-900">Ace</span></span>
-                </div>
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#terminology" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Terminology</a>
-                    <a href="#measurements" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Measurements</a>
-                    <a href="#laws" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Laws & Acts</a>
-                    <a href="#hierarchy" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition">Hierarchy</a>
-                    <a href="#quiz" class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-semibold hover:bg-blue-700 transition shadow-md">Take Quiz</a>
-                </div>
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-slate-900 focus:outline-none p-2" aria-label="Open Menu">
-                        <i class="fa-solid fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 p-4 space-y-3 shadow-lg">
-            <a href="#terminology" class="block text-slate-600 font-medium">Terminology</a>
-            <a href="#measurements" class="block text-slate-600 font-medium">Measurements</a>
-            <a href="#laws" class="block text-slate-600 font-medium">Laws & Acts</a>
-            <a href="#hierarchy" class="block text-slate-600 font-medium">Hierarchy</a>
-            <a href="#quiz" class="block text-blue-600 font-bold">Take Quiz</a>
-        </div>
-    </nav>
+    <!-- Global Navigation (Styles & Content loaded via JS) -->
+    <nav id="global-nav"></nav>
 
-    <!-- Hero Section -->
-    <header class="bg-gradient-to-b from-blue-50 to-slate-50 pt-20 pb-16">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-blue-800 uppercase bg-blue-100 rounded-full">
-                Technical Master Guide
+    <!-- Ultra-Compact Hero -->
+    <header class="relative pt-10 pb-8 overflow-hidden bg-white/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50/80 border border-blue-100 text-blue-700 text-[11px] font-bold uppercase tracking-wider mb-4 shadow-sm backdrop-blur-sm font-heading">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                2026 Syllabus Updated
             </div>
-            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
-                Master Land Records & Revenue
+            
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-3 tracking-tight leading-tight font-heading">
+                Crack Himachal Exams <br>
+                <span class="gradient-text">With Confidence</span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-                The definitive interactive guide to cracking the <strong>Technical/Professional Subject</strong> section of the HP Patwari Exam. Master terminology, calculations, and laws.
+            
+            <p class="text-sm md:text-base text-slate-500 max-w-xl mx-auto mb-6 leading-relaxed font-medium font-sans">
+                The ultimate resource for HPPSC, HPSSC, and Departmental exams. Master General Knowledge, Aptitude, and specialized Technical subjects.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#measurements" class="px-8 py-3 bg-white text-blue-600 border border-blue-200 font-semibold rounded-lg shadow-sm hover:shadow-md hover:bg-blue-50 transition">
-                    Use Converters
+
+            <div class="flex justify-center gap-3">
+                <a href="#modules" class="px-6 py-2.5 bg-slate-900 text-white text-sm font-bold rounded-lg shadow-smooth hover:bg-blue-600 hover:shadow-glow transition-all duration-300 flex items-center gap-2 transform active:scale-95 font-sans">
+                    <i class="fa-solid fa-bolt text-yellow-400"></i> Start Learning
                 </a>
-                <a href="#quiz" class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-700 transition transform hover:-translate-y-0.5">
-                    Start Practice Quiz
+                <a href="hp-patwari-exam/hp-patwari-technical-land-record-and-revenue.html" class="px-6 py-2.5 bg-white text-slate-700 text-sm font-bold border border-slate-200 rounded-lg hover:bg-slate-50 hover:border-slate-300 transition shadow-sm active:scale-95 font-sans">
+                    Revenue Section
                 </a>
             </div>
         </div>
+        
+        <!-- Subtle Gradients -->
+        <div class="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-100 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 pb-24 flex-grow">
-        
-        <!-- Loading Indicator -->
-        <div id="loading-indicator" class="text-center py-20">
-            <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500 mx-auto mb-4"></div>
-            <p class="text-slate-600 font-medium">Loading data from server...</p>
-        </div>
-
-        <div id="app-content" class="hidden space-y-24">
-            <!-- MODULE 1: TERMINOLOGY (Flashcards) -->
-            <section id="terminology" class="scroll-mt-24">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-slate-900 mb-4">1. The Language of a Patwari</h2>
-                    <p class="text-slate-600 max-w-2xl mx-auto">
-                        Direct definitions are frequently asked. Click on any card to reveal the exam-focused definition.
-                    </p>
-                </div>
-
-                <!-- Filter Controls -->
-                <div class="flex justify-center gap-2 mb-8 flex-wrap">
-                    <button onclick="filterTerms('all')" class="term-filter active px-4 py-1.5 rounded-full bg-slate-800 text-white text-sm font-medium transition">All</button>
-                    <button onclick="filterTerms('records')" class="term-filter px-4 py-1.5 rounded-full bg-slate-200 text-slate-600 hover:bg-slate-300 text-sm font-medium transition">Records</button>
-                    <button onclick="filterTerms('maps')" class="term-filter px-4 py-1.5 rounded-full bg-slate-200 text-slate-600 hover:bg-slate-300 text-sm font-medium transition">Maps</button>
-                    <button onclick="filterTerms('numbers')" class="term-filter px-4 py-1.5 rounded-full bg-slate-200 text-slate-600 hover:bg-slate-300 text-sm font-medium transition">Numbers</button>
-                </div>
-
-                <!-- Flashcard Grid (Responsive 1 -> 5 cols) -->
-                <div id="term-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-                    <!-- Cards injected via JS -->
-                </div>
-            </section>
-
-            <!-- MODULE 2: MEASUREMENTS (Converter + Chart) -->
-            <section id="measurements" class="scroll-mt-24 bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden">
-                <div class="p-8 lg:p-12">
-                    <div class="grid lg:grid-cols-2 gap-12 items-center">
-                        
-                        <!-- Converter Tool -->
-                        <div>
-                            <h2 class="text-3xl font-bold text-slate-900 mb-4">2. Land Measurement Lab</h2>
-                            <p class="text-slate-600 mb-8">
-                                HP follows a unique system (Bigha-Biswa) different from Punjab. Use this tool to master the conversions. <br>
-                                <span class="text-sm text-blue-600 font-semibold mt-2 block">Exam Rule: 1 Acre ≈ 5 Bigha</span>
-                            </p>
-
-                            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
-                                <label class="block text-sm font-medium text-slate-700 mb-2">Enter Bigha Value:</label>
-                                <div class="flex gap-4 mb-6">
-                                    <input type="number" id="bigha-input" placeholder="e.g. 5" class="flex-1 p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" oninput="convertLand()">
-                                </div>
-
-                                <div class="grid grid-cols-2 gap-4">
-                                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100">
-                                        <div class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">Biswa</div>
-                                        <div id="res-biswa" class="text-2xl font-bold text-slate-800">0</div>
-                                        <div class="text-xs text-slate-400 mt-1">1 Bigha = 20 Biswa</div>
-                                    </div>
-                                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100">
-                                        <div class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">Acres (Approx)</div>
-                                        <div id="res-acre" class="text-2xl font-bold text-green-600">0</div>
-                                        <div class="text-xs text-slate-400 mt-1">5 Bigha ≈ 1 Acre</div>
-                                    </div>
-                                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100">
-                                        <div class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">Hectares</div>
-                                        <div id="res-hec" class="text-2xl font-bold text-blue-600">0</div>
-                                        <div class="text-xs text-slate-400 mt-1">1 Hectare ≈ 12.35 Bigha</div>
-                                    </div>
-                                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-100">
-                                        <div class="text-xs text-slate-500 uppercase font-bold tracking-wider mb-1">Sq. Yards</div>
-                                        <div id="res-sqyd" class="text-2xl font-bold text-slate-800">0</div>
-                                        <div class="text-xs text-slate-400 mt-1">1 Bigha ≈ 968 Sq.Yd</div>
-                                    </div>
-                                </div>
-                            </div>
+    <!-- High-Density Modules Grid -->
+    <main id="modules" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow bg-slate-50">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            
+            <!-- Technical Module (Patwari Specific) -->
+            <a href="hp-patwari-exam/hp-patwari-technical-land-record-and-revenue.html" class="group relative bg-white rounded-xl p-5 shadow-smooth border border-blue-100 overflow-hidden card-hover col-span-1 md:col-span-2 lg:col-span-2 gradient-border-top">
+                <div class="flex items-start justify-between relative z-10">
+                    <div>
+                        <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-lg mb-3 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-scale-balanced"></i>
                         </div>
-
-                        <!-- Visualization Chart -->
-                        <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 flex flex-col justify-center">
-                            <h3 class="text-lg font-bold text-slate-800 mb-4 text-center">Unit Comparison (in Sq. Yards)</h3>
-                            <div class="chart-container">
-                                <canvas id="landChart"></canvas>
-                            </div>
-                            <p class="text-xs text-center text-slate-500 mt-4">
-                                Comparison based on standard HP conversion rates. Notice how much larger a Hectare is compared to a Bigha.
-                            </p>
-                        </div>
+                        <h2 class="text-lg font-bold text-slate-900 mb-1 group-hover:text-blue-600 transition-colors font-heading">Revenue & Land Records</h2>
+                        <p class="text-xs text-slate-500 font-medium leading-relaxed max-w-sm font-sans">
+                            Specialized module for <strong>Patwari & Kanungo</strong> exams. Covers Land Acts 1954/1972, Surveying, and Mensuration logic.
+                        </p>
+                    </div>
+                    <div class="absolute right-0 top-0 opacity-5 group-hover:opacity-10 transition-opacity transform group-hover:scale-110 origin-top-right">
+                        <i class="fa-solid fa-scroll text-8xl text-blue-600"></i>
                     </div>
                 </div>
-            </section>
-
-            <!-- MODULE 3: ACTS & LAWS (Accordion) -->
-            <section id="laws" class="scroll-mt-24">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-slate-900 mb-4">3. Vital Acts & Laws</h2>
-                    <p class="text-slate-600 max-w-2xl mx-auto">
-                        Section 5 of the syllabus. Memorize the Act years and key sections like Section 118.
-                    </p>
+                <div class="mt-4 flex items-center gap-2">
+                    <span class="px-2 py-0.5 bg-green-100 text-green-700 text-[10px] font-bold uppercase rounded border border-green-200 font-sans">Active</span>
+                    <span class="text-[11px] font-bold text-blue-600 flex items-center group-hover:translate-x-1 transition-transform font-sans">
+                        Access Module <i class="fa-solid fa-arrow-right ml-1 text-[10px]"></i>
+                    </span>
                 </div>
+            </a>
 
-                <div class="max-w-4xl mx-auto space-y-4" id="laws-container">
-                    <!-- Laws injected via JS -->
+            <!-- GK Module -->
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-slate-200 opacity-80 hover:opacity-100 transition-all duration-300 hover:shadow-smooth hover:border-slate-300 relative overflow-hidden group">
+                <div class="w-9 h-9 bg-slate-100 text-slate-600 rounded-lg flex items-center justify-center text-sm mb-3 group-hover:bg-indigo-50 group-hover:text-indigo-600 transition">
+                    <i class="fa-solid fa-landmark"></i>
                 </div>
-            </section>
+                <h2 class="text-sm font-bold text-slate-800 mb-1 font-heading">Himachal GK</h2>
+                <p class="text-[11px] text-slate-500 leading-snug font-sans">History, Geography, Economy & Culture of HP.</p>
+                <div class="absolute top-3 right-3 text-slate-300"><i class="fa-solid fa-lock text-xs"></i></div>
+            </div>
 
-            <!-- MODULE 4: HIERARCHY & TOOLS -->
-            <section id="hierarchy" class="scroll-mt-24 grid lg:grid-cols-2 gap-12">
-                
-                <!-- Hierarchy Tree (Dynamic) -->
-                <div>
-                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Administrative Hierarchy</h2>
-                    <p class="text-slate-600 mb-8 text-sm">The chain of command for revenue officers in Himachal Pradesh.</p>
-                    
-                    <div id="hierarchy-container" class="relative pl-8 border-l-2 border-slate-200 space-y-8">
-                        <!-- Tree Items injected via JS -->
-                    </div>
+            <!-- English Module -->
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-slate-200 opacity-80 hover:opacity-100 transition-all duration-300 hover:shadow-smooth hover:border-slate-300 relative overflow-hidden group">
+                <div class="w-9 h-9 bg-slate-100 text-slate-600 rounded-lg flex items-center justify-center text-sm mb-3 group-hover:bg-purple-50 group-hover:text-purple-600 transition">
+                    <i class="fa-solid fa-font"></i>
                 </div>
+                <h2 class="text-sm font-bold text-slate-800 mb-1 font-heading">General English</h2>
+                <p class="text-[11px] text-slate-500 leading-snug font-sans">Grammar, Vocab, Comprehension & Antonyms.</p>
+                <div class="absolute top-3 right-3 text-slate-300"><i class="fa-solid fa-lock text-xs"></i></div>
+            </div>
 
-                <!-- Digital Tools Grid -->
-                <div>
-                    <h2 class="text-2xl font-bold text-slate-900 mb-6">Digital Initiatives</h2>
-                    <div id="tools-grid" class="grid sm:grid-cols-2 gap-4">
-                        <!-- Tools injected via JS -->
-                    </div>
+            <!-- Hindi Module -->
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-slate-200 opacity-80 hover:opacity-100 transition-all duration-300 hover:shadow-smooth hover:border-slate-300 relative overflow-hidden group">
+                <div class="w-9 h-9 bg-slate-100 text-slate-600 rounded-lg flex items-center justify-center text-sm mb-3 group-hover:bg-orange-50 group-hover:text-orange-600 transition">
+                    <i class="fa-solid fa-language"></i>
                 </div>
-            </section>
+                <h2 class="text-sm font-bold text-slate-800 mb-1 font-heading">General Hindi</h2>
+                <p class="text-[11px] text-slate-500 leading-snug font-sans">Vyakaran, Sandhi, Samas & Muhavare.</p>
+                <div class="absolute top-3 right-3 text-slate-300"><i class="fa-solid fa-lock text-xs"></i></div>
+            </div>
 
-            <!-- MODULE 5: QUIZ -->
-            <section id="quiz" class="scroll-mt-24">
-                <div class="bg-slate-900 rounded-2xl p-8 lg:p-16 text-center shadow-2xl relative overflow-hidden">
-                    <!-- Decorative BG elements -->
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-20 -mt-20"></div>
-                    <div class="absolute bottom-0 left-0 w-48 h-48 bg-blue-500 opacity-10 rounded-full -ml-10 -mb-10"></div>
-
-                    <div class="relative z-10 max-w-2xl mx-auto">
-                        <h2 class="text-3xl font-bold text-white mb-6">The "Exam Trap" Quiz</h2>
-                        <p class="text-slate-300 mb-8">Test yourself on the tricky details. Most candidates miss these specific numbers and distinctions.</p>
-                        
-                        <div id="quiz-container" class="bg-white rounded-xl p-6 text-left shadow-lg">
-                            <!-- Questions injected via JS -->
-                            <div id="question-area">
-                                <div class="flex justify-between items-center mb-4">
-                                    <span class="text-xs font-bold text-blue-600 tracking-wider uppercase">Question <span id="q-number">1</span>/5</span>
-                                    <span id="score-display" class="text-sm font-semibold text-slate-700">Score: 0</span>
-                                </div>
-                                <h3 id="q-text" class="text-lg font-bold text-slate-900 mb-6">Loading...</h3>
-                                <div id="options-area" class="space-y-3">
-                                    <!-- Options go here -->
-                                </div>
-                                <div id="feedback-area" class="mt-4 hidden p-3 rounded-lg text-sm font-medium"></div>
-                                <button id="next-btn" class="mt-6 w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition hidden">Next Question</button>
-                            </div>
-                            
-                            <!-- Result Screen (Hidden initially) -->
-                            <div id="result-area" class="hidden text-center py-8">
-                                <div class="text-6xl mb-4">🏆</div>
-                                <h3 class="text-2xl font-bold text-slate-900 mb-2">Quiz Complete!</h3>
-                                <p class="text-slate-600 mb-6">You scored <span id="final-score" class="font-bold text-blue-600 text-xl"></span> out of <span id="total-qs">5</span></p>
-                                <button onclick="resetQuiz()" class="px-6 py-2 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition">Retry Quiz</button>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Math Module -->
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-slate-200 opacity-80 hover:opacity-100 transition-all duration-300 hover:shadow-smooth hover:border-slate-300 relative overflow-hidden group">
+                <div class="w-9 h-9 bg-slate-100 text-slate-600 rounded-lg flex items-center justify-center text-sm mb-3 group-hover:bg-teal-50 group-hover:text-teal-600 transition">
+                    <i class="fa-solid fa-calculator"></i>
                 </div>
-            </section>
+                <h2 class="text-sm font-bold text-slate-800 mb-1 font-heading">Mathematics</h2>
+                <p class="text-[11px] text-slate-500 leading-snug font-sans">Profit Loss, Percentage, Time & Work.</p>
+                <div class="absolute top-3 right-3 text-slate-300"><i class="fa-solid fa-lock text-xs"></i></div>
+            </div>
+
+            <!-- Reasoning Module -->
+            <div class="bg-white rounded-xl p-5 shadow-sm border border-slate-200 opacity-80 hover:opacity-100 transition-all duration-300 hover:shadow-smooth hover:border-slate-300 relative overflow-hidden group">
+                <div class="w-9 h-9 bg-slate-100 text-slate-600 rounded-lg flex items-center justify-center text-sm mb-3 group-hover:bg-rose-50 group-hover:text-rose-600 transition">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <h2 class="text-sm font-bold text-slate-800 mb-1 font-heading">Reasoning</h2>
+                <p class="text-[11px] text-slate-500 leading-snug font-sans">Series, Coding, Blood Relations & Logic.</p>
+                <div class="absolute top-3 right-3 text-slate-300"><i class="fa-solid fa-lock text-xs"></i></div>
+            </div>
+            
+            <!-- India GK Module -->
+            <div class="md:col-span-2 lg:col-span-1 bg-white rounded-xl p-5 shadow-sm border border-slate-200 opacity-80 hover:opacity-100 transition-all duration-300 hover:shadow-smooth hover:border-slate-300 relative overflow-hidden group">
+                <div class="w-9 h-9 bg-slate-100 text-slate-600 rounded-lg flex items-center justify-center text-sm mb-3 group-hover:bg-amber-50 group-hover:text-amber-600 transition">
+                    <i class="fa-solid fa-earth-asia"></i>
+                </div>
+                <h2 class="text-sm font-bold text-slate-800 mb-1 font-heading">India GK</h2>
+                <p class="text-[11px] text-slate-500 leading-snug font-sans">History, Polity, Geography & Economy of India.</p>
+                <div class="absolute top-3 right-3 text-slate-300"><i class="fa-solid fa-lock text-xs"></i></div>
+            </div>
+
         </div>
     </main>
 
-    <footer class="bg-white border-t border-slate-200 py-12 mt-auto">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-slate-500 text-sm">© HP Patwari Exam Ace. Designed for Aspirants.</p>
-            <p class="text-slate-400 text-xs mt-2">Based on the official Land Records & Revenue Syllabus.</p>
-        </div>
-    </footer>
+    <!-- Global Footer (Styles & Content loaded via JS) -->
+    <footer id="global-footer"></footer>
 
-    <!-- LOGIC -->
     <script>
-        // --- GLOBAL DATA HOLDERS ---
-        let terminologyData = [];
-        let lawsData = [];
-        let hierarchyData = [];
-        let toolsData = [];
-        let quizQuestions = [];
-        
-        // --- DATA FETCHING (Production Mode) ---
-        async function fetchData(url) {
-            const response = await fetch(url);
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status} for ${url}`);
-            }
-            return await response.json();
-        }
-        
-        // --- DOM MANIPULATION ---
-
-        // 1. Render Terminology Cards
-        function renderTerms(filter) {
-            const grid = document.getElementById('term-grid');
-            grid.innerHTML = '';
-            
-            terminologyData.forEach(item => {
-                if (filter === 'all' || item.category === filter) {
-                    const card = document.createElement('div');
-                    card.className = 'flip-card h-48';
-                    card.onclick = function() { this.classList.toggle('flipped'); };
-                    card.innerHTML = `
-                        <div class="flip-card-inner bg-white rounded-xl shadow-sm border border-slate-200">
-                            <div class="flip-card-front bg-white">
-                                <div class="text-4xl mb-2">${item.icon}</div>
-                                <h3 class="text-xl font-bold text-slate-800">${item.term}</h3>
-                                <span class="text-xs text-blue-500 font-semibold mt-2 uppercase tracking-wide">Click to reveal</span>
-                            </div>
-                            <div class="flip-card-back bg-slate-800 text-white">
-                                <p class="text-sm font-medium leading-relaxed">${item.def}</p>
-                            </div>
-                        </div>
-                    `;
-                    grid.appendChild(card);
-                }
-            });
-        }
-
-        function filterTerms(category) {
-            document.querySelectorAll('.term-filter').forEach(btn => {
-                if (btn.textContent.toLowerCase() === category || (category === 'all' && btn.textContent === 'All')) {
-                    btn.classList.remove('bg-slate-200', 'text-slate-600');
-                    btn.classList.add('bg-slate-800', 'text-white');
-                } else {
-                    btn.classList.add('bg-slate-200', 'text-slate-600');
-                    btn.classList.remove('bg-slate-800', 'text-white');
-                }
-            });
-            renderTerms(category);
-        }
-
-        // 2. Converter Logic
-        function convertLand() {
-            const bigha = parseFloat(document.getElementById('bigha-input').value) || 0;
-            document.getElementById('res-biswa').innerText = (bigha * 20).toLocaleString();
-            document.getElementById('res-acre').innerText = (bigha / 5).toFixed(3);
-            document.getElementById('res-hec').innerText = (bigha / 12.35).toFixed(3);
-            document.getElementById('res-sqyd').innerText = (bigha * 968).toLocaleString();
-        }
-
-        // 3. Render Laws Accordion
-        function renderLaws() {
-            const container = document.getElementById('laws-container');
-            container.innerHTML = '';
-            lawsData.forEach((law, index) => {
-                const div = document.createElement('div');
-                div.className = 'border border-slate-200 rounded-lg bg-white overflow-hidden';
-                div.innerHTML = `
-                    <button onclick="toggleLaw(${index})" class="w-full text-left px-6 py-4 flex justify-between items-center hover:bg-slate-50 transition">
-                        <div>
-                            <span class="text-blue-600 font-bold text-sm bg-blue-50 px-2 py-1 rounded mr-3">${law.year}</span>
-                            <span class="font-bold text-slate-800">${law.title}</span>
-                        </div>
-                        <svg id="arrow-${index}" class="w-5 h-5 text-slate-400 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </button>
-                    <div id="law-content-${index}" class="hidden px-6 py-4 border-t border-slate-100 bg-slate-50 text-slate-700 text-sm leading-relaxed">
-                        ${law.details}
-                    </div>
-                `;
-                container.appendChild(div);
-            });
-        }
-
-        function toggleLaw(index) {
-            const content = document.getElementById(`law-content-${index}`);
-            const arrow = document.getElementById(`arrow-${index}`);
-            content.classList.toggle('hidden');
-            arrow.classList.toggle('rotate-180');
-        }
-
-        // 4. Render Hierarchy (Dynamic)
-        function renderHierarchy() {
-            const container = document.getElementById('hierarchy-container');
-            container.innerHTML = '';
-            hierarchyData.forEach(item => {
-                const div = document.createElement('div');
-                div.className = "relative";
-                // Color mapping logic for dots based on JSON color strings
-                let dotColorClass = item.color.replace('bg-', 'bg-').replace('slate', 'slate').replace('green', 'green'); 
-                
-                div.innerHTML = `
-                    <div class="absolute -left-[41px] top-3 h-4 w-4 rounded-full ${item.color} border-4 border-white shadow-sm"></div>
-                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 ${item.role.includes('SDM') ? 'ml-4 opacity-80' : ''}">
-                        <h4 class="font-bold text-slate-900">${item.role}</h4>
-                        <p class="text-xs text-slate-500">${item.desc}</p>
-                    </div>
-                `;
-                container.appendChild(div);
-            });
-        }
-
-        // 5. Render Tools
-        function renderTools() {
-            const grid = document.getElementById('tools-grid');
-            grid.innerHTML = '';
-            toolsData.forEach(tool => {
-                const div = document.createElement('div');
-                div.className = "bg-white p-5 rounded-xl shadow-sm border border-slate-100 hover:border-blue-200 transition group";
-                div.innerHTML = `
-                    <div class="w-10 h-10 ${tool.bg_color} rounded-lg flex items-center justify-center mb-3 ${tool.hover_color} transition">
-                        <i class="${tool.icon} text-xl text-slate-700 group-hover:text-white transition"></i>
-                    </div>
-                    <h3 class="font-bold text-slate-900">${tool.title}</h3>
-                    <p class="text-sm text-slate-600 mt-1">${tool.desc}</p>
-                `;
-                grid.appendChild(div);
-            });
-        }
-
-        // 6. Chart.js Initialization
-        function initChart() {
-            const ctx = document.getElementById('landChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['1 Biswa', '1 Bigha', '1 Acre', '1 Hectare'],
-                    datasets: [{
-                        label: 'Area in Sq. Yards',
-                        data: [48.4, 968, 4840, 11960], 
-                        backgroundColor: ['#cbd5e1', '#93c5fd', '#2563eb', '#1e40af'],
-                        borderRadius: 6
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
-                    scales: { y: { beginAtZero: true } }
-                }
-            });
-        }
-
-        // 7. Quiz Logic
-        let currentQ = 0;
-        let score = 0;
-
-        function loadQuiz() {
-            if (currentQ >= quizQuestions.length) {
-                document.getElementById('question-area').classList.add('hidden');
-                document.getElementById('result-area').classList.remove('hidden');
-                document.getElementById('final-score').innerText = score;
-                document.getElementById('total-qs').innerText = quizQuestions.length;
-                return;
-            }
-
-            const q = quizQuestions[currentQ];
-            document.getElementById('q-number').innerText = currentQ + 1;
-            document.getElementById('q-text').innerText = q.q;
-            document.getElementById('next-btn').classList.add('hidden');
-            document.getElementById('feedback-area').classList.add('hidden');
-            document.getElementById('score-display').innerText = `Score: ${score}`;
-
-            const optsDiv = document.getElementById('options-area');
-            optsDiv.innerHTML = '';
-            
-            q.options.forEach((opt, idx) => {
-                const btn = document.createElement('button');
-                btn.className = "w-full text-left p-3 rounded-lg border border-slate-200 hover:bg-blue-50 hover:border-blue-300 transition text-slate-700 font-medium";
-                btn.innerText = opt;
-                btn.onclick = () => checkAnswer(idx, btn);
-                optsDiv.appendChild(btn);
-            });
-        }
-
-        function checkAnswer(selectedIdx, btn) {
-            const buttons = document.querySelectorAll('#options-area button');
-            buttons.forEach(b => b.disabled = true);
-
-            const q = quizQuestions[currentQ];
-            const feedback = document.getElementById('feedback-area');
-            feedback.classList.remove('hidden');
-
-            if (selectedIdx === q.correct) {
-                score++;
-                btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
-                feedback.className = "mt-4 p-3 rounded-lg text-sm font-medium bg-green-50 text-green-700 border border-green-200";
-                feedback.innerHTML = `<strong>Correct!</strong> ${q.explanation}`;
-            } else {
-                btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
-                feedback.className = "mt-4 p-3 rounded-lg text-sm font-medium bg-red-50 text-red-700 border border-red-200";
-                feedback.innerHTML = `<strong>Incorrect.</strong> ${q.explanation}`;
-            }
-
-            document.getElementById('score-display').innerText = `Score: ${score}`;
-            document.getElementById('next-btn').classList.remove('hidden');
-        }
-
-        document.getElementById('next-btn').onclick = () => {
-            currentQ++;
-            loadQuiz();
-        };
-
-        function resetQuiz() {
-            currentQ = 0;
-            score = 0;
-            document.getElementById('result-area').classList.add('hidden');
-            document.getElementById('question-area').classList.remove('hidden');
-            loadQuiz();
-        }
-
-        // --- INITIALIZATION ---
-        async function initApp() {
-            try {
-                // Fetch all data concurrently
-                // Note: These paths must match the folder structure on your hosting server.
-                const [terms, laws, hierarchy, tools, quiz] = await Promise.all([
-                    fetchData('patwari-json-data/terminology_data.json'),
-                    fetchData('patwari-json-data/laws_data.json'),
-                    fetchData('patwari-json-data/hierarchy_data.json'),
-                    fetchData('patwari-json-data/tools_data.json'),
-                    fetchData('patwari-json-data/quiz_data.json')
-                ]);
-
-                // Populate global variables
-                terminologyData = terms;
-                lawsData = laws;
-                hierarchyData = hierarchy;
-                toolsData = tools;
-                quizQuestions = quiz;
-
-                // Render components
-                renderTerms('all');
-                renderLaws();
-                renderHierarchy();
-                renderTools();
-                initChart();
-                loadQuiz();
-                
-                // Hide loading indicator and show content
-                document.getElementById('loading-indicator').classList.add('hidden');
-                document.getElementById('app-content').classList.remove('hidden');
-
-            } catch (error) {
-                console.error("Initialization failed:", error);
-                document.getElementById('loading-indicator').innerHTML = `
-                    <div class="text-red-600 bg-red-50 p-6 rounded-lg inline-block shadow-md">
-                        <p class="font-bold text-lg mb-2">Error loading data.</p>
-                        <p class="text-sm">Could not fetch JSON files from the server.</p>
-                        <ul class="text-xs mt-3 text-slate-500 text-left list-disc list-inside">
-                            <li>Ensure the folder <code>patwari-json-data</code> exists.</li>
-                            <li>Check that all 5 .json files are inside it.</li>
-                            <li>Check console for exact 404/500 error.</li>
-                        </ul>
-                    </div>
-                `;
-            }
-        }
-
         document.addEventListener('DOMContentLoaded', () => {
-            initApp();
-            document.getElementById('mobile-menu-btn').onclick = () => {
-                document.getElementById('mobile-menu').classList.toggle('hidden');
-            };
+            // Load Shared Header/Footer
+            if(window.loadHeaderFooter) {
+                loadHeaderFooter({ type: 'home', rootPath: '.' });
+            }
         });
-
     </script>
-    
 </body>
 </html>
