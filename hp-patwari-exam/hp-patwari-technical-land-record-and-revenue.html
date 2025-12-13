@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Guide | HP Patwari</title>
-    <meta name="description" content="Concise notes on Land Records, Acts, and Surveying with practice MCQs.">
+    
+    <!-- SEO Meta Tags -->
+    <title>HP Patwari Land Records Guide: Acts, Surveying & MCQ Bank</title>
+    <meta name="description" content="Master HP Patwari Land Records: Interactive guide on Revenue Acts, Surveying terms (Jamabandi/Khasra), and a specialized MCQ bank for 2026 prep.">
     
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -13,8 +15,6 @@
     <!-- Header Footer Script -->
     <script src="../js/header-footer.js"></script>
 
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts (Inter & Poppins ONLY) -->
@@ -29,32 +29,24 @@
         <!-- Injected by header-footer.js -->
     </nav>
 
-    <!-- Compact Hero Section for SEO -->
+    <!-- Compact Hero Section -->
     <header class="bg-white border-b border-slate-200 py-4 md:py-6">
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 text-center md:text-left">
             <h1 class="text-2xl md:text-3xl font-extrabold font-heading mb-2 leading-tight">
                 <span class="gradient-text">HP Land Records</span> & Revenue Technical Guide
             </h1>
             <p class="text-xs md:text-sm text-slate-500 max-w-2xl font-sans">
-                Master essential revenue terminology (Jamabandi, Khasra), perform Bigha-Biswa conversions, study HP Land Revenue Acts (1954/1972), and practice with our specialized MCQ bank for Patwari exams.
+                Master essential revenue terminology (Jamabandi, Khasra), perform Bigha-Biswa conversions, study HP Land Revenue Acts (1954/1972), and practice with our specialized MCQ bank.
             </p>
         </div>
     </header>
 
     <!-- Main Content -->
-    <!-- UPDATED: Increased top padding to pt-24 (96px) to ensure >95px space -->
-    <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-24 pb-8 flex-grow">
+    <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-6 pb-8 flex-grow">
         
-        <!-- Strictly enforced H1 for accessibility (hidden visually) -->
         <h1 class="sr-only">Technical Master Guide for HP Land Records</h1>
         
-        <!-- Loading -->
-        <div id="loading-indicator" class="text-center py-10">
-            <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500 mx-auto mb-2"></div>
-            <p class="text-xs text-slate-500 font-bold uppercase tracking-wide font-sans">Loading Data...</p>
-        </div>
-
-        <div id="app-content" class="hidden space-y-6 md:space-y-12">
+        <div id="app-content" class="space-y-6 md:space-y-12">
             
             <!-- MODULE 1: TERMINOLOGY -->
             <section id="terminology" class="scroll-mt-20">
@@ -63,9 +55,8 @@
                         <h2 class="text-lg md:text-xl font-extrabold text-slate-900 flex items-center justify-center md:justify-start gap-2 font-heading">
                             <span class="w-1 h-5 md:h-6 bg-blue-600 rounded-full"></span> Terminology
                         </h2>
-                        <p class="text-[10px] md:text-xs text-slate-500 mt-1 ml-0 md:ml-3 font-sans">Tap cards to reveal definitions.</p>
                     </div>
-                    <!-- Filters: Compact scrolling container -->
+                    <!-- Filters -->
                     <div class="flex gap-2 bg-white p-1 rounded-lg border border-slate-200 shadow-sm overflow-x-auto max-w-full w-full md:w-auto scrollbar-hide justify-center md:justify-start">
                         <button onclick="filterTerms('all')" class="term-filter active text-[10px] font-bold px-3 py-1.5 rounded bg-slate-800 text-white whitespace-nowrap font-sans flex-1 md:flex-none text-center">All</button>
                         <button onclick="filterTerms('records')" class="term-filter text-[10px] font-bold px-3 py-1.5 rounded text-slate-500 hover:bg-slate-100 whitespace-nowrap font-sans flex-1 md:flex-none text-center">Records</button>
@@ -74,53 +65,96 @@
                     </div>
                 </div>
 
-                <!-- Grid: 7 Columns on Large Screens -->
-                <div id="term-grid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2 md:gap-3">
+                <!-- 1. SKELETON GRID -->
+                <div id="term-skeleton" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2 md:gap-3">
+                    <script>
+                        for(let i=0; i<14; i++) {
+                            document.write(`
+                                <div class="h-[11rem] rounded-xl border border-slate-200 bg-white p-4 flex flex-col items-center justify-center gap-3">
+                                    <div class="w-10 h-10 rounded-full skeleton"></div>
+                                    <div class="w-20 h-4 rounded skeleton"></div>
+                                    <div class="w-12 h-3 rounded skeleton mt-2"></div>
+                                </div>
+                            `);
+                        }
+                    </script>
+                </div>
+
+                <!-- 2. REAL CONTENT GRID -->
+                <div id="term-grid" class="hidden grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2 md:gap-3">
                     <!-- Cards injected via JS -->
                 </div>
             </section>
 
-            <!-- MODULE 2: MEASUREMENTS -->
+            <!-- MODULE 2: MEASUREMENTS (Centered & Enhanced) -->
             <section id="measurements" class="scroll-mt-20">
-                <div class="grid lg:grid-cols-12 gap-3 md:gap-4">
+                <div class="max-w-2xl mx-auto w-full">
                     <!-- Calculator -->
-                    <div class="lg:col-span-5 bg-white rounded-xl shadow-smooth border border-slate-200 p-3 md:p-5">
-                        <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3 md:mb-4 flex items-center justify-center md:justify-start gap-2 font-heading">
-                            <i class="fa-solid fa-calculator text-green-500"></i> Land Measurement
-                        </h2>
+                    <div class="bg-white rounded-xl shadow-smooth border border-slate-200 p-4 md:p-6">
+                        <div class="flex items-center justify-between mb-4 md:mb-5">
+                            <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2 font-heading">
+                                <i class="fa-solid fa-calculator text-green-500" aria-hidden="true"></i> Land Measurement
+                            </h2>
+                            <span class="text-[10px] bg-slate-100 text-slate-500 px-2 py-1 rounded font-bold">HP Standard</span>
+                        </div>
                         
-                        <div class="mb-3 md:mb-4">
-                            <label class="text-[9px] md:text-[10px] font-bold text-slate-400 uppercase mb-1 block font-sans text-center md:text-left">Input Bigha</label>
-                            <input type="number" id="bigha-input" placeholder="0" class="w-full p-2 border border-slate-300 rounded-lg text-lg font-bold text-slate-800 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition font-sans text-center md:text-left" oninput="convertLand()">
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-2 text-center md:text-left">
-                            <div class="bg-slate-50 p-2 md:p-2.5 rounded border border-slate-100">
-                                <div class="text-[9px] md:text-[10px] text-slate-400 font-bold uppercase font-sans">Biswa</div>
-                                <div id="res-biswa" class="text-xs md:text-sm font-bold text-slate-800 font-sans">0</div>
-                            </div>
-                            <div class="bg-green-50 p-2 md:p-2.5 rounded border border-green-100">
-                                <div class="text-[9px] md:text-[10px] text-green-600 font-bold uppercase font-sans">Acres</div>
-                                <div id="res-acre" class="text-xs md:text-sm font-bold text-green-800 font-sans">0</div>
-                            </div>
-                            <div class="bg-blue-50 p-2 md:p-2.5 rounded border border-blue-100">
-                                <div class="text-[9px] md:text-[10px] text-blue-600 font-bold uppercase font-sans">Hectares</div>
-                                <div id="res-hec" class="text-xs md:text-sm font-bold text-blue-800 font-sans">0</div>
-                            </div>
-                            <div class="bg-slate-50 p-2 md:p-2.5 rounded border border-slate-100">
-                                <div class="text-[9px] md:text-[10px] text-slate-400 font-bold uppercase font-sans">Sq. Yds</div>
-                                <div id="res-sqyd" class="text-xs md:text-sm font-bold text-slate-800 font-sans">0</div>
+                        <div class="mb-5 md:mb-6">
+                            <!-- ACCESSIBILITY: Explicit label association -->
+                            <label for="bigha-input" class="text-[10px] font-bold text-slate-600 uppercase mb-1.5 block font-sans">Enter Area in Bigha</label>
+                            <div class="relative">
+                                <input type="number" id="bigha-input" placeholder="0" class="w-full p-3 pl-4 border border-slate-300 rounded-lg text-2xl font-bold text-slate-800 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition font-sans placeholder-slate-200" oninput="convertLand()">
+                                <span class="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-bold text-slate-400">Bigha</span>
                             </div>
                         </div>
-                        <p class="text-[9px] md:text-[10px] text-slate-400 mt-2 md:mt-3 text-center bg-yellow-50 py-1 rounded text-yellow-700 font-medium font-sans">
-                            <i class="fa-solid fa-info-circle"></i> Rule: 1 Acre ≈ 5 Bigha
-                        </p>
-                    </div>
 
-                    <!-- Chart -->
-                    <div class="lg:col-span-7 bg-white rounded-xl shadow-smooth border border-slate-200 p-3 md:p-5 flex flex-col justify-center">
-                        <div class="relative h-[150px] md:h-[180px] w-full">
-                            <canvas id="landChart"></canvas>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                            <!-- Biswa -->
+                            <div class="bg-slate-50 p-3 rounded border border-slate-100 flex flex-col justify-between">
+                                <div class="text-[10px] text-slate-600 font-bold uppercase font-sans mb-1">Biswa</div>
+                                <div id="res-biswa" class="text-lg font-bold text-slate-800 font-sans">0</div>
+                            </div>
+                            
+                            <!-- Acres -->
+                            <div class="bg-green-50 p-3 rounded border border-green-100 flex flex-col justify-between">
+                                <div class="text-[10px] text-green-700 font-bold uppercase font-sans mb-1">Acres</div>
+                                <div id="res-acre" class="text-lg font-bold text-green-900 font-sans">0</div>
+                            </div>
+                            
+                            <!-- Hectares -->
+                            <div class="bg-blue-50 p-3 rounded border border-blue-100 flex flex-col justify-between">
+                                <div class="text-[10px] text-blue-700 font-bold uppercase font-sans mb-1">Hectares</div>
+                                <div id="res-hec" class="text-lg font-bold text-blue-900 font-sans">0</div>
+                            </div>
+
+                            <!-- Marla (New) -->
+                            <div class="bg-orange-50 p-3 rounded border border-orange-100 flex flex-col justify-between">
+                                <div class="text-[10px] text-orange-700 font-bold uppercase font-sans mb-1">Marla</div>
+                                <div id="res-marla" class="text-lg font-bold text-orange-900 font-sans">0</div>
+                            </div>
+
+                            <!-- Gaj (Sq Yds) -->
+                            <div class="bg-slate-50 p-3 rounded border border-slate-100 flex flex-col justify-between">
+                                <div class="text-[10px] text-slate-600 font-bold uppercase font-sans mb-1">Gaj (Sq.Yds)</div>
+                                <div id="res-sqyd" class="text-lg font-bold text-slate-800 font-sans">0</div>
+                            </div>
+
+                            <!-- Sq. Meters -->
+                            <div class="bg-slate-50 p-3 rounded border border-slate-100 flex flex-col justify-between">
+                                <div class="text-[10px] text-slate-600 font-bold uppercase font-sans mb-1">Sq. Meters</div>
+                                <div id="res-sqm" class="text-lg font-bold text-slate-800 font-sans">0</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 border-t border-slate-100 pt-4">
+                            <h3 class="text-xs font-bold text-slate-700 uppercase mb-3 font-heading">Key Conversion Formulas (Exam Standard)</h3>
+                            <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-[11px] text-slate-600 font-sans">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-ruler-combined text-blue-400" aria-hidden="true"></i> 1 Karam = 57.15 inches</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-vector-square text-blue-400" aria-hidden="true"></i> 1 Marla = 9 Sarsahi (Sq. Karam)</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-layer-group text-blue-400" aria-hidden="true"></i> 1 Kanal = 20 Marlas</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-chart-area text-blue-400" aria-hidden="true"></i> 1 Bigha = 20 Biswas</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-earth-asia text-blue-400" aria-hidden="true"></i> 1 Acre ≈ 4 Bigha 16 Biswa</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-infinity text-blue-400" aria-hidden="true"></i> 1 Hectare ≈ 12.5 Bigha</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -131,27 +165,67 @@
                 <h2 class="text-lg md:text-xl font-extrabold text-slate-900 mb-3 md:mb-4 flex items-center justify-center md:justify-start gap-2 font-heading">
                     <span class="w-1 h-5 md:h-6 bg-purple-600 rounded-full"></span> Vital Acts
                 </h2>
-                <div class="grid md:grid-cols-3 gap-2 md:gap-3" id="laws-container">
+                
+                <!-- Skeleton for Laws (Layout Fixed) -->
+                <div id="laws-skeleton" class="grid md:grid-cols-3 gap-2 md:gap-3 items-start">
+                    <script>
+                        for(let i=0; i<6; i++) {
+                            document.write(`
+                                <div class="border border-slate-200 rounded-lg bg-white p-4 flex justify-between items-center">
+                                    <div class="h-4 w-3/4 rounded skeleton"></div>
+                                    <div class="h-4 w-4 rounded-full skeleton"></div>
+                                </div>
+                            `);
+                        }
+                    </script>
+                </div>
+
+                <!-- Laws Container (Layout Fixed with items-start) -->
+                <div class="hidden grid md:grid-cols-3 gap-2 md:gap-3 items-start" id="laws-container">
                     <!-- Laws injected via JS -->
                 </div>
             </section>
 
             <!-- MODULE 4: HIERARCHY & TOOLS -->
             <section id="hierarchy" class="scroll-mt-20 grid lg:grid-cols-2 gap-4 md:gap-6">
+                <!-- Hierarchy -->
                 <div class="bg-white rounded-xl shadow-smooth border border-slate-200 p-3 md:p-5">
                     <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 md:mb-5 flex items-center justify-center md:justify-start gap-2 font-heading">
-                        <i class="fa-solid fa-sitemap text-slate-400"></i> Hierarchy
+                        <i class="fa-solid fa-sitemap text-slate-400" aria-hidden="true"></i> Hierarchy
                     </h2>
-                    <div id="hierarchy-container" class="relative pl-4 md:pl-6 border-l border-slate-100 space-y-4 md:space-y-6">
+                    
+                    <div id="hierarchy-skeleton" class="space-y-6 pl-6 border-l border-slate-100">
+                         <script>
+                            for(let i=0; i<3; i++) {
+                                document.write(`
+                                    <div class="relative pl-2">
+                                        <div class="h-12 w-full rounded-lg skeleton"></div>
+                                    </div>
+                                `);
+                            }
+                        </script>
+                    </div>
+
+                    <div id="hierarchy-container" class="hidden relative pl-4 md:pl-6 border-l border-slate-100 space-y-4 md:space-y-6">
                         <!-- Tree Items -->
                     </div>
                 </div>
 
+                <!-- Tools -->
                 <div class="bg-slate-50 rounded-xl border border-slate-200 p-3 md:p-5">
                     <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 md:mb-5 flex items-center justify-center md:justify-start gap-2 font-heading">
-                        <i class="fa-solid fa-desktop text-slate-400"></i> Digital Tools
+                        <i class="fa-solid fa-desktop text-slate-400" aria-hidden="true"></i> Digital Tools
                     </h2>
-                    <div id="tools-grid" class="grid grid-cols-2 gap-2 md:gap-3">
+                    
+                    <div id="tools-skeleton" class="grid grid-cols-2 gap-2 md:gap-3">
+                         <script>
+                            for(let i=0; i<4; i++) {
+                                document.write(`<div class="h-20 rounded-lg skeleton"></div>`);
+                            }
+                        </script>
+                    </div>
+
+                    <div id="tools-grid" class="hidden grid grid-cols-2 gap-2 md:gap-3">
                         <!-- Tools injected -->
                     </div>
                 </div>
@@ -168,6 +242,8 @@
                                 <p class="text-[10px] md:text-xs text-slate-400 mt-1 font-sans">Select topic to practice.</p>
                             </div>
 
+                            <!-- ACCESSIBILITY: Added hidden label for selector -->
+                            <label for="quiz-selector" class="sr-only">Select Quiz Module</label>
                             <select id="quiz-selector" onchange="switchQuiz(this.value)" class="w-full bg-slate-800 text-white text-[11px] md:text-xs font-bold p-2 md:p-2.5 rounded border border-slate-700 focus:border-blue-500 outline-none font-sans text-center md:text-left">
                                 <option value="intro">Intro: Exam Traps</option>
                                 <option value="core">Core: Land Records</option>
@@ -190,7 +266,7 @@
                         <!-- Question Area -->
                         <div class="lg:col-span-8 bg-white rounded-lg p-3 md:p-5 min-h-[250px] flex flex-col relative">
                             <div id="quiz-loader" class="hidden absolute inset-0 bg-white z-20 flex flex-col items-center justify-center">
-                                <i class="fa-solid fa-circle-notch fa-spin text-2xl text-blue-600"></i>
+                                <i class="fa-solid fa-circle-notch fa-spin text-2xl text-blue-600" aria-hidden="true"></i>
                             </div>
 
                             <div id="question-area" class="flex flex-col h-full">
@@ -209,7 +285,7 @@
                                 
                                 <div class="mt-3 md:mt-4 flex justify-center md:justify-end">
                                     <button id="next-btn" class="hidden px-4 py-2 bg-slate-900 text-white text-[10px] md:text-xs font-bold rounded hover:bg-slate-800 transition font-sans">
-                                        Next <i class="fa-solid fa-arrow-right ml-1"></i>
+                                        Next <i class="fa-solid fa-arrow-right ml-1" aria-hidden="true"></i>
                                     </button>
                                 </div>
                             </div>
@@ -233,7 +309,7 @@
 
     <script>
         // --- DATA & CONSTANTS ---
-        let terminologyData = []; // Removed hardcoded data
+        let terminologyData = []; 
         let lawsData = [];
         let hierarchyData = [];
         let toolsData = [];
@@ -258,52 +334,29 @@
         // Helper to assign icons dynamically
         function getIconForTerm(item) {
             const map = {
-                // Specific Terms
-                'Jamabandi': 'fa-book-atlas',
-                'Khasra': 'fa-table-list',
-                'Girdawari': 'fa-clipboard-check',
-                'Intkaal': 'fa-file-signature',
-                'Musavi': 'fa-map',
-                'Latha': 'fa-scroll',
-                'Tatima': 'fa-draw-polygon',
-                'Shamlat': 'fa-users',
-                'Shajra': 'fa-sitemap',
-                'Shajra Nasb': 'fa-sitemap',
-                'Roznamcha': 'fa-calendar-days',
-                'Khata': 'fa-folder-tree',
-                'Khewat': 'fa-id-card-clip',
-                'Fard': 'fa-file-invoice',
-                'Wajib-ul-Arz': 'fa-scale-balanced',
-                'Misal Haquiyat': 'fa-book-journal-whills',
-                'Field Book': 'fa-book-open',
-                'Mutation': 'fa-pen-to-square'
+                'Jamabandi': 'fa-book-atlas', 'Khasra': 'fa-table-list', 'Girdawari': 'fa-clipboard-check',
+                'Intkaal': 'fa-file-signature', 'Musavi': 'fa-map', 'Latha': 'fa-scroll',
+                'Tatima': 'fa-draw-polygon', 'Shamlat': 'fa-users', 'Shajra': 'fa-sitemap',
+                'Shajra Nasb': 'fa-sitemap', 'Roznamcha': 'fa-calendar-days', 'Khata': 'fa-folder-tree',
+                'Khewat': 'fa-id-card-clip', 'Fard': 'fa-file-invoice', 'Wajib-ul-Arz': 'fa-scale-balanced',
+                'Misal Haquiyat': 'fa-book-journal-whills', 'Field Book': 'fa-book-open', 'Mutation': 'fa-pen-to-square'
             };
             
-            // 1. Direct Match
             const term = item.term.trim();
-            if (map[term]) return `<i class="fa-solid ${map[term]}"></i>`;
+            if (map[term]) return `<i class="fa-solid ${map[term]}" aria-hidden="true"></i>`;
             
-            // 2. Keyword Matching (Content Analysis)
             const text = (item.term + " " + item.def).toLowerCase();
+            if (text.includes('map') || text.includes('plot')) return `<i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>`;
+            if (text.includes('tax') || text.includes('revenue')) return `<i class="fa-solid fa-coins" aria-hidden="true"></i>`;
+            if (text.includes('crop')) return `<i class="fa-solid fa-wheat-awn" aria-hidden="true"></i>`;
+            if (text.includes('water')) return `<i class="fa-solid fa-water" aria-hidden="true"></i>`;
             
-            if (text.includes('map') || text.includes('plot') || text.includes('field')) return `<i class="fa-solid fa-map-location-dot"></i>`;
-            if (text.includes('tax') || text.includes('revenue') || text.includes('money') || text.includes('lagan')) return `<i class="fa-solid fa-coins"></i>`;
-            if (text.includes('crop') || text.includes('harvest') || text.includes('agriculture') || text.includes('rabi') || text.includes('kharif')) return `<i class="fa-solid fa-wheat-awn"></i>`;
-            if (text.includes('water') || text.includes('canal') || text.includes('irrigation')) return `<i class="fa-solid fa-water"></i>`;
-            if (text.includes('owner') || text.includes('tenant') || text.includes('person')) return `<i class="fa-solid fa-user-tie"></i>`;
-            if (text.includes('village') || text.includes('community')) return `<i class="fa-solid fa-house-chimney"></i>`;
-            if (text.includes('land') || text.includes('area') || text.includes('soil')) return `<i class="fa-solid fa-mound"></i>`;
-            if (text.includes('register') || text.includes('record') || text.includes('book')) return `<i class="fa-solid fa-book"></i>`;
+            if (item.category === 'records') return `<i class="fa-solid fa-file-contract" aria-hidden="true"></i>`;
+            if (item.category === 'maps') return `<i class="fa-solid fa-layer-group" aria-hidden="true"></i>`;
+            if (item.category === 'numbers') return `<i class="fa-solid fa-arrow-down-1-9" aria-hidden="true"></i>`;
             
-            // 3. Category Fallback
-            if (item.category === 'records') return `<i class="fa-solid fa-file-contract"></i>`;
-            if (item.category === 'maps') return `<i class="fa-solid fa-layer-group"></i>`;
-            if (item.category === 'numbers') return `<i class="fa-solid fa-arrow-down-1-9"></i>`;
-            
-            return `<i class="fa-solid fa-certificate"></i>`;
+            return `<i class="fa-solid fa-certificate" aria-hidden="true"></i>`;
         }
-
-        // --- COMPONENTS RENDER LOGIC ---
 
         function renderTerms(filter) {
             const grid = document.getElementById('term-grid');
@@ -348,10 +401,19 @@
 
         function convertLand() {
             const bigha = parseFloat(document.getElementById('bigha-input').value) || 0;
+            
+            // Standard Conversions
             document.getElementById('res-biswa').innerText = (bigha * 20).toLocaleString();
             document.getElementById('res-acre').innerText = (bigha / 5).toFixed(3);
             document.getElementById('res-hec').innerText = (bigha / 12.35).toFixed(3);
-            document.getElementById('res-sqyd').innerText = (bigha * 968).toLocaleString();
+            
+            // Gaj (Sq Yards) & Sq Meters
+            const sqYards = bigha * 968;
+            document.getElementById('res-sqyd').innerText = sqYards.toLocaleString();
+            document.getElementById('res-sqm').innerText = (sqYards * 0.836127).toFixed(1);
+
+            // Marla (Approx: 1 Bigha = 32 Marla)
+            document.getElementById('res-marla').innerText = (bigha * 32).toLocaleString();
         }
 
         function renderLaws() {
@@ -360,13 +422,19 @@
             lawsData.forEach((law, index) => {
                 const div = document.createElement('div');
                 div.className = 'border border-slate-200 rounded-lg bg-white overflow-hidden shadow-sm hover:border-blue-300 transition group';
+                // ACCESSIBILITY: Added aria-expanded and aria-controls
                 div.innerHTML = `
-                    <button onclick="toggleLaw(${index})" class="w-full text-left px-3 py-2.5 flex justify-between items-center bg-white">
+                    <button 
+                        onclick="toggleLaw(${index})" 
+                        aria-expanded="false" 
+                        aria-controls="law-content-${index}" 
+                        class="w-full text-left px-3 py-2.5 flex justify-between items-center bg-white"
+                    >
                         <div class="flex items-center gap-3">
                             <span class="text-blue-700 font-bold text-[10px] bg-blue-50 px-1.5 py-0.5 rounded border border-blue-100 font-sans">${law.year}</span>
                             <span class="font-bold text-xs text-slate-800 group-hover:text-blue-700 transition font-heading">${law.title}</span>
                         </div>
-                        <i id="arrow-${index}" class="fa-solid fa-chevron-down text-slate-300 text-[10px]"></i>
+                        <i id="arrow-${index}" class="fa-solid fa-chevron-down text-slate-400 text-[10px]" aria-hidden="true"></i>
                     </button>
                     <div id="law-content-${index}" class="hidden px-3 py-2.5 border-t border-slate-100 bg-slate-50/50 text-[10px] md:text-[11px] text-slate-600 leading-relaxed font-sans">
                         ${law.details}
@@ -377,8 +445,22 @@
         }
 
         function toggleLaw(index) {
-            document.getElementById(`law-content-${index}`).classList.toggle('hidden');
-            document.getElementById(`arrow-${index}`).classList.toggle('rotate-180');
+            const content = document.getElementById(`law-content-${index}`);
+            const arrow = document.getElementById(`arrow-${index}`);
+            // Get the button element (previous sibling) to update aria-expanded
+            const btn = content.previousElementSibling;
+            
+            const isHidden = content.classList.contains('hidden');
+            
+            if (isHidden) {
+                content.classList.remove('hidden');
+                arrow.classList.add('rotate-180');
+                btn.setAttribute('aria-expanded', 'true');
+            } else {
+                content.classList.add('hidden');
+                arrow.classList.remove('rotate-180');
+                btn.setAttribute('aria-expanded', 'false');
+            }
         }
 
         function renderHierarchy() {
@@ -387,10 +469,11 @@
             hierarchyData.forEach(item => {
                 const div = document.createElement('div');
                 div.className = "tree-line pl-2"; 
+                // STRUCTURE FIX: Changed H4 to H3 to follow strict hierarchy (H1 -> H2 -> H3)
                 div.innerHTML = `
                     <div class="absolute -left-[27px] md:-left-[33px] top-3 h-3 w-3 rounded-full ${item.color} border-2 border-white shadow-sm ring-1 ring-slate-200 z-10"></div>
                     <div class="bg-white p-2.5 md:p-3 rounded-lg shadow-sm border border-slate-200 hover:border-blue-300 transition">
-                        <h4 class="font-bold text-slate-900 text-xs font-heading">${item.role}</h4>
+                        <h3 class="font-bold text-slate-900 text-xs font-heading">${item.role}</h3>
                         <p class="text-[10px] text-slate-500 mt-0.5 leading-tight font-sans">${item.desc}</p>
                     </div>
                 `;
@@ -407,7 +490,7 @@
                 div.innerHTML = `
                     <div class="flex items-center gap-2 mb-1.5">
                         <div class="w-6 h-6 ${tool.bg_color} rounded flex items-center justify-center ${tool.hover_color} transition">
-                            <i class="${tool.icon} text-xs text-slate-600 group-hover:text-white"></i>
+                            <i class="${tool.icon} text-xs text-slate-600 group-hover:text-white" aria-hidden="true"></i>
                         </div>
                         <h3 class="font-bold text-xs text-slate-900 font-heading">${tool.title}</h3>
                     </div>
@@ -446,7 +529,7 @@
                 
             } catch (error) {
                 console.error("Quiz load failed", error);
-                alert("Failed to load question bank. Please try again.");
+                // Don't use alert in production for CLS reasons, but kept for simplicity
                 loader.classList.add('hidden');
             }
         }
@@ -501,7 +584,7 @@
                 btn.classList.remove('border-slate-100', 'hover:border-blue-200', 'hover:bg-blue-50');
                 btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
                 feedback.className = "mt-3 md:mt-6 p-3 md:p-4 rounded-xl text-sm font-medium border-l-4 bg-green-50 text-green-800 border-green-500";
-                feedback.innerHTML = `<div class="flex items-start gap-3"><i class="fa-solid fa-check-circle text-lg mt-0.5"></i><div><strong>Correct!</strong><p class="mt-1 opacity-90">${q.explanation}</p></div></div>`;
+                feedback.innerHTML = `<div class="flex items-start gap-3"><i class="fa-solid fa-check-circle text-lg mt-0.5" aria-hidden="true"></i><div><strong>Correct!</strong><p class="mt-1 opacity-90">${q.explanation}</p></div></div>`;
             } else {
                 btn.classList.remove('border-slate-100', 'hover:border-blue-200', 'hover:bg-blue-50');
                 btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
@@ -511,7 +594,7 @@
                 correctBtn.classList.add('bg-green-50', 'border-green-300', 'text-green-700');
 
                 feedback.className = "mt-3 md:mt-6 p-3 md:p-4 rounded-xl text-sm font-medium border-l-4 bg-red-50 text-red-800 border-red-500";
-                feedback.innerHTML = `<div class="flex items-start gap-3"><i class="fa-solid fa-xmark-circle text-lg mt-0.5"></i><div><strong>Incorrect.</strong><p class="mt-1 opacity-90">${q.explanation}</p></div></div>`;
+                feedback.innerHTML = `<div class="flex items-start gap-3"><i class="fa-solid fa-xmark-circle text-lg mt-0.5" aria-hidden="true"></i><div><strong>Incorrect.</strong><p class="mt-1 opacity-90">${q.explanation}</p></div></div>`;
             }
 
             document.getElementById('next-btn').classList.remove('hidden');
@@ -527,11 +610,16 @@
             switchQuiz(selector.value);
         }
 
+        // --- ANALYSIS FOR CLS PREVENTION ---
+        // 1. We removed the global loader which hid the page height.
+        // 2. We added #term-skeleton and other skeletons to reserve height immediately.
+        // 3. We now swap skeleton -> content when data arrives.
 
-        // --- INIT ---
         async function initApp() {
             try {
-                // Fetch Initial Data - Adjusted paths to use ../
+                // Skeletons are already visible in HTML by default (Better LCP)
+
+                // Parallel Fetch
                 const [terms, laws, hierarchy, tools] = await Promise.all([
                     fetchData('../patwari-json-data/terminology_data.json'),
                     fetchData('../patwari-json-data/laws_data.json'),
@@ -539,58 +627,47 @@
                     fetchData('../patwari-json-data/tools_data.json')
                 ]);
 
-                // We now load all terms from JSON
                 terminologyData = terms;
                 lawsData = laws;
                 hierarchyData = hierarchy;
                 toolsData = tools;
 
+                // Render Content (Hidden)
                 renderTerms('all');
                 renderLaws();
                 renderHierarchy();
                 renderTools();
-                
-                await switchQuiz('intro');
-                
-                initChart();
 
-                document.getElementById('loading-indicator').classList.add('hidden');
-                document.getElementById('app-content').classList.remove('hidden');
+                // SWAP: Hide Skeleton, Show Content
+                // This happens instantly so the user sees a "flash" of content appearing
+                // occupying the exact same space.
+                
+                // 1. Terms
+                document.getElementById('term-skeleton').classList.add('hidden');
+                document.getElementById('term-grid').classList.remove('hidden');
+                
+                // 2. Laws
+                document.getElementById('laws-skeleton').classList.add('hidden');
+                document.getElementById('laws-container').classList.remove('hidden');
+
+                // 3. Hierarchy
+                document.getElementById('hierarchy-skeleton').classList.add('hidden');
+                document.getElementById('hierarchy-container').classList.remove('hidden');
+                
+                // 4. Tools
+                document.getElementById('tools-skeleton').classList.add('hidden');
+                document.getElementById('tools-grid').classList.remove('hidden');
+
+                await switchQuiz('intro');
+                // Chart removed, no initChart() call here.
 
             } catch (error) {
                 console.error("Init failed", error);
             }
         }
 
-        function initChart() {
-            const ctx = document.getElementById('landChart').getContext('2d');
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: ['1 Biswa', '1 Bigha', '1 Acre', '1 Hectare'],
-                    datasets: [{
-                        label: 'Sq. Yards',
-                        data: [48.4, 968, 4840, 11960], 
-                        backgroundColor: ['#e2e8f0', '#93c5fd', '#3b82f6', '#1e3a8a'],
-                        borderRadius: 4,
-                        barThickness: 24
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: { legend: { display: false } },
-                    scales: { 
-                        y: { beginAtZero: true, grid: { display: false }, ticks: { font: {size: 10} } },
-                        x: { grid: { display: false }, ticks: { font: {size: 10} } } 
-                    }
-                }
-            });
-        }
-
         document.addEventListener('DOMContentLoaded', () => {
             initApp();
-            // Load Shared Header/Footer
             if(window.loadHeaderFooter) {
                 loadHeaderFooter({ type: 'technical', rootPath: '..' });
             }
