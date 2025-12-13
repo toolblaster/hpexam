@@ -2,66 +2,91 @@
     { 
         "year": "1954", 
         "title": "HP Land Revenue Act", 
-        "details": "The procedural backbone of Revenue Administration. <br><strong>Sec 34:</strong> Duty to report land acquisition/succession within 3 months to Patwari. <br><strong>Sec 35:</strong> Procedure for Mutations attestation. <br><strong>Sec 45:</strong> Presumption of truth attached to entries in Jamabandi. <br><strong>Sec 107:</strong> Power of Revenue Officer to define boundaries (Demarcation). <br><strong>Sec 118:</strong> Penalty for encroachment on roads. <br><strong>Sec 163:</strong> Power to eject encroachers from Govt land." 
+        "details": "The procedural backbone. <br><strong>Sec 16:</strong> Power of Review (90 days). <br><strong>Sec 34:</strong> Reporting acquisition (3 months). <br><strong>Sec 38:</strong> Entries in RoR cannot be varied without mutation. <br><strong>Sec 45:</strong> Presumption of Truth. <br><strong>Sec 107:</strong> Demarcation. <br><strong>Sec 112:</strong> Penalty for destroying Survey Marks (Burji). <br><strong>Sec 118:</strong> Road Encroachment. <br><strong>Sec 163:</strong> Ejectment of encroachers. <br><strong>River Action:</strong> Deals with 'Burdi' (Land washed away) and 'Baramad' (Land recovered)." 
     },
     { 
         "year": "1972", 
         "title": "HP Tenancy & Land Reforms Act", 
-        "details": "Major social justice legislation. <br><strong>Sec 104:</strong> Automatic vesting of proprietary rights in tenants. <br><strong>Sec 118:</strong> Bans transfer of land to non-agriculturists in HP. Permission only by State Govt (Cabinet) or DC (limited). <br><strong>Objective:</strong> 'Land to the Tiller'." 
+        "details": "<strong>Sec 104:</strong> Vesting of proprietary rights (Ownership) in tenants. <br><strong>Sec 118:</strong> Bans transfer to non-agriculturists. <br><strong>Exceptions:</strong> Gift to relatives, transfer by Will. <br><strong>Khudkasht:</strong> Land under personal cultivation. <br><strong>Resumption:</strong> Landowner can resume up to 3 acres (unirrigated) / 1.5 acres (irrigated) from a non-occupancy tenant for self-cultivation." 
     },
     { 
         "year": "1974", 
         "title": "HP Village Common Lands Act", 
-        "details": "<strong>Vesting & Utilization:</strong> Took 'Shamlat' (Common) land from the village community and vested it in the State Government for distribution to the landless (1 Acre Scheme). <br><strong>Exception:</strong> Land used for common purposes like paths/grazing/cremation was retained." 
+        "details": "<strong>Vesting:</strong> 'Shamlat' land vests in State Govt. <br><strong>Utilization:</strong> 50% for grazing (Charand), 50% 'Allotable Pool'. <br><strong>Purpose:</strong> Distribution to landless persons (less than 1 acre holding) and eligible persons (SC/ST/IRDP). <br><strong>Exemptions:</strong> Lands used for religious purposes, cremation grounds, or water bodies." 
     },
     { 
         "year": "1971", 
         "title": "HP Holdings Consolidation Act", 
-        "details": "<strong>Chakbandi:</strong> Aimed to prevent fragmentation of holdings. Combines scattered plots into a compact block called a 'Chak' for better irrigation and farming efficiency. <br><strong>Killabandi:</strong> Rectangularization of fields during consolidation." 
+        "details": "<strong>Chakbandi:</strong> Consolidation of fragmented holdings. <br><strong>Procedure:</strong> Notification -> Advisory Committee -> Draft Scheme -> Confirmation. <br><strong>Killabandi:</strong> Rectangularization of fields. <br><strong>Pass Book:</strong> Issued to landowners containing consolidated holding details." 
     },
     { 
         "year": "1972", 
         "title": "HP Ceiling on Land Holdings Act", 
-        "details": "Limits the maximum land a family can own. <br><strong>Limit:</strong> Approx 10 to 30 Acres (Standard Acres) depending on land quality (irrigated vs barren). Surplus land is vested in the State. <br><strong>Unit:</strong> Family of 5 members." 
+        "details": "Limits family ownership. <br><strong>Limit:</strong> ~10 Acres (Irrigated/2 crops) to ~30 Acres (Barren). <br><strong>Standard Acre:</strong> Calculated based on productivity (1 Standard Acre = 1 Acre receiving perennial irrigation). <br><strong>Surplus Area:</strong> Vests in State Govt free from all encumbrances." 
     },
     { 
         "year": "1968", 
         "title": "HP Nautor Land Rules", 
-        "details": "Governs the grant of government wasteland ('Nautor') to landless/poor residents. <br><strong>Limit:</strong> Generally up to 20 Bighas. <br><strong>Current Status:</strong> Heavily restricted by the Forest Conservation Act, 1980."
+        "details": "Grant of Govt waste land. <br><strong>Limit:</strong> Up to 20 Bighas. <br><strong>Eligibility:</strong> Landless residents of the estate. <br><strong>Restrictions:</strong> No Nautor within 100 meters of a road or inside a forest without clearance. <br><strong>Patta:</strong> The legal document conferring title."
     },
     { 
         "year": "1968", 
         "title": "HP Transfer of Land (Regulation) Act", 
-        "details": "Specific protection for Scheduled Tribes. <br><strong>Key Provision:</strong> Prohibits transfer of land from a Tribal to a Non-Tribal in Scheduled Areas without the specific permission of the Deputy Commissioner."
+        "details": "Protects Tribal land. <br><strong>Scope:</strong> Scheduled Areas (Kinnaur, Lahaul, Pangi, Bharmour). <br><strong>Restriction:</strong> No transfer from Tribal to Non-Tribal without DC's written permission. <br><strong>Benami Transactions:</strong> Specifically targets transactions where a non-tribal buys land in the name of a tribal to bypass the law."
+    },
+    { 
+        "year": "1956", 
+        "title": "Hindu Succession Act", 
+        "details": "Governs Inheritance (Warasat). <br><strong>Class I Heirs:</strong> Son, Daughter, Widow, Mother (share equally). <br><strong>2005 Amendment:</strong> Daughters recognized as Coparceners (birthright in ancestral property). <br><strong>Conflict:</strong> In tribal areas, customary law (Wajib-ul-arz) often conflicts with this Act."
+    },
+    { 
+        "year": "1908", 
+        "title": "Indian Registration Act", 
+        "details": "<strong>Section 17:</strong> Compulsory registration for immovable property value > ₹100. <br><strong>Patwari's Role:</strong> Must update Jamabandi *only* after receiving the registered deed or mutation order. Cannot change ownership based on unregistered agreements (Iqrarnama)."
     },
     { 
         "year": "1994", 
         "title": "HP Panchayati Raj Act", 
-        "details": "<strong>Section 12:</strong> Empowers the Gram Panchayat to remove encroachments from public paths and drains. The Patwari assists by providing revenue record evidence for these proceedings."
+        "details": "<strong>Section 12:</strong> Panchayat power to remove encroachments from public paths. <br><strong>Family Register:</strong> Parivar Register maintained by Panchayat Sahayak; vital for verifying 'Bonafide Himachali' status. <br><strong>Patwari's Role:</strong> Provides 'Naksha' (Map) to identify encroachment boundaries."
+    },
+    { 
+        "year": "2011", 
+        "title": "HP Public Service Guarantee Act", 
+        "details": "Timely service delivery. <br><strong>Nakal (Jamabandi):</strong> Same Day/24 hrs. <br><strong>Attestation of Affidavit:</strong> Same Day. <br><strong>Income/Caste Certificate:</strong> Report by Patwari within 3 days. <br><strong>Designated Officer:</strong> Tehsildar/Naib Tehsildar is responsible for ensuring delivery."
     },
     { 
         "year": "2013", 
         "title": "RFCTLARR Act (Land Acquisition)", 
-        "details": "Right to Fair Compensation and Transparency in Land Acquisition. Replaced the 1894 Act. <br><strong>Role:</strong> Patwaris assist in the Social Impact Assessment (SIA) and survey measurement for compensation calculation."
+        "details": "Right to Fair Compensation. <br><strong>SIA:</strong> Social Impact Assessment is mandatory. <br><strong>Compensation:</strong> Higher of Circle Rate or Market Value x Multiplier + 100% Solatium. <br><strong>R&R:</strong> Rehabilitation & Resettlement benefits for displaced families."
+    },
+    { 
+        "year": "1968", 
+        "title": "HP Roadside Land Control Act", 
+        "details": "Regulates construction near roads. <br><strong>Controlled Width:</strong> No construction allowed within specified distance (e.g., 5m from edge) of Scheduled Roads. <br><strong>NOC:</strong> Patwari report confirms distance from road center for Building Permissions."
+    },
+    { 
+        "year": "2005", 
+        "title": "Disaster Management Act", 
+        "details": "<strong>Relief Manual:</strong> Patwari is the 'First Responder' to report loss (crops/house). <br><strong>Forms:</strong> Prepares 'Nuksan Report' (Damage Report) for SDM. <br><strong>Compensation:</strong> Rates fixed by Govt for crop loss (>50%) and house damage."
+    },
+    { 
+        "year": "1899", 
+        "title": "Indian Stamp Act (HP Amendments)", 
+        "details": "<strong>Stamp Duty:</strong> Tax on documents. <br><strong>Circle Rates:</strong> Minimum land value fixed annually by DC. <br><strong>Categories:</strong> Patwari report classifies land (e.g., road-side has higher rate, internal has lower) to determine correct duty."
     },
     { 
         "year": "1996", 
-        "title": "PESA Act (Tribal Rights)", 
-        "details": "Applies to Scheduled Areas (Kinnaur, Lahaul-Spiti, Pangi). <br><strong>Gram Sabha</strong> is the supreme authority for land alienation and ownership of Minor Forest Produce. <br><strong>Consultation:</strong> Mandatory before land acquisition in these areas." 
-    },
-    { 
-        "year": "1977", 
-        "title": "HP Abolition of Land Revenue Act", 
-        "details": "Abolished land revenue on 'Uneconomic Holdings'. <br><strong>Definition:</strong> Holdings up to 2.5 Acres or paying less than ₹5 revenue are exempt from paying land revenue." 
+        "title": "PESA Act", 
+        "details": "Scheduled Areas. <br><strong>Gram Sabha:</strong> Supreme authority. <br><strong>Land Acquisition:</strong> Consultation mandatory. <br><strong>Mining:</strong> No mining lease/license without Gram Sabha recommendation. <br><strong>Intoxicants:</strong> Power to regulate sale/consumption." 
     },
     { 
         "year": "Rules", 
         "title": "HP Land Records Manual", 
-        "details": "The 'Bible' for Patwaris. <br><strong>Chapter 3:</strong> Duties of Patwaris. <br><strong>Chapter 4:</strong> Duties of Kanungos. <br><strong>Chapter 9:</strong> Harvest Inspection (Girdawari) procedure."
+        "details": "<strong>Ch 3:</strong> Duties of Patwaris (Residence, Diary). <br><strong>Ch 4:</strong> Duties of Kanungos (100% Check). <br><strong>Ch 8:</strong> Mutation Procedure. <br><strong>Ch 9:</strong> Girdawari (Harvest Inspection). <br><strong>Settlement:</strong> Usually conducted every 40 years to revise records completely."
     },
     { 
         "year": "Misc", 
         "title": "Limitation Act (Appeals)", 
-        "details": "<strong>Appeal to Collector:</strong> 30 Days. <br><strong>Appeal to Commissioner:</strong> 60 Days. <br><strong>Appeal to Financial Commissioner:</strong> 90 Days. (Section 14 of HP Land Revenue Act)."
+        "details": "<strong>To Collector:</strong> 30 Days. <br><strong>To Commissioner:</strong> 60 Days. <br><strong>To Financial Comm:</strong> 90 Days. <br><strong>Section 5:</strong> Delay can be condoned if 'Sufficient Cause' (e.g., illness, wrong forum) is proved."
     }
 ]
