@@ -24,11 +24,13 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen font-sans">
 
-    <!-- Global Navigation (Styles & Content loaded via JS) -->
-    <nav id="global-nav"></nav>
+    <!-- Compact Nav (Static) -->
+    <nav class="bg-white border-b border-slate-200/80 shadow-sm nav-height" id="global-nav">
+        <!-- Injected by header-footer.js -->
+    </nav>
 
     <!-- Compact Hero Section for SEO -->
-    <header class="bg-white border-b border-slate-200 py-6 md:py-8">
+    <header class="bg-white border-b border-slate-200 py-4 md:py-6">
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 text-center md:text-left">
             <h1 class="text-2xl md:text-3xl font-extrabold font-heading mb-2 leading-tight">
                 <span class="gradient-text">HP Land Records</span> & Revenue Technical Guide
@@ -39,8 +41,12 @@
         </div>
     </header>
 
-    <!-- Main Content: Updated spacing for mobile density -->
-    <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 space-y-6 md:space-y-12 py-4 md:py-8 flex-grow">
+    <!-- Main Content -->
+    <!-- UPDATED: Increased top padding to pt-24 (96px) to ensure >95px space -->
+    <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-24 pb-8 flex-grow">
+        
+        <!-- Strictly enforced H1 for accessibility (hidden visually) -->
+        <h1 class="sr-only">Technical Master Guide for HP Land Records</h1>
         
         <!-- Loading -->
         <div id="loading-indicator" class="text-center py-10">
