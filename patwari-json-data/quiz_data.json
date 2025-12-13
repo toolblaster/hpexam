@@ -300,55 +300,43 @@
         "explanation": "Wajib-ul-Arz is the Village Administration Paper that records village customs, community rights, and rules."
     },
     {
-        "q": "To whom must a report regarding acquisition of land rights be made under Section 34 of the HP Land Revenue Act?",
-        "options": ["Tehsildar", "Patwari", "Kanungo", "Deputy Commissioner"],
-        "correct": 1,
-        "explanation": "Section 34 mandates that any person acquiring a right must report it to the Patwari of the estate."
-    },
-    {
-        "q": "Which Section of the HP Land Revenue Act attaches a 'Presumption of Truth' to entries in the Jamabandi?",
+        "q": "Which Section of the HP Land Revenue Act attaches a 'Presumption of Truth' to Jamabandi entries?",
         "options": ["Section 32", "Section 35", "Section 45", "Section 118"],
         "correct": 2,
         "explanation": "Section 45 states that entries in the Record of Rights (Jamabandi) shall be presumed to be true until the contrary is proved."
     },
     {
-        "q": "Under the HP Tenancy and Land Reforms Act 1972, which section confers proprietary rights on tenants?",
+        "q": "Under HP Tenancy Act 1972, which section confers proprietary rights on tenants?",
         "options": ["Section 90", "Section 104", "Section 118", "Section 163"],
         "correct": 1,
         "explanation": "Section 104 is the landmark provision that provided for the automatic vesting of proprietary (ownership) rights in tenants."
     },
     {
-        "q": "Who is the competent authority to grant permission under Section 118 for buying land in HP (for non-agriculturists)?",
-        "options": ["Patwari", "District Collector", "Divisional Commissioner", "State Government"],
-        "correct": 3,
-        "explanation": "Permission under Section 118 is generally granted by the State Government (Cabinet), though powers for small plots may be delegated."
-    },
-    {
-        "q": "Under the HP Village Common Lands (Vesting and Utilization) Act 1974, in whom does the 'Shamlat' land vest?",
+        "q": "Under the HP Village Common Lands Act 1974, in whom does the 'Shamlat' land vest?",
         "options": ["Village Panchayat", "State Government", "Landowners", "Forest Department"],
         "correct": 1,
         "explanation": "The Act vested all rights, title, and interest in Shamlat lands in the State Government."
     },
     {
-        "q": "What is the primary objective of the HP Holdings (Consolidation and Prevention of Fragmentation) Act 1971?",
+        "q": "What is the primary objective of the HP Holdings Consolidation Act 1971?",
         "options": ["To increase tax", "To consolidate scattered plots (Chakbandi)", "To survey forests", "To sell government land"],
         "correct": 1,
         "explanation": "The Act aims to provide for the consolidation of agricultural holdings (Chakbandi) to prevent fragmentation."
     },
     {
-        "q": "Under the HP Ceiling on Land Holdings Act 1972, what happens to the land held in excess of the permissible limit?",
+        "q": "Under the HP Ceiling on Land Holdings Act 1972, what happens to surplus land?",
         "options": ["Returned to owner", "Sold by auction", "Vested in State Government", "Given to Panchayat"],
         "correct": 2,
         "explanation": "Surplus land above the ceiling limit vests in the State Government for utilization/distribution."
     },
     {
-        "q": "In Scheduled Areas of HP (under PESA Act 1996), whose consultation is mandatory before land acquisition?",
+        "q": "In Scheduled Areas (PESA Act), whose consultation is mandatory before land acquisition?",
         "options": ["Zila Parishad", "Gram Sabha", "Tehsildar", "MLA"],
         "correct": 1,
         "explanation": "PESA empowers the Gram Sabha, and its consultation is mandatory before land acquisition in Scheduled Areas."
     },
     {
-        "q": "The HP Abolition of Land Revenue on Uneconomic Holdings Act 1977 exempts holdings up to what size from land revenue?",
+        "q": "The HP Abolition of Land Revenue Act 1977 exempts holdings up to what size?",
         "options": ["1 Acre", "2.5 Acres", "5 Acres", "10 Acres"],
         "correct": 1,
         "explanation": "Holdings up to 2.5 Acres (or paying less than ₹5 revenue) are defined as uneconomic and exempt."
@@ -360,33 +348,81 @@
         "explanation": "Chapter 3 of the HP Land Records Manual specifically lists the duties and functions of the Patwari."
     },
     {
-        "q": "What is the time limit for filing an appeal before the Financial Commissioner under the HP Land Revenue Act?",
+        "q": "What is the limitation period for filing an appeal before the Financial Commissioner?",
         "options": ["30 Days", "60 Days", "90 Days", "180 Days"],
         "correct": 2,
         "explanation": "The limitation period for an appeal to the Financial Commissioner is 90 days."
     },
     {
-        "q": "Which section of the HP Land Revenue Act deals with the penalty for encroachment on roads?",
-        "options": ["Section 163", "Section 118", "Section 107", "Section 35"],
-        "correct": 1,
-        "explanation": "Section 118 of the HP Land Revenue Act (not to be confused with Tenancy Act) deals with penalties for encroachment on roads."
-    },
-    {
-        "q": "Who decides disputes regarding entries in the Record of Rights under Section 37 of the HP Land Revenue Act?",
+        "q": "Who decides disputes regarding entries in the Record of Rights under Section 37?",
         "options": ["Patwari", "Kanungo", "Revenue Officer", "Nambardar"],
         "correct": 2,
         "explanation": "Section 37 empowers the Revenue Officer to determine disputes regarding entries in the records."
     },
     {
-        "q": "Who can apply for partition of land under Section 123 of the HP Land Revenue Act?",
-        "options": ["Any tenant", "Any joint owner", "The Patwari", "The Village Pradhan"],
+        "q": "Which section of the HP Land Revenue Act deals with the penalty for encroachment on roads?",
+        "options": ["Section 163", "Section 118", "Section 107", "Section 35"],
         "correct": 1,
-        "explanation": "Any joint owner of land may apply to a Revenue Officer for partition of his share."
+        "explanation": "Section 118 of the HP Land Revenue Act deals with penalties for encroachment on roads."
     },
     {
-        "q": "Which of the following is NOT a class of Revenue Officer under Section 7 of the HP Land Revenue Act?",
-        "options": ["Financial Commissioner", "Collector", "Tehsildar", "Patwari"],
+        "q": "Under the Hindu Succession Act, which amendment granted daughters equal rights as coparceners?",
+        "options": ["1976 Amendment", "1994 Amendment", "2005 Amendment", "2020 Amendment"],
+        "correct": 2,
+        "explanation": "The 2005 Amendment to the Hindu Succession Act, 1956, recognized daughters as coparceners by birth, giving them equal rights in ancestral property."
+    },
+    {
+        "q": "According to Section 17 of the Indian Registration Act, registration is compulsory for immovable property exceeding what value?",
+        "options": ["₹100", "₹500", "₹1000", "₹10000"],
+        "correct": 0,
+        "explanation": "Section 17 mandates compulsory registration for any non-testamentary instrument transferring immovable property valued at more than ₹100."
+    },
+    {
+        "q": "What is the time limit for providing a copy of Jamabandi (Nakal) under the HP Public Service Guarantee Act?",
+        "options": ["3 Days", "7 Days", "15 Days", "24 Hours / Same Day"],
         "correct": 3,
-        "explanation": "While a key official, the Patwari is a village officer/official, not classified as a 'Revenue Officer' under Section 7 (which lists FC, Commissioner, Collector, ACs)."
+        "explanation": "The Act mandates that a copy of land records (Nakal) must be provided within 24 hours or on the same working day."
+    },
+    {
+        "q": "Under the HP Roadside Land Control Act, what is required for construction near a scheduled road?",
+        "options": ["NOC from PWD/Revenue", "Permission from Panchayat", "No permission needed", "NOC from Forest Dept"],
+        "correct": 0,
+        "explanation": "To ensure construction is outside the 'Controlled Width', an NOC (No Objection Certificate) confirming the distance from the road center is required."
+    },
+    {
+        "q": "Which section of the Limitation Act allows for 'Condonation of Delay' in filing appeals?",
+        "options": ["Section 3", "Section 5", "Section 12", "Section 14"],
+        "correct": 1,
+        "explanation": "Section 5 of the Limitation Act allows the appellate authority to admit an appeal after the expiry of the period if 'sufficient cause' is shown."
+    },
+    {
+        "q": "What is 'SIA' in the context of the RFCTLARR Act (Land Acquisition)?",
+        "options": ["State Impact Assessment", "Social Impact Assessment", "Survey of India Act", "Systematic Investment Area"],
+        "correct": 1,
+        "explanation": "SIA stands for Social Impact Assessment, which is a mandatory study to determine the public purpose and social costs of land acquisition."
+    },
+    {
+        "q": "Under the HP Ceiling on Land Holdings Act, what defines a 'Standard Acre'?",
+        "options": ["1 acre of barren land", "1 acre of orchard", "1 acre of land yielding two crops a year", "1000 sq meters"],
+        "correct": 2,
+        "explanation": "A Standard Acre is defined as one acre of land capable of yielding two crops in an agricultural year (irrigated land)."
+    },
+    {
+        "q": "Which section of the HP Land Revenue Act imposes a penalty for destroying survey marks (Burji)?",
+        "options": ["Section 45", "Section 107", "Section 112", "Section 118"],
+        "correct": 2,
+        "explanation": "Section 112 deals with the penalty for willfully destroying, damaging, or removing survey marks or boundary pillars."
+    },
+    {
+        "q": "How much irrigated land can a landowner resume from a non-occupancy tenant for personal cultivation under the Tenancy Act?",
+        "options": ["1.5 Acres", "3 Acres", "5 Acres", "10 Acres"],
+        "correct": 0,
+        "explanation": "A landowner can resume up to 1.5 acres of irrigated land (or 3 acres of unirrigated land) for personal cultivation (Khudkasht)."
+    },
+    {
+        "q": "Who prepares the 'Nuksan Report' (Damage Report) for disaster relief claims?",
+        "options": ["Pradhan", "Patwari", "BDO", "Insurance Agent"],
+        "correct": 1,
+        "explanation": "As the first responder under the Relief Manual, the Patwari conducts the spot survey and prepares the Nuksan Report for crop or house damage."
     }
 ]
