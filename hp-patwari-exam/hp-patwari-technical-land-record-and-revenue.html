@@ -352,6 +352,7 @@
             renderTerms(currentFilter);
             renderLaws();
             renderHierarchy();
+            renderTools();
         }
 
         function renderTerms(filter) {
@@ -502,14 +503,25 @@
             toolsData.forEach(tool => {
                 const div = document.createElement('div');
                 div.className = "bg-white p-2.5 md:p-3 rounded-lg border border-slate-200 hover:border-blue-200 hover:shadow-sm transition group cursor-default";
+                
+                // Keep Titles bilingual if Hindi available, Description toggles
+                let displayTitle = tool.title;
+                if (tool.title_hi) {
+                    displayTitle = `<span class="font-heading">${tool.title}</span> <span class="text-[10px] font-hindi text-slate-400">(${tool.title_hi})</span>`;
+                }
+                
+                // Description Toggles
+                let displayDesc = (currentDefLanguage === 'hi' && tool.desc_hi) ? tool.desc_hi : tool.desc;
+                let descClass = (currentDefLanguage === 'hi') ? 'font-hindi tracking-wide' : 'font-sans';
+
                 div.innerHTML = `
                     <div class="flex items-center gap-2 mb-1.5">
                         <div class="w-6 h-6 ${tool.bg_color} rounded flex items-center justify-center ${tool.hover_color} transition">
                             <i class="${tool.icon} text-xs text-slate-600 group-hover:text-white" aria-hidden="true"></i>
                         </div>
-                        <h3 class="font-bold text-xs text-slate-900 font-heading">${tool.title}</h3>
+                        <h3 class="font-bold text-xs text-slate-900">${displayTitle}</h3>
                     </div>
-                    <p class="text-[10px] text-slate-500 leading-snug font-sans">${tool.desc}</p>
+                    <p class="text-[10px] text-slate-500 leading-snug ${descClass}">${displayDesc}</p>
                 `;
                 grid.appendChild(div);
             });
