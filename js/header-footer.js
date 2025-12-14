@@ -30,20 +30,21 @@ const AppComponents = {
     footerContent: () => `
         <div class="max-w-7xl mx-auto px-4 text-center">
             <!-- ACCESSIBILITY: Increased contrast from slate-400 to slate-500 -->
-            <p class="text-slate-500 text-[10px] uppercase font-bold tracking-wider font-sans">© 2025 HP Patwari Exam Prep</p>
+            <p class="text-slate-500 text-[10px] uppercase font-bold tracking-wider font-sans">© 2026 HP Exam Hub</p>
         </div>
     `,
 
+    // HOME NAVIGATION
     navHomeContent: () => `
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
             <div class="flex justify-between items-center h-full">
-                <!-- Cap Icon Logo -->
-                <div class="flex items-center gap-3">
+                <!-- Cap Icon Logo - Linked to Root for Refresh -->
+                <a href="./" aria-label="HP Exam Hub Home" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
                     <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white shadow-sm">
                         <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
                     </div>
                     <span class="text-xl font-bold text-slate-900 tracking-tight font-heading">HP Exam <span class="text-blue-600">Hub</span></span>
-                </div>
+                </a>
                 
                 <div class="flex items-center gap-4">
                     <!-- ACCESSIBILITY: Added aria-label for clearer link purpose -->
@@ -55,12 +56,17 @@ const AppComponents = {
         </div>
     `,
 
+    // TECHNICAL PAGES NAVIGATION
     navTechnicalContent: (rootPath) => `
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
             <div class="flex justify-between items-center h-full">
                 <div class="flex items-center gap-3">
-                    <!-- ACCESSIBILITY: Added aria-label -->
-                    <a href="${rootPath}/index.html" aria-label="Back to Exam Hub" class="flex items-center gap-2 group text-slate-500 hover:text-blue-600 transition">
+                    <!-- 
+                       CLEAN URL FIX: 
+                       Changed href="${rootPath}/index.html" to href="${rootPath}/"
+                       If rootPath is "..", this becomes "../" which resolves to domain.com/ instead of domain.com/index.html
+                    -->
+                    <a href="${rootPath}/" aria-label="Back to Exam Hub" class="flex items-center gap-2 group text-slate-500 hover:text-blue-600 transition">
                         <i class="fa-solid fa-arrow-left text-sm" aria-hidden="true"></i>
                         <span class="text-xs font-bold uppercase tracking-wider hidden sm:block font-heading">Hub</span>
                     </a>
