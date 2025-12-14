@@ -80,8 +80,8 @@
                     <!-- Language Toggle -->
                     <div class="flex items-center gap-2 bg-slate-100 p-1 rounded-lg border border-slate-200 shadow-inner">
                         <span class="text-[10px] font-bold text-slate-400 uppercase px-2 tracking-wider">Language:</span>
-                        <button onclick="setSyllabusLanguage('en')" id="syl-btn-en" class="text-[10px] font-bold px-3 py-1 rounded-md transition-all duration-200 bg-white text-blue-700 shadow-sm ring-1 ring-slate-200">EN</button>
-                        <button onclick="setSyllabusLanguage('hi')" id="syl-btn-hi" class="text-[10px] font-bold px-3 py-1 rounded-md transition-all duration-200 text-slate-500 hover:text-slate-700">हिन्दी</button>
+                        <button type="button" onclick="setSyllabusLanguage('en')" id="syl-btn-en" class="text-[10px] font-bold px-3 py-1 rounded-md transition-all duration-200 bg-white text-blue-700 shadow-sm ring-1 ring-slate-200">EN</button>
+                        <button type="button" onclick="setSyllabusLanguage('hi')" id="syl-btn-hi" class="text-[10px] font-bold px-3 py-1 rounded-md transition-all duration-200 text-slate-500 hover:text-slate-700">हिन्दी</button>
                     </div>
                 </div>
                 
@@ -331,7 +331,7 @@
 
         function renderSyllabus() {
             const container = document.getElementById('syllabus-container');
-            container.innerHTML = '';
+            let htmlContent = '';
 
             syllabusData.forEach(item => {
                 const title = currentSylLang === 'hi' ? item.title_hi : item.title;
@@ -341,29 +341,33 @@
                 item.items.forEach(li => {
                     const label = currentSylLang === 'hi' ? li.label_hi : li.label;
                     const text = currentSylLang === 'hi' ? li.text_hi : li.text;
+                    // Standardized font size to text-xs (12px) for consistency
+                    const langClass = currentSylLang === 'hi' ? 'font-hindi text-xs leading-relaxed' : 'font-sans text-xs';
+                    
                     itemsHtml += `
                         <li class="flex gap-2 items-start">
                             <i class="fa-solid fa-check ${item.textClass} mt-0.5 text-[10px]"></i>
-                            <span class="${currentSylLang === 'hi' ? 'font-hindi' : 'font-sans'}"><strong>${label}:</strong> ${text}</span>
+                            <span class="${langClass}"><strong>${label}:</strong> ${text}</span>
                         </li>
                     `;
                 });
 
-                const cardHtml = `
-                    <div class="bg-white rounded-xl p-4 border ${item.borderClass} shadow-sm relative overflow-hidden group hover:shadow-md transition hover:-translate-y-1">
+                htmlContent += `
+                    <div class="bg-white rounded-xl p-4 border ${item.borderClass} shadow-sm relative overflow-hidden group hover:shadow-md transition hover:-translate-y-1 h-full min-h-[180px] flex flex-col">
                         <div class="absolute top-0 right-0 w-16 h-16 ${item.bgClass} rounded-bl-full -mr-4 -mt-4 z-0 transition-transform group-hover:scale-110"></div>
                         <h3 class="${fontClass} font-bold text-slate-800 mb-2 relative z-10 flex items-center gap-2 text-sm">
                             <span class="w-2 h-2 rounded-full ${item.colorHex}"></span>
                             ${title}
                         </h3>
                         <p class="text-[10px] text-slate-400 mb-2 font-bold uppercase tracking-wide relative z-10">${item.mcqCount}</p>
-                        <ul class="space-y-2 text-[11px] text-slate-600 relative z-10 leading-snug">
+                        <ul class="space-y-2 text-slate-600 relative z-10 flex-grow">
                             ${itemsHtml}
                         </ul>
                     </div>
                 `;
-                container.innerHTML += cardHtml;
             });
+            
+            container.innerHTML = htmlContent;
         }
 
         // --- QUIZ LOGIC WITH LOCAL STORAGE ---
