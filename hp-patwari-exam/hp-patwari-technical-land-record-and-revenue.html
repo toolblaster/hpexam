@@ -27,18 +27,20 @@
 <body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen font-sans">
 
     <!-- Compact Nav (Static) -->
-    <nav class="bg-white border-b border-slate-200/80 shadow-sm nav-height" id="global-nav">
+    <nav class="bg-white border-b border-slate-300 shadow-sm nav-height" id="global-nav">
         <!-- Injected by header-footer.js -->
     </nav>
 
     <!-- Compact Hero Section -->
-    <header class="bg-white border-b border-slate-200 py-4 md:py-6">
+    <header class="bg-white border-b border-slate-300 py-4 md:py-6">
         <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 text-center md:text-left">
             <h1 class="text-2xl md:text-3xl font-extrabold font-heading mb-2 leading-tight">
                 <span class="gradient-text">HP Land Records</span> & Revenue Technical Guide
             </h1>
             <p class="text-xs md:text-sm text-slate-500 max-w-2xl font-sans">
-                Master essential revenue terminology (Jamabandi, Khasra), perform Bigha-Biswa conversions, study HP Land Revenue Acts (1954/1972), and practice with our specialized MCQ bank.
+                Master essential revenue terminology (Jamabandi, Khasra), perform Bigha-Biswa conversions, study HP Land Revenue Acts (1954/1972). 
+                <!-- Updated Link to the new nested folder -->
+                <a href="patwari-mock-test/hp-patwari-mock-test-1-land-and-revenue.html" class="text-blue-600 font-bold hover:underline">Take Mock Test 1 &rarr;</a>
             </p>
         </div>
     </header>
@@ -52,8 +54,7 @@
         <div id="app-content" class="space-y-6 md:space-y-12">
             
             <!-- MODULE 1: TERMINOLOGY -->
-            <!-- Added border, rounded corners, and background to create separation -->
-            <section id="terminology" class="scroll-mt-20 border border-slate-200 rounded-2xl p-4 md:p-6 bg-white shadow-sm">
+            <section id="terminology" class="scroll-mt-20 border border-slate-300 rounded-2xl p-4 md:p-6 bg-white shadow-sm">
                 <div class="flex flex-col md:flex-row justify-between items-center mb-4 md:mb-6 gap-4">
                     <div class="text-center md:text-left w-full md:w-auto">
                         <h2 class="text-lg md:text-xl font-extrabold text-slate-900 flex items-center justify-center md:justify-start gap-2 font-heading">
@@ -61,7 +62,7 @@
                         </h2>
                     </div>
                     <!-- Filters -->
-                    <div class="flex gap-2 bg-white p-1 rounded-lg border border-slate-200 shadow-sm overflow-x-auto max-w-full w-full md:w-auto scrollbar-hide justify-center md:justify-start">
+                    <div class="flex gap-2 bg-white p-1 rounded-lg border border-slate-300 shadow-sm overflow-x-auto max-w-full w-full md:w-auto scrollbar-hide justify-center md:justify-start">
                         <button onclick="filterTerms('all')" class="term-filter active text-[10px] font-bold px-3 py-1.5 rounded bg-slate-800 text-white whitespace-nowrap font-sans flex-1 md:flex-none text-center">All</button>
                         <button onclick="filterTerms('records')" class="term-filter text-[10px] font-bold px-3 py-1.5 rounded text-slate-500 hover:bg-slate-100 whitespace-nowrap font-sans flex-1 md:flex-none text-center">Records</button>
                         <button onclick="filterTerms('maps')" class="term-filter text-[10px] font-bold px-3 py-1.5 rounded text-slate-500 hover:bg-slate-100 whitespace-nowrap font-sans flex-1 md:flex-none text-center">Maps</button>
@@ -74,7 +75,7 @@
                     <script>
                         for(let i=0; i<14; i++) {
                             document.write(`
-                                <div class="h-[11rem] rounded-xl border border-slate-200 bg-white p-4 flex flex-col items-center justify-center gap-3">
+                                <div class="h-[11rem] rounded-xl border border-slate-300 bg-white p-4 flex flex-col items-center justify-center gap-3">
                                     <div class="w-10 h-10 rounded-full skeleton"></div>
                                     <div class="w-20 h-4 rounded skeleton"></div>
                                     <div class="w-12 h-3 rounded skeleton mt-2"></div>
@@ -90,12 +91,11 @@
                 </div>
             </section>
 
-            <!-- MODULE 2: MEASUREMENTS (Centered & Enhanced) -->
-            <!-- Added border container -->
-            <section id="measurements" class="scroll-mt-20 border border-slate-200 rounded-2xl p-3 md:p-4 bg-white shadow-sm">
+            <!-- MODULE 2: MEASUREMENTS -->
+            <section id="measurements" class="scroll-mt-20 border border-slate-300 rounded-2xl p-3 md:p-4 bg-white shadow-sm">
                 <div class="max-w-2xl mx-auto w-full">
                     <!-- Calculator -->
-                    <div class="bg-white rounded-xl shadow-smooth border border-slate-200 p-3 md:p-4">
+                    <div class="bg-white rounded-xl shadow-smooth border border-slate-300 p-3 md:p-4">
                         <div class="flex items-center justify-between mb-3">
                             <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider flex items-center gap-2 font-heading">
                                 <i class="fa-solid fa-calculator text-green-500" aria-hidden="true"></i> Land Measurement
@@ -104,53 +104,42 @@
                         </div>
                         
                         <div class="mb-3">
-                            <!-- ACCESSIBILITY: Explicit label association -->
                             <label for="bigha-input" class="text-[10px] font-bold text-slate-600 uppercase mb-1 block font-sans">Enter Area in Bigha</label>
                             <div class="relative">
-                                <input type="number" id="bigha-input" placeholder="0" class="w-full p-2 pl-3 border border-slate-300 rounded-lg text-xl font-bold text-slate-800 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition font-sans placeholder-slate-200" oninput="convertLand()">
+                                <input type="number" id="bigha-input" placeholder="0" class="w-full p-2 pl-3 border border-slate-400 rounded-lg text-xl font-bold text-slate-800 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition font-sans placeholder-slate-200" oninput="convertLand()">
                                 <span class="absolute right-3 top-1/2 -translate-y-1/2 text-[10px] font-bold text-slate-400">Bigha</span>
                             </div>
                         </div>
 
                         <div class="grid grid-cols-3 gap-2">
-                            <!-- Biswa -->
-                            <div class="bg-slate-50 p-2 rounded border border-slate-100 flex flex-col justify-center items-center text-center">
+                            <!-- Results (Biswa, Acres, etc.) -->
+                            <div class="bg-slate-50 p-2 rounded border border-slate-200 flex flex-col justify-center items-center text-center">
                                 <div class="text-[9px] text-slate-600 font-bold uppercase font-sans mb-0.5">Biswa</div>
                                 <div id="res-biswa" class="text-sm font-bold text-slate-800 font-sans">0</div>
                             </div>
-                            
-                            <!-- Acres -->
                             <div class="bg-green-50 p-2 rounded border border-green-100 flex flex-col justify-center items-center text-center">
                                 <div class="text-[9px] text-green-700 font-bold uppercase font-sans mb-0.5">Acres</div>
                                 <div id="res-acre" class="text-sm font-bold text-green-900 font-sans">0</div>
                             </div>
-                            
-                            <!-- Hectares -->
                             <div class="bg-blue-50 p-2 rounded border border-blue-100 flex flex-col justify-center items-center text-center">
                                 <div class="text-[9px] text-blue-700 font-bold uppercase font-sans mb-0.5">Hectares</div>
                                 <div id="res-hec" class="text-sm font-bold text-blue-900 font-sans">0</div>
                             </div>
-
-                            <!-- Marla (New) -->
                             <div class="bg-orange-50 p-2 rounded border border-orange-100 flex flex-col justify-center items-center text-center">
                                 <div class="text-[9px] text-orange-700 font-bold uppercase font-sans mb-0.5">Marla</div>
                                 <div id="res-marla" class="text-sm font-bold text-orange-900 font-sans">0</div>
                             </div>
-
-                            <!-- Gaj (Sq Yds) -->
-                            <div class="bg-slate-50 p-2 rounded border border-slate-100 flex flex-col justify-center items-center text-center">
+                            <div class="bg-slate-50 p-2 rounded border border-slate-200 flex flex-col justify-center items-center text-center">
                                 <div class="text-[9px] text-slate-600 font-bold uppercase font-sans mb-0.5">Gaj</div>
                                 <div id="res-sqyd" class="text-sm font-bold text-slate-800 font-sans">0</div>
                             </div>
-
-                            <!-- Sq. Meters -->
-                            <div class="bg-slate-50 p-2 rounded border border-slate-100 flex flex-col justify-center items-center text-center">
+                            <div class="bg-slate-50 p-2 rounded border border-slate-200 flex flex-col justify-center items-center text-center">
                                 <div class="text-[9px] text-slate-600 font-bold uppercase font-sans mb-0.5">Sq.M</div>
                                 <div id="res-sqm" class="text-sm font-bold text-slate-800 font-sans">0</div>
                             </div>
                         </div>
                         
-                        <div class="mt-4 border-t border-slate-100 pt-3">
+                        <div class="mt-4 border-t border-slate-200 pt-3">
                             <h3 class="text-[10px] font-bold text-slate-700 uppercase mb-2 font-heading">Key Formulas</h3>
                             <ul class="grid grid-cols-2 gap-x-2 gap-y-1 text-[10px] text-slate-600 font-sans leading-tight">
                                 <li class="flex items-center gap-1.5"><i class="fa-solid fa-ruler-combined text-blue-400 text-[9px]" aria-hidden="true"></i> 1 Karam = 57.15"</li>
@@ -166,8 +155,7 @@
             </section>
 
             <!-- MODULE 3: ACTS & LAWS -->
-            <!-- Added border container -->
-            <section id="laws" class="scroll-mt-20 border border-slate-200 rounded-2xl p-4 md:p-6 bg-white shadow-sm">
+            <section id="laws" class="scroll-mt-20 border border-slate-300 rounded-2xl p-4 md:p-6 bg-white shadow-sm">
                 <h2 class="text-lg md:text-xl font-extrabold text-slate-900 mb-3 md:mb-4 flex items-center justify-center md:justify-start gap-2 font-heading">
                     <span class="w-1 h-5 md:h-6 bg-purple-600 rounded-full"></span> Vital Acts
                 </h2>
@@ -177,7 +165,7 @@
                     <script>
                         for(let i=0; i<6; i++) {
                             document.write(`
-                                <div class="border border-slate-200 rounded-lg bg-white p-4 flex justify-between items-center">
+                                <div class="border border-slate-300 rounded-lg bg-white p-4 flex justify-between items-center">
                                     <div class="h-4 w-3/4 rounded skeleton"></div>
                                     <div class="h-4 w-4 rounded-full skeleton"></div>
                                 </div>
@@ -193,15 +181,14 @@
             </section>
 
             <!-- MODULE 4: HIERARCHY & TOOLS -->
-            <!-- Added border container and managed grid spacing within it -->
-            <section id="hierarchy" class="scroll-mt-20 grid lg:grid-cols-2 gap-4 md:gap-6 border border-slate-200 rounded-2xl p-4 md:p-6 bg-white shadow-sm">
+            <section id="hierarchy" class="scroll-mt-20 grid lg:grid-cols-2 gap-4 md:gap-6 border border-slate-300 rounded-2xl p-4 md:p-6 bg-white shadow-sm">
                 <!-- Hierarchy -->
-                <div class="bg-white rounded-xl shadow-smooth border border-slate-200 p-3 md:p-5">
+                <div class="bg-white rounded-xl shadow-smooth border border-slate-300 p-3 md:p-5">
                     <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 md:mb-5 flex items-center justify-center md:justify-start gap-2 font-heading">
                         <i class="fa-solid fa-sitemap text-slate-400" aria-hidden="true"></i> Hierarchy
                     </h2>
                     
-                    <div id="hierarchy-skeleton" class="space-y-6 pl-6 border-l border-slate-100">
+                    <div id="hierarchy-skeleton" class="space-y-6 pl-6 border-l border-slate-200">
                          <script>
                             for(let i=0; i<3; i++) {
                                 document.write(`
@@ -213,13 +200,13 @@
                         </script>
                     </div>
 
-                    <div id="hierarchy-container" class="hidden relative pl-4 md:pl-6 border-l border-slate-100 space-y-4 md:space-y-6">
+                    <div id="hierarchy-container" class="hidden relative pl-4 md:pl-6 border-l border-slate-200 space-y-4 md:space-y-6">
                         <!-- Tree Items -->
                     </div>
                 </div>
 
                 <!-- Tools -->
-                <div class="bg-slate-50 rounded-xl border border-slate-200 p-3 md:p-5">
+                <div class="bg-slate-50 rounded-xl border border-slate-300 p-3 md:p-5">
                     <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 md:mb-5 flex items-center justify-center md:justify-start gap-2 font-heading">
                         <i class="fa-solid fa-desktop text-slate-400" aria-hidden="true"></i> Digital Tools
                     </h2>
@@ -237,78 +224,7 @@
                     </div>
                 </div>
             </section>
-
-            <!-- MODULE 5: QUIZ -->
-            <!-- Added border container -->
-            <section id="quiz" class="scroll-mt-20 border border-slate-200 rounded-2xl p-4 md:p-6 bg-white shadow-sm">
-                <div class="bg-slate-900 rounded-xl p-3 md:p-6 shadow-2xl relative overflow-hidden">
-                    <div class="relative z-10 grid lg:grid-cols-12 gap-4 md:gap-6">
-                        <!-- Controls -->
-                        <div class="lg:col-span-4 space-y-3 md:space-y-4 text-center md:text-left">
-                            <div>
-                                <h2 class="text-lg md:text-xl font-bold text-white font-heading">MCQ Bank</h2>
-                                <p class="text-[10px] md:text-xs text-slate-400 mt-1 font-sans">Select topic to practice.</p>
-                            </div>
-
-                            <!-- ACCESSIBILITY: Added hidden label for selector -->
-                            <label for="quiz-selector" class="sr-only">Select Quiz Module</label>
-                            <select id="quiz-selector" onchange="switchQuiz(this.value)" class="w-full bg-slate-800 text-white text-[11px] md:text-xs font-bold p-2 md:p-2.5 rounded border border-slate-700 focus:border-blue-500 outline-none font-sans text-center md:text-left">
-                                <option value="intro">Intro: Exam Traps</option>
-                                <option value="core">Core: Land Records</option>
-                                <option value="advanced">Adv: Legal/Numerical</option>
-                                <option value="consolidation">Spl: Consolidation</option>
-                            </select>
-
-                            <div class="flex items-center justify-between bg-slate-800/50 p-2 md:p-3 rounded-lg border border-slate-700/50">
-                                <div class="text-center md:text-left">
-                                    <div class="text-[9px] md:text-[10px] text-slate-400 uppercase font-bold font-sans">Score</div>
-                                    <div class="text-lg md:text-xl font-bold text-white font-heading" id="score-display">0</div>
-                                </div>
-                                <div class="text-center md:text-right">
-                                    <div class="text-[9px] md:text-[10px] text-slate-400 uppercase font-bold font-sans">Total</div>
-                                    <div class="text-lg md:text-xl font-bold text-white font-heading" id="q-count-display">0</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Question Area -->
-                        <div class="lg:col-span-8 bg-white rounded-lg p-3 md:p-5 min-h-[250px] flex flex-col relative">
-                            <div id="quiz-loader" class="hidden absolute inset-0 bg-white z-20 flex flex-col items-center justify-center">
-                                <i class="fa-solid fa-circle-notch fa-spin text-2xl text-blue-600" aria-hidden="true"></i>
-                            </div>
-
-                            <div id="question-area" class="flex flex-col h-full">
-                                <div class="flex justify-between items-center mb-3 md:mb-4">
-                                    <span class="text-[10px] font-bold text-blue-600 uppercase bg-blue-50 px-2 py-0.5 rounded font-sans">Q <span id="q-number">1</span></span>
-                                    <div class="h-1 w-20 bg-slate-100 rounded-full overflow-hidden">
-                                        <div id="progress-bar" class="h-full bg-blue-500 w-0 transition-all duration-300"></div>
-                                    </div>
-                                </div>
-                                
-                                <h3 id="q-text" class="text-xs md:text-sm font-bold text-slate-900 mb-3 md:mb-4 leading-relaxed font-heading text-center md:text-left">Loading...</h3>
-                                
-                                <div id="options-area" class="space-y-2 flex-grow font-sans text-[11px] md:text-sm"></div>
-
-                                <div id="feedback-area" class="mt-3 md:mt-4 hidden p-2 md:p-3 rounded text-[10px] md:text-[11px] font-medium border-l-2 font-sans"></div>
-                                
-                                <div class="mt-3 md:mt-4 flex justify-center md:justify-end">
-                                    <button id="next-btn" class="hidden px-4 py-2 bg-slate-900 text-white text-[10px] md:text-xs font-bold rounded hover:bg-slate-800 transition font-sans">
-                                        Next <i class="fa-solid fa-arrow-right ml-1" aria-hidden="true"></i>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div id="result-area" class="hidden text-center py-8">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2 font-heading">Module Finished</h3>
-                                <p class="text-xs text-slate-500 mb-4 font-sans">Final Score: <span id="final-score" class="font-bold text-slate-900"></span></p>
-                                <button onclick="resetQuiz()" class="px-4 py-2 bg-blue-600 text-white text-xs font-bold rounded hover:bg-blue-700 transition font-sans">
-                                    Restart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
         </div>
     </main>
 
@@ -321,17 +237,7 @@
         let lawsData = [];
         let hierarchyData = [];
         let toolsData = [];
-        let quizQuestions = [];
-        
-        let currentQ = 0;
-        let score = 0;
-
-        const quizFiles = {
-            'intro': '../patwari-json-data/quiz_data.json',
-            'core': '../patwari-json-data/100_mcq_hp_land_records_surveying_and_revenue_acts.json',
-            'advanced': '../patwari-json-data/100_mcq_advanced_legal_and_numerical.json',
-            'consolidation': '../patwari-json-data/50_mcq_final_phase_consolidation_schemes.json'
-        };
+        // Removed quiz variables
 
         async function fetchData(url) {
             const response = await fetch(url);
@@ -429,7 +335,7 @@
             container.innerHTML = '';
             lawsData.forEach((law, index) => {
                 const div = document.createElement('div');
-                div.className = 'border border-slate-200 rounded-lg bg-white overflow-hidden shadow-sm hover:border-blue-300 transition group';
+                div.className = 'border border-slate-300 rounded-lg bg-white overflow-hidden shadow-sm hover:border-blue-300 transition group';
                 // ACCESSIBILITY: Added aria-expanded and aria-controls
                 div.innerHTML = `
                     <button 
@@ -455,7 +361,6 @@
         function toggleLaw(index) {
             const content = document.getElementById(`law-content-${index}`);
             const arrow = document.getElementById(`arrow-${index}`);
-            // Get the button element (previous sibling) to update aria-expanded
             const btn = content.previousElementSibling;
             
             const isHidden = content.classList.contains('hidden');
@@ -476,12 +381,10 @@
             container.innerHTML = '';
             hierarchyData.forEach(item => {
                 const div = document.createElement('div');
-                // FIX: Changed "tree-line" to "relative" to remove the unwanted vertical line overlay
                 div.className = "relative pl-2"; 
-                // STRUCTURE FIX: Changed H4 to H3 to follow strict hierarchy (H1 -> H2 -> H3)
                 div.innerHTML = `
                     <div class="absolute -left-[27px] md:-left-[33px] top-3 h-3 w-3 rounded-full ${item.color} border-2 border-white shadow-sm ring-1 ring-slate-200 z-10"></div>
-                    <div class="bg-white p-2.5 md:p-3 rounded-lg shadow-sm border border-slate-200 hover:border-blue-300 transition">
+                    <div class="bg-white p-2.5 md:p-3 rounded-lg shadow-sm border border-slate-300 hover:border-blue-300 transition">
                         <h3 class="font-bold text-slate-900 text-xs font-heading">${item.role}</h3>
                         <p class="text-[10px] text-slate-500 mt-0.5 leading-tight font-sans">${item.desc}</p>
                     </div>
@@ -495,7 +398,7 @@
             grid.innerHTML = '';
             toolsData.forEach(tool => {
                 const div = document.createElement('div');
-                div.className = "bg-white p-2.5 md:p-3 rounded-lg border border-slate-100 hover:border-blue-200 hover:shadow-sm transition group cursor-default";
+                div.className = "bg-white p-2.5 md:p-3 rounded-lg border border-slate-200 hover:border-blue-200 hover:shadow-sm transition group cursor-default";
                 div.innerHTML = `
                     <div class="flex items-center gap-2 mb-1.5">
                         <div class="w-6 h-6 ${tool.bg_color} rounded flex items-center justify-center ${tool.hover_color} transition">
@@ -509,125 +412,9 @@
             });
         }
 
-        // --- QUIZ LOGIC ---
-
-        async function switchQuiz(topic) {
-            const loader = document.getElementById('quiz-loader');
-            const qArea = document.getElementById('question-area');
-            const resultArea = document.getElementById('result-area');
-            
-            qArea.classList.add('hidden');
-            resultArea.classList.add('hidden');
-            loader.classList.remove('hidden');
-
-            const url = quizFiles[topic];
-            try {
-                const data = await fetchData(url);
-                quizQuestions = Array.isArray(data) ? data : [];
-                
-                currentQ = 0;
-                score = 0;
-                document.getElementById('q-count-display').innerText = quizQuestions.length;
-                document.getElementById('score-display').innerText = 0;
-                
-                setTimeout(() => {
-                    loader.classList.add('hidden');
-                    qArea.classList.remove('hidden');
-                    loadQuiz();
-                }, 500); 
-                
-            } catch (error) {
-                console.error("Quiz load failed", error);
-                // Don't use alert in production for CLS reasons, but kept for simplicity
-                loader.classList.add('hidden');
-            }
-        }
-
-        function loadQuiz() {
-            if (currentQ >= quizQuestions.length) {
-                document.getElementById('question-area').classList.add('hidden');
-                document.getElementById('result-area').classList.remove('hidden');
-                document.getElementById('final-score').innerText = `${score} / ${quizQuestions.length}`;
-                return;
-            }
-
-            const q = quizQuestions[currentQ];
-            const questionText = q.q || q.q_en;
-            const options = q.options || q.options_en;
-
-            document.getElementById('q-number').innerText = currentQ + 1;
-            document.getElementById('q-text').innerText = questionText;
-            
-            const progressPct = ((currentQ) / quizQuestions.length) * 100;
-            document.getElementById('progress-bar').style.width = `${progressPct}%`;
-
-            document.getElementById('next-btn').classList.add('hidden');
-            document.getElementById('feedback-area').classList.add('hidden');
-            
-            const optsDiv = document.getElementById('options-area');
-            optsDiv.innerHTML = '';
-            
-            options.forEach((opt, idx) => {
-                const btn = document.createElement('button');
-                btn.className = "w-full text-left p-3 md:p-4 rounded-xl border-2 border-slate-100 hover:border-blue-200 hover:bg-blue-50 transition text-slate-700 font-medium relative group";
-                btn.innerHTML = `<span class="inline-block w-6 font-bold text-slate-400 group-hover:text-blue-500">${String.fromCharCode(65+idx)}.</span> ${opt}`;
-                btn.onclick = () => checkAnswer(idx, btn, q);
-                optsDiv.appendChild(btn);
-            });
-        }
-
-        function checkAnswer(selectedIdx, btn, q) {
-            const buttons = document.querySelectorAll('#options-area button');
-            buttons.forEach(b => {
-                b.disabled = true;
-                b.classList.add('opacity-70', 'cursor-not-allowed');
-            });
-            btn.classList.remove('opacity-70');
-
-            const feedback = document.getElementById('feedback-area');
-            feedback.classList.remove('hidden');
-
-            if (selectedIdx === q.correct) {
-                score++;
-                document.getElementById('score-display').innerText = score;
-                btn.classList.remove('border-slate-100', 'hover:border-blue-200', 'hover:bg-blue-50');
-                btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
-                feedback.className = "mt-3 md:mt-6 p-3 md:p-4 rounded-xl text-sm font-medium border-l-4 bg-green-50 text-green-800 border-green-500";
-                feedback.innerHTML = `<div class="flex items-start gap-3"><i class="fa-solid fa-check-circle text-lg mt-0.5" aria-hidden="true"></i><div><strong>Correct!</strong><p class="mt-1 opacity-90">${q.explanation}</p></div></div>`;
-            } else {
-                btn.classList.remove('border-slate-100', 'hover:border-blue-200', 'hover:bg-blue-50');
-                btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
-                
-                const correctBtn = buttons[q.correct];
-                correctBtn.classList.remove('opacity-70', 'border-slate-100');
-                correctBtn.classList.add('bg-green-50', 'border-green-300', 'text-green-700');
-
-                feedback.className = "mt-3 md:mt-6 p-3 md:p-4 rounded-xl text-sm font-medium border-l-4 bg-red-50 text-red-800 border-red-500";
-                feedback.innerHTML = `<div class="flex items-start gap-3"><i class="fa-solid fa-xmark-circle text-lg mt-0.5" aria-hidden="true"></i><div><strong>Incorrect.</strong><p class="mt-1 opacity-90">${q.explanation}</p></div></div>`;
-            }
-
-            document.getElementById('next-btn').classList.remove('hidden');
-        }
-
-        document.getElementById('next-btn').onclick = () => {
-            currentQ++;
-            loadQuiz();
-        };
-
-        function resetQuiz() {
-            const selector = document.getElementById('quiz-selector');
-            switchQuiz(selector.value);
-        }
-
         // --- ANALYSIS FOR CLS PREVENTION ---
-        // 1. We removed the global loader which hid the page height.
-        // 2. We added #term-skeleton and other skeletons to reserve height immediately.
-        // 3. We now swap skeleton -> content when data arrives.
-
         async function initApp() {
             try {
-                // Skeletons are already visible in HTML by default (Better LCP)
-
                 // Parallel Fetch
                 const [terms, laws, hierarchy, tools] = await Promise.all([
                     fetchData('../patwari-json-data/terminology_data.json'),
@@ -642,23 +429,16 @@
                 lawsData.sort((a, b) => {
                     const yearA = parseInt(a.year);
                     const yearB = parseInt(b.year);
-                    
-                    // Logic: Numeric years come first, sorted ascending.
-                    // Non-numeric years (NaN) are pushed to the bottom.
-                    
-                    // Check if years are valid numbers
                     const isNumA = !isNaN(yearA);
                     const isNumB = !isNaN(yearB);
 
                     if (isNumA && isNumB) {
-                        return yearA - yearB; // Both are numbers: sort normally
+                        return yearA - yearB; 
                     } else if (isNumA && !isNumB) {
-                        return -1; // A is number, B is text: A comes first
+                        return -1; 
                     } else if (!isNumA && isNumB) {
-                        return 1; // A is text, B is number: B comes first
+                        return 1; 
                     } else {
-                        // Both are text (e.g. 'Rules' vs 'Misc'), keep original relative order or sort alphabetically if preferred
-                        // For now, let's sort them alphabetically by title to have a deterministic order
                         return a.title.localeCompare(b.title);
                     }
                 });
@@ -672,8 +452,6 @@
                 renderTools();
 
                 // SWAP: Hide Skeleton, Show Content
-                // This happens instantly so the user sees a "flash" of content appearing
-                // occupying the exact same space.
                 
                 // 1. Terms
                 document.getElementById('term-skeleton').classList.add('hidden');
@@ -690,9 +468,6 @@
                 // 4. Tools
                 document.getElementById('tools-skeleton').classList.add('hidden');
                 document.getElementById('tools-grid').classList.remove('hidden');
-
-                await switchQuiz('intro');
-                // Chart removed, no initChart() call here.
 
             } catch (error) {
                 console.error("Init failed", error);
