@@ -76,10 +76,12 @@ const AppComponents = {
                 
                 <!-- Compact Desktop Menu -->
                 <div class="hidden md:flex space-x-1 items-center bg-slate-100 p-1 rounded-lg">
-                    <a href="#terminology" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Terms</a>
-                    <a href="#measurements" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Calc</a>
-                    <a href="#laws" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Laws</a>
-                    <a href="#quiz" class="text-[11px] font-bold text-white bg-blue-600 px-3 py-1.5 rounded-md shadow-sm hover:bg-blue-700 transition ml-1 font-sans">
+                    <!-- UPDATED LINKS TO RENAMED TECHNICAL PAGE -->
+                    <a href="hp-technical-land-record-and-revenue.html#terminology" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Terms</a>
+                    <a href="hp-technical-land-record-and-revenue.html#measurements" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Calc</a>
+                    <a href="hp-technical-land-record-and-revenue.html#laws" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Laws</a>
+                    <!-- CHANGED LINK TO NEW MOCK TEST 1 PAGE -->
+                    <a href="hp-patwari-mock-test-1-land-and-revenue.html" class="text-[11px] font-bold text-white bg-blue-600 px-3 py-1.5 rounded-md shadow-sm hover:bg-blue-700 transition ml-1 font-sans">
                         MCQ Bank
                     </a>
                 </div>
@@ -97,10 +99,12 @@ const AppComponents = {
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 shadow-lg absolute w-full left-0 top-14 z-40">
             <div class="grid grid-cols-4 p-2 gap-2 text-center">
-                <a href="#terminology" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Terms</a>
-                <a href="#measurements" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Calc</a>
-                <a href="#laws" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Laws</a>
-                <a href="#quiz" class="text-[10px] font-bold text-blue-600 bg-blue-50 p-2 rounded font-sans">Quiz</a>
+                <!-- UPDATED LINKS TO RENAMED TECHNICAL PAGE -->
+                <a href="hp-technical-land-record-and-revenue.html#terminology" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Terms</a>
+                <a href="hp-technical-land-record-and-revenue.html#measurements" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Calc</a>
+                <a href="hp-technical-land-record-and-revenue.html#laws" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Laws</a>
+                <!-- CHANGED LINK TO NEW MOCK TEST 1 PAGE -->
+                <a href="hp-patwari-mock-test-1-land-and-revenue.html" class="text-[10px] font-bold text-blue-600 bg-blue-50 p-2 rounded font-sans">Quiz</a>
             </div>
         </div>
     `
