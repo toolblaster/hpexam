@@ -1,86 +1,114 @@
 [
     {
         "title": "HIMBHOOMI",
-        "desc": "Official Land Records portal (himbhoomi.nic.in). Developed by NIC HP. Core engine for Jamabandi data entry. **Crucial Fact:** It supports Unicode (Hindi) data entry and generates the legal 'Parat Sarkar' copy.",
+        "desc": "Official Land Records portal (himbhoomi.nic.in). Developed by NIC HP. Core engine for Jamabandi data entry. Crucial Fact: It supports Unicode (Hindi) data entry and generates the legal 'Parat Sarkar' copy.",
         "icon": "fa-solid fa-desktop",
         "bg_color": "bg-blue-100",
         "hover_color": "group-hover:bg-blue-600"
     },
     {
         "title": "mHimBhoomi",
-        "desc": "Official Android App. Allows viewing Jamabandi by Khewat/Khatoni/Khasra. **Trap Question:** Can you apply for Mutation on the app? No, currently it is primarily for *viewing* records and status tracking.",
+        "desc": "Official Android App. Allows viewing Jamabandi by Khewat/Khatoni/Khasra. Trap Question: Can you apply for Mutation on the app? No, currently it is primarily for viewing records and status tracking.",
         "icon": "fa-solid fa-mobile-screen",
         "bg_color": "bg-green-100",
         "hover_color": "group-hover:bg-green-600"
     },
     {
         "title": "SVAMITVA Scheme",
-        "desc": "Uses CORS (Continuously Operating Reference Stations) network for 5cm accuracy drone surveys. **Goal:** Monetize rural residential assets by issuing legal Property Cards (Sampatti Cards) valid for bank loans.",
+        "desc": "Uses CORS (Continuously Operating Reference Stations) network for 5cm accuracy drone surveys. Goal: Monetize rural residential assets by issuing legal Property Cards (Sampatti Cards) valid for bank loans.",
         "icon": "fa-solid fa-plane-up",
         "bg_color": "bg-orange-100",
         "hover_color": "group-hover:bg-orange-600"
     },
     {
         "title": "PM-KISAN Portal",
-        "desc": "Requires 'Aadhaar Seeding' and 'Land Seeding'. **Field Insight:** Patwari must reject cases where land is 'Gair Mumkin' (uncultivable) or owned by 'Institutional' owners (e.g., Temple trust).",
+        "desc": "Requires 'Aadhaar Seeding' and 'Land Seeding'. Field Insight: Patwari must reject cases where land is 'Gair Mumkin' (uncultivable) or owned by 'Institutional' owners (e.g., Temple trust).",
         "icon": "fa-solid fa-wheat-awn",
         "bg_color": "bg-yellow-100",
         "hover_color": "group-hover:bg-yellow-600"
     },
     {
         "title": "e-District / e-Praman",
-        "desc": "Integrates with 'Parivar Register'. **Workflow:** Citizen applies -> Patwari receives task -> Uploads field report -> Tehsildar digitally signs certificate. **Valid for:** 14+ services including Character & OBC certificates.",
+        "desc": "Integrates with 'Parivar Register'. Workflow: Citizen applies -> Patwari receives task -> Uploads field report -> Tehsildar digitally signs certificate. Valid for: 14+ services including Character & OBC certificates.",
         "icon": "fa-solid fa-scroll",
         "bg_color": "bg-purple-100",
         "hover_color": "group-hover:bg-purple-600"
     },
     {
         "title": "ULPIN",
-        "desc": "14-digit alphanumeric code. **Structure:** The digits represent the latitude and longitude coordinates of the plot's centroid. It aims to prevent fraud by uniquely identifying every plot nationally.",
+        "desc": "14-digit alphanumeric code. Structure: The digits represent the latitude and longitude coordinates of the plot's centroid. It aims to prevent fraud by uniquely identifying every plot nationally.",
         "icon": "fa-solid fa-fingerprint",
         "bg_color": "bg-slate-200",
         "hover_color": "group-hover:bg-slate-600"
     },
     {
         "title": "RCMS HP",
-        "desc": "Revenue Court Case Monitoring System. **Key Feature:** Litigants get SMS alerts for hearing dates. It tracks delays in partition cases (Section 123) against the mandated 6-month timeline.",
+        "desc": "Revenue Court Case Monitoring System. Key Feature: Litigants get SMS alerts for hearing dates. It tracks delays in partition cases (Section 123) against the mandated 6-month timeline.",
         "icon": "fa-solid fa-gavel",
         "bg_color": "bg-red-100",
         "hover_color": "group-hover:bg-red-600"
     },
     {
         "title": "NGDRS / HIMRIS",
-        "desc": "Registration system. **Integration:** Automatically triggers a 'Tatima' request to the Revenue Department. Prevents undervaluation of Stamp Duty by auto-calculating based on Circle Rates.",
+        "desc": "Registration system. Integration: Automatically triggers a 'Tatima' request to the Revenue Department. Prevents undervaluation of Stamp Duty by auto-calculating based on Circle Rates.",
         "icon": "fa-solid fa-file-signature",
         "bg_color": "bg-teal-100",
         "hover_color": "group-hover:bg-teal-600"
     },
     {
         "title": "Bhu-Naksha",
-        "desc": "Digitized Cadastral Maps. **Vector Data:** Unlike scanned images, these maps are vector-based, allowing area calculation on screen. Integrated with ROR to show owner name when clicking a plot.",
+        "desc": "Digitized Cadastral Maps. Vector Data: Unlike scanned images, these maps are vector-based, allowing area calculation on screen. Integrated with ROR to show owner name when clicking a plot.",
         "icon": "fa-solid fa-map-location-dot",
         "bg_color": "bg-indigo-100",
         "hover_color": "group-hover:bg-indigo-600"
     },
     {
         "title": "CM Sewa Sankalp (1100)",
-        "desc": "Grievance Redressal. **Patwari Role:** Must file a 'Spot Report' (Mauka Report) for complaints like 'Rasta Rokna' (Path obstruction) within 7-15 days.",
+        "desc": "Grievance Redressal. Patwari Role: Must file a 'Spot Report' (Mauka Report) for complaints like 'Rasta Rokna' (Path obstruction) within 7-15 days.",
         "icon": "fa-solid fa-headset",
         "bg_color": "bg-rose-100",
         "hover_color": "group-hover:bg-rose-600"
     },
     {
         "title": "Sugam / LMK",
-        "desc": "Lok Mitra Kendra. Operated by Village Level Entrepreneurs (VLEs). **Fee:** ₹20 per page for Nakal. Patwari's manual signature is NOT required for digitally signed Nakals generated here.",
+        "desc": "Lok Mitra Kendra. Operated by Village Level Entrepreneurs (VLEs). Fee: ₹20 per page for Nakal. Patwari's manual signature is NOT required for digitally signed Nakals generated here.",
         "icon": "fa-solid fa-building-columns",
         "bg_color": "bg-pink-100",
         "hover_color": "group-hover:bg-pink-600"
     },
     {
         "title": "Bhu-Sandarbh",
-        "desc": "Geo-referencing application. **Use Case:** Overlays Khasra maps on Google Earth/Satellite imagery. Used to identify encroachments on Forest/Govt land without physical chain measurement.",
+        "desc": "Geo-referencing application. Use Case: Overlays Khasra maps on Google Earth/Satellite imagery. Used to identify encroachments on Forest/Govt land without physical chain measurement.",
         "icon": "fa-solid fa-satellite",
         "bg_color": "bg-cyan-100",
         "hover_color": "group-hover:bg-cyan-600"
+    },
+    {
+        "title": "e-Kalyan HP",
+        "desc": "Social Welfare portal. Used for managing social security pensions. Patwaris verify income and landholding status for eligibility (e.g., Old Age Pension).",
+        "icon": "fa-solid fa-hand-holding-heart",
+        "bg_color": "bg-emerald-100",
+        "hover_color": "group-hover:bg-emerald-600"
+    },
+    {
+        "title": "e-Udyan",
+        "desc": "Horticulture Department portal. Facilitates DB-transfer for schemes like Anti-Hail Nets and Apple Scab control. Patwari verifies orchard land details.",
+        "icon": "fa-solid fa-apple-whole",
+        "bg_color": "bg-lime-100",
+        "hover_color": "group-hover:bg-lime-600"
+    },
+    {
+        "title": "HIMSWAN",
+        "desc": "Himachal State Wide Area Network. The backbone connectivity infrastructure connecting State HQ (Shimla) to District, Tehsil, and Block HQs. Essential for real-time revenue data sync.",
+        "icon": "fa-solid fa-network-wired",
+        "bg_color": "bg-sky-100",
+        "hover_color": "group-hover:bg-sky-600"
+    },
+    {
+        "title": "Lok Praman Patra",
+        "desc": "Verified certificate repository. Allows citizens to access digitally signed copies of Bonafide, Caste, and Income certificates without visiting the Tehsil repeatedly.",
+        "icon": "fa-solid fa-certificate",
+        "bg_color": "bg-fuchsia-100",
+        "hover_color": "group-hover:bg-fuchsia-600"
     }
 ]
