@@ -348,9 +348,10 @@
                 btnHi.className = "text-[10px] font-bold px-3 py-1 rounded-md transition-all duration-200 bg-white text-blue-700 shadow-sm ring-1 ring-slate-200";
                 btnEn.className = "text-[10px] font-bold px-3 py-1 rounded-md transition-all duration-200 text-slate-500 hover:text-slate-700";
             }
-            // Update both sections
+            // Update all language-dependent sections
             renderTerms(currentFilter);
             renderLaws();
+            renderHierarchy();
         }
 
         function renderTerms(filter) {
@@ -473,14 +474,22 @@
         function renderHierarchy() {
             const container = document.getElementById('hierarchy-container');
             container.innerHTML = '';
+            
             hierarchyData.forEach(item => {
                 const div = document.createElement('div');
                 div.className = "relative pl-2"; 
+                
+                // Determine Content based on Language
+                let displayRole = (currentDefLanguage === 'hi' && item.role_hi) ? item.role_hi : item.role;
+                let displayDesc = (currentDefLanguage === 'hi' && item.desc_hi) ? item.desc_hi : item.desc;
+                let roleClass = (currentDefLanguage === 'hi') ? 'font-hindi text-sm' : 'font-heading text-xs';
+                let descClass = (currentDefLanguage === 'hi') ? 'font-hindi tracking-wide' : 'font-sans';
+
                 div.innerHTML = `
                     <div class="absolute -left-[27px] md:-left-[33px] top-3 h-3 w-3 rounded-full ${item.color} border-2 border-white shadow-sm ring-1 ring-slate-200 z-10"></div>
                     <div class="bg-white p-2.5 md:p-3 rounded-lg shadow-sm border border-slate-300 hover:border-blue-300 transition">
-                        <h3 class="font-bold text-slate-900 text-xs font-heading">${item.role}</h3>
-                        <p class="text-[10px] text-slate-500 mt-0.5 leading-tight font-sans">${item.desc}</p>
+                        <h3 class="font-bold text-slate-900 ${roleClass}">${displayRole}</h3>
+                        <p class="text-[10px] text-slate-500 mt-0.5 leading-tight ${descClass}">${displayDesc}</p>
                     </div>
                 `;
                 container.appendChild(div);
