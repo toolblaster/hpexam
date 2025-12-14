@@ -2,181 +2,253 @@
     { 
         "year": "1954", 
         "title": "HP Land Revenue Act", 
-        "details": "The procedural backbone. <br><strong>Sec 16:</strong> Power of Review (90 days). <br><strong>Sec 34:</strong> Reporting acquisition (3 months). <br><strong>Sec 38:</strong> Restrictions on varying RoR. <br><strong>Sec 45:</strong> Presumption of Truth. <br><strong>Sec 107:</strong> Demarcation. <br><strong>Sec 112:</strong> Penalty for destroying Survey Marks. <br><strong>Sec 118:</strong> Road Encroachment penalty. <br><strong>Sec 135:</strong> Private Partition. <br><strong>Sec 138-A:</strong> Partition cases must be decided within 6 months. <br><strong>Sec 163:</strong> Ejectment of encroachers." 
+        "title_hi": "हि.प्र. भू-राजस्व अधिनियम",
+        "details": "The procedural backbone. <br><strong>Sec 16:</strong> Power of Review (90 days). <br><strong>Sec 34:</strong> Reporting acquisition (3 months). <br><strong>Sec 38:</strong> Restrictions on varying RoR. <br><strong>Sec 45:</strong> Presumption of Truth. <br><strong>Sec 107:</strong> Demarcation. <br><strong>Sec 112:</strong> Penalty for destroying Survey Marks. <br><strong>Sec 118:</strong> Road Encroachment penalty. <br><strong>Sec 135:</strong> Private Partition. <br><strong>Sec 138-A:</strong> Partition cases must be decided within 6 months. <br><strong>Sec 163:</strong> Ejectment of encroachers.",
+        "details_hi": "प्रक्रियात्मक रीढ़। <br><strong>धारा 16:</strong> समीक्षा की शक्ति (90 दिन)। <br><strong>धारा 34:</strong> अधिग्रहण की रिपोर्टिंग (3 महीने)। <br><strong>धारा 38:</strong> RoR में बदलाव पर प्रतिबंध। <br><strong>धारा 45:</strong> सत्यता का अनुमान (Presumption of Truth)। <br><strong>धारा 107:</strong> निशानदेही (सीमांकन)। <br><strong>धारा 112:</strong> सर्वेक्षण चिह्नों को नष्ट करने पर दंड। <br><strong>धारा 118:</strong> सड़क अतिक्रमण दंड। <br><strong>धारा 135:</strong> निजी विभाजन। <br><strong>धारा 138-A:</strong> विभाजन के मामलों का निर्णय 6 महीने के भीतर होना चाहिए। <br><strong>धारा 163:</strong> अतिक्रमणकारियों की बेदखली।"
     },
     { 
         "year": "1972", 
         "title": "HP Tenancy & Land Reforms Act", 
-        "details": "<strong>Sec 104:</strong> Vesting of proprietary rights. <br><strong>Sec 118:</strong> Bans transfer to non-agriculturists. <br><strong>Exceptions:</strong> Bonafide Himachali agriculturists. <br><strong>Resumption:</strong> Landlord can resume land for 'Khudkasht' (self-cultivation) up to 3 acres. <br><strong>Rule 38-A:</strong> Conditions for granting Sec 118 permission (e.g., use within 2 years)." 
+        "title_hi": "हि.प्र. काश्तकारी और भूमि सुधार अधिनियम",
+        "details": "<strong>Sec 104:</strong> Vesting of proprietary rights. <br><strong>Sec 118:</strong> Bans transfer to non-agriculturists. <br><strong>Exceptions:</strong> Bonafide Himachali agriculturists. <br><strong>Resumption:</strong> Landlord can resume land for 'Khudkasht' (self-cultivation) up to 3 acres. <br><strong>Rule 38-A:</strong> Conditions for granting Sec 118 permission (e.g., use within 2 years).",
+        "details_hi": "<strong>धारा 104:</strong> मालिकाना अधिकारों का निहित होना। <br><strong>धारा 118:</strong> गैर-कृषकों को हस्तांतरण पर प्रतिबंध। <br><strong>अपवाद:</strong> बोनाफाइड हिमाचली कृषक। <br><strong>पुनर्ग्रहण (Resumption):</strong> जमींदार 'खुदकाश्त' (स्वयं की खेती) के लिए 3 एकड़ तक जमीन वापस ले सकता है। <br><strong>नियम 38-A:</strong> धारा 118 की अनुमति देने की शर्तें (जैसे, 2 साल के भीतर उपयोग)।"
     },
     { 
         "year": "1974", 
         "title": "HP Village Common Lands Act", 
-        "details": "<strong>Vesting:</strong> 'Shamlat' land vests in State Govt. <br><strong>Utilization:</strong> 50% for grazing (Charand), 50% 'Allotable Pool'. <br><strong>Purpose:</strong> Distribution to landless (less than 1 acre). <br><strong>Sec 8:</strong> Power of Collector to evict unauthorized occupants from vested land." 
+        "title_hi": "हि.प्र. ग्राम शामलात भूमि अधिनियम",
+        "details": "<strong>Vesting:</strong> 'Shamlat' land vests in State Govt. <br><strong>Utilization:</strong> 50% for grazing (Charand), 50% 'Allotable Pool'. <br><strong>Purpose:</strong> Distribution to landless (less than 1 acre). <br><strong>Sec 8:</strong> Power of Collector to evict unauthorized occupants from vested land.",
+        "details_hi": "<strong>निहित होना:</strong> 'शामलात' भूमि राज्य सरकार में निहित है। <br><strong>उपयोग:</strong> 50% चराई (चरणद) के लिए, 50% 'आवंटन योग्य पूल'। <br><strong>उद्देश्य:</strong> भूमिहीनों को वितरण (1 एकड़ से कम)। <br><strong>धारा 8:</strong> निहित भूमि से अनधिकृत कब्जाधारियों को बेदखल करने की कलेक्टर की शक्ति।"
     },
     { 
         "year": "1971", 
         "title": "HP Holdings Consolidation Act", 
-        "details": "<strong>Chakbandi:</strong> Consolidation process. <br><strong>Killabandi:</strong> Rectangularization of fields. <br><strong>Scheme:</strong> Drafted by Consolidation Officer (CO). <br><strong>Jurisdiction:</strong> Civil Courts jurisdiction is barred during consolidation proceedings regarding land rights." 
+        "title_hi": "हि.प्र. जोत चकबंदी अधिनियम",
+        "details": "<strong>Chakbandi:</strong> Consolidation process. <br><strong>Killabandi:</strong> Rectangularization of fields. <br><strong>Scheme:</strong> Drafted by Consolidation Officer (CO). <br><strong>Jurisdiction:</strong> Civil Courts jurisdiction is barred during consolidation proceedings regarding land rights.",
+        "details_hi": "<strong>चकबंदी:</strong> एकीकरण प्रक्रिया। <br><strong>किलाबंदी:</strong> खेतों का आयताकार करना। <br><strong>योजना:</strong> चकबंदी अधिकारी (CO) द्वारा तैयार की गई। <br><strong>अधिकार क्षेत्र:</strong> भूमि अधिकारों के संबंध में चकबंदी कार्यवाही के दौरान सिविल न्यायालयों का अधिकार क्षेत्र वर्जित है।"
     },
     { 
         "year": "1972", 
         "title": "HP Ceiling on Land Holdings Act", 
-        "details": "Limits family ownership. <br><strong>Limit:</strong> ~10 to 30 Acres. <br><strong>Standard Acre:</strong> 1 Acre of land yielding 2 crops/year. <br><strong>Exemptions:</strong> Tea Estates, Religious Trusts. <br><strong>Surplus Area:</strong> Vests in Govt free from encumbrances for distribution to landless." 
+        "title_hi": "हि.प्र. जोत सीमा अधिनियम",
+        "details": "Limits family ownership. <br><strong>Limit:</strong> ~10 to 30 Acres. <br><strong>Standard Acre:</strong> 1 Acre of land yielding 2 crops/year. <br><strong>Exemptions:</strong> Tea Estates, Religious Trusts. <br><strong>Surplus Area:</strong> Vests in Govt free from encumbrances for distribution to landless.",
+        "details_hi": "पारिवारिक स्वामित्व को सीमित करता है। <br><strong>सीमा:</strong> ~10 से 30 एकड़। <br><strong>मानक एकड़:</strong> 1 एकड़ भूमि जो साल में 2 फसलें देती है। <br><strong>छूट:</strong> चाय बागान, धार्मिक ट्रस्ट। <br><strong>अधिशेष क्षेत्र (Surplus):</strong> भूमिहीनों को वितरण के लिए सरकार में निहित होता है।"
     },
     { 
         "year": "1968", 
         "title": "HP Nautor Land Rules", 
-        "details": "Grant of Govt waste land. <br><strong>Limit:</strong> Up to 20 Bighas. <br><strong>Eligibility:</strong> Landless residents. <br><strong>Condition:</strong> Cannot be sold for 10-20 years (depending on policy). <br><strong>Patta:</strong> Title document issued by DC/SDM."
+        "title_hi": "हि.प्र. नौतोड़ भूमि नियम",
+        "details": "Grant of Govt waste land. <br><strong>Limit:</strong> Up to 20 Bighas. <br><strong>Eligibility:</strong> Landless residents. <br><strong>Condition:</strong> Cannot be sold for 10-20 years (depending on policy). <br><strong>Patta:</strong> Title document issued by DC/SDM.",
+        "details_hi": "सरकारी बंजर भूमि का अनुदान। <br><strong>सीमा:</strong> 20 बीघा तक। <br><strong>पात्रता:</strong> भूमिहीन निवासी। <br><strong>शर्त:</strong> 10-20 वर्षों तक बेचा नहीं जा सकता (नीति के आधार पर)। <br><strong>पट्टा:</strong> DC/SDM द्वारा जारी शीर्षक दस्तावेज।"
     },
     { 
         "year": "1968", 
         "title": "HP Transfer of Land (Regulation) Act", 
-        "details": "Protects Tribal land. <br><strong>Scope:</strong> Scheduled Areas. <br><strong>Restriction:</strong> No transfer from Tribal to Non-Tribal without DC's permission. <br><strong>Void Transfer:</strong> Any transaction violating this is void ab initio (invalid from start)."
+        "title_hi": "हि.प्र. भूमि अंतरण (विनियमन) अधिनियम",
+        "details": "Protects Tribal land. <br><strong>Scope:</strong> Scheduled Areas. <br><strong>Restriction:</strong> No transfer from Tribal to Non-Tribal without DC's permission. <br><strong>Void Transfer:</strong> Any transaction violating this is void ab initio (invalid from start).",
+        "details_hi": "जनजातीय भूमि की रक्षा करता है। <br><strong>क्षेत्र:</strong> अनुसूचित क्षेत्र। <br><strong>प्रतिबंध:</strong> DC की अनुमति के बिना आदिवासी से गैर-आदिवासी को कोई हस्तांतरण नहीं। <br><strong>शून्य हस्तांतरण:</strong> इसका उल्लंघन करने वाला कोई भी लेनदेन शुरू से ही शून्य (अमान्य) है।"
     },
     { 
         "year": "1956", 
         "title": "Hindu Succession Act", 
-        "details": "Governs Inheritance (Warasat). <br><strong>Class I Heirs:</strong> Son, Daughter, Widow, Mother. <br><strong>2005 Amendment:</strong> Daughters are Coparceners. <br><strong>Sec 22:</strong> Preferential right (Pre-emption) of heirs to buy share of other heirs in immovable property."
+        "title_hi": "हिंदू उत्तराधिकार अधिनियम",
+        "details": "Governs Inheritance (Warasat). <br><strong>Class I Heirs:</strong> Son, Daughter, Widow, Mother. <br><strong>2005 Amendment:</strong> Daughters are Coparceners. <br><strong>Sec 22:</strong> Preferential right (Pre-emption) of heirs to buy share of other heirs in immovable property.",
+        "details_hi": "विरासत (विरासत) को नियंत्रित करता है। <br><strong>कक्षा I वारिस:</strong> बेटा, बेटी, विधवा, माँ। <br><strong>2005 संशोधन:</strong> बेटियां सहदायिक (Coparceners) हैं। <br><strong>धारा 22:</strong> अचल संपत्ति में अन्य वारिसों का हिस्सा खरीदने के लिए वारिसों का अधिमान्य अधिकार (Pre-emption)।"
     },
     { 
         "year": "1908", 
         "title": "Indian Registration Act", 
-        "details": "<strong>Section 17:</strong> Compulsory registration for immovable property value > ₹100. <br><strong>Section 49:</strong> Effect of non-registration (document cannot be used as evidence). <br><strong>Patwari's Role:</strong> Verifies 'Tatima' for registration."
+        "title_hi": "भारतीय पंजीकरण अधिनियम",
+        "details": "<strong>Section 17:</strong> Compulsory registration for immovable property value > ₹100. <br><strong>Section 49:</strong> Effect of non-registration (document cannot be used as evidence). <br><strong>Patwari's Role:</strong> Verifies 'Tatima' for registration.",
+        "details_hi": "<strong>धारा 17:</strong> ₹100 से अधिक मूल्य की अचल संपत्ति के लिए अनिवार्य पंजीकरण। <br><strong>धारा 49:</strong> गैर-पंजीकरण का प्रभाव (दस्तावेज़ का उपयोग सबूत के रूप में नहीं किया जा सकता)। <br><strong>पटवारी की भूमिका:</strong> पंजीकरण के लिए 'ततीमा' सत्यापित करता है।"
     },
     { 
         "year": "1994", 
         "title": "HP Panchayati Raj Act", 
-        "details": "<strong>Section 12:</strong> Panchayat power to remove encroachments from public paths. <br><strong>Patwari's Role:</strong> Providing revenue maps. <br><strong>Family Register:</strong> Maintains details of every family, used for verifying Bonafide certificates."
+        "title_hi": "हि.प्र. पंचायती राज अधिनियम",
+        "details": "<strong>Section 12:</strong> Panchayat power to remove encroachments from public paths. <br><strong>Patwari's Role:</strong> Providing revenue maps. <br><strong>Family Register:</strong> Maintains details of every family, used for verifying Bonafide certificates.",
+        "details_hi": "<strong>धारा 12:</strong> सार्वजनिक रास्तों से अतिक्रमण हटाने की पंचायत की शक्ति। <br><strong>पटवारी की भूमिका:</strong> राजस्व मानचित्र प्रदान करना। <br><strong>परिवार रजिस्टर:</strong> प्रत्येक परिवार का विवरण रखता है, जिसका उपयोग बोनाफाइड प्रमाण पत्रों को सत्यापित करने के लिए किया जाता है।"
     },
     { 
         "year": "2011", 
         "title": "HP Public Service Guarantee Act", 
-        "details": "Timely service. <br><strong>Nakal:</strong> 24 hrs. <br><strong>Attestation:</strong> Same Day. <br><strong>Reports:</strong> 3-7 days. <br><strong>Designated Officer:</strong> Tehsildar. <br><strong>Appellate Authority:</strong> SDM/DC."
+        "title_hi": "हि.प्र. लोक सेवा गारंटी अधिनियम",
+        "details": "Timely service. <br><strong>Nakal:</strong> 24 hrs. <br><strong>Attestation:</strong> Same Day. <br><strong>Reports:</strong> 3-7 days. <br><strong>Designated Officer:</strong> Tehsildar. <br><strong>Appellate Authority:</strong> SDM/DC.",
+        "details_hi": "समय पर सेवा। <br><strong>नकल:</strong> 24 घंटे। <br><strong>सत्यापन:</strong> उसी दिन। <br><strong>रिपोर्ट:</strong> 3-7 दिन। <br><strong>नामित अधिकारी:</strong> तहसीलदार। <br><strong>अपीलीय प्राधिकारी:</strong> एसडीएम/डीसी।"
     },
     { 
         "year": "2013", 
         "title": "RFCTLARR Act (Land Acquisition)", 
-        "details": "Fair Compensation. <br><strong>SIA:</strong> Social Impact Assessment. <br><strong>Compensation:</strong> Market Value x Factor (1 or 2) + 100% Solatium + 12% Interest. <br><strong>Patwari:</strong> Prepares field book and award statement."
+        "title_hi": "भूमि अधिग्रहण अधिनियम (RFCTLARR)",
+        "details": "Fair Compensation. <br><strong>SIA:</strong> Social Impact Assessment. <br><strong>Compensation:</strong> Market Value x Factor (1 or 2) + 100% Solatium + 12% Interest. <br><strong>Patwari:</strong> Prepares field book and award statement.",
+        "details_hi": "उचित मुआवजा। <br><strong>SIA:</strong> सामाजिक प्रभाव मूल्यांकन। <br><strong>मुआवजा:</strong> बाजार मूल्य x कारक (1 या 2) + 100% सोलेटियम + 12% ब्याज। <br><strong>पटवारी:</strong> फील्ड बुक और अवार्ड स्टेटमेंट तैयार करता है।"
     },
     { 
         "year": "1968", 
         "title": "HP Roadside Land Control Act", 
-        "details": "Regulates construction. <br><strong>Controlled Width:</strong> No construction allowed within set distance from road. <br><strong>NOC:</strong> Required from Revenue/PWD to prove land is outside controlled width."
+        "title_hi": "हि.प्र. सड़क किनारे भूमि नियंत्रण अधिनियम",
+        "details": "Regulates construction. <br><strong>Controlled Width:</strong> No construction allowed within set distance from road. <br><strong>NOC:</strong> Required from Revenue/PWD to prove land is outside controlled width.",
+        "details_hi": "निर्माण को नियंत्रित करता है। <br><strong>नियंत्रित चौड़ाई:</strong> सड़क से निर्धारित दूरी के भीतर किसी भी निर्माण की अनुमति नहीं है। <br><strong>NOC:</strong> यह साबित करने के लिए राजस्व/PWD से आवश्यक है कि भूमि नियंत्रित चौड़ाई से बाहर है।"
     },
     { 
         "year": "2005", 
         "title": "Disaster Management Act", 
-        "details": "<strong>Relief Manual:</strong> Patwari reports loss (crops/house). <br><strong>Ex-Gratia:</strong> Financial assistance provided based on 'Nuksan Report'. <br><strong>Calamities:</strong> Flood, Fire, Cloudburst, Drought."
+        "title_hi": "आपदा प्रबंधन अधिनियम",
+        "details": "<strong>Relief Manual:</strong> Patwari reports loss (crops/house). <br><strong>Ex-Gratia:</strong> Financial assistance provided based on 'Nuksan Report'. <br><strong>Calamities:</strong> Flood, Fire, Cloudburst, Drought.",
+        "details_hi": "<strong>राहत मैनुअल:</strong> पटवारी नुकसान (फसल/घर) की रिपोर्ट करता है। <br><strong>अनुग्रह राशि (Ex-Gratia):</strong> 'नुकसान रिपोर्ट' के आधार पर वित्तीय सहायता प्रदान की जाती है। <br><strong>आपदाएं:</strong> बाढ़, आग, बादल फटना, सूखा।"
     },
     { 
         "year": "1899", 
         "title": "Indian Stamp Act (HP)", 
-        "details": "<strong>Stamp Duty:</strong> Tax on documents. <br><strong>Circle Rates:</strong> Minimum value fixed by DC annually. <br><strong>Sec 47-A:</strong> Dealing with undervaluation of instruments (Collector can recover deficit duty)."
+        "title_hi": "भारतीय स्टाम्प अधिनियम (हि.प्र.)",
+        "details": "<strong>Stamp Duty:</strong> Tax on documents. <br><strong>Circle Rates:</strong> Minimum value fixed by DC annually. <br><strong>Sec 47-A:</strong> Dealing with undervaluation of instruments (Collector can recover deficit duty).",
+        "details_hi": "<strong>स्टाम्प शुल्क:</strong> दस्तावेजों पर कर। <br><strong>सर्कल रेट:</strong> डीसी द्वारा सालाना तय किया गया न्यूनतम मूल्य। <br><strong>धारा 47-A:</strong> दस्तावेजों के कम मूल्यांकन से निपटना (कलेक्टर कम शुल्क वसूल सकता है)।"
     },
     { 
         "year": "1996", 
         "title": "PESA Act", 
-        "details": "Scheduled Areas. <br><strong>Gram Sabha:</strong> Supreme authority for resources. <br><strong>Land Alienation:</strong> Power to prevent/restore tribal land. <br><strong>Consultation:</strong> Mandatory for projects/acquisition." 
+        "title_hi": "पेसा (PESA) अधिनियम",
+        "details": "Scheduled Areas. <br><strong>Gram Sabha:</strong> Supreme authority for resources. <br><strong>Land Alienation:</strong> Power to prevent/restore tribal land. <br><strong>Consultation:</strong> Mandatory for projects/acquisition.",
+        "details_hi": "अनुसूचित क्षेत्र। <br><strong>ग्राम सभा:</strong> संसाधनों के लिए सर्वोच्च प्राधिकरण। <br><strong>भूमि अलगाव:</strong> आदिवासी भूमि को रोकने/बहाल करने की शक्ति। <br><strong>परामर्श:</strong> परियोजनाओं/अधिग्रहण के लिए अनिवार्य।"
     },
     { 
         "year": "Rules", 
         "title": "HP Land Records Manual", 
-        "details": "<strong>Ch 3:</strong> Duties of Patwaris. <br><strong>Ch 4:</strong> Duties of Kanungos. <br><strong>Ch 9:</strong> Harvest Inspection. <br><strong>Ch 14:</strong> Partition. <br><strong>Ch 18:</strong> Reports/Statements. <br><strong>Settlement:</strong> Revision of records every 40 years."
+        "title_hi": "हि.प्र. भू-अभिलेख मैनुअल",
+        "details": "<strong>Ch 3:</strong> Duties of Patwaris. <br><strong>Ch 4:</strong> Duties of Kanungos. <br><strong>Ch 9:</strong> Harvest Inspection. <br><strong>Ch 14:</strong> Partition. <br><strong>Ch 18:</strong> Reports/Statements. <br><strong>Settlement:</strong> Revision of records every 40 years.",
+        "details_hi": "<strong>अध्याय 3:</strong> पटवारियों के कर्तव्य। <br><strong>अध्याय 4:</strong> कानूनगो के कर्तव्य। <br><strong>अध्याय 9:</strong> फसल निरीक्षण। <br><strong>अध्याय 14:</strong> विभाजन। <br><strong>अध्याय 18:</strong> रिपोर्ट/विवरण। <br><strong>बंदोबस्त:</strong> हर 40 साल में रिकॉर्ड का संशोधन।"
     },
     { 
         "year": "Misc", 
         "title": "Limitation Act (Appeals)", 
-        "details": "<strong>To Collector:</strong> 30 Days. <br><strong>To Commissioner:</strong> 60 Days. <br><strong>To FC:</strong> 90 Days. <br><strong>Section 27:</strong> Extinguishment of right to property (Adverse Possession concept if possession is adverse for 12 years)."
+        "title_hi": "परिसीमा अधिनियम (अपील)",
+        "details": "<strong>To Collector:</strong> 30 Days. <br><strong>To Commissioner:</strong> 60 Days. <br><strong>To FC:</strong> 90 Days. <br><strong>Section 27:</strong> Extinguishment of right to property (Adverse Possession concept if possession is adverse for 12 years).",
+        "details_hi": "<strong>कलेक्टर को:</strong> 30 दिन। <br><strong>आयुक्त को:</strong> 60 दिन। <br><strong>वित्तीय आयुक्त को:</strong> 90 दिन। <br><strong>धारा 27:</strong> संपत्ति के अधिकार की समाप्ति (प्रतिकूल कब्जे की अवधारणा यदि कब्जा 12 साल तक प्रतिकूल है)।"
     },
     {
         "year": "1882",
         "title": "Transfer of Property Act",
-        "details": "<strong>Sec 54 (Sale):</strong> Transfer of ownership. <br><strong>Sec 58 (Mortgage):</strong> Transfer of interest. <br><strong>Sec 105 (Lease):</strong> Transfer of right to enjoy. <br><strong>Lis Pendens (Sec 52):</strong> Property under dispute in court cannot be transferred."
+        "title_hi": "संपत्ति अंतरण अधिनियम",
+        "details": "<strong>Sec 54 (Sale):</strong> Transfer of ownership. <br><strong>Sec 58 (Mortgage):</strong> Transfer of interest. <br><strong>Sec 105 (Lease):</strong> Transfer of right to enjoy. <br><strong>Lis Pendens (Sec 52):</strong> Property under dispute in court cannot be transferred.",
+        "details_hi": "<strong>धारा 54 (बिक्री):</strong> स्वामित्व का हस्तांतरण। <br><strong>धारा 58 (गिरवी):</strong> ब्याज का हस्तांतरण। <br><strong>धारा 105 (पट्टा):</strong> भोगने के अधिकार का हस्तांतरण। <br><strong>लंबित वाद (धारा 52):</strong> अदालत में विवाद के तहत संपत्ति हस्तांतरित नहीं की जा सकती।"
     },
     {
         "year": "2006",
-        "title": "Forest Rights Act (FRA)",
-        "details": "Recognizes rights of forest dwellers. <br><strong>IFR/CFR:</strong> Individual/Community Rights. <br><strong>FRC:</strong> Forest Rights Committee verify claims. <br><strong>Patwari:</strong> Verifies revenue records for claims."
+        "title": "Forest Rights Act (FRA)", 
+        "title_hi": "वन अधिकार अधिनियम (FRA)",
+        "details": "Recognizes rights of forest dwellers. <br><strong>IFR/CFR:</strong> Individual/Community Rights. <br><strong>FRC:</strong> Forest Rights Committee verify claims. <br><strong>Patwari:</strong> Verifies revenue records for claims.",
+        "details_hi": "वनवासियों के अधिकारों को मान्यता देता है। <br><strong>IFR/CFR:</strong> व्यक्तिगत/सामुदायिक अधिकार। <br><strong>FRC:</strong> वन अधिकार समिति दावों का सत्यापन करती है। <br><strong>पटवारी:</strong> दावों के लिए राजस्व रिकॉर्ड सत्यापित करता है।"
     },
     {
         "year": "1872",
-        "title": "Indian Evidence Act",
-        "details": "<strong>Sec 35:</strong> Relevancy of public record entries (Jamabandi). <br><strong>Sec 74:</strong> Public Documents. <br><strong>Sec 114:</strong> Court presumes official acts have been regularly performed."
+        "title": "Indian Evidence Act", 
+        "title_hi": "भारतीय साक्ष्य अधिनियम",
+        "details": "<strong>Sec 35:</strong> Relevancy of public record entries (Jamabandi). <br><strong>Sec 74:</strong> Public Documents. <br><strong>Sec 114:</strong> Court presumes official acts have been regularly performed.",
+        "details_hi": "<strong>धारा 35:</strong> सार्वजनिक रिकॉर्ड प्रविष्टियों (जमाबंदी) की प्रासंगिकता। <br><strong>धारा 74:</strong> सार्वजनिक दस्तावेज। <br><strong>धारा 114:</strong> अदालत मानती है कि आधिकारिक कार्य नियमित रूप से किए गए हैं।"
     },
     {
         "year": "1977",
-        "title": "HP Town & Country Planning Act",
-        "details": "<strong>TCP:</strong> Regulates land use. <br><strong>Land Use Change:</strong> Permission required to convert agricultural land to commercial in planning areas. <br><strong>Patwari:</strong> Reports violation of land use."
+        "title": "HP Town & Country Planning Act", 
+        "title_hi": "हि.प्र. नगर एवं ग्राम नियोजन अधिनियम",
+        "details": "<strong>TCP:</strong> Regulates land use. <br><strong>Land Use Change:</strong> Permission required to convert agricultural land to commercial in planning areas. <br><strong>Patwari:</strong> Reports violation of land use.",
+        "details_hi": "<strong>TCP:</strong> भूमि उपयोग को नियंत्रित करता है। <br><strong>भूमि उपयोग परिवर्तन:</strong> योजना क्षेत्रों में कृषि भूमि को वाणिज्यिक में बदलने के लिए अनुमति आवश्यक है। <br><strong>पटवारी:</strong> भूमि उपयोग के उल्लंघन की रिपोर्ट करता है।"
     },
     {
         "year": "1963",
-        "title": "Specific Relief Act",
-        "details": "<strong>Section 6:</strong> Summary suit for possession by person dispossessed without consent (within 6 months). Speedier remedy than regular title suit."
+        "title": "Specific Relief Act", 
+        "title_hi": "विनिर्दिष्ट अनुतोष अधिनियम",
+        "details": "<strong>Section 6:</strong> Summary suit for possession by person dispossessed without consent (within 6 months). Speedier remedy than regular title suit.",
+        "details_hi": "<strong>धारा 6:</strong> सहमति के बिना बेदखल किए गए व्यक्ति द्वारा कब्जे के लिए सारांश मुकदमा (6 महीने के भीतर)। नियमित शीर्षक मुकदमे की तुलना में त्वरित उपाय।"
     },
     {
         "year": "2005",
-        "title": "Right to Information Act",
-        "details": "<strong>Transparency:</strong> Access to revenue records. <br><strong>PIO:</strong> Tehsildar/Naib Tehsildar. <br><strong>Time:</strong> 30 days. <br><strong>Exemption:</strong> Personal info unless public interest warrants."
+        "title": "Right to Information Act", 
+        "title_hi": "सूचना का अधिकार अधिनियम",
+        "details": "<strong>Transparency:</strong> Access to revenue records. <br><strong>PIO:</strong> Tehsildar/Naib Tehsildar. <br><strong>Time:</strong> 30 days. <br><strong>Exemption:</strong> Personal info unless public interest warrants.",
+        "details_hi": "<strong>पारदर्शिता:</strong> राजस्व रिकॉर्ड तक पहुंच। <br><strong>PIO:</strong> तहसीलदार/नायब तहसीलदार। <br><strong>समय:</strong> 30 दिन। <br><strong>छूट:</strong> व्यक्तिगत जानकारी जब तक कि सार्वजनिक हित वारंट न हो।"
     },
     {
         "year": "1882",
-        "title": "Indian Easements Act",
-        "details": "<strong>Right of Way:</strong> Access paths. <br><strong>Bartan Rights:</strong> Customary rights (grazing, water) recorded in Wajib-ul-arz. <br><strong>Prescription:</strong> Rights acquired by 20 years continuous use."
+        "title": "Indian Easements Act", 
+        "title_hi": "भारतीय सुखाचार अधिनियम",
+        "details": "<strong>Right of Way:</strong> Access paths. <br><strong>Bartan Rights:</strong> Customary rights (grazing, water) recorded in Wajib-ul-arz. <br><strong>Prescription:</strong> Rights acquired by 20 years continuous use.",
+        "details_hi": "<strong>रास्ते का अधिकार:</strong> पहुंच पथ। <br><strong>बर्तन अधिकार:</strong> वाजिब-उल-अर्ज में दर्ज प्रथागत अधिकार (चराई, पानी)। <br><strong>चिरभोग (Prescription):</strong> 20 साल के निरंतर उपयोग द्वारा प्राप्त अधिकार।"
     },
     {
         "year": "1971",
-        "title": "HP Public Premises (Eviction) Act",
-        "details": "<strong>Scope:</strong> Evicting unauthorized occupants from Govt land/buildings. <br><strong>Authority:</strong> Collector. <br><strong>Procedure:</strong> Show cause notice -> Hearing -> Eviction Order."
+        "title": "HP Public Premises (Eviction) Act", 
+        "title_hi": "हि.प्र. सार्वजनिक परिसर (बेदखली) अधिनियम",
+        "details": "<strong>Scope:</strong> Evicting unauthorized occupants from Govt land/buildings. <br><strong>Authority:</strong> Collector. <br><strong>Procedure:</strong> Show cause notice -> Hearing -> Eviction Order.",
+        "details_hi": "<strong>दायरा:</strong> सरकारी भूमि/भवनों से अनधिकृत कब्जाधारियों को बेदखल करना। <br><strong>प्राधिकरण:</strong> कलेक्टर। <br><strong>प्रक्रिया:</strong> कारण बताओ नोटिस -> सुनवाई -> बेदखली आदेश।"
     },
     {
         "year": "1968",
-        "title": "HP Court Fees Act",
-        "details": "Prescribes fees for revenue applications. <br><strong>Schedule II:</strong> Fixed fees (e.g., Application for Partition). <br><strong>Ad Valorem:</strong> Fee based on land value for civil suits. <br><strong>Revenue Petition:</strong> Requires specific court fee stamp."
+        "title": "HP Court Fees Act", 
+        "title_hi": "हि.प्र. कोर्ट फीस अधिनियम",
+        "details": "Prescribes fees for revenue applications. <br><strong>Schedule II:</strong> Fixed fees (e.g., Application for Partition). <br><strong>Ad Valorem:</strong> Fee based on land value for civil suits. <br><strong>Revenue Petition:</strong> Requires specific court fee stamp.",
+        "details_hi": "राजस्व आवेदनों के लिए शुल्क निर्धारित करता है। <br><strong>अनुसूची II:</strong> निश्चित शुल्क (जैसे, विभाजन के लिए आवेदन)। <br><strong>मूल्यानुसार (Ad Valorem):</strong> दीवानी मुकदमों के लिए भूमि मूल्य पर आधारित शुल्क। <br><strong>राजस्व याचिका:</strong> विशिष्ट कोर्ट फीस स्टाम्प की आवश्यकता है।"
     },
     {
         "year": "1974",
-        "title": "HP Utilization of Surplus Area Scheme",
-        "details": "Operationalizes Ceiling Act. <br><strong>Allotment:</strong> Surplus land allotted to landless labourers/small farmers. <br><strong>Condition:</strong> Grantee cannot transfer land for 20 years. <br><strong>Purpose:</strong> Agriculture only."
+        "title": "HP Utilization of Surplus Area Scheme", 
+        "title_hi": "हि.प्र. अधिशेष क्षेत्र उपयोग योजना",
+        "details": "Operationalizes Ceiling Act. <br><strong>Allotment:</strong> Surplus land allotted to landless labourers/small farmers. <br><strong>Condition:</strong> Grantee cannot transfer land for 20 years. <br><strong>Purpose:</strong> Agriculture only.",
+        "details_hi": "सीलिंग एक्ट को संचालित करता है। <br><strong>आवंटन:</strong> भूमिहीन मजदूरों/छोटे किसानों को अधिशेष भूमि आवंटित की जाती है। <br><strong>शर्त:</strong> ग्रांटी 20 साल तक जमीन हस्तांतरित नहीं कर सकता। <br><strong>उद्देश्य:</strong> केवल कृषि।"
     },
     {
         "year": "1988",
-        "title": "Benami Transactions Act",
-        "details": "<strong>Prohibition:</strong> Bans holding property in another's name to hide beneficial ownership. <br><strong>HP Context:</strong> Checks non-agriculturists buying land in name of agriculturists (Benamidar) to bypass Sec 118."
+        "title": "Benami Transactions Act", 
+        "title_hi": "बेनामी लेनदेन अधिनियम",
+        "details": "<strong>Prohibition:</strong> Bans holding property in another's name to hide beneficial ownership. <br><strong>HP Context:</strong> Checks non-agriculturists buying land in name of agriculturists (Benamidar) to bypass Sec 118.",
+        "details_hi": "<strong>निषेध:</strong> लाभकारी स्वामित्व को छिपाने के लिए दूसरे के नाम पर संपत्ति रखने पर प्रतिबंध लगाता है। <br><strong>HP संदर्भ:</strong> धारा 118 को बायपास करने के लिए कृषकों (बेनामीदार) के नाम पर जमीन खरीदने वाले गैर-कृषकों की जाँच करता है।"
     },
     {
         "year": "1976",
-        "title": "HP Relief of Agricultural Indebtedness Act",
-        "details": "Protects marginal farmers/laborers/artisans. <br><strong>Moratorium:</strong> Stays repayment of private debts for eligible debtors. <br><strong>Patwari:</strong> Certifies status as marginal farmer/landless labourer."
+        "title": "HP Relief of Agricultural Indebtedness Act", 
+        "title_hi": "हि.प्र. कृषि ऋणग्रस्तता राहत अधिनियम",
+        "details": "Protects marginal farmers/laborers/artisans. <br><strong>Moratorium:</strong> Stays repayment of private debts for eligible debtors. <br><strong>Patwari:</strong> Certifies status as marginal farmer/landless labourer.",
+        "details_hi": "सीमांत किसानों/मजदूरों/कारीगरों की रक्षा करता है। <br><strong>मोरेटोरियम:</strong> पात्र देनदारों के लिए निजी ऋणों के पुनर्भुगतान पर रोक लगाता है। <br><strong>पटवारी:</strong> सीमांत किसान/भूमिहीन मजदूर के रूप में स्थिति प्रमाणित करता है।"
     },
     {
         "year": "Rules",
         "title": "HP Tenancy & Land Reforms Rules", 
-        "details": "<strong>Form LR-V:</strong> Application form for Resumption of land by landowner. <br><strong>Form LR-IX:</strong> Form for conferring proprietary rights on tenants. <br><strong>Rule 38-A:</strong> Procedure/Conditions for Sec 118 permission."
+        "title_hi": "हि.प्र. काश्तकारी और भूमि सुधार नियम",
+        "details": "<strong>Form LR-V:</strong> Application form for Resumption of land by landowner. <br><strong>Form LR-IX:</strong> Form for conferring proprietary rights on tenants. <br><strong>Rule 38-A:</strong> Procedure/Conditions for Sec 118 permission.",
+        "details_hi": "<strong>फॉर्म LR-V:</strong> भूस्वामी द्वारा भूमि के पुनर्ग्रहण के लिए आवेदन पत्र। <br><strong>फॉर्म LR-IX:</strong> किरायेदारों को मालिकाना अधिकार प्रदान करने के लिए फॉर्म। <br><strong>नियम 38-A:</strong> धारा 118 की अनुमति के लिए प्रक्रिया/शर्तें।"
     },
     {
         "year": "1976",
-        "title": "HP Minor Canals Act",
-        "details": "<strong>Scope:</strong> Manages private/state 'Kuhls' (Irrigation Channels). <br><strong>Record of Irrigation:</strong> Prepared by Revenue Officer. <br><strong>Water Mills (Gharats):</strong> Rights and disputes regarding water flow for mills are settled under this."
+        "title": "HP Minor Canals Act", 
+        "title_hi": "हि.प्र. लघु नहर अधिनियम",
+        "details": "<strong>Scope:</strong> Manages private/state 'Kuhls' (Irrigation Channels). <br><strong>Record of Irrigation:</strong> Prepared by Revenue Officer. <br><strong>Water Mills (Gharats):</strong> Rights and disputes regarding water flow for mills are settled under this.",
+        "details_hi": "<strong>दायरा:</strong> निजी/राज्य 'कूहल' (सिंचाई चैनल) का प्रबंधन करता है। <br><strong>सिंचाई का रिकॉर्ड:</strong> राजस्व अधिकारी द्वारा तैयार किया जाता है। <br><strong>पनचक्की (घराट):</strong> मिलों के लिए जल प्रवाह के संबंध में अधिकार और विवाद इसके तहत निपटाए जाते हैं।"
     },
     {
         "year": "Manual",
-        "title": "HP Settlement Manual",
-        "details": "<strong>Assessment Circles:</strong> Grouping villages with similar soil/climate. <br><strong>Net Assets:</strong> Calculation basis for Land Revenue (Standard is 1/4th of Net Assets). <br><strong>Soil Classification:</strong> Detailed criteria for 'Barani', 'Chahi', 'Khadetar'."
+        "title": "HP Settlement Manual", 
+        "title_hi": "हि.प्र. बंदोबस्त मैनुअल",
+        "details": "<strong>Assessment Circles:</strong> Grouping villages with similar soil/climate. <br><strong>Net Assets:</strong> Calculation basis for Land Revenue (Standard is 1/4th of Net Assets). <br><strong>Soil Classification:</strong> Detailed criteria for 'Barani', 'Chahi', 'Khadetar'.",
+        "details_hi": "<strong>मूल्यांकन मंडल:</strong> समान मिट्टी/जलवायु वाले गांवों का समूहन। <br><strong>शुद्ध संपत्ति:</strong> भू-राजस्व के लिए गणना आधार (मानक शुद्ध संपत्ति का 1/4 है)। <br><strong>मृदा वर्गीकरण:</strong> 'बारानी', 'चाही', 'खदेतर' के लिए विस्तृत मानदंड।"
     },
     {
         "year": "2013",
-        "title": "HP Lease Rules",
-        "details": "<strong>Govt Land:</strong> Rules for leasing to Hydro Projects/Industries. <br><strong>Period:</strong> Typically 40 years (Hydro), 99 years (others). <br><strong>Patwari Duty:</strong> Annual verification of lease conditions (Encroachment/Misuse)."
+        "title": "HP Lease Rules", 
+        "title_hi": "हि.प्र. पट्टा नियम",
+        "details": "<strong>Govt Land:</strong> Rules for leasing to Hydro Projects/Industries. <br><strong>Period:</strong> Typically 40 years (Hydro), 99 years (others). <br><strong>Patwari Duty:</strong> Annual verification of lease conditions (Encroachment/Misuse).",
+        "details_hi": "<strong>सरकारी भूमि:</strong> हाइड्रो प्रोजेक्ट्स/उद्योगों को पट्टे पर देने के नियम। <br><strong>अवधि:</strong> आमतौर पर 40 साल (हाइड्रो), 99 साल (अन्य)। <br><strong>पटवारी कर्तव्य:</strong> पट्टे की शर्तों (अतिक्रमण/दुरुपयोग) का वार्षिक सत्यापन।"
     },
     {
         "year": "Policy",
-        "title": "Landless Allotment Scheme",
-        "details": "<strong>Target:</strong> Families with no house/land. <br><strong>Grant:</strong> 3 Biswa (Rural) / 2 Biswa (Urban) for housing. <br><strong>Condition:</strong> Land cannot be transferred. Patwari identifies available 'Gair Mumkin' or 'Shamlat' land for this."
+        "title": "Landless Allotment Scheme", 
+        "title_hi": "भूमिहीन आवंटन योजना",
+        "details": "<strong>Target:</strong> Families with no house/land. <br><strong>Grant:</strong> 3 Biswa (Rural) / 2 Biswa (Urban) for housing. <br><strong>Condition:</strong> Land cannot be transferred. Patwari identifies available 'Gair Mumkin' or 'Shamlat' land for this.",
+        "details_hi": "<strong>लक्ष्य:</strong> बिना घर/जमीन वाले परिवार। <br><strong>अनुदान:</strong> आवास के लिए 3 बिस्वा (ग्रामीण) / 2 बिस्वा (शहरी)। <br><strong>शर्त:</strong> जमीन हस्तांतरित नहीं की जा सकती। पटवारी इसके लिए उपलब्ध 'गैर मुमकिन' या 'शामलात' भूमि की पहचान करता है।"
     },
     {
         "year": "1969",
-        "title": "HP Instruments (Control of Nuisance) Act",
-        "details": "<strong>Relevance:</strong> Often cited in land disputes regarding noise/nuisance affecting agriculture/habitation. <br><strong>Authority:</strong> District Magistrate/SDM. <br><strong>Intersection:</strong> Revenue officers often execute orders."
+        "title": "HP Instruments (Control of Nuisance) Act", 
+        "title_hi": "हि.प्र. उपकरण (उपद्रव नियंत्रण) अधिनियम",
+        "details": "<strong>Relevance:</strong> Often cited in land disputes regarding noise/nuisance affecting agriculture/habitation. <br><strong>Authority:</strong> District Magistrate/SDM. <br><strong>Intersection:</strong> Revenue officers often execute orders.",
+        "details_hi": "<strong>प्रासंगिकता:</strong> अक्सर कृषि/आवास को प्रभावित करने वाले शोर/उपद्रव के संबंध में भूमि विवादों में उद्धृत किया जाता है। <br><strong>प्राधिकरण:</strong> जिला मजिस्ट्रेट/एसडीएम। <br><strong>चौराहा:</strong> राजस्व अधिकारी अक्सर आदेशों का निष्पादन करते हैं।"
     }
 ]
