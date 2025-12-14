@@ -23,6 +23,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Noto Sans Devanagari for Hindi Support -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .font-hindi { font-family: 'Noto Sans Devanagari', sans-serif; }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen font-sans">
 
@@ -44,7 +50,8 @@
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-[95px] pb-8 flex-grow">
+    <!-- REMOVED: pt-[95px] to reduce space. Changed to pt-6 for standard spacing -->
+    <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-6 pb-8 flex-grow">
         
         <div id="app-content" class="max-w-5xl mx-auto">
             
@@ -94,36 +101,47 @@
                         </div>
 
                         <!-- Question Area -->
-                        <div class="lg:col-span-8 bg-white rounded-lg p-3 md:p-5 min-h-[300px] flex flex-col relative">
-                            <div id="quiz-loader" class="hidden absolute inset-0 bg-white z-20 flex flex-col items-center justify-center">
+                        <!-- FIX: Reduced height to h-[480px] md:h-[520px] for a denser, more compact look while remaining static. Added max-w-3xl to squeeze horizontally. -->
+                        <div class="lg:col-span-8 bg-white rounded-lg p-3 md:p-4 h-[480px] md:h-[520px] flex flex-col relative shadow-sm border border-slate-200 mx-auto w-full max-w-3xl">
+                            <div id="quiz-loader" class="hidden absolute inset-0 bg-white z-20 flex flex-col items-center justify-center rounded-lg">
                                 <i class="fa-solid fa-circle-notch fa-spin text-2xl text-blue-600" aria-hidden="true"></i>
                             </div>
 
                             <div id="question-area" class="flex flex-col h-full">
-                                <div class="flex justify-between items-center mb-3 md:mb-4">
+                                <!-- Top Bar: Q Number & Progress (Compact MB) -->
+                                <div class="flex justify-between items-center mb-2 flex-shrink-0">
                                     <span class="text-[10px] font-bold text-blue-600 uppercase bg-blue-50 px-2 py-0.5 rounded font-sans">Q <span id="q-number">1</span></span>
                                     <div class="h-1 w-20 bg-slate-100 rounded-full overflow-hidden">
                                         <div id="progress-bar" class="h-full bg-blue-500 w-0 transition-all duration-300"></div>
                                     </div>
                                 </div>
                                 
-                                <h3 id="q-text" class="text-xs md:text-sm font-bold text-slate-900 mb-3 md:mb-4 leading-relaxed font-heading text-center md:text-left">Loading...</h3>
-                                
-                                <div id="options-area" class="space-y-2 flex-grow font-sans text-[11px] md:text-sm"></div>
+                                <!-- Scrollable Question Content Area -->
+                                <div class="flex-grow overflow-y-auto pr-2 custom-scrollbar">
+                                    <div class="mb-3">
+                                        <h3 id="q-text" class="text-xs md:text-sm font-bold text-slate-900 leading-snug font-heading">Loading...</h3>
+                                        <!-- Container for Hindi Question -->
+                                        <h3 id="q-text-hi" class="text-xs md:text-sm font-bold text-slate-700 leading-snug font-hindi mt-1.5 hidden border-t border-slate-100 pt-1.5"></h3>
+                                    </div>
+                                    
+                                    <!-- Dense Options Area -->
+                                    <div id="options-area" class="space-y-1.5 font-sans text-[11px] md:text-sm pb-2"></div>
 
-                                <div id="feedback-area" class="mt-3 md:mt-4 hidden p-2 md:p-3 rounded text-[10px] md:text-[11px] font-medium border-l-2 font-sans"></div>
+                                    <div id="feedback-area" class="mt-2 hidden p-2 rounded text-[10px] md:text-[11px] font-medium border-l-2 font-sans mb-1"></div>
+                                </div>
                                 
-                                <div class="mt-3 md:mt-4 flex justify-center md:justify-end gap-2">
-                                    <button id="prev-btn" class="hidden px-4 py-2 bg-slate-200 text-slate-700 text-[10px] md:text-xs font-bold rounded hover:bg-slate-300 transition font-sans">
+                                <!-- Bottom Bar: Navigation Buttons (Compact Top Border) -->
+                                <div class="mt-2 pt-2 border-t border-slate-100 flex justify-between items-center flex-shrink-0">
+                                    <button id="prev-btn" class="invisible px-3 py-1.5 bg-slate-100 text-slate-600 text-[10px] md:text-xs font-bold rounded hover:bg-slate-200 transition font-sans">
                                         <i class="fa-solid fa-arrow-left mr-1" aria-hidden="true"></i> Prev
                                     </button>
-                                    <button id="next-btn" class="hidden px-4 py-2 bg-slate-900 text-white text-[10px] md:text-xs font-bold rounded hover:bg-slate-800 transition font-sans">
+                                    <button id="next-btn" class="hidden px-4 py-1.5 bg-slate-900 text-white text-[10px] md:text-xs font-bold rounded hover:bg-slate-800 transition font-sans shadow-md">
                                         Next <i class="fa-solid fa-arrow-right ml-1" aria-hidden="true"></i>
                                     </button>
                                 </div>
                             </div>
 
-                            <div id="result-area" class="hidden text-center py-10 flex-col items-center justify-center h-full">
+                            <div id="result-area" class="hidden absolute inset-0 bg-white z-10 flex-col items-center justify-center rounded-lg text-center p-6">
                                 <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-2xl mb-4 shadow-sm">
                                     <i class="fa-solid fa-trophy"></i>
                                 </div>
@@ -253,11 +271,25 @@
             const q = quizQuestions[currentQ];
             // Normalize question text property (some files use q, some q_en)
             const questionText = q.q || q.q_en;
+            // Get Hindi question text if available
+            const questionTextHi = q.q_hi;
+            
             // Normalize options property (some files use options, some options_en)
             const options = q.options || q.options_en;
+            // Get Hindi options if available
+            const optionsHi = q.options_hi;
 
             document.getElementById('q-number').innerText = currentQ + 1;
             document.getElementById('q-text').innerText = questionText;
+            
+            // Handle Hindi Question Display
+            const qTextHiEl = document.getElementById('q-text-hi');
+            if (questionTextHi) {
+                qTextHiEl.innerText = questionTextHi;
+                qTextHiEl.classList.remove('hidden');
+            } else {
+                qTextHiEl.classList.add('hidden');
+            }
             
             const progressPct = ((currentQ) / quizQuestions.length) * 100;
             document.getElementById('progress-bar').style.width = `${progressPct}%`;
@@ -270,10 +302,13 @@
             const prevBtn = document.getElementById('prev-btn');
             
             // Show prev button if not first question
+            // FIX: Use visibility: hidden/visible instead of display: none to maintain layout stability
             if (currentQ > 0) {
-                prevBtn.classList.remove('hidden');
+                prevBtn.classList.remove('invisible');
+                prevBtn.classList.add('visible');
             } else {
-                prevBtn.classList.add('hidden');
+                prevBtn.classList.add('invisible');
+                prevBtn.classList.remove('visible');
             }
 
             // Check if this question was already answered
@@ -284,8 +319,16 @@
             
             options.forEach((opt, idx) => {
                 const btn = document.createElement('button');
-                btn.className = "w-full text-left p-3 md:p-4 rounded-xl border-2 border-slate-200 hover:border-blue-200 hover:bg-blue-50 transition text-slate-700 font-medium relative group";
-                btn.innerHTML = `<span class="inline-block w-6 font-bold text-slate-400 group-hover:text-blue-500">${String.fromCharCode(65+idx)}.</span> ${opt}`;
+                btn.className = "w-full text-left p-3 md:p-3.5 rounded-xl border-2 border-slate-100 hover:border-blue-200 hover:bg-blue-50 transition text-slate-700 font-medium relative group text-xs md:text-sm";
+                
+                // Construct Option HTML (Bilingual if available)
+                let optionContent = `<div class="flex gap-3"><span class="flex-shrink-0 inline-flex items-center justify-center w-5 h-5 rounded-full bg-slate-100 text-slate-500 text-[10px] font-bold group-hover:bg-blue-100 group-hover:text-blue-600 transition">${String.fromCharCode(65+idx)}</span> <span>${opt}</span></div>`;
+                
+                if (optionsHi && optionsHi[idx]) {
+                    optionContent += `<div class="mt-1 ml-8 text-slate-600 font-hindi text-xs border-t border-slate-50 pt-1">${optionsHi[idx]}</div>`;
+                }
+                
+                btn.innerHTML = optionContent;
                 
                 // If answered, disable and show state
                 if (alreadyAnswered) {
@@ -293,17 +336,17 @@
                     btn.classList.add('cursor-not-allowed', 'opacity-70');
                     // Highlight selected
                     if (idx === alreadyAnswered.selected) {
-                        btn.classList.remove('border-slate-200', 'hover:border-blue-200', 'hover:bg-blue-50');
+                        btn.classList.remove('border-slate-100', 'hover:border-blue-200', 'hover:bg-blue-50');
                         if (alreadyAnswered.isCorrect) {
-                            btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+                            btn.classList.add('bg-green-50', 'border-green-500', 'text-green-800');
                         } else {
-                            btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+                            btn.classList.add('bg-red-50', 'border-red-500', 'text-red-800');
                         }
                     }
                     // Always show correct answer if wrong was selected
                     if (!alreadyAnswered.isCorrect && idx === q.correct) {
-                        btn.classList.remove('border-slate-200', 'opacity-70');
-                        btn.classList.add('bg-green-50', 'border-green-300', 'text-green-700');
+                        btn.classList.remove('border-slate-100', 'opacity-70');
+                        btn.classList.add('bg-green-50', 'border-green-400', 'text-green-700');
                     }
                 } else {
                     btn.onclick = () => checkAnswer(idx, btn, q);
@@ -314,7 +357,11 @@
 
             // If answered, show feedback and next button
             if (alreadyAnswered) {
-                showFeedback(alreadyAnswered.isCorrect, q.explanation);
+                // If explanation is available in Hindi (q.explanation_hi), we could show that too, 
+                // but currently JSONs only seem to have 'explanation'.
+                // If we want to show Hindi question in feedback for context, we can.
+                // For now, let's keep explanation as is.
+                showFeedback(alreadyAnswered.isCorrect, q.explanation, q.q_hi);
                 nextBtn.classList.remove('hidden');
             } else {
                 nextBtn.classList.add('hidden');
@@ -346,23 +393,23 @@
 
             // UI Feedback
             if (isCorrect) {
-                btn.classList.remove('border-slate-200', 'hover:border-blue-200', 'hover:bg-blue-50');
-                btn.classList.add('bg-green-100', 'border-green-500', 'text-green-800');
+                btn.classList.remove('border-slate-100', 'hover:border-blue-200', 'hover:bg-blue-50');
+                btn.classList.add('bg-green-50', 'border-green-500', 'text-green-800');
             } else {
-                btn.classList.remove('border-slate-200', 'hover:border-blue-200', 'hover:bg-blue-50');
-                btn.classList.add('bg-red-100', 'border-red-500', 'text-red-800');
+                btn.classList.remove('border-slate-100', 'hover:border-blue-200', 'hover:bg-blue-50');
+                btn.classList.add('bg-red-50', 'border-red-500', 'text-red-800');
                 
                 // Highlight correct one
                 const correctBtn = buttons[q.correct];
-                correctBtn.classList.remove('opacity-70', 'border-slate-200');
-                correctBtn.classList.add('bg-green-50', 'border-green-300', 'text-green-700');
+                correctBtn.classList.remove('opacity-70', 'border-slate-100');
+                correctBtn.classList.add('bg-green-50', 'border-green-400', 'text-green-700');
             }
 
-            showFeedback(isCorrect, q.explanation);
+            showFeedback(isCorrect, q.explanation, q.q_hi);
             document.getElementById('next-btn').classList.remove('hidden');
         }
 
-        function showFeedback(isCorrect, explanation) {
+        function showFeedback(isCorrect, explanation, q_hi) {
             const feedback = document.getElementById('feedback-area');
             feedback.classList.remove('hidden');
             
@@ -371,6 +418,8 @@
                 feedback.innerHTML = `<div class="flex items-start gap-3"><i class="fa-solid fa-check-circle text-lg mt-0.5" aria-hidden="true"></i><div><strong>Correct!</strong><p class="mt-1 opacity-90">${explanation}</p></div></div>`;
             } else {
                 feedback.className = "mt-3 md:mt-6 p-3 md:p-4 rounded-xl text-sm font-medium border-l-4 bg-red-50 text-red-800 border-red-500";
+                // If question was hindi, maybe show translation of explanation? 
+                // Currently only standard explanation available.
                 feedback.innerHTML = `<div class="flex items-start gap-3"><i class="fa-solid fa-xmark-circle text-lg mt-0.5" aria-hidden="true"></i><div><strong>Incorrect.</strong><p class="mt-1 opacity-90">${explanation}</p></div></div>`;
             }
         }
