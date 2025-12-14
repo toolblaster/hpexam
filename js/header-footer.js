@@ -57,15 +57,11 @@ const AppComponents = {
     `,
 
     // TECHNICAL PAGES NAVIGATION
+    // Updated to use ${rootPath} for all links to support nested folder structures (e.g. patwari-mock-test/)
     navTechnicalContent: (rootPath) => `
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
             <div class="flex justify-between items-center h-full">
                 <div class="flex items-center gap-3">
-                    <!-- 
-                       CLEAN URL FIX: 
-                       Changed href="${rootPath}/index.html" to href="${rootPath}/"
-                       If rootPath is "..", this becomes "../" which resolves to domain.com/ instead of domain.com/index.html
-                    -->
                     <a href="${rootPath}/" aria-label="Back to Exam Hub" class="flex items-center gap-2 group text-slate-500 hover:text-blue-600 transition">
                         <i class="fa-solid fa-arrow-left text-sm" aria-hidden="true"></i>
                         <span class="text-xs font-bold uppercase tracking-wider hidden sm:block font-heading">Hub</span>
@@ -76,19 +72,19 @@ const AppComponents = {
                 
                 <!-- Compact Desktop Menu -->
                 <div class="hidden md:flex space-x-1 items-center bg-slate-100 p-1 rounded-lg">
-                    <!-- UPDATED LINKS TO RENAMED TECHNICAL PAGE -->
-                    <a href="hp-technical-land-record-and-revenue.html#terminology" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Terms</a>
-                    <a href="hp-technical-land-record-and-revenue.html#measurements" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Calc</a>
-                    <a href="hp-technical-land-record-and-revenue.html#laws" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Laws</a>
-                    <!-- CHANGED LINK TO NEW MOCK TEST 1 PAGE -->
-                    <a href="hp-patwari-mock-test-1-land-and-revenue.html" class="text-[11px] font-bold text-white bg-blue-600 px-3 py-1.5 rounded-md shadow-sm hover:bg-blue-700 transition ml-1 font-sans">
+                    <!-- Links updated to absolute-like paths using rootPath -->
+                    <!-- Added onclick="window.location.hash='section-id'" logic for smoother in-page navigation if already on page -->
+                    <a href="${rootPath}/hp-patwari-exam/hp-technical-land-record-and-revenue.html#terminology" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Terms</a>
+                    <a href="${rootPath}/hp-patwari-exam/hp-technical-land-record-and-revenue.html#measurements" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Calc</a>
+                    <a href="${rootPath}/hp-patwari-exam/hp-technical-land-record-and-revenue.html#laws" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Laws</a>
+                    <!-- CHANGED LINK TO NEW MOCK TEST LOCATION -->
+                    <a href="${rootPath}/hp-patwari-exam/patwari-mock-test/hp-patwari-mock-test-1-land-and-revenue.html" class="text-[11px] font-bold text-white bg-blue-600 px-3 py-1.5 rounded-md shadow-sm hover:bg-blue-700 transition ml-1 font-sans">
                         MCQ Bank
                     </a>
                 </div>
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <!-- ACCESSIBILITY: Added aria-label for button name -->
                     <button id="mobile-menu-btn" aria-label="Toggle navigation menu" class="text-slate-600 p-2 focus:outline-none">
                         <i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
                     </button>
@@ -99,12 +95,11 @@ const AppComponents = {
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 shadow-lg absolute w-full left-0 top-14 z-40">
             <div class="grid grid-cols-4 p-2 gap-2 text-center">
-                <!-- UPDATED LINKS TO RENAMED TECHNICAL PAGE -->
-                <a href="hp-technical-land-record-and-revenue.html#terminology" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Terms</a>
-                <a href="hp-technical-land-record-and-revenue.html#measurements" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Calc</a>
-                <a href="hp-technical-land-record-and-revenue.html#laws" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Laws</a>
-                <!-- CHANGED LINK TO NEW MOCK TEST 1 PAGE -->
-                <a href="hp-patwari-mock-test-1-land-and-revenue.html" class="text-[10px] font-bold text-blue-600 bg-blue-50 p-2 rounded font-sans">Quiz</a>
+                <a href="${rootPath}/hp-patwari-exam/hp-technical-land-record-and-revenue.html#terminology" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Terms</a>
+                <a href="${rootPath}/hp-patwari-exam/hp-technical-land-record-and-revenue.html#measurements" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Calc</a>
+                <a href="${rootPath}/hp-patwari-exam/hp-technical-land-record-and-revenue.html#laws" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Laws</a>
+                <!-- CHANGED LINK TO NEW MOCK TEST LOCATION -->
+                <a href="${rootPath}/hp-patwari-exam/patwari-mock-test/hp-patwari-mock-test-1-land-and-revenue.html" class="text-[10px] font-bold text-blue-600 bg-blue-50 p-2 rounded font-sans">Quiz</a>
             </div>
         </div>
     `
@@ -140,5 +135,18 @@ window.loadHeaderFooter = function(options) {
                 btn.onclick = () => menu.classList.toggle('hidden');
             }
         }
+    }
+
+    // 3. Handle Hash Scroll (Fix for cross-page anchor links)
+    // If the URL has a hash (e.g. #laws), scroll to it after a short delay
+    // to ensure the page layout is stable.
+    if (window.location.hash) {
+        setTimeout(() => {
+            const id = window.location.hash.substring(1);
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 300); // 300ms delay to allow initial rendering/skeletons
     }
 };
