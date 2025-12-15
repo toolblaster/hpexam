@@ -284,11 +284,12 @@
             'sqm': 1.19599      // 1 sqm = 1.196 sq yards approx
         };
 
+        // PATHS UPDATED: Replaced '../patwari-json-data' with 'patwari-json-data'
         const quizFiles = {
-            'intro': '../patwari-json-data/71_mcq_basic_phase_hp_revenue.json',
-            'core': '../patwari-json-data/100_mcq_hp_land_records_surveying_and_revenue_acts.json',
-            'advanced': '../patwari-json-data/100_mcq_advanced_legal_and_numerical.json',
-            'consolidation': '../patwari-json-data/50_mcq_final_phase_consolidation_schemes.json'
+            'intro': 'patwari-json-data/71_mcq_basic_phase_hp_revenue.json',
+            'core': 'patwari-json-data/100_mcq_hp_land_records_surveying_and_revenue_acts.json',
+            'advanced': 'patwari-json-data/100_mcq_advanced_legal_and_numerical.json',
+            'consolidation': 'patwari-json-data/50_mcq_final_phase_consolidation_schemes.json'
         };
 
         async function fetchData(url) {
@@ -529,11 +530,12 @@
 
         async function initApp() {
             try {
+                // PATHS UPDATED: Replaced '../patwari-json-data' with 'patwari-json-data'
                 const [terms, laws, hierarchy, tools] = await Promise.all([
-                    fetchData('../patwari-json-data/terminology_data.json'),
-                    fetchData('../patwari-json-data/laws_data.json'),
-                    fetchData('../patwari-json-data/hierarchy_data.json'),
-                    fetchData('../patwari-json-data/tools_data.json')
+                    fetchData('patwari-json-data/terminology_data.json'),
+                    fetchData('patwari-json-data/laws_data.json'),
+                    fetchData('patwari-json-data/hierarchy_data.json'),
+                    fetchData('patwari-json-data/tools_data.json')
                 ]);
 
                 terminologyData = terms;
