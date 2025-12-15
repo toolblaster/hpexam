@@ -48,7 +48,7 @@ const AppComponents = {
                 
                 <div class="flex items-center gap-4">
                     <!-- ACCESSIBILITY: Added aria-label for clearer link purpose -->
-                    <a href="https://hpsssb.hp.gov.in/" target="_blank" aria-label="Visit Official HPSSSB Website" class="text-xs font-semibold text-slate-600 hover:text-blue-600 transition flex items-center gap-1 bg-slate-100 px-3 py-1.5 rounded-full hover:bg-blue-50 font-sans">
+                    <a href="[https://hpsssb.hp.gov.in/](https://hpsssb.hp.gov.in/)" target="_blank" aria-label="Visit Official HPSSSB Website" class="text-xs font-semibold text-slate-600 hover:text-blue-600 transition flex items-center gap-1 bg-slate-100 px-3 py-1.5 rounded-full hover:bg-blue-50 font-sans">
                         Official Site <i class="fa-solid fa-external-link-alt text-[10px]" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -81,6 +81,10 @@ const AppComponents = {
                     <a href="${rootPath}/hp-patwari-exam/patwari-mock-test/hp-patwari-mock-test-1-land-and-revenue.html" class="text-[11px] font-bold text-white bg-blue-600 px-3 py-1.5 rounded-md shadow-sm hover:bg-blue-700 transition ml-1 font-sans">
                         MCQ Bank
                     </a>
+                    <!-- ADDED STUDY NOTES LINK -->
+                    <a href="${rootPath}/hp-patwari-exam/hp-patwari-technical-field-study-notes.html" class="text-[11px] font-bold text-slate-700 bg-white border border-slate-300 px-3 py-1.5 rounded-md hover:bg-slate-50 hover:text-blue-600 hover:border-blue-300 transition ml-1 font-sans shadow-sm">
+                        <i class="fa-solid fa-book-open mr-1"></i> Notes
+                    </a>
                 </div>
 
                 <!-- Mobile menu button -->
@@ -100,6 +104,10 @@ const AppComponents = {
                 <a href="${rootPath}/hp-patwari-exam/hp-technical-land-record-and-revenue.html#laws" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Laws</a>
                 <!-- CHANGED LINK TO NEW MOCK TEST LOCATION -->
                 <a href="${rootPath}/hp-patwari-exam/patwari-mock-test/hp-patwari-mock-test-1-land-and-revenue.html" class="text-[10px] font-bold text-blue-600 bg-blue-50 p-2 rounded font-sans">Quiz</a>
+                <!-- ADDED STUDY NOTES LINK MOBILE -->
+                <a href="${rootPath}/hp-patwari-exam/hp-patwari-technical-field-study-notes.html" class="col-span-4 text-[10px] font-bold text-slate-700 bg-slate-100 border border-slate-200 p-2 rounded font-sans mt-1">
+                    <i class="fa-solid fa-book-open mr-1"></i> Study Notes (14 Topics)
+                </a>
             </div>
         </div>
     `
@@ -138,6 +146,8 @@ window.loadHeaderFooter = function(options) {
     }
 
     // 3. Handle Hash Scroll (Fix for cross-page anchor links)
+    // If the URL has a hash (e.g. #laws), scroll to it after a short delay
+    // to ensure the page layout is stable.
     if (window.location.hash) {
         setTimeout(() => {
             const id = window.location.hash.substring(1);
@@ -145,6 +155,6 @@ window.loadHeaderFooter = function(options) {
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
             }
-        }, 300);
+        }, 300); // 300ms delay to allow initial rendering/skeletons
     }
 };
