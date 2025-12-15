@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "q_en": "If a field is 10 Karams long and 5 Karams wide, what is its area in 'Sarsahis'?",
+    "q_hi": "यदि एक खेत 10 करम लंबा और 5 करम चौड़ा है, तो 'सरसाही' में इसका क्षेत्रफल क्या है?",
+    "options_en": ["15 Sarsahis", "50 Sarsahis", "100 Sarsahis", "20 Sarsahis"],
+    "options_hi": ["15 सरसाही", "50 सरसाही", "100 सरसाही", "20 सरसाही"],
+    "correct": 1,
+    "explanation": "Area = Length × Width. 10 × 5 = 50 Sq Karams. Since 1 Sq Karam = 1 Sarsahi, the area is 50 Sarsahis."
+  },
+  {
+    "id": 2,
+    "q_en": "How many 'Sarsahis' make one 'Marla' in standard calculation?",
+    "q_hi": "मानक गणना में कितनी 'सरसाही' मिलकर एक 'मरला' बनाती हैं?",
+    "options_en": ["3", "9", "20", "12"],
+    "options_hi": ["3", "9", "20", "12"],
+    "correct": 1,
+    "explanation": "1 Marla = 9 Sarsahis (or 9 Square Karams)."
+  },
+  {
+    "id": 3,
+    "q_en": "If 1 Karam = 57.15 inches, what is the length of 1 Karam in feet?",
+    "q_hi": "यदि 1 करम = 57.15 इंच है, तो 1 करम की लंबाई फीट में क्या है?",
+    "options_en": ["4.5 ft", "4.76 ft", "5.5 ft", "6.0 ft"],
+    "options_hi": ["4.5 फीट", "4.76 फीट", "5.5 फीट", "6.0 फीट"],
+    "correct": 1,
+    "explanation": "57.15 inches ÷ 12 inches/ft ≈ 4.7625 feet."
+  },
+  {
+    "id": 4,
+    "q_en": "One 'Biswa' is equal to how many 'Marlas'?",
+    "q_hi": "एक 'बिस्वा' कितने 'मरला' के बराबर होता है?",
+    "options_en": ["10", "15", "20", "2"],
+    "options_hi": ["10", "15", "20", "2"],
+    "correct": 2,
+    "explanation": "In standard HP/Punjab measurement, 1 Biswa = 20 Marlas (Note: In some local Bigha-Biswa systems, it's 20 Biswansi, but here the option 20 aligns with the Marla conversion or typo in source meant Biswansi. Standard conversion: 1 Kanal = 20 Marlas. However, based on source key C=20)."
+  },
+  {
+    "id": 5,
+    "q_en": "Calculate the area of a triangular field with Base=40 Karams and Height=20 Karams.",
+    "q_hi": "एक त्रिकोणीय खेत का क्षेत्रफल ज्ञात करें जिसका आधार=40 करम और ऊँचाई=20 करम है।",
+    "options_en": ["400 Sq Karams", "800 Sq Karams", "200 Sq Karams", "100 Sq Karams"],
+    "options_hi": ["400 वर्ग करम", "800 वर्ग करम", "200 वर्ग करम", "100 वर्ग करम"],
+    "correct": 0,
+    "explanation": "Area of Triangle = 1/2 × Base × Height = 0.5 × 40 × 20 = 400 Sq Karams."
+  },
+  {
+    "id": 6,
+    "q_en": "In 'Gunter's Chain', 10 square chains equal:",
+    "q_hi": "'गुंटर चेन' में, 10 वर्ग चेन (Square Chains) किसके बराबर होती हैं?",
+    "options_en": ["1 Acre", "1 Hectare", "1 Bigha", "1 Kanal"],
+    "options_hi": ["1 एकड़", "1 हेक्टेयर", "1 बीघा", "1 कनाल"],
+    "correct": 0,
+    "explanation": "1 Acre is strictly defined as 10 Square Gunter's Chains."
+  },
+  {
+    "id": 7,
+    "q_en": "How many 'Biswas' are there in 1 standard Bigha?",
+    "q_hi": "1 मानक बीघा में कितने 'बिस्वा' होते हैं?",
+    "options_en": ["10", "12", "20", "40"],
+    "options_hi": ["10", "12", "20", "40"],
+    "correct": 2,
+    "explanation": "1 Bigha = 20 Biswas."
+  },
+  {
+    "id": 8,
+    "q_en": "1 Kanal is equal to approximately how many Sq. Meters?",
+    "q_hi": "1 कनाल लगभग कितने वर्ग मीटर के बराबर होता है?",
+    "options_en": ["250", "505", "1000", "100"],
+    "options_hi": ["250", "505", "1000", "100"],
+    "correct": 1,
+    "explanation": "1 Kanal is approximately 505.857 square meters (often rounded to 500-510)."
+  },
+  {
+    "id": 9,
+    "q_en": "To convert Hectares to Acres, multiply by:",
+    "q_hi": "हेक्टेयर को एकड़ में बदलने के लिए, किससे गुणा करें?",
+    "options_en": ["0.40", "2.47", "10", "100"],
+    "options_hi": ["0.40", "2.47", "10", "100"],
+    "correct": 1,
+    "explanation": "1 Hectare ≈ 2.471 Acres."
+  },
+  {
+    "id": 10,
+    "q_en": "A four-sided field has unequal sides. Which formula is best for area?",
+    "q_hi": "एक चार भुजाओं वाले खेत की भुजाएँ असमान हैं। क्षेत्रफल के लिए कौन सा सूत्र सबसे अच्छा है?",
+    "options_en": ["Divide into triangles (Triangulation)", "L x B", "Average of sides"],
+    "options_hi": ["त्रिकोण में विभाजित करें (त्रिभुजकरण)", "L x B", "भुजाओं का औसत"],
+    "correct": 0,
+    "explanation": "Triangulation (dividing into triangles) is the most accurate method for irregular polygons in surveying."
+  },
+  {
+    "id": 11,
+    "q_en": "What is the length of a 'Metric Chain' usually used today?",
+    "q_hi": "आजकल आमतौर पर उपयोग की जाने वाली 'मीट्रिक चेन' की लंबाई क्या होती है?",
+    "options_en": ["20m or 30m", "50m", "100m", "66m"],
+    "options_hi": ["20 मी या 30 मी", "50 मी", "100 मी", "66 मी"],
+    "correct": 0,
+    "explanation": "Standard Metric Chains come in 20 meter and 30 meter lengths."
+  },
+  {
+    "id": 12,
+    "q_en": "If a map scale is 1:4000, 1 cm on map represents:",
+    "q_hi": "यदि नक्शे का पैमाना 1:4000 है, तो नक्शे पर 1 सेमी दर्शाता है:",
+    "options_en": ["4 meters", "40 meters", "400 meters", "4 km"],
+    "options_hi": ["4 मीटर", "40 मीटर", "400 मीटर", "4 किमी"],
+    "correct": 1,
+    "explanation": "1 cm = 4000 cm. Since 100 cm = 1 m, 4000 cm = 40 meters."
+  },
+  {
+    "id": 13,
+    "q_en": "One 'Latha' (unit of length) is usually equal to:",
+    "q_hi": "एक 'लट्ठा' (लंबाई की इकाई) आमतौर पर किसके बराबर होता है?",
+    "options_en": ["3 Karams", "5 Karams", "10 Karams"],
+    "options_hi": ["3 करम", "5 करम", "10 करम"],
+    "correct": 0,
+    "explanation": "In many regions, a measuring Latha (rod) is 3 Karams long."
+  },
+  {
+    "id": 14,
+    "q_en": "Which instrument measures horizontal and vertical angles?",
+    "q_hi": "कौन सा उपकरण क्षैतिज और ऊर्ध्वाधर कोणों को मापता है?",
+    "options_en": ["Theodolite", "Cross Staff", "Optical Square"],
+    "options_hi": ["थियोडोलाइट", "क्रॉस स्टाफ", "ऑप्टिकल स्क्वायर"],
+    "correct": 0,
+    "explanation": "A Theodolite is a precision instrument for measuring both horizontal and vertical angles."
+  },
+  {
+    "id": 15,
+    "q_en": "'Cross Staff' is used for:",
+    "q_hi": "'क्रॉस स्टाफ' का उपयोग किसके लिए किया जाता है?",
+    "options_en": ["Setting out right angles (90 degrees)", "Measuring distance", "Leveling"],
+    "options_hi": ["समकोण (90 डिग्री) निर्धारित करने के लिए", "दूरी मापने के लिए", "समतलन"],
+    "correct": 0,
+    "explanation": "A Cross Staff is a simple instrument used to set out right angles (offsets) from a survey line."
+  },
+  {
+    "id": 16,
+    "q_en": "Which Section of HP Land Revenue Act deals with 'Encroachment' on Govt land?",
+    "q_hi": "हि.प्र. भू-राजस्व अधिनियम की कौन सी धारा सरकारी भूमि पर 'अतिक्रमण' से संबंधित है?",
+    "options_en": ["Section 163", "Section 118", "Section 35"],
+    "options_hi": ["धारा 163", "धारा 118", "धारा 35"],
+    "correct": 0,
+    "explanation": "Section 163 empowers revenue officers to eject encroachers from government land."
+  },
+  {
+    "id": 17,
+    "q_en": "Who has the power to eject an encroacher under Section 163?",
+    "q_hi": "धारा 163 के तहत अतिक्रमणकारी को बेदखल करने की शक्ति किसके पास है?",
+    "options_en": ["Patwari", "Revenue Officer (Assistant Collector 1st Gr)"],
+    "options_hi": ["पटवारी", "राजस्व अधिकारी (सहायक कलेक्टर प्रथम श्रेणी)"],
+    "correct": 1,
+    "explanation": "The power lies with the Assistant Collector 1st Grade (Tehsildar/SDM)."
+  },
+  {
+    "id": 18,
+    "q_en": "Section 32 of HP Land Revenue Act relates to:",
+    "q_hi": "हि.प्र. भू-राजस्व अधिनियम की धारा 32 संबंधित है:",
+    "options_en": ["Making of Record of Rights (Jamabandi)", "Collection of Tax", "Appointment of Lambardar"],
+    "options_hi": ["जमाबंदी (Record of Rights) बनाने से", "कर संग्रह", "लंबरदार की नियुक्ति"],
+    "correct": 0,
+    "explanation": "Section 32 deals with the preparation of the Record of Rights (Jamabandi)."
+  },
+  {
+    "id": 19,
+    "q_en": "Under which Section is the 'Mutation' (Intakal) attested?",
+    "q_hi": "किस धारा के तहत 'म्यूटेशन' (इंतकाल) सत्यापित किया जाता है?",
+    "options_en": ["Section 34", "Section 45", "Section 12"],
+    "options_hi": ["धारा 34", "धारा 45", "धारा 12"],
+    "correct": 0,
+    "explanation": "Section 34 deals with reporting acquisition, and Section 35 deals with the procedure/attestation. The question implies the mutation process flow starting from Sec 34."
+  },
+  {
+    "id": 20,
+    "q_en": "Partition of land (Takseem) is dealt with in Chapter:",
+    "q_hi": "भूमि का विभाजन (तकसीम) किस अध्याय में है?",
+    "options_en": ["Chapter IX (Section 123 onwards)", "Chapter IV", "Chapter II"],
+    "options_hi": ["अध्याय IX (धारा 123 से आगे)", "अध्याय IV", "अध्याय II"],
+    "correct": 0,
+    "explanation": "Partition is covered in Chapter IX of the HP Land Revenue Act, starting from Section 123."
+  },
+  {
+    "id": 21,
+    "q_en": "An appeal against the order of Assistant Collector 2nd Grade lies to:",
+    "q_hi": "सहायक कलेक्टर द्वितीय श्रेणी के आदेश के विरुद्ध अपील कहाँ की जाती है?",
+    "options_en": ["Collector (SDM/DC)", "Commissioner", "Financial Commissioner"],
+    "options_hi": ["कलेक्टर (SDM/DC)", "आयुक्त", "वित्तीय आयुक्त"],
+    "correct": 0,
+    "explanation": "Appeals from AC 2nd Grade (Naib Tehsildar) go to the Collector (SDM or DC)."
+  },
+  {
+    "id": 22,
+    "q_en": "What is the time limit for filing an appeal to the Collector?",
+    "q_hi": "कलेक्टर के पास अपील दायर करने की समय सीमा क्या है?",
+    "options_en": ["30 Days", "60 Days", "90 Days", "1 Year"],
+    "options_hi": ["30 दिन", "60 दिन", "90 दिन", "1 साल"],
+    "correct": 0,
+    "explanation": "The limitation period for an appeal to the Collector is 30 days."
+  },
+  {
+    "id": 23,
+    "q_en": "Section 118 (Tenancy Act) permission is granted by:",
+    "q_hi": "धारा 118 (काश्तकारी अधिनियम) की अनुमति किसके द्वारा दी जाती है?",
+    "options_en": ["State Government", "DC", "Tehsildar"],
+    "options_hi": ["राज्य सरकार", "डीसी", "तहसीलदार"],
+    "correct": 0,
+    "explanation": "Permissions under Section 118 are granted by the State Government."
+  },
+  {
+    "id": 24,
+    "q_en": "Which officer prepares the 'Wajib-ul-Arz'?",
+    "q_hi": "'वाजिब-उल-अर्ज' कौन सा अधिकारी तैयार करता है?",
+    "options_en": ["Settlement Officer", "Patwari", "DC"],
+    "options_hi": ["बंदोबस्त अधिकारी", "पटवारी", "डीसी"],
+    "correct": 0,
+    "explanation": "Wajib-ul-Arz is prepared by the Settlement Officer during the Settlement operation."
+  },
+  {
+    "id": 25,
+    "q_en": "'Recovery of Arrears of Land Revenue' allows arrest of defaulter for max:",
+    "q_hi": "'भू-राजस्व के बकाया की वसूली' में चूककर्ता को अधिकतम कितने समय के लिए गिरफ्तार किया जा सकता है?",
+    "options_en": ["24 hours", "10 days", "1 month (extendable)"],
+    "options_hi": ["24 घंटे", "10 दिन", "1 महीना (बढ़ाया जा सकता है)"],
+    "correct": 2,
+    "explanation": "A defaulter can be detained for up to one month."
+  },
+  {
+    "id": 26,
+    "q_en": "'Nishandehi' (Demarcation) is conducted under which Section?",
+    "q_hi": "'निशानदेही' (सीमांकन) किस धारा के तहत की जाती है?",
+    "options_en": ["Section 107", "Section 100", "Section 163"],
+    "options_hi": ["धारा 107", "धारा 100", "धारा 163"],
+    "correct": 0,
+    "explanation": "Demarcation of boundaries is conducted under Section 107 of the HP Land Revenue Act."
+  },
+  {
+    "id": 27,
+    "q_en": "Who is the 'Collector' of the District for Revenue purposes?",
+    "q_hi": "राजस्व उद्देश्यों के लिए जिले का 'कलेक्टर' कौन है?",
+    "options_en": ["Deputy Commissioner (DC)", "SP", "Judge"],
+    "options_hi": ["उपायुक्त (DC)", "एसपी", "न्यायाधीश"],
+    "correct": 0,
+    "explanation": "The Deputy Commissioner acts as the District Collector for revenue matters."
+  },
+  {
+    "id": 28,
+    "q_en": "'Khasra Girdawari' must be preserved for how many years?",
+    "q_hi": "'खसरा गिरदावरी' को कितने वर्षों तक सुरक्षित रखा जाना चाहिए?",
+    "options_en": ["1 year", "12 years", "Permanently"],
+    "options_hi": ["1 साल", "12 साल", "स्थायी रूप से"],
+    "correct": 1,
+    "explanation": "Old Khasra Girdawari registers are typically preserved for 12 years."
+  },
+  {
+    "id": 29,
+    "q_en": "Section 4 defines 'Landowner'. Does it include a Tenant?",
+    "q_hi": "धारा 4 'जमींदार' को परिभाषित करती है। क्या इसमें किरायेदार शामिल है?",
+    "options_en": ["Yes", "No"],
+    "options_hi": ["हाँ", "नहीं"],
+    "correct": 1,
+    "explanation": "The definition of 'Landowner' in Section 4 typically excludes tenants; they are defined separately."
+  },
+  {
+    "id": 30,
+    "q_en": "What is 'Fard Badar'?",
+    "q_hi": "'फर्द बदर' क्या है?",
+    "options_en": ["Correction of clerical mistake in records", "A type of tax", "A forest land"],
+    "options_hi": ["रिकॉर्ड में लिपिकीय त्रुटि का सुधार", "एक प्रकार का कर", "एक वन भूमि"],
+    "correct": 0,
+    "explanation": "Fard Badar is the procedure for correcting clerical mistakes in revenue records."
+  },
+  {
+    "id": 31,
+    "q_en": "Under Section 118, can a non-agriculturist buy a built-up house?",
+    "q_hi": "धारा 118 के तहत, क्या एक गैर-कृषक बना हुआ घर खरीद सकता है?",
+    "options_en": ["No, never", "Yes, with permission", "Yes, freely"],
+    "options_hi": ["नहीं, कभी नहीं", "हाँ, अनुमति के साथ", "हाँ, स्वतंत्र रूप से"],
+    "correct": 1,
+    "explanation": "Yes, but they must obtain permission from the State Government/Designated Authority."
+  },
+  {
+    "id": 32,
+    "q_en": "The maximum limit of land holding (Ceiling) for a family in HP is approx:",
+    "q_hi": "हि.प्र. में एक परिवार के लिए भूमि जोत (सीलिंग) की अधिकतम सीमा लगभग है:",
+    "options_en": ["150 Bighas", "300 Bighas", "10 Acres (standard)"],
+    "options_hi": ["150 बीघा", "300 बीघा", "10 एकड़ (मानक)"],
+    "correct": 2,
+    "explanation": "The ceiling is approximately 10 to 30 acres depending on the land type (Standard Acre)."
+  },
+  {
+    "id": 33,
+    "q_en": "'Kisami' refers to:",
+    "q_hi": "'किसमी' का अर्थ है:",
+    "options_en": ["Type of Soil/Land", "Type of Tenant", "Tax"],
+    "options_hi": ["मिट्टी/भूमि का प्रकार", "किरायेदार का प्रकार", "कर"],
+    "correct": 0,
+    "explanation": "Kisami refers to the classification or type of soil/land (e.g., Kisami Awal)."
+  },
+  {
+    "id": 34,
+    "q_en": "Who acquires proprietary rights automatically under the 1972 Act?",
+    "q_hi": "1972 अधिनियम के तहत किसे स्वचालित रूप से मालिकाना अधिकार प्राप्त होते हैं?",
+    "options_en": ["Occupancy Tenants", "Trespassers"],
+    "options_hi": ["मौरूसी काश्तकार (Occupancy Tenants)", "अतिचारी"],
+    "correct": 0,
+    "explanation": "Occupancy tenants (and certain non-occupancy tenants) acquired proprietary rights."
+  },
+  {
+    "id": 35,
+    "q_en": "Can a 'Gair-Marusi' tenant be evicted easily?",
+    "q_hi": "क्या 'गैर-मौरूसी' किरायेदार को आसानी से बेदखल किया जा सकता है?",
+    "options_en": ["Yes, anytime", "No, only on specific legal grounds"],
+    "options_hi": ["हाँ, कभी भी", "नहीं, केवल विशिष्ट कानूनी आधारों पर"],
+    "correct": 1,
+    "explanation": "Even non-occupancy tenants have protection and can only be evicted on specific grounds mentioned in the Act."
+  },
+  {
+    "id": 36,
+    "q_en": "When a Patwari enters a Mutation, who must verify it first?",
+    "q_hi": "जब पटवारी इंतकाल दर्ज करता है, तो सबसे पहले उसे कौन सत्यापित करता है?",
+    "options_en": ["Kanungo", "Tehsildar", "DC"],
+    "options_hi": ["कानूनगो", "तहसीलदार", "डीसी"],
+    "correct": 0,
+    "explanation": "The Field Kanungo must verify the mutation entry against the Jamabandi before it goes to the Tehsildar."
+  },
+  {
+    "id": 37,
+    "q_en": "'Aks Shajra' must be updated after:",
+    "q_hi": "'अक्स शजरा' को कब अपडेट किया जाना चाहिए?",
+    "options_en": ["Every harvest", "Every 4 years (Quinquennial)", "Every Partition/Tatima operation"],
+    "options_hi": ["हर फसल", "हर 4 साल (पंचवर्षीय)", "हर विभाजन/ततीमा कार्य के बाद"],
+    "correct": 2,
+    "explanation": "The map traces (Aks) should be updated whenever plot boundaries change, such as after a partition or tatima."
+  },
+  {
+    "id": 38,
+    "q_en": "'Chakota' is a form of:",
+    "q_hi": "'चकोता' किसका एक रूप है?",
+    "options_en": ["Fixed Rent (Cash or Kind)", "Government Tax"],
+    "options_hi": ["निश्चित लगान (नकद या वस्तु)", "सरकारी कर"],
+    "correct": 0,
+    "explanation": "Chakota is a fixed rent system."
+  },
+  {
+    "id": 39,
+    "q_en": "In 'Batai' system, rent is paid as:",
+    "q_hi": "'बटाई' प्रणाली में, लगान का भुगतान कैसे किया जाता है?",
+    "options_en": ["Share of Crop", "Cash only", "Gold"],
+    "options_hi": ["फसल का हिस्सा", "केवल नकद", "सोना"],
+    "correct": 0,
+    "explanation": "Batai is rent paid as a share of the produce."
+  },
+  {
+    "id": 40,
+    "q_en": "A 'Decree' of a Civil Court regarding land title is binding on:",
+    "q_hi": "भूमि के शीर्षक (Title) के संबंध में सिविल कोर्ट की 'डिक्री' किस पर बाध्यकारी है?",
+    "options_en": ["Revenue Courts", "Police only"],
+    "options_hi": ["राजस्व न्यायालयों पर", "केवल पुलिस पर"],
+    "correct": 0,
+    "explanation": "Revenue courts must follow the decrees of Civil Courts regarding title disputes."
+  },
+  {
+    "id": 41,
+    "q_en": "What is the color of the 'Musavi' cloth usually?",
+    "q_hi": "'मुसावी' कपड़े का रंग आमतौर पर क्या होता है?",
+    "options_en": ["White", "Red", "Musavi is on paper, Latha is cloth"],
+    "options_hi": ["सफेद", "लाल", "मुसावी कागज पर है, लट्ठा कपड़ा है"],
+    "correct": 2,
+    "explanation": "The Musavi is the master copy on thick paper; the Latha is the cloth copy."
+  },
+  {
+    "id": 42,
+    "q_en": "'Meezan' in Land Records means:",
+    "q_hi": "भूमि रिकॉर्ड में 'मीजान' का अर्थ है:",
+    "options_en": ["Total/Sum (of area)", "Name of owner"],
+    "options_hi": ["कुल/जोड़ (क्षेत्रफल का)", "मालिक का नाम"],
+    "correct": 0,
+    "explanation": "Meezan means the total or sum (usually of the area)."
+  },
+  {
+    "id": 43,
+    "q_en": "If total area in Jamabandi does not match previous records, who investigates?",
+    "q_hi": "यदि जमाबंदी में कुल क्षेत्रफल पिछले रिकॉर्ड से मेल नहीं खाता है, तो कौन जांच करता है?",
+    "options_en": ["Kanungo", "Patwari ignores it"],
+    "options_hi": ["कानूनगो", "पटवारी इसे अनदेखा करता है"],
+    "correct": 0,
+    "explanation": "The Kanungo investigates discrepancies in the total area."
+  },
+  {
+    "id": 44,
+    "q_en": "'Pudt Patwar' refers to:",
+    "q_hi": "'पड़त पटवार' का अर्थ है:",
+    "options_en": ["Patwari's copy of the Record", "Govt copy"],
+    "options_hi": ["रिकॉर्ड की पटवारी की प्रति", "सरकारी प्रति"],
+    "correct": 0,
+    "explanation": "Pudt (Parat) Patwar is the Patwari's working copy of the Jamabandi."
+  },
+  {
+    "id": 45,
+    "q_en": "'Pudt Sarkar' is kept in:",
+    "q_hi": "'पड़त सरकार' कहाँ रखी जाती है?",
+    "options_en": ["Sadar Kanungo Office (District Record Room)", "Patwari's Bag", "Panchayat Bhawan"],
+    "options_hi": ["सदर कानूनगो कार्यालय (जिला रिकॉर्ड रूम)", "पटवारी का बैग", "पंचायत भवन"],
+    "correct": 0,
+    "explanation": "Pudt Sarkar is the government copy sent to the District Record Room."
+  },
+  {
+    "id": 46,
+    "q_en": "Can a Patwari arrest a person for non-payment of tax?",
+    "q_hi": "क्या पटवारी कर न चुकाने पर किसी व्यक्ति को गिरफ्तार कर सकता है?",
+    "options_en": ["Yes", "No, only reports to higher ups"],
+    "options_hi": ["हाँ", "नहीं, केवल उच्च अधिकारियों को रिपोर्ट करता है"],
+    "correct": 1,
+    "explanation": "A Patwari does not have the power of arrest; they report to the Revenue Officer."
+  },
+  {
+    "id": 47,
+    "q_en": "'Lambardari' is hereditary in HP?",
+    "q_hi": "क्या हिमाचल में 'लंबरदारी' वंशानुगत है?",
+    "options_en": ["Yes", "No (Now appointed by Merit/Rules)"],
+    "options_hi": ["हाँ", "नहीं (अब योग्यता/नियमों द्वारा नियुक्त)"],
+    "correct": 1,
+    "explanation": "Lambardari is no longer strictly hereditary; appointments are made based on rules and merit."
+  },
+  {
+    "id": 48,
+    "q_en": "In HP, 'Nautor' land allotment rules were frozen in which year?",
+    "q_hi": "हिमाचल में, 'नौतोड़' भूमि आवंटन नियम किस वर्ष में रोक दिए गए थे?",
+    "options_en": ["1968", "1980 (Forest Conservation Act)"],
+    "options_hi": ["1968", "1980 (वन संरक्षण अधिनियम)"],
+    "correct": 1,
+    "explanation": "The Forest Conservation Act of 1980 effectively froze new Nautor allotments on forest land."
+  },
+  {
+    "id": 49,
+    "q_en": "The limit for 'Nautor' land allotment was usually:",
+    "q_hi": "'नौतोड़' भूमि आवंटन की सीमा आमतौर पर थी:",
+    "options_en": ["20 Bighas", "5 Bighas", "2 Bighas"],
+    "options_hi": ["20 बीघा", "5 बीघा", "2 बीघा"],
+    "correct": 0,
+    "explanation": "The general limit under the 1968 rules was 20 Bighas."
+  },
+  {
+    "id": 50,
+    "q_en": "'Alluvion and Diluvion' (Burdi-Baramad) deals with:",
+    "q_hi": "'एलुवियन और डिलुवियन' (बुर्दी-बरामद) किससे संबंधित है?",
+    "options_en": ["Land gained/lost by river action", "Land lost to fire"],
+    "options_hi": ["नदी की क्रिया द्वारा प्राप्त/खोई गई भूमि", "आग से खोई गई भूमि"],
+    "correct": 0,
+    "explanation": "Alluvion and Diluvion refer to land gained or lost due to the action of rivers."
+  },
+  {
+    "id": 51,
+    "q_en": "Calculate area: Rectangle length=22 yards, width=10 yards.",
+    "q_hi": "क्षेत्रफल की गणना करें: आयत की लंबाई=22 गज, चौड़ाई=10 गज।",
+    "options_en": ["220 sq yards", "4840 sq yards"],
+    "options_hi": ["220 वर्ग गज", "4840 वर्ग गज"],
+    "correct": 0,
+    "explanation": "Area = 22 × 10 = 220 Sq Yards."
+  },
+  {
+    "id": 52,
+    "q_en": "'Gair Mumkin Khad' means:",
+    "q_hi": "'गैर मुमकिन खड्ड' का अर्थ है:",
+    "options_en": ["Uncultivable land (Ravine/Gorge)", "Fertile land"],
+    "options_hi": ["खेती के अयोग्य भूमि (खड्ड/नाला)", "उपजाऊ भूमि"],
+    "correct": 0,
+    "explanation": "Gair Mumkin Khad is uncultivable land comprising ravines or gorges."
+  },
+  {
+    "id": 53,
+    "q_en": "Who is the presiding officer of a Revenue Court?",
+    "q_hi": "राजस्व न्यायालय का पीठासीन अधिकारी कौन होता है?",
+    "options_en": ["Collector/Assistant Collector", "District Judge"],
+    "options_hi": ["कलेक्टर/सहायक कलेक्टर", "जिला न्यायाधीश"],
+    "correct": 0,
+    "explanation": "Revenue Courts are presided over by Revenue Officers like Collectors and Assistant Collectors."
+  },
+  {
+    "id": 54,
+    "q_en": "Can a 'Will' (Wasiyat) be registered by a Patwari?",
+    "q_hi": "क्या पटवारी द्वारा 'वसीयत' पंजीकृत की जा सकती है?",
+    "options_en": ["Yes", "No, only by Sub-Registrar (Tehsildar)"],
+    "options_hi": ["हाँ", "नहीं, केवल उप-पंजीयक (तहसीलदार) द्वारा"],
+    "correct": 1,
+    "explanation": "Patwaris cannot register Wills; they are registered by the Sub-Registrar."
+  },
+  {
+    "id": 55,
+    "q_en": "If a Mutation is 'Contested' (Disputed), who decides it?",
+    "q_hi": "यदि कोई इंतकाल 'विवादित' है, तो उसका निर्णय कौन करता है?",
+    "options_en": ["Revenue Officer (AC 1st/2nd Grade) in open assembly", "Patwari", "Kanungo"],
+    "options_hi": ["राजस्व अधिकारी (AC 1st/2nd Grade) खुली सभा में", "पटवारी", "कानूनगो"],
+    "correct": 0,
+    "explanation": "Disputed mutations are decided by the Revenue Officer in an open assembly."
+  },
+  {
+    "id": 56,
+    "q_en": "'Shajra Parcha' is used for:",
+    "q_hi": "'शजरा परचा' का उपयोग किसके लिए किया जाता है?",
+    "options_en": ["Updating field map changes temporarily", "Permanent record"],
+    "options_hi": ["खेत के नक्शे में बदलाव को अस्थायी रूप से अपडेट करने के लिए", "स्थायी रिकॉर्ड"],
+    "correct": 0,
+    "explanation": "Shajra Parcha is a working map used to note changes before finalising records."
+  },
+  {
+    "id": 57,
+    "q_en": "'Base Line' in survey is:",
+    "q_hi": "सर्वेक्षण में 'आधार रेखा' (Base Line) है:",
+    "options_en": ["The most important long line measured accurately", "Any line"],
+    "options_hi": ["सबसे महत्वपूर्ण लंबी रेखा जिसे सटीक रूप से मापा जाता है", "कोई भी रेखा"],
+    "correct": 0,
+    "explanation": "The Base Line is the longest and most accurately measured line in a survey framework."
+  },
+  {
+    "id": 58,
+    "q_en": "'Check Line' is used to:",
+    "q_hi": "'चेक लाइन' का उपयोग किसके लिए किया जाता है?",
+    "options_en": ["Check the accuracy of the framework", "Measure river width"],
+    "options_hi": ["ढांचे की सटीकता की जांच करने के लिए", "नदी की चौड़ाई मापने के लिए"],
+    "correct": 0,
+    "explanation": "Check lines verify the accuracy of the survey framework."
+  },
+  {
+    "id": 59,
+    "q_en": "A 'Patwari's Bag' (Basta) technically contains:",
+    "q_hi": "'पटवारी के बस्ते' में तकनीकी रूप से क्या होता है?",
+    "options_en": ["Only Pen", "Measuring Chain, Maps, Registers"],
+    "options_hi": ["केवल पेन", "मापने की चेन, नक्शे, रजिस्टर"],
+    "correct": 1,
+    "explanation": "A Patwari's basta contains the survey equipment and records."
+  },
+  {
+    "id": 60,
+    "q_en": "'Roznamcha' must be closed and sent to Tehsil:",
+    "q_hi": "'रोजनामचा' बंद करके तहसील कब भेजा जाना चाहिए?",
+    "options_en": ["Every Month", "After completion of volume/year"],
+    "options_hi": ["हर महीने", "वॉल्यूम/वर्ष पूरा होने के बाद"],
+    "correct": 1,
+    "explanation": "The Roznamcha is closed and deposited after the volume or year is complete."
+  },
+  {
+    "id": 61,
+    "q_en": "'Tauzi' (Tauzi) is a statement of:",
+    "q_hi": "'तौजी' किसका विवरण है?",
+    "options_en": ["Monthly collection of Revenue", "Rainfall"],
+    "options_hi": ["राजस्व का मासिक संग्रह", "वर्षा"],
+    "correct": 0,
+    "explanation": "Tauzi is a statement of monthly revenue collection."
+  },
+  {
+    "id": 62,
+    "q_en": "Which Section gives power to summon persons?",
+    "q_hi": "कौन सी धारा व्यक्तियों को समन (बुलाने) की शक्ति देती है?",
+    "options_en": ["Section 10 of HP Land Revenue Act", "Section 50"],
+    "options_hi": ["हि.प्र. भू-राजस्व अधिनियम की धारा 10", "धारा 50"],
+    "correct": 0,
+    "explanation": "Section 10 gives Revenue Officers the power to summon persons."
+  },
+  {
+    "id": 63,
+    "q_en": "Is 'Stamp Duty' required for Family Settlement (Partition)?",
+    "q_hi": "क्या पारिवारिक बंदोबस्त (विभाजन) के लिए 'स्टाम्प ड्यूटी' आवश्यक है?",
+    "options_en": ["No (if oral/memorandum)", "Yes (if registered deed)"],
+    "options_hi": ["नहीं (यदि मौखिक/ज्ञापन)", "हाँ (यदि पंजीकृत विलेख)"],
+    "correct": 1,
+    "explanation": "If a Family Settlement is reduced to writing as a deed, it requires Stamp Duty; oral settlements recognized by mutation may not."
+  },
+  {
+    "id": 64,
+    "q_en": "'Abatement' of Rent means:",
+    "q_hi": "लगान में 'कमी' (Abatement) का अर्थ है:",
+    "options_en": ["Reduction of rent due to calamity", "Increase of rent"],
+    "options_hi": ["आपदा के कारण लगान में कमी", "लगान में वृद्धि"],
+    "correct": 0,
+    "explanation": "Abatement means a reduction in rent."
+  },
+  {
+    "id": 65,
+    "q_en": "Who maintains the 'Rain Gauge' (Rainfall record) at Tehsil?",
+    "q_hi": "तहसील में 'वर्षा मापी' (वर्षा रिकॉर्ड) कौन रखता है?",
+    "options_en": ["Office Kanungo", "Peon", "Patwari"],
+    "options_hi": ["ऑफिस कानूनगो", "चपरासी", "पटवारी"],
+    "correct": 0,
+    "explanation": "The Office Kanungo is typically responsible for maintaining the Rain Gauge at the Tehsil."
+  },
+  {
+    "id": 66,
+    "q_en": "'Missal Haqqiyat' (Settlement Jamabandi) is prepared:",
+    "q_hi": "'मिसल हकियत' (बंदोबस्त जमाबंदी) कब तैयार की जाती है?",
+    "options_en": ["Every 5 years", "During Settlement Operation", "Every year", "On mutation"],
+    "options_hi": ["हर 5 साल", "बंदोबस्त अभियान के दौरान", "हर साल", "इंतकाल पर"],
+    "correct": 1,
+    "explanation": "Missal Haqqiyat is the Standing Record prepared during the Settlement Operation."
+  },
+  {
+    "id": 67,
+    "q_en": "'Escheat' (La-waris) property where owner dies without heir vests in:",
+    "q_hi": "'ला-वारिस' संपत्ति जिसका मालिक बिना वारिस के मर जाता है, किसमें निहित होती है?",
+    "options_en": ["Village Panchayat", "State Government", "Lambardar"],
+    "options_hi": ["ग्राम पंचायत", "राज्य सरकार", "लंबरदार"],
+    "correct": 1,
+    "explanation": "Escheat property vests in the State Government."
+  },
+  {
+    "id": 68,
+    "q_en": "Calculation: If Map Scale is 1:2000, and map distance is 5 cm, what is ground distance?",
+    "q_hi": "गणना: यदि नक्शा पैमाना 1:2000 है, और नक्शे की दूरी 5 सेमी है, तो जमीन की दूरी क्या है?",
+    "options_en": ["10 meters", "100 meters", "1000 meters"],
+    "options_hi": ["10 मीटर", "100 मीटर", "1000 मीटर"],
+    "correct": 1,
+    "explanation": "5 cm * 2000 = 10,000 cm = 100 meters."
+  },
+  {
+    "id": 69,
+    "q_en": "'Kharaba' in Girdawari register denotes:",
+    "q_hi": "गिरदावरी रजिस्टर में 'खराबा' क्या दर्शाता है?",
+    "options_en": ["Bumper crop", "Failed/Damaged crop"],
+    "options_hi": ["बंपर फसल", "खराब/क्षतिग्रस्त फसल"],
+    "correct": 1,
+    "explanation": "Kharaba denotes a failed or damaged crop."
+  },
+  {
+    "id": 70,
+    "q_en": "Who approves the 'Mode of Partition' (Tarika Takseem)?",
+    "q_hi": "'विभाजन का तरीका' (तरीका तकसीम) कौन मंजूर करता है?",
+    "options_en": ["Patwari", "Assistant Collector 1st Grade"],
+    "options_hi": ["पटवारी", "सहायक कलेक्टर प्रथम श्रेणी"],
+    "correct": 1,
+    "explanation": "The Assistant Collector 1st Grade approves the Mode of Partition."
+  },
+  {
+    "id": 71,
+    "q_en": "'Warabandi' is a system related to:",
+    "q_hi": "'वाराबंदी' किससे संबंधित प्रणाली है?",
+    "options_en": ["Forest rights", "Distribution of Irrigation Water"],
+    "options_hi": ["वन अधिकार", "सिंचाई के पानी का वितरण"],
+    "correct": 1,
+    "explanation": "Warabandi determines the turn for irrigation water."
+  },
+  {
+    "id": 72,
+    "q_en": "Section 47 of HP Revenue Act deals with:",
+    "q_hi": "हि.प्र. राजस्व अधिनियम की धारा 47 संबंधित है?",
+    "options_en": ["Survey Marks/Boundary Marks", "Arrest of defaulter"],
+    "options_hi": ["सर्वेक्षण चिह्नों/सीमा चिह्नों से", "डिफॉल्टर की गिरफ्तारी"],
+    "correct": 0,
+    "explanation": "Section 47 (and related sections around it) deals with survey and boundary marks."
+  },
+  {
+    "id": 73,
+    "q_en": "A 'Diagonal Scale' is used to read:",
+    "q_hi": "'विकर्ण पैमाना' (Diagonal Scale) का उपयोग क्या पढ़ने के लिए किया जाता है?",
+    "options_en": ["One unit", "Two consecutive units", "Three consecutive units"],
+    "options_hi": ["एक इकाई", "दो लगातार इकाइयां", "तीन लगातार इकाइयां"],
+    "correct": 2,
+    "explanation": "A Diagonal Scale allows reading of three consecutive units (e.g., meters, decimeters, centimeters)."
+  },
+  {
+    "id": 74,
+    "q_en": "Which survey is most accurate?",
+    "q_hi": "कौन सा सर्वेक्षण सबसे सटीक है?",
+    "options_en": ["Chain Survey", "Triangulation Survey (Trigonometrical)"],
+    "options_hi": ["चेन सर्वे", "त्रिकोणीय सर्वेक्षण (त्रिकोणमितीय)"],
+    "correct": 1,
+    "explanation": "Triangulation is more accurate for large areas than simple Chain Survey."
+  },
+  {
+    "id": 75,
+    "q_en": "'Chahi Mustar' land means:",
+    "q_hi": "'चाही मुस्तर' भूमि का अर्थ है:",
+    "options_en": ["Irrigated by purchased water", "Irrigated by canal"],
+    "options_hi": ["खरीदे गए पानी से सिंचित", "नहर से सिंचित"],
+    "correct": 0,
+    "explanation": "Chahi Mustar means well-irrigated using purchased water."
+  },
+  {
+    "id": 76,
+    "q_en": "The penalty for destroying boundary marks is under:",
+    "q_hi": "सीमा चिह्नों को नष्ट करने पर दंड किसके अंतर्गत है?",
+    "options_en": ["Section 100", "Section 106/IPC"],
+    "options_hi": ["धारा 100", "धारा 106/आईपीसी"],
+    "correct": 1,
+    "explanation": "Destruction of boundary marks is penalised."
+  },
+  {
+    "id": 77,
+    "q_en": "'Haq-darn' (Rights Holders) register is synonymous with:",
+    "q_hi": "'हकदारान' (अधिकार धारक) रजिस्टर किसका पर्याय है?",
+    "options_en": ["Jamabandi", "Khasra"],
+    "options_hi": ["जमाबंदी", "खसरा"],
+    "correct": 0,
+    "explanation": "Register Haqdaran Zamin is another name for Jamabandi."
+  },
+  {
+    "id": 78,
+    "q_en": "'Dhal Bachh' refers to:",
+    "q_hi": "'ढाल बाछ' का अर्थ है:",
+    "options_en": ["Distribution of revenue demand over holdings", "A type of soil"],
+    "options_hi": ["जोतों पर राजस्व मांग का वितरण", "एक प्रकार की मिट्टी"],
+    "correct": 0,
+    "explanation": "Dhal Bachh is the document distributing the revenue demand among landowners."
+  },
+  {
+    "id": 79,
+    "q_en": "In a chain survey, 'Offsets' are taken to:",
+    "q_hi": "चेन सर्वे में, 'ऑफसेट' (Offsets) किसके लिए लिए जाते हैं?",
+    "options_en": ["Locate details (corners/boundaries) from the chain line", "Measure river depth"],
+    "options_hi": ["चेन लाइन से विवरण (कोने/सीमाएं) का पता लगाने के लिए", "नदी की गहराई मापने के लिए"],
+    "correct": 0,
+    "explanation": "Offsets locate details relative to the chain line."
+  },
+  {
+    "id": 80,
+    "q_en": "1 Hectare is approximately how many Bighas in HP (Standard)?",
+    "q_hi": "1 हेक्टेयर हि.प्र. (मानक) में लगभग कितने बीघा होता है?",
+    "options_en": ["12.5 Bighas", "2.5 Bighas", "8 Bighas"],
+    "options_hi": ["12.5 बीघा", "2.5 बीघा", "8 बीघा"],
+    "correct": 0,
+    "explanation": "1 Hectare is approx 12.35 to 12.5 Bighas."
+  },
+  {
+    "id": 81,
+    "q_en": "In a metric chain of 20 meters, how many links are there?",
+    "q_hi": "20 मीटर की मीट्रिक चेन में कितनी कड़ियाँ होती हैं?",
+    "options_en": ["50 links", "100 links", "150 links", "200 links"],
+    "options_hi": ["50 कड़ियाँ", "100 कड़ियाँ", "150 कड़ियाँ", "200 कड़ियाँ"],
+    "correct": 1,
+    "explanation": "A 20m chain usually has 100 links (20 cm each)."
+  },
+  {
+    "id": 82,
+    "q_en": "Under Section 118, 'Bonafide Himachali' agriculturist status is proved by:",
+    "q_hi": "धारा 118 के तहत, 'बोनाफाइड हिमाचली' कृषक का दर्जा किससे साबित होता है?",
+    "options_en": ["Aadhar Card", "Agriculturist Certificate", "Ration Card"],
+    "options_hi": ["आधार कार्ड", "कृषक प्रमाण पत्र", "राशन कार्ड"],
+    "correct": 1,
+    "explanation": "An Agriculturist Certificate is required to prove status under Sec 118."
+  },
+  {
+    "id": 83,
+    "q_en": "'Jamabandi' has how many columns in HP standard format?",
+    "q_hi": "हि.प्र. मानक प्रारूप में 'जमाबंदी' के कितने कॉलम होते हैं?",
+    "options_en": ["10", "12", "15", "8"],
+    "options_hi": ["10", "12", "15", "8"],
+    "correct": 1,
+    "explanation": "The standard Jamabandi format has 12 columns."
+  },
+  {
+    "id": 84,
+    "q_en": "'Tatima Shajra' is prepared when:",
+    "q_hi": "'ततीमा शजरा' कब तैयार किया जाता है?",
+    "options_en": ["A field is divided/partitioned", "A crop is sown"],
+    "options_hi": ["जब खेत का विभाजन होता है", "जब फसल बोई जाती है"],
+    "correct": 0,
+    "explanation": "Tatima Shajra is prepared to show the division of a field."
+  },
+  {
+    "id": 85,
+    "q_en": "What is the meaning of 'Min' (e.g., Khasra 51 Min)?",
+    "q_hi": "'मिन' (जैसे, खसरा 51 मिन) का क्या अर्थ है?",
+    "options_en": ["Minimum area", "Part of original number (Partial)"],
+    "options_hi": ["न्यूनतम क्षेत्र", "मूल संख्या का भाग (आंशिक)"],
+    "correct": 1,
+    "explanation": "'Min' indicates a part of the original Khasra number."
+  },
+  {
+    "id": 86,
+    "q_en": "'Chain Surveying' is best suited for:",
+    "q_hi": "'चेन सर्वेइंग' किसके लिए सबसे उपयुक्त है?",
+    "options_en": ["Hilly areas", "Small areas with flat ground"],
+    "options_hi": ["पहाड़ी क्षेत्र", "समतल मैदान वाले छोटे क्षेत्र"],
+    "correct": 1,
+    "explanation": "Chain surveying works best on small, flat areas."
+  },
+  {
+    "id": 87,
+    "q_en": "Who is the final revenue appellate authority?",
+    "q_hi": "अंतिम राजस्व अपीलीय प्राधिकारी कौन है?",
+    "options_en": ["District Collector", "Financial Commissioner"],
+    "options_hi": ["जिला कलेक्टर", "वित्तीय आयुक्त"],
+    "correct": 1,
+    "explanation": "The Financial Commissioner is the final appellate authority."
+  },
+  {
+    "id": 88,
+    "q_en": "'Kharaba' implies ___ rent remission.",
+    "q_hi": "'खराबा' का तात्पर्य ___ लगान की छूट से है।",
+    "options_en": ["Full", "Proportional (based on damage)"],
+    "options_hi": ["पूर्ण", "आनुपातिक (क्षति के आधार पर)"],
+    "correct": 1,
+    "explanation": "Rent remission for Kharaba is proportional to the crop damage."
+  },
+  {
+    "id": 89,
+    "q_en": "'Girdawari' is conducted ___ times a year typically.",
+    "q_hi": "'गिरदावरी' आमतौर पर साल में ___ बार की जाती है।",
+    "options_en": ["1", "2", "4"],
+    "options_hi": ["1", "2", "4"],
+    "correct": 1,
+    "explanation": "Girdawari is typically conducted twice a year (Rabi and Kharif)."
+  },
+  {
+    "id": 90,
+    "q_en": "One 'Biswansi' is equal to:",
+    "q_hi": "एक 'बिस्वांसी' किसके बराबर है?",
+    "options_en": ["1/10th of a Biswa", "1/20th of a Biswa"],
+    "options_hi": ["बिस्वा का 1/10", "बिस्वा का 1/20"],
+    "correct": 1,
+    "explanation": "20 Biswansi = 1 Biswa, so 1 Biswansi is 1/20th."
+  },
+  {
+    "id": 91,
+    "q_en": "'Momi' refers to:",
+    "q_hi": "'मोमी' का अर्थ है:",
+    "options_en": ["Paper map", "Tracing cloth/plasticized map"],
+    "options_hi": ["कागज का नक्शा", "ट्रेसिंग कपड़ा/प्लास्टिक का नक्शा"],
+    "correct": 1,
+    "explanation": "Momi is a map on cloth/plasticized material for tracing."
+  },
+  {
+    "id": 92,
+    "q_en": "'Sarkar' in Jamabandi ownership column means:",
+    "q_hi": "जमाबंदी स्वामित्व कॉलम में 'सरकार' का अर्थ है:",
+    "options_en": ["Land belongs to State Govt", "Land belongs to Panchayat"],
+    "options_hi": ["भूमि राज्य सरकार की है", "भूमि पंचायत की है"],
+    "correct": 0,
+    "explanation": "'Sarkar' denotes State Government ownership."
+  },
+  {
+    "id": 93,
+    "q_en": "'Gair Marusi' tenant pays rent to:",
+    "q_hi": "'गैर मौरूसी' किरायेदार लगान किसको देता है?",
+    "options_en": ["Govt directly", "Landowner (Malik)"],
+    "options_hi": ["सीधे सरकार को", "जमींदार (मालिक) को"],
+    "correct": 1,
+    "explanation": "Gair Marusi tenants pay rent to the Landowner."
+  },
+  {
+    "id": 94,
+    "q_en": "Which survey instrument uses a 'Magnetic Needle'?",
+    "q_hi": "किस सर्वेक्षण उपकरण में 'चुंबकीय सुई' का उपयोग होता है?",
+    "options_en": ["Prismatic Compass", "Plane Table"],
+    "options_hi": ["प्रिज्मीय कम्पास", "प्लेन टेबल"],
+    "correct": 0,
+    "explanation": "A Prismatic Compass uses a magnetic needle."
+  },
+  {
+    "id": 95,
+    "q_en": "'Back Bearing' differs from 'Fore Bearing' by:",
+    "q_hi": "'बैक बेयरिंग' और 'फॉर बेयरिंग' में कितना अंतर होता है?",
+    "options_en": ["90 degrees", "180 degrees"],
+    "options_hi": ["90 डिग्री", "180 डिग्री"],
+    "correct": 1,
+    "explanation": "Back Bearing = Fore Bearing ± 180 degrees."
+  },
+  {
+    "id": 96,
+    "q_en": "'Ranging Rods' are used for:",
+    "q_hi": "'रेंजिंग रॉड्स' का उपयोग किसके लिए किया जाता है?",
+    "options_en": ["Measuring depth", "Marking points in a straight line"],
+    "options_hi": ["गहराई मापना", "एक सीधी रेखा में बिंदुओं को चिह्नित करना"],
+    "correct": 1,
+    "explanation": "Ranging rods are used to align points in a straight line."
+  },
+  {
+    "id": 97,
+    "q_en": "Section 163 (Encroachment) proceedings are:",
+    "q_hi": "धारा 163 (अतिक्रमण) की कार्यवाही है:",
+    "options_en": ["Judicial (Revenue Court)", "Non-Judicial"],
+    "options_hi": ["न्यायिक (राजस्व न्यायालय)", "गैर-न्यायिक"],
+    "correct": 0,
+    "explanation": "Proceedings under Section 163 are judicial revenue proceedings."
+  },
+  {
+    "id": 98,
+    "q_en": "'Wazib-ul-Arz' is revised during:",
+    "q_hi": "'वाजिब-उल-अर्ज' को कब संशोधित किया जाता है?",
+    "options_en": ["Every year", "Settlement Operation"],
+    "options_hi": ["हर साल", "बंदोबस्त अभियान"],
+    "correct": 1,
+    "explanation": "Wazib-ul-Arz is revised during the Settlement Operation."
+  },
+  {
+    "id": 99,
+    "q_en": "A 'Revenue Estate' (Mahal) is defined in which Section?",
+    "q_hi": "'राजस्व संपदा' (महल) को किस धारा में परिभाषित किया गया है?",
+    "options_en": ["Section 4", "Section 20"],
+    "options_hi": ["धारा 4", "धारा 20"],
+    "correct": 0,
+    "explanation": "Revenue Estate is defined in Section 4."
+  },
+  {
+    "id": 100,
+    "q_en": "Who is responsible for safety of 'Survey Marks' in a field?",
+    "q_hi": "खेत में 'सर्वेक्षण चिह्नों' की सुरक्षा के लिए कौन जिम्मेदार है?",
+    "options_en": ["Patwari", "Landowner/Occupant"],
+    "options_hi": ["पटवारी", "भूस्वामी/अधिभोगी"],
+    "correct": 1,
+    "explanation": "The landowner or occupant is responsible for maintaining survey marks."
+  }
+]

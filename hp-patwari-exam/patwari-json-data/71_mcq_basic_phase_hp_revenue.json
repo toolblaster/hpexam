@@ -1,0 +1,570 @@
+[
+    {
+        "q": "What is the difference between 'Min' and 'Salam' numbers in Khasra?",
+        "q_hi": "खसरा में 'मिन' और 'सलाम' नंबरों में क्या अंतर है?",
+        "options": ["Min is full, Salam is part", "Salam is full field, Min is a part", "Both mean the same", "Min is for government land"],
+        "options_hi": ["मिन पूरा है, सलाम हिस्सा है", "सलाम पूरा खेत है, मिन एक हिस्सा है", "दोनों का मतलब एक ही है", "मिन सरकारी जमीन के लिए है"],
+        "correct": 1,
+        "explanation": "Salam means the whole/intact field number. Min indicates a portion/part of the field."
+    },
+    {
+        "q": "When does the 'Agricultural Year' start in Revenue records?",
+        "q_hi": "राजस्व अभिलेखों में 'कृषि वर्ष' कब शुरू होता है?",
+        "options": ["1st January", "1st April", "16th June", "1st October"],
+        "options_hi": ["1 जनवरी", "1 अप्रैल", "16 जून", "1 अक्टूबर"],
+        "correct": 2,
+        "explanation": "It starts from 16th June (Kharif sowing season) and ends on 15th June."
+    },
+    {
+        "q": "Which form number is used for the Khasra Girdawari register?",
+        "q_hi": "खसरा गिरदावरी रजिस्टर के लिए कौन सा फॉर्म नंबर उपयोग किया जाता है?",
+        "options": ["Form No. 1", "Form No. 4", "Form No. 22", "Form No. 10"],
+        "options_hi": ["फॉर्म नंबर 1", "फॉर्म नंबर 4", "फॉर्म नंबर 22", "फॉर्म नंबर 10"],
+        "correct": 1,
+        "explanation": "Khasra Girdawari (Harvest Inspection) is maintained on Form No. 4."
+    },
+    {
+        "q": "How many Bighas are approximately in 1 Acre in HP (Standard)?",
+        "q_hi": "हिमाचल प्रदेश (मानक) में 1 एकड़ में लगभग कितने बीघा होते हैं?",
+        "options": ["2 Bigha", "5 Bigha", "10 Bigha", "20 Bigha"],
+        "options_hi": ["2 बीघा", "5 बीघा", "10 बीघा", "20 बीघा"],
+        "correct": 1,
+        "explanation": "Standard calculation for exams: 1 Acre ≈ 5 Bigha."
+    },
+    {
+        "q": "Who prepares the Jamabandi and who attests it?",
+        "q_hi": "जमाबंदी कौन तैयार करता है और कौन सत्यापित करता है?",
+        "options": ["Patwari prepares, Kanungo attests", "Kanungo prepares, Tehsildar attests", "Patwari prepares, Revenue Officer attests", "DC prepares, Patwari attests"],
+        "options_hi": ["पटवारी तैयार करता है, कानूनगो सत्यापित करता है", "कानूनगो तैयार करता है, तहसीलदार सत्यापित करता है", "पटवारी तैयार करता है, राजस्व अधिकारी सत्यापित करता है", "डीसी तैयार करता है, पटवारी सत्यापित करता है"],
+        "correct": 2,
+        "explanation": "The Patwari prepares the Jamabandi, and the Revenue Officer (Tehsildar/Naib Tehsildar) attests it."
+    },
+    {
+        "q": "What is the fee (Pachotra) collected by the Nambardar?",
+        "q_hi": "नंबरदार द्वारा वसूला जाने वाला शुल्क (पचोतरा) क्या है?",
+        "options": ["10% of Revenue", "5% Surcharge on Revenue", "Fixed Salary", "No Fee"],
+        "options_hi": ["राजस्व का 10%", "राजस्व पर 5% सरचार्ज", "निश्चित वेतन", "कोई शुल्क नहीं"],
+        "correct": 1,
+        "explanation": "Nambardars get a 5% surcharge on the Land Revenue collected, called 'Pachotra'."
+    },
+    {
+        "q": "Under Section 118, who grants permission to buy land?",
+        "q_hi": "धारा 118 के तहत, जमीन खरीदने की अनुमति कौन देता है?",
+        "options": ["Patwari", "Tehsildar", "State Government", "Village Pradhan"],
+        "options_hi": ["पटवारी", "तहसीलदार", "राज्य सरकार", "ग्राम प्रधान"],
+        "correct": 2,
+        "explanation": "Permission for non-agriculturists is granted by the State Government (Cabinet), though limited powers are delegated to the DC for small plots."
+    },
+    {
+        "q": "What is the time limit to report acquisition of land (Mutation) under Section 34?",
+        "q_hi": "धारा 34 के तहत भूमि अधिग्रहण (इंतकाल) की रिपोर्ट करने की समय सीमा क्या है?",
+        "options": ["1 Month", "3 Months", "6 Months", "1 Year"],
+        "options_hi": ["1 महीना", "3 महीने", "6 महीने", "1 साल"],
+        "correct": 1,
+        "explanation": "Section 34 requires the person acquiring the right to report it to the Patwari within 3 months."
+    },
+    {
+        "q": "Which officer handles 'Partition' (Taqseem) cases?",
+        "q_hi": "'विभाजन' (तक्सीम) के मामलों को कौन सा अधिकारी संभालता है?",
+        "options": ["Field Kanungo", "Naib Tehsildar", "Assistant Collector 1st Grade", "Patwari"],
+        "options_hi": ["फील्ड कानूनगो", "नायब तहसीलदार", "सहायक कलेक्टर प्रथम श्रेणी", "पटवारी"],
+        "correct": 2,
+        "explanation": "Partition (Section 123) is a judicial function handled by the Assistant Collector 1st Grade (Tehsildar/SDM)."
+    },
+    {
+        "q": "What is 'Sihadda' in demarcation?",
+        "q_hi": "निशानदेही में 'सिहद्दा' क्या है?",
+        "options": ["A revenue tax", "A type of soil", "A tri-junction boundary pillar", "A mutation type"],
+        "options_hi": ["एक राजस्व कर", "मिट्टी का एक प्रकार", "तीन सीमाओं का मिलन पत्थर (बुर्जी)", "एक इंतकाल का प्रकार"],
+        "correct": 2,
+        "explanation": "Sihadda is a permanent stone pillar marking the point where boundaries of three villages meet. It is the reference point for surveys."
+    },
+    {
+        "q": "What is 'Roznamcha Waqiati'?",
+        "q_hi": "'रोजनामचा वाकयाती' क्या है?",
+        "options": ["Daily Diary of Patwari", "Weekly Report of Kanungo", "Monthly Report of Tehsildar", "Annual Report of DC"],
+        "options_hi": ["पटवारी की दैनिक डायरी", "कानूनगो की साप्ताहिक रिपोर्ट", "तहसीलदार की मासिक रिपोर्ट", "डीसी की वार्षिक रिपोर्ट"],
+        "correct": 0,
+        "explanation": "It is the Daily Diary where the Patwari records daily events like hailstorms, deaths, and official visits."
+    },
+    {
+        "q": "Which Act abolished the system of 'Big Landed Estates' in HP?",
+        "q_hi": "किस अधिनियम ने हिमाचल में 'बड़ी जमींदारी' प्रथा को समाप्त किया?",
+        "options": ["HP Land Revenue Act 1954", "HP Big Landed Estates Abolition Act 1953", "HP Tenancy Act 1972", "HP Ceiling Act 1972"],
+        "options_hi": ["हि.प्र. भू-राजस्व अधिनियम 1954", "हि.प्र. बड़ी जमींदारी उन्मूलन अधिनियम 1953", "हि.प्र. काश्तकारी अधिनियम 1972", "हि.प्र. सीलिंग अधिनियम 1972"],
+        "correct": 1,
+        "explanation": "The HP Abolition of Big Landed Estates and Land Reforms Act, 1953 abolished Zamindari."
+    },
+    {
+        "q": "What is the maximum fine for encroachment under Section 163?",
+        "q_hi": "धारा 163 के तहत अतिक्रमण के लिए अधिकतम जुर्माना क्या है?",
+        "options": ["₹500 per bigha", "₹2000 per bigha", "₹5000 per bigha", "₹10000 per bigha"],
+        "options_hi": ["₹500 प्रति बीघा", "₹2000 प्रति बीघा", "₹5000 प्रति बीघा", "₹10000 प्रति बीघा"],
+        "correct": 1,
+        "explanation": "The standard fine cited in exams is often ₹2000 per bigha (subject to amendments, but this is the classic text answer)."
+    },
+    {
+        "q": "Who is the appointing authority for a Patwari?",
+        "q_hi": "पटवारी के लिए नियुक्ति प्राधिकारी कौन है?",
+        "options": ["Tehsildar", "SDM", "Deputy Commissioner (Collector)", "Financial Commissioner"],
+        "options_hi": ["तहसीलदार", "एसडीएम", "उपायुक्त (कलेक्टर)", "वित्तीय आयुक्त"],
+        "correct": 2,
+        "explanation": "The Deputy Commissioner (Collector) is the appointing authority for Patwaris."
+    },
+    {
+        "q": "What does 'Banjar Kadim' mean?",
+        "q_hi": "'बंजर कदीम' का क्या अर्थ है?",
+        "options": ["New Fallow", "Old Fallow (4 years+)", "Cultivated Land", "Forest Land"],
+        "options_hi": ["नई परती", "पुरानी परती (4 साल+)", "खेती की जमीन", "वन भूमि"],
+        "correct": 1,
+        "explanation": "Banjar Kadim refers to land that has remained uncultivated for 8 harvests (4 years) or more."
+    },
+    {
+        "q": "What is 'Tatima'?",
+        "q_hi": "'ततीमा' क्या है?",
+        "options": ["A map of a divided field", "A tax receipt", "A type of soil", "A revenue officer"],
+        "options_hi": ["विभाजित खेत का नक्शा", "कर रसीद", "मिट्टी का प्रकार", "एक राजस्व अधिकारी"],
+        "correct": 0,
+        "explanation": "Tatima is a supplementary map prepared when a specific Khasra number is divided into parts."
+    },
+    {
+        "q": "When does the Kharif (Sauni) Girdawari start?",
+        "q_hi": "खरीफ (साउनी) गिरदावरी कब शुरू होती है?",
+        "options": ["1st March", "1st April", "1st October", "1st November"],
+        "options_hi": ["1 मार्च", "1 अप्रैल", "1 अक्टूबर", "1 नवंबर"],
+        "correct": 2,
+        "explanation": "Kharif Girdawari officially begins on 1st October."
+    },
+    {
+        "q": "Which officer has the power to Remit (Cancel) land revenue?",
+        "q_hi": "भू-राजस्व को माफ (रद्द) करने की शक्ति किस अधिकारी के पास है?",
+        "options": ["Tehsildar", "Collector", "Divisional Commissioner", "Financial Commissioner"],
+        "options_hi": ["तहसीलदार", "कलेक्टर", "मंडलायुक्त", "वित्तीय आयुक्त"],
+        "correct": 3,
+        "explanation": "Only the Financial Commissioner has the power to Remit (completely cancel) land revenue; others can only Suspend it."
+    },
+    {
+        "q": "What is the length of a standard Gunter's Chain?",
+        "q_hi": "एक मानक गुंटर चेन की लंबाई क्या है?",
+        "options": ["33 feet", "66 feet", "100 feet", "165 feet"],
+        "options_hi": ["33 फीट", "66 फीट", "100 फीट", "165 फीट"],
+        "correct": 1,
+        "explanation": "A standard Gunter's Chain is 66 feet long and consists of 100 links."
+    },
+    {
+        "q": "Who maintains the 'Lal Kitab' (Village Note Book)?",
+        "q_hi": "'लाल किताब' (ग्राम नोटबुक) का रखरखाव कौन करता है?",
+        "options": ["Pradhan", "Patwari", "Secretary", "Kanungo"],
+        "options_hi": ["प्रधान", "पटवारी", "सचिव", "कानूनगो"],
+        "correct": 1,
+        "explanation": "The Patwari maintains the Lal Kitab, which contains statistical data of the village (crops, population, livestock)."
+    },
+    {
+        "q": "In a Musavi (Map), what color is used to show water bodies?",
+        "q_hi": "मुसावी (नक्शा) में जल निकायों को दिखाने के लिए किस रंग का उपयोग किया जाता है?",
+        "options": ["Red", "Green", "Blue", "Black"],
+        "options_hi": ["लाल", "हरा", "नीला", "काला"],
+        "correct": 2,
+        "explanation": "Water bodies like rivers and ponds are typically shown in Blue."
+    },
+    {
+        "q": "Which register is known as 'Missal Haquiyat'?",
+        "q_hi": "किस रजिस्टर को 'मिसल हकियत' के नाम से जाना जाता है?",
+        "options": ["Daily Diary", "Mutation Register", "Standing Record of Rights (Settlement)", "Crop Register"],
+        "options_hi": ["दैनिक डायरी", "इंतकाल रजिस्टर", "अधिकारों का स्थायी रिकॉर्ड (बंदोबस्त)", "फसल रजिस्टर"],
+        "correct": 2,
+        "explanation": "Missal Haquiyat is the 'Standing Record of Rights' prepared at the time of Settlement."
+    },
+    {
+        "q": "Who is the 'Settlement Officer' equivalent to in rank?",
+        "q_hi": "'बंदोबस्त अधिकारी' रैंक में किसके बराबर है?",
+        "options": ["Tehsildar", "SDM", "Deputy Commissioner", "Kanungo"],
+        "options_hi": ["तहसीलदार", "एसडीएम", "उपायुक्त (डीसी)", "कानूनगो"],
+        "correct": 2,
+        "explanation": "The Settlement Officer generally holds a rank equivalent to the Deputy Commissioner (Collector) for settlement work."
+    },
+    {
+        "q": "What is the appeal period for the Collector's order?",
+        "q_hi": "कलेक्टर के आदेश के खिलाफ अपील की अवधि क्या है?",
+        "options": ["30 Days", "60 Days", "90 Days", "1 Year"],
+        "options_hi": ["30 दिन", "60 दिन", "90 दिन", "1 साल"],
+        "correct": 0,
+        "explanation": "The limitation period for an appeal to the Collector is 30 days."
+    },
+    {
+        "q": "What does 'Gair Mumkin' land signify?",
+        "q_hi": "'गैर मुमकिन' भूमि का क्या अर्थ है?",
+        "options": ["Highly fertile land", "Forest land", "Uncultivable land (Roads/Buildings)", "Orchard land"],
+        "options_hi": ["अत्यधिक उपजाऊ भूमि", "वन भूमि", "अकृष्य भूमि (सड़कें/भवन)", "बगीचे की जमीन"],
+        "correct": 2,
+        "explanation": "Gair Mumkin refers to land that is not cultivable because it is occupied by buildings, roads, or riverbeds."
+    },
+    {
+        "q": "In which register are Mutations entered by the Patwari?",
+        "q_hi": "पटवारी द्वारा इंतकाल (म्यूटेशन) किस रजिस्टर में दर्ज किए जाते हैं?",
+        "options": ["Register No. 1", "Register No. 4", "Register No. 6", "Register No. 10"],
+        "options_hi": ["रजिस्टर नंबर 1", "रजिस्टर नंबर 4", "रजिस्टर नंबर 6", "रजिस्टर नंबर 10"],
+        "correct": 2,
+        "explanation": "Mutations are entered in Register No. 6 (Register Haqdaran Zamin is based on this)."
+    },
+    {
+        "q": "What is the maximum area of 'Nautor' land that could be granted?",
+        "q_hi": "'नौतोड़' भूमि का अधिकतम कितना क्षेत्र आवंटित किया जा सकता था?",
+        "options": ["5 Bighas", "10 Bighas", "20 Bighas", "50 Bighas"],
+        "options_hi": ["5 बीघा", "10 बीघा", "20 बीघा", "50 बीघा"],
+        "correct": 2,
+        "explanation": "Historically, under the Nautor Rules 1968, the limit was up to 20 Bighas."
+    },
+    {
+        "q": "Who is the 'Malik Kabza'?",
+        "q_hi": "'मालिक कब्जा' कौन होता है?",
+        "options": ["Tenant", "Owner with share in Shamlat", "Owner WITHOUT share in Shamlat", "Government"],
+        "options_hi": ["किरायेदार", "शामलात में हिस्सेदार मालिक", "शामलात में बिना हिस्से वाला मालिक", "सरकार"],
+        "correct": 2,
+        "explanation": "Malik Kabza owns the land in his possession but has no share in the village common land (Shamlat)."
+    },
+    {
+        "q": "Which officer attests the 'Shajra Nasb' (Genealogy Tree)?",
+        "q_hi": "'शजरा नसब' (वंशावली वृक्ष) को कौन सा अधिकारी सत्यापित करता है?",
+        "options": ["Patwari", "Field Kanungo", "Tehsildar/Revenue Officer", "Lambardar"],
+        "options_hi": ["पटवारी", "फील्ड कानूनगो", "तहसीलदार/राजस्व अधिकारी", "लंबरदार"],
+        "correct": 2,
+        "explanation": "The Shajra Nasb is prepared by the Patwari/Kanungo but finally attested by the Revenue Officer."
+    },
+    {
+        "q": "What is 1 Biswa equal to?",
+        "q_hi": "1 बिस्वा किसके बराबर होता है?",
+        "options": ["10 Biswansi", "15 Biswansi", "20 Biswansi", "100 Biswansi"],
+        "options_hi": ["10 बिस्वांसी", "15 बिस्वांसी", "20 बिस्वांसी", "100 बिस्वांसी"],
+        "correct": 2,
+        "explanation": "1 Biswa = 20 Biswansi."
+    },
+    {
+        "q": "What is the colour of the 'Abadi Deh' (Habitation) line on the map?",
+        "q_hi": "नक्शे पर 'आबादी देह' (बसावट) रेखा का रंग क्या होता है?",
+        "options": ["Blue", "Green", "Red", "Black"],
+        "options_hi": ["नीला", "हरा", "लाल", "काला"],
+        "correct": 2,
+        "explanation": "The habitation area is enclosed by a Red line, hence often called 'Lal Dora'."
+    },
+    {
+        "q": "Under Section 35, who verifies the correctness of mutation entries on the spot?",
+        "q_hi": "धारा 35 के तहत, मौके पर इंतकाल प्रविष्टियों की शुद्धता कौन सत्यापित करता है?",
+        "options": ["Patwari", "Field Kanungo", "Tehsildar", "Nambardar"],
+        "options_hi": ["पटवारी", "फील्ड कानूनगो", "तहसीलदार", "नंबरदार"],
+        "correct": 1,
+        "explanation": "The Field Kanungo is responsible for 100% verification of mutation entries before they are put up for attestation."
+    },
+    {
+        "q": "What is 'Warabandi'?",
+        "q_hi": "'वाराबंदी' क्या है?",
+        "options": ["Division of land", "Rotation of water for irrigation", "Collection of tax", "Village assembly"],
+        "options_hi": ["भूमि का विभाजन", "सिंचाई के लिए पानी की बारी (रोटेशन)", "कर संग्रह", "ग्राम सभा"],
+        "correct": 1,
+        "explanation": "Warabandi is the system of rotational water supply for irrigation."
+    },
+    {
+        "q": "What is the 'Parat Sarkar' copy of Jamabandi?",
+        "q_hi": "जमाबंदी की 'पड़त सरकार' प्रति क्या है?",
+        "options": ["Copy kept by Patwari", "Copy sent to District Record Room", "Copy given to owner", "Copy destroyed"],
+        "options_hi": ["पटवारी द्वारा रखी गई प्रति", "जिला रिकॉर्ड रूम भेजी गई प्रति", "मालिक को दी गई प्रति", "नष्ट की गई प्रति"],
+        "correct": 1,
+        "explanation": "Parat Sarkar is the government copy sent to the District Record Room (Muhafiz Khana)."
+    },
+    {
+        "q": "Which Section of HP Land Revenue Act deals with 'Arrest and Detention' of defaulters?",
+        "q_hi": "हि.प्र. भू-राजस्व अधिनियम की कौन सी धारा डिफॉल्टरों की 'गिरफ्तारी और हिरासत' से संबंधित है?",
+        "options": ["Section 68", "Section 69", "Section 70", "Section 75"],
+        "options_hi": ["धारा 68", "धारा 69", "धारा 70", "धारा 75"],
+        "correct": 1,
+        "explanation": "Section 69 of the HP Land Revenue Act 1954 deals with arrest and detention of defaulters."
+    },
+    {
+        "q": "What is 'Sarsahi' in measurement?",
+        "q_hi": "माप में 'सरसाही' क्या है?",
+        "options": ["1 Karam x 1 Karam", "1 Meter x 1 Meter", "1 Foot x 1 Foot", "1 Chain x 1 Chain"],
+        "options_hi": ["1 करम x 1 करम", "1 मीटर x 1 मीटर", "1 फुट x 1 फुट", "1 चेन x 1 चेन"],
+        "correct": 0,
+        "explanation": "1 Sarsahi is a square unit equal to 1 Karam x 1 Karam (Square Karam). It is the smallest unit in the Kanal system."
+    },
+    {
+        "q": "What does the term 'Muafi' signify in revenue records?",
+        "q_hi": "राजस्व रिकॉर्ड में 'मुआफी' शब्द का क्या अर्थ है?",
+        "options": ["Land with double tax", "Land exempted from land revenue", "Forest land", "Disputed land"],
+        "options_hi": ["दोगुना कर वाली भूमि", "भू-राजस्व से छूट प्राप्त भूमि", "वन भूमि", "विवादित भूमि"],
+        "correct": 1,
+        "explanation": "Muafi means land that has been exempted (forgiven) from the payment of Land Revenue."
+    },
+    {
+        "q": "Who maintains the record of Patwaris' service books and salary at the district level?",
+        "q_hi": "जिला स्तर पर पटवारियों की सर्विस बुक और वेतन का रिकॉर्ड कौन रखता है?",
+        "options": ["Field Kanungo", "Sadar (Office) Kanungo", "Tehsildar", "Nambardar"],
+        "options_hi": ["फील्ड कानूनगो", "सदर (कार्यालय) कानूनगो", "तहसीलदार", "नंबरदार"],
+        "correct": 1,
+        "explanation": "The Sadar Kanungo (Office Kanungo) sits at the Tehsil/District HQ and manages records, statistics, and salaries."
+    },
+    {
+        "q": "What is 'Chahi Mustar'?",
+        "q_hi": "'चाही मुस्तर' क्या है?",
+        "options": ["Land irrigated by own well", "Land irrigated by purchased water", "Rain-fed land", "Barren land"],
+        "options_hi": ["अपने कुएं से सिंचित भूमि", "खरीदे गए पानी से सिंचित भूमि", "वर्षा आधारित भूमि", "बंजर भूमि"],
+        "correct": 1,
+        "explanation": "Chahi means well-irrigated. 'Mustar' implies 'acquired/purchased'. So it is land irrigated by water purchased from another source."
+    },
+    {
+        "q": "How many digits does the ULPIN (Unique Land Parcel Identification Number) have?",
+        "q_hi": "ULPIN (विशिष्ट भूमि पार्सल पहचान संख्या) में कितने अंक होते हैं?",
+        "options": ["10", "12", "14", "16"],
+        "options_hi": ["10", "12", "14", "16"],
+        "correct": 2,
+        "explanation": "ULPIN, often called 'Aadhaar for Land', consists of 14 alphanumeric digits based on geo-coordinates."
+    },
+    {
+        "q": "Who appoints the 'Nambardar' (Village Headman)?",
+        "q_hi": "'नंबरदार' (ग्राम प्रधान) की नियुक्ति कौन करता है?",
+        "options": ["Patwari", "Tehsildar", "Collector (DC)", "Divisional Commissioner"],
+        "options_hi": ["पटवारी", "तहसीलदार", "कलेक्टर (डीसी)", "मंडलायुक्त"],
+        "correct": 2,
+        "explanation": "The Collector (Deputy Commissioner) has the power to appoint and remove the Nambardar."
+    },
+    {
+        "q": "What is 'Kurki' in the context of revenue recovery?",
+        "q_hi": "राजस्व वसूली के संदर्भ में 'कुर्की' क्या है?",
+        "options": ["Arrest of defaulter", "Attachment/Sale of movable property", "Transfer of holding", "Fine on encroachment"],
+        "options_hi": ["डिफॉल्टर की गिरफ्तारी", "चल संपत्ति की कुर्की/बिक्री", "जोत का स्थानांतरण", "अतिक्रमण पर जुर्माना"],
+        "correct": 1,
+        "explanation": "Kurki refers to the process of distraint and sale of the defaulter's movable property (like crops) to recover arrears."
+    },
+    {
+        "q": "What is the standard length of a 'Karam' in Himachal (Standard)?",
+        "q_hi": "हिमाचल (मानक) में 'करम' की मानक लंबाई क्या है?",
+        "options": ["50 inches", "54 inches", "57.5 inches", "66 inches"],
+        "options_hi": ["50 इंच", "54 इंच", "57.5 इंच", "66 इंच"],
+        "correct": 2,
+        "explanation": "While local variations exist, 57.5 inches is the standard Karam length used for conversions in most exams."
+    },
+    {
+        "q": "Where does an appeal lie against the order of a Settlement Officer?",
+        "q_hi": "बंदोबस्त अधिकारी के आदेश के विरुद्ध अपील कहाँ की जाती है?",
+        "options": ["Deputy Commissioner", "Divisional Commissioner", "Financial Commissioner", "High Court"],
+        "options_hi": ["उपायुक्त", "मंडलायुक्त", "वित्तीय आयुक्त", "उच्च न्यायालय"],
+        "correct": 1,
+        "explanation": "Appeals against the Settlement Officer typically go to the Divisional Commissioner."
+    },
+    {
+        "q": "What is a 'Maurusi' tenant?",
+        "q_hi": "'मौरूसी' किरायेदार क्या है?",
+        "options": ["Tenant-at-will", "Occupancy Tenant", "Sub-tenant", "Government Lessee"],
+        "options_hi": ["इच्छानुसार किरायेदार", "दखलकार किरायेदार (Occupancy Tenant)", "उप-किरायेदार", "सरकारी पट्टेदार"],
+        "correct": 1,
+        "explanation": "Maurusi refers to an Occupancy Tenant who has permanent, heritable rights to cultivate the land."
+    },
+    {
+        "q": "What does 'Ghair Maurusi' mean?",
+        "q_hi": "'गैर मौरूसी' का क्या अर्थ है?",
+        "options": ["Occupancy Tenant", "Tenant-at-will", "Landowner", "Mortgagee"],
+        "options_hi": ["दखलकार किरायेदार", "इच्छानुसार किरायेदार (Tenant-at-will)", "जमींदार", "गिरवी रखने वाला"],
+        "correct": 1,
+        "explanation": "Ghair Maurusi means a 'Tenant-at-will' who does not have permanent rights and cultivates on a year-to-year basis."
+    },
+    {
+        "q": "Who is the 'Murtahin' in a land transaction?",
+        "q_hi": "भूमि लेनदेन में 'मुर्ताहिन' कौन होता है?",
+        "options": ["Seller", "Buyer", "Mortgagor (Borrower)", "Mortgagee (Lender)"],
+        "options_hi": ["विक्रेता", "खरीदार", "गिरवी रखने वाला (ऋणी)", "गिरवी लेने वाला (ऋणदाता)"],
+        "correct": 3,
+        "explanation": "Murtahin is the Mortgagee (the person/bank who lends money and keeps the land as security)."
+    },
+    {
+        "q": "Who is the 'Rahin' in a land transaction?",
+        "q_hi": "भूमि लेनदेन में 'राहिन' कौन होता है?",
+        "options": ["Mortgagor (Borrower)", "Mortgagee (Lender)", "Tenant", "Landlord"],
+        "options_hi": ["गिरवी रखने वाला (ऋणी)", "गिरवी लेने वाला (ऋणदाता)", "किरायेदार", "मकान मालिक"],
+        "correct": 0,
+        "explanation": "Rahin is the Mortgagor (the landowner who pledges their land to take a loan)."
+    },
+    {
+        "q": "What is the 'Hadbast' number?",
+        "q_hi": "'हड़बस्त' नंबर क्या है?",
+        "options": ["House number", "Khasra number", "Village/Estate boundary number", "Patwari circle number"],
+        "options_hi": ["मकान नंबर", "खसरा नंबर", "ग्राम/संपदा सीमा संख्या", "पटवारी सर्कल नंबर"],
+        "correct": 2,
+        "explanation": "Hadbast number is the serial number assigned to the boundary of a revenue estate (village)."
+    },
+    {
+        "q": "What is recorded in the 'Wajib-ul-Arz'?",
+        "q_hi": "'वाजिब-उल-अर्ज' में क्या दर्ज किया जाता है?",
+        "options": ["Daily events", "Village customs and rights", "Crop data", "Mutation fee"],
+        "options_hi": ["दैनिक घटनाएं", "गाँव के रीति-रिवाज और अधिकार", "फसल डेटा", "इंतकाल शुल्क"],
+        "correct": 1,
+        "explanation": "Wajib-ul-Arz is the Village Administration Paper that records village customs, community rights, and rules."
+    },
+    {
+        "q": "Which Section of the HP Land Revenue Act attaches a 'Presumption of Truth' to Jamabandi entries?",
+        "q_hi": "हि.प्र. भू-राजस्व अधिनियम की कौन सी धारा जमाबंदी प्रविष्टियों को 'सत्यता की धारणा' प्रदान करती है?",
+        "options": ["Section 32", "Section 35", "Section 45", "Section 118"],
+        "options_hi": ["धारा 32", "धारा 35", "धारा 45", "धारा 118"],
+        "correct": 2,
+        "explanation": "Section 45 states that entries in the Record of Rights (Jamabandi) shall be presumed to be true until the contrary is proved."
+    },
+    {
+        "q": "Under HP Tenancy Act 1972, which section confers proprietary rights on tenants?",
+        "q_hi": "हि.प्र. काश्तकारी अधिनियम 1972 के तहत, कौन सी धारा किरायेदारों को मालिकाना अधिकार प्रदान करती है?",
+        "options": ["Section 90", "Section 104", "Section 118", "Section 163"],
+        "options_hi": ["धारा 90", "धारा 104", "धारा 118", "धारा 163"],
+        "correct": 1,
+        "explanation": "Section 104 is the landmark provision that provided for the automatic vesting of proprietary (ownership) rights in tenants."
+    },
+    {
+        "q": "Under the HP Village Common Lands Act 1974, in whom does the 'Shamlat' land vest?",
+        "q_hi": "हि.प्र. ग्राम शामलात भूमि अधिनियम 1974 के तहत, 'शामलात' भूमि किसमें निहित होती है?",
+        "options": ["Village Panchayat", "State Government", "Landowners", "Forest Department"],
+        "options_hi": ["ग्राम पंचायत", "राज्य सरकार", "भूस्वामी", "वन विभाग"],
+        "correct": 1,
+        "explanation": "The Act vested all rights, title, and interest in Shamlat lands in the State Government."
+    },
+    {
+        "q": "What is the primary objective of the HP Holdings Consolidation Act 1971?",
+        "q_hi": "हि.प्र. जोत चकबंदी अधिनियम 1971 का मुख्य उद्देश्य क्या है?",
+        "options": ["To increase tax", "To consolidate scattered plots (Chakbandi)", "To survey forests", "To sell government land"],
+        "options_hi": ["कर बढ़ाना", "बिखरे हुए भूखंडों को समेकित करना (चकबंदी)", "वनों का सर्वेक्षण", "सरकारी जमीन बेचना"],
+        "correct": 1,
+        "explanation": "The Act aims to provide for the consolidation of agricultural holdings (Chakbandi) to prevent fragmentation."
+    },
+    {
+        "q": "Under the HP Ceiling on Land Holdings Act 1972, what happens to surplus land?",
+        "q_hi": "हि.प्र. जोत सीमा अधिनियम 1972 के तहत, अधिशेष भूमि का क्या होता है?",
+        "options": ["Returned to owner", "Sold by auction", "Vested in State Government", "Given to Panchayat"],
+        "options_hi": ["मालिक को वापस", "नीलामी द्वारा बिक्री", "राज्य सरकार में निहित", "पंचायत को दी गई"],
+        "correct": 2,
+        "explanation": "Surplus land above the ceiling limit vests in the State Government for utilization/distribution."
+    },
+    {
+        "q": "In Scheduled Areas (PESA Act), whose consultation is mandatory before land acquisition?",
+        "q_hi": "अनुसूचित क्षेत्रों (PESA अधिनियम) में, भूमि अधिग्रहण से पहले किससे परामर्श अनिवार्य है?",
+        "options": ["Zila Parishad", "Gram Sabha", "Tehsildar", "MLA"],
+        "options_hi": ["जिला परिषद", "ग्राम सभा", "तहसीलदार", "विधायक"],
+        "correct": 1,
+        "explanation": "PESA empowers the Gram Sabha, and its consultation is mandatory before land acquisition in Scheduled Areas."
+    },
+    {
+        "q": "The HP Abolition of Land Revenue Act 1977 exempts holdings up to what size?",
+        "q_hi": "हि.प्र. भू-राजस्व उन्मूलन अधिनियम 1977 किस आकार तक की जोत को छूट देता है?",
+        "options": ["1 Acre", "2.5 Acres", "5 Acres", "10 Acres"],
+        "options_hi": ["1 एकड़", "2.5 एकड़", "5 एकड़", "10 एकड़"],
+        "correct": 1,
+        "explanation": "Holdings up to 2.5 Acres (or paying less than ₹5 revenue) are defined as uneconomic and exempt."
+    },
+    {
+        "q": "Which Chapter of the HP Land Records Manual details the duties of a Patwari?",
+        "q_hi": "हि.प्र. भू-अभिलेख मैनुअल का कौन सा अध्याय पटवारी के कर्तव्यों का विवरण देता है?",
+        "options": ["Chapter 1", "Chapter 3", "Chapter 9", "Chapter 15"],
+        "options_hi": ["अध्याय 1", "अध्याय 3", "अध्याय 9", "अध्याय 15"],
+        "correct": 1,
+        "explanation": "Chapter 3 of the HP Land Records Manual specifically lists the duties and functions of the Patwari."
+    },
+    {
+        "q": "What is the limitation period for filing an appeal before the Financial Commissioner?",
+        "q_hi": "वित्तीय आयुक्त के समक्ष अपील दायर करने की परिसीमा अवधि क्या है?",
+        "options": ["30 Days", "60 Days", "90 Days", "180 Days"],
+        "options_hi": ["30 दिन", "60 दिन", "90 दिन", "180 दिन"],
+        "correct": 2,
+        "explanation": "The limitation period for an appeal to the Financial Commissioner is 90 days."
+    },
+    {
+        "q": "Who decides disputes regarding entries in the Record of Rights under Section 37?",
+        "q_hi": "धारा 37 के तहत जमाबंदी (रिकॉर्ड ऑफ राइट्स) में प्रविष्टियों से संबंधित विवादों का निर्णय कौन करता है?",
+        "options": ["Patwari", "Kanungo", "Revenue Officer", "Nambardar"],
+        "options_hi": ["पटवारी", "कानूनगो", "राजस्व अधिकारी", "नंबरदार"],
+        "correct": 2,
+        "explanation": "Section 37 empowers the Revenue Officer to determine disputes regarding entries in the records."
+    },
+    {
+        "q": "Which section of the HP Land Revenue Act deals with the penalty for encroachment on roads?",
+        "q_hi": "हि.प्र. भू-राजस्व अधिनियम की कौन सी धारा सड़कों पर अतिक्रमण के लिए दंड से संबंधित है?",
+        "options": ["Section 163", "Section 118", "Section 107", "Section 35"],
+        "options_hi": ["धारा 163", "धारा 118", "धारा 107", "धारा 35"],
+        "correct": 1,
+        "explanation": "Section 118 of the HP Land Revenue Act deals with penalties for encroachment on roads."
+    },
+    {
+        "q": "Under the Hindu Succession Act, which amendment granted daughters equal rights as coparceners?",
+        "q_hi": "हिंदू उत्तराधिकार अधिनियम के तहत, किस संशोधन ने बेटियों को सहदायिक (coparceners) के रूप में समान अधिकार दिए?",
+        "options": ["1976 Amendment", "1994 Amendment", "2005 Amendment", "2020 Amendment"],
+        "options_hi": ["1976 संशोधन", "1994 संशोधन", "2005 संशोधन", "2020 संशोधन"],
+        "correct": 2,
+        "explanation": "The 2005 Amendment to the Hindu Succession Act, 1956, recognized daughters as coparceners by birth, giving them equal rights in ancestral property."
+    },
+    {
+        "q": "According to Section 17 of the Indian Registration Act, registration is compulsory for immovable property exceeding what value?",
+        "q_hi": "भारतीय पंजीकरण अधिनियम की धारा 17 के अनुसार, किस मूल्य से अधिक की अचल संपत्ति के लिए पंजीकरण अनिवार्य है?",
+        "options": ["₹100", "₹500", "₹1000", "₹10000"],
+        "options_hi": ["₹100", "₹500", "₹1000", "₹10000"],
+        "correct": 0,
+        "explanation": "Section 17 mandates compulsory registration for any non-testamentary instrument transferring immovable property valued at more than ₹100."
+    },
+    {
+        "q": "What is the time limit for providing a copy of Jamabandi (Nakal) under the HP Public Service Guarantee Act?",
+        "q_hi": "हि.प्र. लोक सेवा गारंटी अधिनियम के तहत जमाबंदी (नकल) की प्रति प्रदान करने की समय सीमा क्या है?",
+        "options": ["3 Days", "7 Days", "15 Days", "24 Hours / Same Day"],
+        "options_hi": ["3 दिन", "7 दिन", "15 दिन", "24 घंटे / उसी दिन"],
+        "correct": 3,
+        "explanation": "The Act mandates that a copy of land records (Nakal) must be provided within 24 hours or on the same working day."
+    },
+    {
+        "q": "Under the HP Roadside Land Control Act, what is required for construction near a scheduled road?",
+        "q_hi": "हि.प्र. सड़क किनारे भूमि नियंत्रण अधिनियम के तहत, अनुसूचित सड़क के पास निर्माण के लिए क्या आवश्यक है?",
+        "options": ["NOC from PWD/Revenue", "Permission from Panchayat", "No permission needed", "NOC from Forest Dept"],
+        "options_hi": ["PWD/राजस्व से NOC", "पंचायत से अनुमति", "अनुमति की आवश्यकता नहीं", "वन विभाग से NOC"],
+        "correct": 0,
+        "explanation": "To ensure construction is outside the 'Controlled Width', an NOC (No Objection Certificate) confirming the distance from the road center is required."
+    },
+    {
+        "q": "Which section of the Limitation Act allows for 'Condonation of Delay' in filing appeals?",
+        "q_hi": "परिसीमा अधिनियम की कौन सी धारा अपील दायर करने में 'विलंब क्षमा' (Condonation of Delay) की अनुमति देती है?",
+        "options": ["Section 3", "Section 5", "Section 12", "Section 14"],
+        "options_hi": ["धारा 3", "धारा 5", "धारा 12", "धारा 14"],
+        "correct": 1,
+        "explanation": "Section 5 of the Limitation Act allows the appellate authority to admit an appeal after the expiry of the period if 'sufficient cause' is shown."
+    },
+    {
+        "q": "What is 'SIA' in the context of the RFCTLARR Act (Land Acquisition)?",
+        "q_hi": "RFCTLARR अधिनियम (भूमि अधिग्रहण) के संदर्भ में 'SIA' क्या है?",
+        "options": ["State Impact Assessment", "Social Impact Assessment", "Survey of India Act", "Systematic Investment Area"],
+        "options_hi": ["राज्य प्रभाव मूल्यांकन", "सामाजिक प्रभाव मूल्यांकन", "भारतीय सर्वेक्षण अधिनियम", "व्यवस्थित निवेश क्षेत्र"],
+        "correct": 1,
+        "explanation": "SIA stands for Social Impact Assessment, which is a mandatory study to determine the public purpose and social costs of land acquisition."
+    },
+    {
+        "q": "Under the HP Ceiling on Land Holdings Act, what defines a 'Standard Acre'?",
+        "q_hi": "हि.प्र. जोत सीमा अधिनियम के तहत, 'मानक एकड़' को क्या परिभाषित करता है?",
+        "options": ["1 acre of barren land", "1 acre of orchard", "1 acre of land yielding two crops a year", "1000 sq meters"],
+        "options_hi": ["1 एकड़ बंजर भूमि", "1 एकड़ बगीचा", "1 एकड़ भूमि जो साल में दो फसलें देती है", "1000 वर्ग मीटर"],
+        "correct": 2,
+        "explanation": "A Standard Acre is defined as one acre of land capable of yielding two crops in an agricultural year (irrigated land)."
+    },
+    {
+        "q": "Which section of the HP Land Revenue Act imposes a penalty for destroying survey marks (Burji)?",
+        "q_hi": "हि.प्र. भू-राजस्व अधिनियम की कौन सी धारा सर्वेक्षण चिह्नों (बुर्जी) को नष्ट करने पर दंड लगाती है?",
+        "options": ["Section 45", "Section 107", "Section 112", "Section 118"],
+        "options_hi": ["धारा 45", "धारा 107", "धारा 112", "धारा 118"],
+        "correct": 2,
+        "explanation": "Section 112 deals with the penalty for willfully destroying, damaging, or removing survey marks or boundary pillars."
+    },
+    {
+        "q": "How much irrigated land can a landowner resume from a non-occupancy tenant for personal cultivation under the Tenancy Act?",
+        "q_hi": "काश्तकारी अधिनियम के तहत व्यक्तिगत खेती के लिए एक जमींदार गैर-दखलकार किरायेदार से कितनी सिंचित भूमि वापस ले सकता है?",
+        "options": ["1.5 Acres", "3 Acres", "5 Acres", "10 Acres"],
+        "options_hi": ["1.5 एकड़", "3 एकड़", "5 एकड़", "10 एकड़"],
+        "correct": 0,
+        "explanation": "A landowner can resume up to 1.5 acres of irrigated land (or 3 acres of unirrigated land) for personal cultivation (Khudkasht)."
+    },
+    {
+        "q": "Who prepares the 'Nuksan Report' (Damage Report) for disaster relief claims?",
+        "q_hi": "आपदा राहत दावों के लिए 'नुकसान रिपोर्ट' कौन तैयार करता है?",
+        "options": ["Pradhan", "Patwari", "BDO", "Insurance Agent"],
+        "options_hi": ["प्रधान", "पटवारी", "बीडीओ", "बीमा एजेंट"],
+        "correct": 1,
+        "explanation": "As the first responder under the Relief Manual, the Patwari conducts the spot survey and prepares the Nuksan Report for crop or house damage."
+    }
+]

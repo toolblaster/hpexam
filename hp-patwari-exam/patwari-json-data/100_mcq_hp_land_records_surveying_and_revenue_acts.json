@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "q_en": "What is the length of a Revenue Chain commonly used in HP?",
+    "q_hi": "हिमाचल में आमतौर पर उपयोग की जाने वाली 'राजस्व श्रृंखला' (Revenue Chain) की लंबाई क्या है?",
+    "options_en": ["66 feet", "33 feet", "100 feet", "50 feet"],
+    "options_hi": ["66 फीट", "33 फीट", "100 फीट", "50 फीट"],
+    "correct": 1,
+    "explanation": "In HP hill areas, a 33-feet chain is often used locally, though Gunter's chain (66ft) is the standard academic answer. As per the mock test source, the answer is 33 feet."
+  },
+  {
+    "id": 2,
+    "q_en": "Which instrument determines the difference in height (leveling)?",
+    "q_hi": "ऊँचाई (समतलन) में अंतर निर्धारित करने के लिए किस उपकरण का उपयोग होता है?",
+    "options_en": ["Chain", "Theodolite", "Level", "Compass"],
+    "options_hi": ["चेन", "थियोडोलाइट", "लेवल", "कम्पास"],
+    "correct": 2,
+    "explanation": "A Level (Dumpy Level/Auto Level) is used for determining elevation differences."
+  },
+  {
+    "id": 3,
+    "q_en": "'Jamabandi' is revised every ____ years.",
+    "q_hi": "'जमाबंदी' को हर ____ वर्षों में संशोधित किया जाता है।",
+    "options_en": ["1", "4", "5", "10"],
+    "options_hi": ["1", "4", "5", "10"],
+    "correct": 2,
+    "explanation": "Jamabandi is prepared quinquennially (every 5 years)."
+  },
+  {
+    "id": 4,
+    "q_en": "The inspection of crops by Patwari is called:",
+    "q_hi": "पटवारी द्वारा फसलों के निरीक्षण को क्या कहा जाता है?",
+    "options_en": ["Jamabandi", "Girdawari", "Mutation", "Nishandehi"],
+    "options_hi": ["जमाबंदी", "गिरदावरी", "इंतकाल", "निशानदेही"],
+    "correct": 1,
+    "explanation": "Girdawari is the bi-annual crop inspection."
+  },
+  {
+    "id": 5,
+    "q_en": "Who prepares the 'Tatima'?",
+    "q_hi": "'ततीमा' कौन तैयार करता है?",
+    "options_en": ["Tehsildar", "Kanungo", "Patwari", "DC"],
+    "options_hi": ["तहसीलदार", "कानूनगो", "पटवारी", "डीसी"],
+    "correct": 2,
+    "explanation": "The Patwari prepares the Tatima (map of divided plot) on the spot."
+  },
+  {
+    "id": 6,
+    "q_en": "1 Acre is equal to how many Bighas (approx in HP standard)?",
+    "q_hi": "1 एकड़ कितने बीघा (हि.प्र. मानक) के बराबर है?",
+    "options_en": ["2 Bighas", "4 Bighas", "10 Bighas", "8 Bighas"],
+    "options_hi": ["2 बीघा", "4 बीघा", "10 बीघा", "8 बीघा"],
+    "correct": 1,
+    "explanation": "Standard conversion is approx 4-5 Bighas per Acre depending on the region (Source key says 4)."
+  },
+  {
+    "id": 7,
+    "q_en": "Which officer approves the 'Mutation' (Intakal)?",
+    "q_hi": "'इंतकाल' (म्यूटेशन) को कौन सा अधिकारी स्वीकृत करता है?",
+    "options_en": ["Patwari", "Revenue Officer (Tehsildar)", "Pradhan", "BDO"],
+    "options_hi": ["पटवारी", "राजस्व अधिकारी (तहसीलदार)", "प्रधान", "बीडीओ"],
+    "correct": 1,
+    "explanation": "Mutations are attested by a Revenue Officer (Tehsildar/Naib Tehsildar)."
+  },
+  {
+    "id": 8,
+    "q_en": "'Lal Dora' land is exempted from:",
+    "q_hi": "'लाल डोरा' भूमि को किससे छूट प्राप्त है?",
+    "options_en": ["Sale", "Building Bye-laws/House Tax", "Electricity", "Water"],
+    "options_hi": ["बिक्री", "भवन उपनियम/गृह कर", "बिजली", "पानी"],
+    "correct": 1,
+    "explanation": "Abadi Deh (Lal Dora) is traditionally exempt from building bye-laws and land revenue."
+  },
+  {
+    "id": 9,
+    "q_en": "What is 'Shajra Nasb'?",
+    "q_hi": "'शजरा नसब' क्या है?",
+    "options_en": ["Map", "Genealogy Tree", "Tax List", "Crop List"],
+    "options_hi": ["नक्शा", "वंशावली वृक्ष", "कर सूची", "फसल सूची"],
+    "correct": 1,
+    "explanation": "Shajra Nasb is the genealogical tree of landowners."
+  },
+  {
+    "id": 10,
+    "q_en": "Under MGNREGA, employment is guaranteed for ___ days.",
+    "q_hi": "मनरेगा के तहत ___ दिनों के रोजगार की गारंटी है।",
+    "options_en": ["50", "100", "120", "200"],
+    "options_hi": ["50", "100", "120", "200"],
+    "correct": 1,
+    "explanation": "100 days is the standard guarantee (though HP offers 120 in tribal areas)."
+  },
+  {
+    "id": 11,
+    "q_en": "One 'Karam' is approximately:",
+    "q_hi": "एक 'करम' लगभग होता है:",
+    "options_en": ["57 inches", "66 inches", "33 inches", "100 inches"],
+    "options_hi": ["57 इंच", "66 इंच", "33 इंच", "100 इंच"],
+    "correct": 0,
+    "explanation": "57.15 inches is the standard Karam length."
+  },
+  {
+    "id": 12,
+    "q_en": "20 'Biswansi' make one:",
+    "q_hi": "20 'बिस्वांसी' मिलकर क्या बनाते हैं?",
+    "options_en": ["Bigha", "Biswa", "Kanal", "Marla"],
+    "options_hi": ["बीघा", "बिस्वा", "कनाल", "मरला"],
+    "correct": 1,
+    "explanation": "20 Biswansi = 1 Biswa."
+  },
+  {
+    "id": 13,
+    "q_en": "20 'Biswa' make one:",
+    "q_hi": "20 'बिस्वा' मिलकर क्या बनाते हैं?",
+    "options_en": ["Bigha", "Kanal", "Acre", "Hectare"],
+    "options_hi": ["बीघा", "कनाल", "एकड़", "हेक्टेयर"],
+    "correct": 0,
+    "explanation": "20 Biswa = 1 Bigha."
+  },
+  {
+    "id": 14,
+    "q_en": "What is 'Khewat Number'?",
+    "q_hi": "'खेवट नंबर' क्या है?",
+    "options_en": ["Cultivator's number", "Owner's holding number", "Map number"],
+    "options_hi": ["काश्तकार का नंबर", "मालिक का खाता नंबर", "नक्शा नंबर"],
+    "correct": 1,
+    "explanation": "Khewat Number denotes ownership (Malik)."
+  },
+  {
+    "id": 15,
+    "q_en": "What is 'Khatauni Number'?",
+    "q_hi": "'खतौनी नंबर' क्या है?",
+    "options_en": ["Owner's number", "Cultivator's/Tenant's holding number"],
+    "options_hi": ["मालिक का नंबर", "काश्तकार/किरायेदार का नंबर"],
+    "correct": 1,
+    "explanation": "Khatauni denotes the cultivator/tenant holding."
+  },
+  {
+    "id": 16,
+    "q_en": "'Mussavi' is the ____ map.",
+    "q_hi": "'मुसावी' ____ नक्शा है।",
+    "options_en": ["Final Cloth", "Original Field (Paper)", "Digital", "Rough"],
+    "options_hi": ["अंतिम कपड़ा", "मूल क्षेत्र (कागज)", "डिजिटल", "रफ"],
+    "correct": 1,
+    "explanation": "Mussavi is the original map on thick paper."
+  },
+  {
+    "id": 17,
+    "q_en": "'Latha' is made of:",
+    "q_hi": "'लट्ठा' किससे बना होता है?",
+    "options_en": ["Paper", "Cloth", "Plastic", "Metal"],
+    "options_hi": ["कागज", "कपड़ा", "प्लास्टिक", "धातु"],
+    "correct": 1,
+    "explanation": "Latha is the cloth copy of the map."
+  },
+  {
+    "id": 18,
+    "q_en": "The Rabi crop is sown in:",
+    "q_hi": "रबी की फसल कब बोई जाती है?",
+    "options_en": ["Summer", "Monsoon", "Winter", "Spring"],
+    "options_hi": ["गर्मी", "मानसून", "सर्दी", "वसंत"],
+    "correct": 2,
+    "explanation": "Rabi is sown in winter (Oct-Nov)."
+  },
+  {
+    "id": 19,
+    "q_en": "Maize (Makki) is a ____ crop.",
+    "q_hi": "मक्का (मक्की) एक ____ फसल है।",
+    "options_en": ["Rabi", "Kharif", "Zaid", "None"],
+    "options_hi": ["रबी", "खरीफ", "जायद", "कोई नहीं"],
+    "correct": 1,
+    "explanation": "Maize is a Kharif crop."
+  },
+  {
+    "id": 20,
+    "q_en": "'Wajib-ul-Arz' records:",
+    "q_hi": "'वाजिब-उल-अर्ज' में क्या दर्ज होता है?",
+    "options_en": ["Village customs", "Loans", "Forest fire", "Births"],
+    "options_hi": ["गाँव के रीति-रिवाज", "ऋण", "जंगल की आग", "जन्म"],
+    "correct": 0,
+    "explanation": "It records village customs and rights."
+  },
+  {
+    "id": 21,
+    "q_en": "Who appoints the 'Lambardar'?",
+    "q_hi": "'लंबरदार' की नियुक्ति कौन करता है?",
+    "options_en": ["Patwari", "District Collector", "Tehsildar", "SDM"],
+    "options_hi": ["पटवारी", "जिला कलेक्टर", "तहसीलदार", "एसडीएम"],
+    "correct": 1,
+    "explanation": "The District Collector appoints the Lambardar."
+  },
+  {
+    "id": 22,
+    "q_en": "'Pachotra' refers to:",
+    "q_hi": "'पचोतरा' का अर्थ है:",
+    "options_en": ["5% Surcharge for Lambardar", "5 Bighas land", "5% Tax rebate", "5 year term"],
+    "options_hi": ["लंबरदार के लिए 5% अधिभार", "5 बीघा जमीन", "5% कर छूट", "5 साल का कार्यकाल"],
+    "correct": 0,
+    "explanation": "Pachotra is the fee for the Lambardar."
+  },
+  {
+    "id": 23,
+    "q_en": "'Kanungo' supervises the work of:",
+    "q_hi": "'कानूनगो' किसके काम का निरीक्षण करता है?",
+    "options_en": ["Tehsildar", "Patwari", "DC", "Pradhan"],
+    "options_hi": ["तहसीलदार", "पटवारी", "डीसी", "प्रधान"],
+    "correct": 1,
+    "explanation": "Kanungo supervises the Patwari."
+  },
+  {
+    "id": 24,
+    "q_en": "First appellate authority in partition cases is:",
+    "q_hi": "विभाजन के मामलों में प्रथम अपीलीय प्राधिकारी कौन है?",
+    "options_en": ["Tehsildar", "SDM", "DC", "High Court"],
+    "options_hi": ["तहसीलदार", "एसडीएम", "डीसी", "उच्च न्यायालय"],
+    "correct": 1,
+    "explanation": "Partition is decided by AC 1st Grade (Tehsildar/SDM), appeal lies to Collector (DC/SDM)."
+  },
+  {
+    "id": 25,
+    "q_en": "'Intakal' fee is paid to:",
+    "q_hi": "'इंतकाल' शुल्क किसको दिया जाता है?",
+    "options_en": ["Patwari directly", "Government Treasury", "Pradhan", "Nobody"],
+    "options_hi": ["पटवारी को सीधे", "सरकारी खजाने में", "प्रधान", "कोई नहीं"],
+    "correct": 1,
+    "explanation": "Fees are deposited in the Government Treasury."
+  },
+  {
+    "id": 26,
+    "q_en": "'Fard' means:",
+    "q_hi": "'फर्द' का अर्थ है:",
+    "options_en": ["Copy of Land Record", "Tax Receipt", "Map", "Mutation"],
+    "options_hi": ["भूमि रिकॉर्ड की नकल", "कर रसीद", "नक्शा", "इंतकाल"],
+    "correct": 0,
+    "explanation": "Fard means a copy of the revenue record."
+  },
+  {
+    "id": 27,
+    "q_en": "Who is the chairman of the District Disaster Management Authority?",
+    "q_hi": "जिला आपदा प्रबंधन प्राधिकरण का अध्यक्ष कौन होता है?",
+    "options_en": ["SP", "DC", "CMO", "MP"],
+    "options_hi": ["एसपी", "डीसी", "सीएमओ", "सांसद"],
+    "correct": 1,
+    "explanation": "The DC is the chairman of DDMA."
+  },
+  {
+    "id": 28,
+    "q_en": "Administrative head of a Tehsil is:",
+    "q_hi": "तहसील का प्रशासनिक प्रमुख कौन होता है?",
+    "options_en": ["SDM", "Tehsildar", "Kanungo", "Naib Tehsildar"],
+    "options_hi": ["एसडीएम", "तहसीलदार", "कानूनगो", "नायब तहसीलदार"],
+    "correct": 1,
+    "explanation": "The Tehsildar heads the Tehsil."
+  },
+  {
+    "id": 29,
+    "q_en": "Section 118 of HP Tenancy Act restricts:",
+    "q_hi": "हि.प्र. काश्तकारी अधिनियम की धारा 118 किसे प्रतिबंधित करती है?",
+    "options_en": ["Selling crops", "Non-agriculturists buying land", "Cutting trees", "Building houses"],
+    "options_hi": ["फसल बेचना", "गैर-कृषकों का जमीन खरीदना", "पेड़ काटना", "घर बनाना"],
+    "correct": 1,
+    "explanation": "It restricts land purchase by non-agriculturists."
+  },
+  {
+    "id": 30,
+    "q_en": "Who can give permission under Sec 118?",
+    "q_hi": "धारा 118 के तहत अनुमति कौन दे सकता है?",
+    "options_en": ["Patwari", "State Govt", "Panchayat", "Local MLA"],
+    "options_hi": ["पटवारी", "राज्य सरकार", "पंचायत", "स्थानीय विधायक"],
+    "correct": 1,
+    "explanation": "State Government grants the permission."
+  },
+  {
+    "id": 31,
+    "q_en": "PM-KISAN amount is Rs ___ per installment.",
+    "q_hi": "पीएम-किसान राशि प्रति किस्त ___ रुपये है।",
+    "options_en": ["2000", "4000", "6000", "1000"],
+    "options_hi": ["2000", "4000", "6000", "1000"],
+    "correct": 0,
+    "explanation": "PM-KISAN provides Rs 6000 annually in three installments of Rs 2000 each."
+  },
+  {
+    "id": 32,
+    "q_en": "'e-Kalyan' portal is related to:",
+    "q_hi": "'ई-कल्याण' पोर्टल किससे संबंधित है?",
+    "options_en": ["Land Records", "Scholarships/Welfare", "Taxes", "Forests"],
+    "options_hi": ["भूमि रिकॉर्ड", "छात्रवृत्ति/कल्याण", "कर", "वन"],
+    "correct": 0,
+    "explanation": "In HP context questions, e-Kalyan is often linked to Land Records Computerization (though elsewhere it is scholarships)."
+  },
+  {
+    "id": 33,
+    "q_en": "SVAMITVA scheme uses which technology?",
+    "q_hi": "स्वामित्व योजना किस तकनीक का उपयोग करती है?",
+    "options_en": ["Satellite", "Drones", "Manual Chain", "None"],
+    "options_hi": ["उपग्रह", "ड्रोन", "मैनुअल चेन", "कोई नहीं"],
+    "correct": 1,
+    "explanation": "SVAMITVA uses Drone technology for surveying village inhabited areas."
+  },
+  {
+    "id": 34,
+    "q_en": "HimBhoomi is a:",
+    "q_hi": "हिमभूमि एक ____ है।",
+    "options_en": ["Land Record Software", "Fertilizer", "Seed Bank", "Map"],
+    "options_hi": ["लैंड रिकॉर्ड सॉफ्टवेयर", "उर्वरक", "बीज बैंक", "नक्शा"],
+    "correct": 0,
+    "explanation": "HimBhoomi is the software used for Land Records in Himachal Pradesh."
+  },
+  {
+    "id": 35,
+    "q_en": "'Kisan Credit Card' (KCC) validity is:",
+    "q_hi": "'किसान क्रेडिट कार्ड' (KCC) की वैधता होती है:",
+    "options_en": ["1 year", "3 years", "5 years", "10 years"],
+    "options_hi": ["1 साल", "3 साल", "5 साल", "10 साल"],
+    "correct": 2,
+    "explanation": "The validity of the Kisan Credit Card is typically 5 years."
+  },
+  {
+    "id": 36,
+    "q_en": "Soil Health Card Scheme was launched in:",
+    "q_hi": "मृदा स्वास्थ्य कार्ड योजना कब शुरू की गई थी?",
+    "options_en": ["2014", "2015", "2016", "2018"],
+    "options_hi": ["2014", "2015", "2016", "2018"],
+    "correct": 1,
+    "explanation": "The Soil Health Card Scheme was launched in 2015."
+  },
+  {
+    "id": 37,
+    "q_en": "Full form of GIS:",
+    "q_hi": "GIS का पूर्ण रूप:",
+    "options_en": ["Geographic Information System", "Geo Internet System", "Global Input System", "Geological Info System"],
+    "options_hi": ["भौगोलिक सूचना प्रणाली", "जियो इंटरनेट सिस्टम", "ग्लोबल इनपुट सिस्टम", "जियोलॉजिकल इन्फो सिस्टम"],
+    "correct": 0,
+    "explanation": "GIS stands for Geographic Information System."
+  },
+  {
+    "id": 38,
+    "q_en": "PESA Act was enacted in:",
+    "q_hi": "PESA अधिनियम कब लागू किया गया था?",
+    "options_en": ["1992", "1993", "1996", "2000"],
+    "options_hi": ["1992", "1993", "1996", "2000"],
+    "correct": 2,
+    "explanation": "The PESA Act was enacted in 1996."
+  },
+  {
+    "id": 39,
+    "q_en": "'Bhu-Naksha' software is for:",
+    "q_hi": "'भू-नक्शा' सॉफ्टवेयर किसके लिए है?",
+    "options_en": ["Digitizing Maps", "Weather", "Crop Insurance", "Soil Testing"],
+    "options_hi": ["नक्शों का डिजिटलीकरण", "मौसम", "फसल बीमा", "मृदा परीक्षण"],
+    "correct": 0,
+    "explanation": "Bhu-Naksha is used for the digitization and management of cadastral maps."
+  },
+  {
+    "id": 40,
+    "q_en": "Unique Land Parcel Identification Number (ULPIN) has:",
+    "q_hi": "विशिष्ट भूमि पार्सल पहचान संख्या (ULPIN) में कितने अंक होते हैं?",
+    "options_en": ["10 digits", "12 digits", "14 digits", "16 digits"],
+    "options_hi": ["10 अंक", "12 अंक", "14 अंक", "16 अंक"],
+    "correct": 2,
+    "explanation": "ULPIN consists of 14 alphanumeric digits."
+  },
+  {
+    "id": 41,
+    "q_en": "Minimum age to contest Panchayat election:",
+    "q_hi": "पंचायत चुनाव लड़ने के लिए न्यूनतम आयु:",
+    "options_en": ["18", "21", "25", "30"],
+    "options_hi": ["18", "21", "25", "30"],
+    "correct": 1,
+    "explanation": "The minimum age to contest Panchayat elections is 21 years."
+  },
+  {
+    "id": 42,
+    "q_en": "Tenure of Gram Panchayat is:",
+    "q_hi": "ग्राम पंचायत का कार्यकाल होता है:",
+    "options_en": ["3 years", "4 years", "5 years", "6 years"],
+    "options_hi": ["3 साल", "4 साल", "5 साल", "6 साल"],
+    "correct": 2,
+    "explanation": "The tenure of a Gram Panchayat is 5 years."
+  },
+  {
+    "id": 43,
+    "q_en": "Secretary of Gram Panchayat is appointed by:",
+    "q_hi": "ग्राम पंचायत के सचिव की नियुक्ति कौन करता है?",
+    "options_en": ["Pradhan", "State Govt", "Voters", "DC"],
+    "options_hi": ["प्रधान", "राज्य सरकार", "मतदाता", "डीसी"],
+    "correct": 1,
+    "explanation": "The Panchayat Secretary is a government employee appointed by the State Government."
+  },
+  {
+    "id": 44,
+    "q_en": "'Gram Sabha' meets at least ___ times a year.",
+    "q_hi": "'ग्राम सभा' की बैठक साल में कम से कम ___ बार होती है।",
+    "options_en": ["1", "2", "4", "12"],
+    "options_hi": ["1", "2", "4", "12"],
+    "correct": 2,
+    "explanation": "Gram Sabha meetings are generally held 4 times a year."
+  },
+  {
+    "id": 45,
+    "q_en": "Reservation for women in HP Panchayats is:",
+    "q_hi": "हि.प्र. पंचायतों में महिलाओं के लिए आरक्षण है:",
+    "options_en": ["33%", "50%", "25%", "10%"],
+    "options_hi": ["33%", "50%", "25%", "10%"],
+    "correct": 1,
+    "explanation": "Himachal Pradesh provides 50% reservation for women in Panchayati Raj Institutions."
+  },
+  {
+    "id": 46,
+    "q_en": "Which schedule of Constitution deals with Panchayats?",
+    "q_hi": "संविधान की कौन सी अनुसूची पंचायतों से संबंधित है?",
+    "options_en": ["10th", "11th", "12th", "9th"],
+    "options_hi": ["10वीं", "11वीं", "12वीं", "9वीं"],
+    "correct": 1,
+    "explanation": "The 11th Schedule contains the powers and responsibilities of Panchayats."
+  },
+  {
+    "id": 47,
+    "q_en": "Head of 'Gram Sabha' is:",
+    "q_hi": "'ग्राम सभा' का प्रमुख कौन होता है?",
+    "options_en": ["BDO", "Pradhan", "Patwari", "Secretary"],
+    "options_hi": ["बीडीओ", "प्रधान", "पटवारी", "सचिव"],
+    "correct": 1,
+    "explanation": "The Pradhan is the head of the Gram Sabha."
+  },
+  {
+    "id": 48,
+    "q_en": "Who prepares the BPL list in a village?",
+    "q_hi": "गाँव में बीपीएल सूची कौन तैयार करता है?",
+    "options_en": ["Patwari", "Gram Sabha", "MLA", "Tehsildar"],
+    "options_hi": ["पटवारी", "ग्राम सभा", "विधायक", "तहसीलदार"],
+    "correct": 1,
+    "explanation": "The BPL list is approved and finalized by the Gram Sabha."
+  },
+  {
+    "id": 49,
+    "q_en": "PESA Act gives special powers to:",
+    "q_hi": "PESA अधिनियम विशेष अधिकार किसे देता है?",
+    "options_en": ["Gram Sabha", "DC", "Police", "Courts"],
+    "options_hi": ["ग्राम सभा", "डीसी", "पुलिस", "न्यायालय"],
+    "correct": 0,
+    "explanation": "PESA empowers the Gram Sabha in Scheduled Areas."
+  },
+  {
+    "id": 50,
+    "q_en": "The Block Development Officer (BDO) sits at:",
+    "q_hi": "खंड विकास अधिकारी (BDO) कहाँ बैठते हैं?",
+    "options_en": ["District HQ", "Block HQ", "Village", "State HQ"],
+    "options_hi": ["जिला मुख्यालय", "ब्लॉक मुख्यालय", "गाँव", "राज्य मुख्यालय"],
+    "correct": 1,
+    "explanation": "The BDO sits at the Block Headquarters."
+  },
+  {
+    "id": 51,
+    "q_en": "'Min' written after a Khasra number means:",
+    "q_hi": "खसरा नंबर के बाद 'मिन' लिखा होने का अर्थ है:",
+    "options_en": ["Mineral", "Portion/Part", "Minimum", "Minus"],
+    "options_hi": ["खनिज", "भाग/हिस्सा", "न्यूनतम", "घटाना"],
+    "correct": 1,
+    "explanation": "'Min' signifies a portion or part of a larger Khasra number."
+  },
+  {
+    "id": 52,
+    "q_en": "'Gair Mumkin' land is:",
+    "q_hi": "'गैर मुमकिन' भूमि है:",
+    "options_en": ["Cultivable", "Non-Cultivable (e.g., roads)", "Forest", "Irrigated"],
+    "options_hi": ["कृषि योग्य", "गैर-कृषि योग्य (जैसे सड़कें)", "वन", "सिंचित"],
+    "correct": 1,
+    "explanation": "Gair Mumkin refers to land that is uncultivable due to structures, roads, or geography."
+  },
+  {
+    "id": 53,
+    "q_en": "'Banjar Jadid' means land fallow for:",
+    "q_hi": "'बंजर जदीद' का अर्थ है, भूमि जो परती है:",
+    "options_en": ["4 harvests", "10 harvests", "1 harvest", "Never"],
+    "options_hi": ["4 फसलें", "10 फसलें", "1 फसल", "कभी नहीं"],
+    "correct": 0,
+    "explanation": "Banjar Jadid is land left fallow for 4 successive harvests (2 years)."
+  },
+  {
+    "id": 54,
+    "q_en": "'Banjar Qadim' means land fallow for:",
+    "q_hi": "'बंजर कदीम' का अर्थ है, भूमि जो परती है:",
+    "options_en": ["4 harvests", "8 or more harvests", "1 year", "2 years"],
+    "options_hi": ["4 फसलें", "8 या अधिक फसलें", "1 साल", "2 साल"],
+    "correct": 1,
+    "explanation": "Banjar Qadim is land left fallow for 8 or more harvests (4+ years)."
+  },
+  {
+    "id": 55,
+    "q_en": "'Chahi' land is irrigated by:",
+    "q_hi": "'चाही' भूमि किससे सिंचित होती है?",
+    "options_en": ["Rain", "Wells/Lift", "Canal", "River"],
+    "options_hi": ["वर्षा", "कुएं/लिफ्ट", "नहर", "नदी"],
+    "correct": 1,
+    "explanation": "Chahi refers to land irrigated by wells or lifts."
+  },
+  {
+    "id": 56,
+    "q_en": "'Barani' land depends on:",
+    "q_hi": "'बारानी' भूमि निर्भर करती है:",
+    "options_en": ["Rain", "Wells", "Canals", "Tanks"],
+    "options_hi": ["वर्षा", "कुएं", "नहरें", "टैंक"],
+    "correct": 0,
+    "explanation": "Barani land is rain-fed."
+  },
+  {
+    "id": 57,
+    "q_en": "'Nahri' land is irrigated by:",
+    "q_hi": "'नहरी' भूमि किससे सिंचित होती है?",
+    "options_en": ["Canals (Kuhl)", "Wells", "Rain", "None"],
+    "options_hi": ["नहरें (कूहल)", "कुएं", "वर्षा", "कोई नहीं"],
+    "correct": 0,
+    "explanation": "Nahri land is irrigated by canals (Kuhls)."
+  },
+  {
+    "id": 58,
+    "q_en": "'Abadi Deh' means:",
+    "q_hi": "'आबादी देह' का अर्थ है:",
+    "options_en": ["Inhabited area", "Farm land", "Forest", "Pond"],
+    "options_hi": ["आबादी वाला क्षेत्र", "खेत की जमीन", "वन", "तालाब"],
+    "correct": 0,
+    "explanation": "Abadi Deh refers to the inhabited area of the village."
+  },
+  {
+    "id": 59,
+    "q_en": "'Shamlat' land belongs to:",
+    "q_hi": "'शामलात' भूमि किसकी होती है?",
+    "options_en": ["Individual", "Village Community", "Govt only", "Tehsildar"],
+    "options_hi": ["व्यक्ति", "ग्राम समुदाय", "केवल सरकार", "तहसीलदार"],
+    "correct": 1,
+    "explanation": "Shamlat is common land belonging to the village community."
+  },
+  {
+    "id": 60,
+    "q_en": "'Khudkasht' means land cultivated by:",
+    "q_hi": "'खुदकाश्त' का अर्थ है भूमि जिसकी खेती की जाती है:",
+    "options_en": ["Owner himself", "Tenant", "Govt", "Labor"],
+    "options_hi": ["स्वयं मालिक द्वारा", "किरायेदार", "सरकार", "मजदूर"],
+    "correct": 0,
+    "explanation": "Khudkasht refers to land cultivated personally by the owner."
+  },
+  {
+    "id": 61,
+    "q_en": "'Rapat Rojnamcha' is a:",
+    "q_hi": "'रपट रोजनामचा' एक ____ है।",
+    "options_en": ["Daily Diary", "Monthly Report", "Annual Report", "Audit"],
+    "options_hi": ["दैनिक डायरी", "मासिक रिपोर्ट", "वार्षिक रिपोर्ट", "ऑडिट"],
+    "correct": 0,
+    "explanation": "Rapat Rojnamcha is the daily diary maintained by the Patwari."
+  },
+  {
+    "id": 62,
+    "q_en": "Which colour is used for 'Abadi' in maps?",
+    "q_hi": "नक्शों में 'आबादी' के लिए किस रंग का प्रयोग होता है?",
+    "options_en": ["Green", "Red", "Blue", "Yellow"],
+    "options_hi": ["हरा", "लाल", "नीला", "पीला"],
+    "correct": 1,
+    "explanation": "Red colour (Lal Dora) marks the Abadi."
+  },
+  {
+    "id": 63,
+    "q_en": "In 'Lal Kitab', data regarding ___ is kept.",
+    "q_hi": "'लाल किताब' में ___ से संबंधित डेटा रखा जाता है।",
+    "options_en": ["Village Statistics", "Soil", "Water", "Air"],
+    "options_hi": ["ग्राम सांख्यिकी", "मिट्टी", "पानी", "हवा"],
+    "correct": 0,
+    "explanation": "Lal Kitab (Village Notebook) contains statistical data of the village."
+  },
+  {
+    "id": 64,
+    "q_en": "'Field Book' contains details of:",
+    "q_hi": "'फील्ड बुक' (खसरा) में किसका विवरण होता है?",
+    "options_en": ["Dimensions of fields", "Names of voters", "Tax rates", "Population"],
+    "options_hi": ["खेतों के आयाम (नाप)", "मतदाताओं के नाम", "कर दरें", "जनसंख्या"],
+    "correct": 0,
+    "explanation": "The Field Book (Khasra) contains dimensions and details of fields."
+  },
+  {
+    "id": 65,
+    "q_en": "'Aks Shajra' is a copy of:",
+    "q_hi": "'अक्स शजरा' किसकी एक प्रति है?",
+    "options_en": ["Map (Latha)", "Jamabandi", "Mutation", "Khatauni"],
+    "options_hi": ["नक्शा (लट्ठा)", "जमाबंदी", "इंतकाल", "खतौनी"],
+    "correct": 0,
+    "explanation": "Aks Shajra is a copy or image of the village map (Latha/Musavi)."
+  },
+  {
+    "id": 66,
+    "q_en": "Which Act governs Land Revenue in HP?",
+    "q_hi": "हिमाचल में भू-राजस्व किस अधिनियम द्वारा शासित है?",
+    "options_en": ["HP Land Revenue Act 1954", "1972 Act", "1968 Act", "1990 Act"],
+    "options_hi": ["हि.प्र. भू-राजस्व अधिनियम 1954", "1972 अधिनियम", "1968 अधिनियम", "1990 अधिनियम"],
+    "correct": 0,
+    "explanation": "Land Revenue in HP is governed by the HP Land Revenue Act 1954."
+  },
+  {
+    "id": 67,
+    "q_en": "Limitation period to appeal against Mutation?",
+    "q_hi": "इंतकाल के खिलाफ अपील करने की समय सीमा?",
+    "options_en": ["30 days", "60 days", "90 days", "1 Year"],
+    "options_hi": ["30 दिन", "60 दिन", "90 दिन", "1 साल"],
+    "correct": 0,
+    "explanation": "The limitation period for appeal to the Collector is 30 days."
+  },
+  {
+    "id": 68,
+    "q_en": "Who can certify a copy of Jamabandi?",
+    "q_hi": "जमाबंदी की प्रति कौन प्रमाणित कर सकता है?",
+    "options_en": ["Patwari", "Pradhan", "School Teacher", "Police"],
+    "options_hi": ["पटवारी", "प्रधान", "स्कूल शिक्षक", "पुलिस"],
+    "correct": 0,
+    "explanation": "The Patwari is authorized to issue and certify copies of the Jamabandi."
+  },
+  {
+    "id": 69,
+    "q_en": "'Stamp Duty' is paid for:",
+    "q_hi": "'स्टाम्प ड्यूटी' का भुगतान किसके लिए किया जाता है?",
+    "options_en": ["Registration of Deeds", "Mutation", "Girdawari", "Demarcation"],
+    "options_hi": ["विलेखों का पंजीकरण", "इंतकाल", "गिरदावरी", "निशानदेही"],
+    "correct": 0,
+    "explanation": "Stamp Duty is paid for the registration of deeds like sale deeds."
+  },
+  {
+    "id": 70,
+    "q_en": "'Circle Rate' is fixed by:",
+    "q_hi": "'सर्कल रेट' किसके द्वारा तय किया जाता है?",
+    "options_en": ["District Collector", "Patwari", "Bank", "Pradhan"],
+    "options_hi": ["जिला कलेक्टर", "पटवारी", "बैंक", "प्रधान"],
+    "correct": 0,
+    "explanation": "Circle Rates are fixed annually by the District Collector."
+  },
+  {
+    "id": 71,
+    "q_en": "Area of a triangle is calculated as:",
+    "q_hi": "त्रिभुज के क्षेत्रफल की गणना कैसे की जाती है?",
+    "options_en": ["1/2 * Base * Height", "Base * Height", "Length * Width", "2 * Height"],
+    "options_hi": ["1/2 * आधार * ऊँचाई", "आधार * ऊँचाई", "लंबाई * चौड़ाई", "2 * ऊँचाई"],
+    "correct": 0,
+    "explanation": "The formula for the area of a triangle is 1/2 * Base * Height."
+  },
+  {
+    "id": 72,
+    "q_en": "1 Hectare = ___ Acres (approx).",
+    "q_hi": "1 हेक्टेयर = ___ एकड़ (लगभग)।",
+    "options_en": ["2.47", "1.5", "3.5", "4.0"],
+    "options_hi": ["2.47", "1.5", "3.5", "4.0"],
+    "correct": 0,
+    "explanation": "1 Hectare is approximately equal to 2.47 Acres."
+  },
+  {
+    "id": 73,
+    "q_en": "'Sarsahi' is a unit of:",
+    "q_hi": "'सरसाही' किसकी इकाई है?",
+    "options_en": ["Area (very small)", "Length", "Weight", "Volume"],
+    "options_hi": ["क्षेत्रफल (बहुत छोटा)", "लंबाई", "वजन", "आयतन"],
+    "correct": 0,
+    "explanation": "Sarsahi is a small unit of area in the local measurement system."
+  },
+  {
+    "id": 74,
+    "q_en": "How many 'Links' are in a Gunter's Chain?",
+    "q_hi": "गुंटर चेन में कितनी 'कड़ियाँ' (Links) होती हैं?",
+    "options_en": ["50", "100", "150", "200"],
+    "options_hi": ["50", "100", "150", "200"],
+    "correct": 1,
+    "explanation": "A Gunter's Chain has 100 links."
+  },
+  {
+    "id": 75,
+    "q_en": "Which scale is larger?",
+    "q_hi": "कौन सा पैमाना बड़ा है?",
+    "options_en": ["1:1000", "1:5000", "1:10000", "1:50000"],
+    "options_hi": ["1:1000", "1:5000", "1:10000", "1:50000"],
+    "correct": 0,
+    "explanation": "1:1000 is a larger scale than the others (shows more detail)."
+  },
+  {
+    "id": 76,
+    "q_en": "'Triangulation' is a method of:",
+    "q_hi": "'त्रिभुजकरण' किसकी एक विधि है?",
+    "options_en": ["Surveying", "Farming", "Accounting", "Cooking"],
+    "options_hi": ["सर्वेक्षण", "खेती", "लेखांकन", "खाना बनाना"],
+    "correct": 0,
+    "explanation": "Triangulation is a fundamental method used in surveying."
+  },
+  {
+    "id": 77,
+    "q_en": "A 'Gattha' is usually ___ Karam long.",
+    "q_hi": "एक 'गठ्ठा' आमतौर पर ___ करम लंबा होता है।",
+    "options_en": ["1", "2", "3", "5"],
+    "options_hi": ["1", "2", "3", "5"],
+    "correct": 0,
+    "explanation": "A Gattha is typically 1 Karam long."
+  },
+  {
+    "id": 78,
+    "q_en": "'Murabba' (Rectangle) usually contains ___ Acres.",
+    "q_hi": "'मुरब्बा' (आयत) में आमतौर पर ___ एकड़ होते हैं।",
+    "options_en": ["10", "25", "50", "100"],
+    "options_hi": ["10", "25", "50", "100"],
+    "correct": 1,
+    "explanation": "A Murabba generally refers to a block of 25 Acres."
+  },
+  {
+    "id": 79,
+    "q_en": "'Kilabandi' refers to:",
+    "q_hi": "'किलाबंदी' का अर्थ है:",
+    "options_en": ["Rectangulation of land", "Building a fort", "Fencing", "Mining"],
+    "options_hi": ["भूमि का आयताकार करना", "किला बनाना", "बाड़ लगाना", "खनन"],
+    "correct": 0,
+    "explanation": "Kilabandi refers to the rectangulation of fields during consolidation."
+  },
+  {
+    "id": 80,
+    "q_en": "Which chain is 100 ft long?",
+    "q_hi": "कौन सी चेन 100 फीट लंबी होती है?",
+    "options_en": ["Engineer's Chain", "Gunter's Chain", "Metric Chain", "Revenue Chain"],
+    "options_hi": ["इंजीनियर चेन", "गुंटर चेन", "मीट्रिक चेन", "राजस्व चेन"],
+    "correct": 0,
+    "explanation": "The Engineer's Chain is 100 feet long."
+  },
+  {
+    "id": 81,
+    "q_en": "Himachal Day is celebrated on:",
+    "q_hi": "हिमाचल दिवस कब मनाया जाता है?",
+    "options_en": ["25 Jan", "15 April", "1 Nov", "2 Oct"],
+    "options_hi": ["25 जनवरी", "15 अप्रैल", "1 नवंबर", "2 अक्टूबर"],
+    "correct": 1,
+    "explanation": "Himachal Day is celebrated on 15th April."
+  },
+  {
+    "id": 82,
+    "q_en": "'Nautor' land means:",
+    "q_hi": "'नौतोड़' भूमि का अर्थ है:",
+    "options_en": ["Breaking new land for cultivation", "Old land", "Forest land", "Sold land"],
+    "options_hi": ["खेती के लिए नई जमीन तोड़ना", "पुरानी जमीन", "वन भूमि", "बेची गई जमीन"],
+    "correct": 0,
+    "explanation": "Nautor refers to breaking fresh government wasteland for cultivation."
+  },
+  {
+    "id": 83,
+    "q_en": "Daughters have equal rights in property after:",
+    "q_hi": "बेटियों को संपत्ति में समान अधिकार कब मिले?",
+    "options_en": ["2005 Amendment", "1956 Act", "1990", "1947"],
+    "options_hi": ["2005 संशोधन", "1956 अधिनियम", "1990", "1947"],
+    "correct": 0,
+    "explanation": "The 2005 Amendment to the Hindu Succession Act gave daughters equal rights as coparceners."
+  },
+  {
+    "id": 84,
+    "q_en": "'Encumbrance Certificate' (EC) shows:",
+    "q_hi": "'भार-मुक्त प्रमाण पत्र' (EC) क्या दिखाता है?",
+    "options_en": ["Loans/Mortgages on property", "Crop yield", "Soil type", "Owner's age"],
+    "options_hi": ["संपत्ति पर ऋण/बंधक", "फसल की उपज", "मिट्टी का प्रकार", "मालिक की उम्र"],
+    "correct": 0,
+    "explanation": "An EC reflects any encumbrances like loans or mortgages on the property."
+  },
+  {
+    "id": 85,
+    "q_en": "Patwari is also known as ___ in other states.",
+    "q_hi": "पटवारी को अन्य राज्यों में ___ के नाम से भी जाना जाता है।",
+    "options_en": ["Lekhpal", "Collector", "Tehsildar", "SDM"],
+    "options_hi": ["लेखपाल", "कलेक्टर", "तहसीलदार", "एसडीएम"],
+    "correct": 0,
+    "explanation": "Patwari is commonly known as Lekhpal in states like UP."
+  },
+  {
+    "id": 86,
+    "q_en": "'Chakbandi' is done to solve:",
+    "q_hi": "'चकबंदी' किसके समाधान के लिए की जाती है?",
+    "options_en": ["Fragmentation of land", "Flood", "Drought", "Theft"],
+    "options_hi": ["भूमि का विखंडन", "बाढ़", "सूखा", "चोरी"],
+    "correct": 0,
+    "explanation": "Chakbandi (Consolidation) is done to solve the problem of fragmented land holdings."
+  },
+  {
+    "id": 87,
+    "q_en": "Who collects land revenue?",
+    "q_hi": "भू-राजस्व कौन जमा करता है?",
+    "options_en": ["Patwari/Lambardar", "Pradhan", "MLA", "MP"],
+    "options_hi": ["पटवारी/लंबरदार", "प्रधान", "विधायक", "सांसद"],
+    "correct": 0,
+    "explanation": "The Lambardar collects land revenue, often assisted by the Patwari's records."
+  },
+  {
+    "id": 88,
+    "q_en": "'Settlement Officer' works during:",
+    "q_hi": "'बंदोबस्त अधिकारी' कब काम करता है?",
+    "options_en": ["Settlement Operation", "Election", "Census", "Strike"],
+    "options_hi": ["बंदोबस्त अभियान", "चुनाव", "जनगणना", "हड़ताल"],
+    "correct": 0,
+    "explanation": "The Settlement Officer functions during the Settlement Operation."
+  },
+  {
+    "id": 89,
+    "q_en": "Highest Revenue Officer in State is:",
+    "q_hi": "राज्य में सर्वोच्च राजस्व अधिकारी कौन है?",
+    "options_en": ["Financial Commissioner (FC)", "DC", "SDM", "Tehsildar"],
+    "options_hi": ["वित्तीय आयुक्त (FC)", "डीसी", "एसडीएम", "तहसीलदार"],
+    "correct": 0,
+    "explanation": "The Financial Commissioner is the highest revenue authority in the state."
+  },
+  {
+    "id": 90,
+    "q_en": "Division of a district is called:",
+    "q_hi": "जिले के विभाजन को क्या कहा जाता है?",
+    "options_en": ["Sub-Division", "Tehsil", "Block", "Ward"],
+    "options_hi": ["उप-मंडल", "तहसील", "ब्लॉक", "वार्ड"],
+    "correct": 0,
+    "explanation": "A District is divided into Sub-Divisions."
+  },
+  {
+    "id": 91,
+    "q_en": "'Jamma' in revenue means:",
+    "q_hi": "राजस्व में 'जम्मा' का अर्थ है:",
+    "options_en": ["Land Tax/Assessment", "Deposit", "Crowd", "Meeting"],
+    "options_hi": ["भूमि कर/आकलन", "जमा", "भीड़", "बैठक"],
+    "correct": 0,
+    "explanation": "Jamma refers to the land tax or assessment."
+  },
+  {
+    "id": 92,
+    "q_en": "Patwari reports natural calamities to:",
+    "q_hi": "पटवारी प्राकृतिक आपदाओं की रिपोर्ट किसे करता है?",
+    "options_en": ["Kanungo/Tehsildar", "Police", "Pradhan", "School"],
+    "options_hi": ["कानूनगो/तहसीलदार", "पुलिस", "प्रधान", "स्कूल"],
+    "correct": 0,
+    "explanation": "The Patwari reports natural calamities to superior revenue officers like the Kanungo or Tehsildar."
+  },
+  {
+    "id": 93,
+    "q_en": "'Benami Transaction' is:",
+    "q_hi": "'बेनामी लेनदेन' है:",
+    "options_en": ["Buying property in another's name", "Buying legally", "Selling to govt", "Leasing"],
+    "options_hi": ["दूसरे के नाम पर संपत्ति खरीदना", "कानूनी रूप से खरीदना", "सरकार को बेचना", "पट्टे पर देना"],
+    "correct": 0,
+    "explanation": "A Benami transaction involves buying property in someone else's name to conceal ownership (Illegal)."
+  },
+  {
+    "id": 94,
+    "q_en": "Full form of DILRMP:",
+    "q_hi": "DILRMP का पूर्ण रूप:",
+    "options_en": ["Digital India Land Records Modernization Programme", "Digital Internet Land Record", "Direct India Land Record", "None"],
+    "options_hi": ["डिजिटल इंडिया लैंड रिकॉर्ड्स मॉडर्नाइजेशन प्रोग्राम", "डिजिटल इंटरनेट लैंड रिकॉर्ड", "डायरेक्ट इंडिया लैंड रिकॉर्ड", "कोई नहीं"],
+    "correct": 0,
+    "explanation": "DILRMP stands for Digital India Land Records Modernization Programme."
+  },
+  {
+    "id": 95,
+    "q_en": "A 'Khasra' is valid for:",
+    "q_hi": "एक 'खसरा' किसके लिए मान्य होता है?",
+    "options_en": ["1 year", "Until revised", "5 years", "10 years"],
+    "options_hi": ["1 साल", "संशोधित होने तक", "5 साल", "10 साल"],
+    "correct": 1,
+    "explanation": "A Khasra entry remains valid until it is revised (usually during settlement or specific updates)."
+  },
+  {
+    "id": 96,
+    "q_en": "'Roznamcha Waqiati' records:",
+    "q_hi": "'रोजनामचा वाकयाती' क्या रिकॉर्ड करता है?",
+    "options_en": ["Daily events/happenings", "Only orders", "Salary", "Attendance"],
+    "options_hi": ["दैनिक घटनाएं", "केवल आदेश", "वेतन", "उपस्थिति"],
+    "correct": 0,
+    "explanation": "Roznamcha Waqiati records daily events and happenings in the Patwari's circle."
+  },
+  {
+    "id": 97,
+    "q_en": "'Patwarkhana' is the office of:",
+    "q_hi": "'पटवारखाना' किसका कार्यालय है?",
+    "options_en": ["Patwari", "Tehsildar", "Kanungo", "DC"],
+    "options_hi": ["पटवारी", "तहसीलदार", "कानूनगो", "डीसी"],
+    "correct": 0,
+    "explanation": "Patwarkhana is the office of the Patwari."
+  },
+  {
+    "id": 98,
+    "q_en": "Who maintains the 'Birth and Death Register' in a village?",
+    "q_hi": "गाँव में 'जन्म और मृत्यु रजिस्टर' कौन रखता है?",
+    "options_en": ["Panchayat Secretary", "Patwari", "Chowkidar", "Teacher"],
+    "options_hi": ["पंचायत सचिव", "पटवारी", "चौकीदार", "शिक्षक"],
+    "correct": 0,
+    "explanation": "The Panchayat Secretary is typically responsible for the Birth and Death Register in a village."
+  },
+  {
+    "id": 99,
+    "q_en": "Which department conducts the Census?",
+    "q_hi": "जनगणना कौन सा विभाग करता है?",
+    "options_en": ["Home Ministry (RGI)", "Revenue", "Finance", "Education"],
+    "options_hi": ["गृह मंत्रालय (RGI)", "राजस्व", "वित्त", "शिक्षा"],
+    "correct": 0,
+    "explanation": "The Census is conducted by the Office of the Registrar General and Census Commissioner, under the Ministry of Home Affairs."
+  },
+  {
+    "id": 100,
+    "q_en": "'Aadhaar' is mandatory for:",
+    "q_hi": "'आधार' किसके लिए अनिवार्य है?",
+    "options_en": ["Land Registry", "PM-KISAN", "Both A and B", "None"],
+    "options_hi": ["भूमि रजिस्ट्री", "पीएम-किसान", "ए और बी दोनों", "कोई नहीं"],
+    "correct": 2,
+    "explanation": "Aadhaar is mandatory for both Land Registry and PM-KISAN schemes."
+  }
+]
