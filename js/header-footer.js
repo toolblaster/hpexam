@@ -138,8 +138,6 @@ window.loadHeaderFooter = function(options) {
     }
 
     // 3. Handle Hash Scroll (Fix for cross-page anchor links)
-    // If the URL has a hash (e.g. #laws), scroll to it after a short delay
-    // to ensure the page layout is stable.
     if (window.location.hash) {
         setTimeout(() => {
             const id = window.location.hash.substring(1);
@@ -147,6 +145,6 @@ window.loadHeaderFooter = function(options) {
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
             }
-        }, 300); // 300ms delay to allow initial rendering/skeletons
+        }, 300);
     }
 };
