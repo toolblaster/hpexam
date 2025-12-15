@@ -231,7 +231,9 @@
                 <div class="bg-white rounded-xl shadow-smooth border border-slate-300 p-3 md:p-5">
                     <h2 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4 md:mb-5 flex items-center justify-center md:justify-start gap-2 font-heading">
                         <i class="fa-solid fa-sitemap text-slate-400" aria-hidden="true"></i> Hierarchy
+                        <span class="ml-auto text-[9px] bg-slate-100 text-slate-500 px-2 py-0.5 rounded border border-slate-200 normal-case font-medium">Color Coded by Rank</span>
                     </h2>
+                    
                     <div id="hierarchy-skeleton" class="space-y-6 pl-6 border-l border-slate-200">
                          <script>
                             for(let i=0; i<3; i++) {
@@ -486,11 +488,16 @@
                 let displayDesc = (currentDefLanguage === 'hi' && item.desc_hi) ? item.desc_hi : item.desc;
                 let roleClass = (currentDefLanguage === 'hi') ? 'font-hindi text-sm' : 'font-heading text-xs';
                 let descClass = (currentDefLanguage === 'hi') ? 'font-hindi tracking-wide' : 'font-sans';
+                
+                // Fallback if no border color is defined in old JSON
+                const borderColor = item.border || 'border-slate-300';
 
                 div.innerHTML = `
                     <div class="absolute -left-[27px] md:-left-[33px] top-3 h-3 w-3 rounded-full ${item.color} border-2 border-white shadow-sm ring-1 ring-slate-200 z-10"></div>
-                    <div class="bg-white p-2.5 md:p-3 rounded-lg shadow-sm border border-slate-300 hover:border-blue-300 transition">
-                        <h3 class="font-bold text-slate-900 ${roleClass}">${displayRole}</h3>
+                    <div class="bg-white p-2.5 md:p-3 rounded-lg shadow-sm border border-slate-300 border-l-4 ${borderColor} hover:translate-x-1 transition-transform">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold text-slate-900 ${roleClass}">${displayRole}</h3>
+                        </div>
                         <p class="text-[10px] text-slate-500 mt-0.5 leading-tight ${descClass}">${displayDesc}</p>
                     </div>
                 `;
