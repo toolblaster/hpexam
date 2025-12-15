@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>HP Patwari Detailed Study Notes: 14 Core Topics</title>
+    <meta name="description" content="In-depth study notes for HP Patwari Exam. Comprehensive explanations of Land Records, Revenue Acts, Measurements, and Schemes in English and Hindi.">
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GLOBAL STYLES & CONFIG -->
+    <script src="../js/tailwind-global-css.js"></script>
+    <!-- Header Footer Script -->
+    <script src="../js/header-footer.js"></script>
+    <!-- Global Scripts -->
+    <script src="../js/global-scripts.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Noto Sans Devanagari -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .font-hindi { font-family: 'Noto Sans Devanagari', sans-serif; }
+        .note-content p { margin-bottom: 0.75rem; line-height: 1.6; }
+        .note-content ul { margin-left: 1.2rem; list-style-type: disc; margin-bottom: 0.75rem; }
+        .note-content ol { margin-left: 1.2rem; list-style-type: decimal; margin-bottom: 0.75rem; }
+        .note-content li { margin-bottom: 0.25rem; }
+        .note-content strong { color: #1e293b; font-weight: 700; }
+        
+        /* Smooth scroll offset for sticky header - Reduced to match compact header */
+        html { scroll-padding-top: 140px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen font-sans">
+
+    <!-- Compact Nav (Static) -->
+    <nav class="bg-white border-b border-slate-300 shadow-sm nav-height" id="global-nav">
+        <!-- Injected by header-footer.js -->
+    </nav>
+
+    <!-- Header Section (Compact) -->
+    <header class="bg-white border-b border-slate-300 py-3 md:py-4 sticky top-0 z-30 shadow-sm backdrop-blur-md bg-white/95">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Breadcrumb container (hidden on mobile scroll for more space, or keep very small) -->
+            <div id="breadcrumb-container" class="mb-2 scale-90 origin-top-left"></div>
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-3">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-extrabold font-heading text-slate-900 leading-tight">
+                        <span class="gradient-text">Detailed Study Notes</span>
+                    </h1>
+                    <p class="text-[11px] md:text-xs text-slate-500 mt-1 max-w-2xl font-medium leading-relaxed hidden sm:block">
+                        Concise explanations for 14 critical topics. Master theory behind terms.
+                    </p>
+                </div>
+                <div class="flex gap-2">
+                    <button onclick="toggleLang('en')" id="btn-en" class="px-3 py-1.5 text-[10px] md:text-xs font-bold rounded-lg bg-slate-900 text-white shadow-sm transition transform active:scale-95 flex items-center gap-1.5">
+                        <i class="fa-solid fa-language"></i> English
+                    </button>
+                    <button onclick="toggleLang('hi')" id="btn-hi" class="px-3 py-1.5 text-[10px] md:text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition transform active:scale-95 flex items-center gap-1.5">
+                        <i class="fa-solid fa-language"></i> हिन्दी
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-grow">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            
+            <!-- Sidebar: Navigation -->
+            <aside class="lg:col-span-1 hidden lg:block">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-4 sticky top-36 max-h-[calc(100vh-10rem)] overflow-y-auto scrollbar-thin">
+                    <h3 class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-3">Topic Index</h3>
+                    <ul id="topic-nav" class="space-y-1">
+                        <!-- Nav items injected here -->
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Mobile Topic Select (Sticky below header) -->
+            <div class="lg:hidden col-span-1 sticky top-[110px] z-20 bg-slate-50 py-2 -mx-2 px-2 shadow-sm">
+                <div class="relative">
+                    <select id="mobile-topic-select" onchange="document.getElementById(this.value).scrollIntoView({behavior: 'smooth'})" class="w-full p-2.5 pl-9 rounded-lg border border-slate-300 bg-white font-bold text-xs shadow-sm focus:ring-1 focus:ring-blue-500 outline-none appearance-none text-slate-700">
+                        <option value="" disabled selected>Jump to Topic...</option>
+                        <!-- Options injected here -->
+                    </select>
+                    <div class="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+                        <i class="fa-solid fa-list-ul text-xs"></i>
+                    </div>
+                    <div class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none">
+                        <i class="fa-solid fa-chevron-down text-[10px]"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content: Notes Cards -->
+            <div class="lg:col-span-3 space-y-6" id="notes-container">
+                <!-- Content injected here -->
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer id="global-footer"></footer>
+
+    <script>
+        // --- 1. DETAILED EMBEDDED CONTENT WITH COLORS ---
+        const notesData = [
+            {
+                "id": "topic-1",
+                "title": "1. Land Records Terminology",
+                "title_hi": "1. भूमि अभिलेख शब्दावली",
+                "content": `
+                    <p>Understanding revenue terminology is the absolute bedrock for a Patwari. These are not merely words but legally binding concepts that define property rights. A misunderstanding here can lead to incorrect records and legal disputes.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Jamabandi (Record of Rights/RoR):</strong> Often termed the 'Bible of Land Records', the Jamabandi is the definitive record of land ownership, cultivation, and revenue assessment. It is prepared quinquennially (every 5 years). A copy known as 'Parat Sarkar' is sent to the District Record Room (Muhafiz Khana), while the 'Parat Patwar' remains with the Patwari. Under Section 45 of the HP Land Revenue Act, entries in the Jamabandi carry a 'Presumption of Truth', meaning they are accepted as evidence in court unless proven otherwise. It contains 12 columns detailing the owner (Khewat), cultivator (Khatauni), plot number (Khasra), area, and rent/revenue.</li>
+                        <li><strong>Khasra (Field Book):</strong> While the Jamabandi is owner-centric (organized by owner names), the Khasra is plot-centric. It is a field-by-field index of the village. Every plot of land has a unique 'Khasra Number'. The Field Book records the area, soil classification (e.g., Barani, Chahi), the crop grown in each harvest (Kharif/Rabi), and the name of the actual cultivator. It is the primary data source for preparing the Jamabandi.</li>
+                        <li><strong>Intakal (Mutation):</strong> This refers to the legal process of updating the Jamabandi. When a change in ownership occurs due to Sale, Gift, Inheritance (Warasat), Mortgage (Rahin), or Exchange (Tabadala), a mutation must be entered. The Patwari enters the details in the Mutation Register (Register No. 6). The entry is then verified by the Kanungo and finally attested by a Revenue Officer (Tehsildar/Naib Tehsildar) in a public assembly (Jalsa Aam) to ensure transparency.</li>
+                        <li><strong>Khatauni:</strong> This is the register of cultivating holdings. It groups different fields cultivated by the same person (tenant or owner) under one account. It helps in determining who is actually tilling the land and liable for paying rent or revenue.</li>
+                        <li><strong>Wajib-ul-Arz (Village Administration Paper):</strong> This document records the customary rights and liabilities of the village community. It details rights over common lands (Shamlat), grazing rights, irrigation customs (Warabandi), and rights of way. It serves as evidence of village customs in legal disputes.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>राजस्व शब्दावली को समझना पटवारी के लिए आधारशिला है। ये केवल शब्द नहीं हैं बल्कि कानूनी रूप से बाध्यकारी अवधारणाएं हैं जो संपत्ति के अधिकारों को परिभाषित करती हैं। यहाँ एक गलतफहमी गलत रिकॉर्ड और कानूनी विवादों का कारण बन सकती है।</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>जमाबंदी (अधिकारों का रिकॉर्ड/RoR):</strong> इसे अक्सर 'भूमि अभिलेखों की बाइबिल' कहा जाता है, जमाबंदी भूमि स्वामित्व, खेती और राजस्व मूल्यांकन का अंतिम रिकॉर्ड है। इसे पंचवर्षीय (हर 5 साल में) तैयार किया जाता है। 'पड़त सरकार' नामक एक प्रति जिला रिकॉर्ड रूम (मुहाफिज खाना) में भेजी जाती है, जबकि 'पड़त पटवार' पटवारी के पास रहती है। हि.प्र. भू-राजस्व अधिनियम की धारा 45 के तहत, जमाबंदी में प्रविष्टियाँ 'सत्यता की धारणा' रखती हैं, जिसका अर्थ है कि उन्हें अदालत में सबूत के रूप में स्वीकार किया जाता है जब तक कि अन्यथा साबित न हो जाए। इसमें मालिक (खेवट), काश्तकार (खतौनी), प्लॉट नंबर (खसरा), क्षेत्रफल और लगान/राजस्व का विवरण देने वाले 12 कॉलम होते हैं।</li>
+                        <li><strong>खसरा (फील्ड बुक):</strong> जबकि जमाबंदी मालिक-केंद्रित (मालिक के नामों द्वारा आयोजित) है, खसरा प्लॉट-केंद्रित है। यह गाँव का एक खेत-दर-खेत सूचकांक है। भूमि के प्रत्येक प्लॉट का एक अनूठा 'खसरा नंबर' होता है। फील्ड बुक में क्षेत्रफल, मिट्टी का वर्गीकरण (जैसे, बारानी, चाही), प्रत्येक फसल (खरीफ/रबी) में उगाई गई फसल और वास्तविक काश्तकार का नाम दर्ज होता है। यह जमाबंदी तैयार करने का प्राथमिक डेटा स्रोत है।</li>
+                        <li><strong>इंतकाल (म्यूटेशन):</strong> इसका तात्पर्य जमाबंदी को अपडेट करने की कानूनी प्रक्रिया से है। जब बिक्री, उपहार, विरासत (विरासत), गिरवी (राहिन), या विनिमय (तबादला) के कारण स्वामित्व में बदलाव होता है, तो एक इंतकाल दर्ज किया जाना चाहिए। पटवारी विवरण इंतकाल रजिस्टर (रजिस्टर नंबर 6) में दर्ज करता है। प्रविष्टि को तब कानूनगो द्वारा सत्यापित किया जाता है और अंत में पारदर्शिता सुनिश्चित करने के लिए एक सार्वजनिक सभा (जलसा आम) में राजस्व अधिकारी (तहसीलदार/नायब तहसीलदार) द्वारा सत्यापित किया जाता है।</li>
+                        <li><strong>खतौनी:</strong> यह खेती करने वाली जोतों का रजिस्टर है। यह एक ही व्यक्ति (किरायेदार या मालिक) द्वारा जोते गए विभिन्न खेतों को एक खाते के तहत समूहित करता है। यह निर्धारित करने में मदद करता है कि वास्तव में भूमि कौन जोत रहा है और लगान या राजस्व का भुगतान करने के लिए कौन उत्तरदायी है।</li>
+                        <li><strong>वाजिब-उल-अर्ज (ग्राम प्रशासन पत्र):</strong> यह दस्तावेज ग्राम समुदाय के प्रथागत अधिकारों और दायित्वों को दर्ज करता है। यह साझा भूमि (शामलात), चराई के अधिकार, सिंचाई के रीति-रिवाजों (वाराबंदी) और रास्ते के अधिकारों का विवरण देता है। यह कानूनी विवादों में गाँव के रीति-रिवाजों के प्रमाण के रूप में कार्य करता है।</li>
+                    </ul>
+                `,
+                "icon": "fa-book-atlas",
+                "color": "text-blue-600",
+                "bg": "bg-blue-50",
+                "border": "border-blue-600"
+            },
+            {
+                "id": "topic-2",
+                "title": "2. Measurement Units & Conversions",
+                "title_hi": "2. मापन इकाइयाँ और रूपांतरण",
+                "content": `
+                    <p>Himachal Pradesh uses a unique blend of traditional and metric units for land measurement. Proficiency in these conversions is mandatory for field surveys and record-keeping.</p>
+                    <p><strong>The Hierarchy of Area (Traditional System):</strong></p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Sarsahi:</strong> The most basic unit of area. It is defined as a square with sides of 1 Karam each (1 Karam x 1 Karam = 1 Sarsahi).</li>
+                        <li><strong>Marla:</strong> 9 Sarsahis make up 1 Marla. This is a common unit for smaller plots, especially in residential areas.</li>
+                        <li><strong>Kanal:</strong> 20 Marlas constitute 1 Kanal. This is widely used for agricultural plots.</li>
+                        <li><strong>Ghumao / Acre:</strong> 8 Kanals make 1 Ghumao. In local parlance, a Ghumao is often equated to an Acre, though slight variations existed historically.</li>
+                    </ul>
+                    <p><strong>The Bigha System (Standard in HP):</strong></p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Structure:</strong> 1 Bigha = 20 Biswa. Further, 1 Biswa = 20 Biswansi. This 1-20-20 relationship is crucial for calculations.</li>
+                        <li><strong>Metric Equivalents:</strong> 1 Bigha is approximately 809 square meters or 968 square yards. This conversion factor (968 sq yards) is standard for exam calculations.</li>
+                        <li><strong>Acre to Bigha:</strong> 1 Acre is approximately 4.84 Bighas (often rounded to 5 Bighas for quick mental math, but 4.84 is the precise figure).</li>
+                        <li><strong>Hectare Conversion:</strong> 1 Hectare = 2.47 Acres = approximately 12.5 Bighas. Since modern records use Hectares, knowing this conversion is vital.</li>
+                    </ul>
+                    <p><strong>Linear Measure (The Karam):</strong> The entire system rests on the 'Karam'. In most parts of HP, the standard Karam is 57.15 inches (approx 4.76 feet). However, local variations (like 54 inches or 66 inches) exist in specific old settlements, so always check the local standard.</p>
+                `,
+                "content_hi": `
+                    <p>हिमाचल प्रदेश भूमि माप के लिए पारंपरिक और मीट्रिक इकाइयों के अनूठे मिश्रण का उपयोग करता है। क्षेत्र सर्वेक्षण और रिकॉर्ड रखने के लिए इन रूपांतरणों में दक्षता अनिवार्य है।</p>
+                    <p><strong>क्षेत्रफल का पदानुक्रम (पारंपरिक प्रणाली):</strong></p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>सरसाही:</strong> क्षेत्रफल की सबसे बुनियादी इकाई। इसे 1 करम की भुजाओं वाले वर्ग के रूप में परिभाषित किया गया है (1 करम x 1 करम = 1 सरसाही)।</li>
+                        <li><strong>मरला:</strong> 9 सरसाही मिलकर 1 मरला बनाते हैं। यह छोटे भूखंडों के लिए एक सामान्य इकाई है, विशेष रूप से आवासीय क्षेत्रों में।</li>
+                        <li><strong>कनाल:</strong> 20 मरले 1 कनाल का गठन करते हैं। यह कृषि भूखंडों के लिए व्यापक रूप से उपयोग किया जाता है।</li>
+                        <li><strong>घुमाओ / एकड़:</strong> 8 कनाल मिलकर 1 घुमाओ बनाते हैं। स्थानीय भाषा में, एक घुमाओ को अक्सर एक एकड़ के बराबर माना जाता है, हालांकि ऐतिहासिक रूप से इसमें मामूली बदलाव मौजूद थे।</li>
+                    </ul>
+                    <p><strong>बीघा प्रणाली (हि.प्र. में मानक):</strong></p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>संरचना:</strong> 1 बीघा = 20 बिस्वा। इसके अलावा, 1 बिस्वा = 20 बिस्वांसी। यह 1-20-20 संबंध गणना के लिए महत्वपूर्ण है।</li>
+                        <li><strong>मीट्रिक समतुल्य:</strong> 1 बीघा लगभग 809 वर्ग मीटर या 968 वर्ग गज है। यह रूपांतरण कारक (968 वर्ग गज) परीक्षा गणना के लिए मानक है।</li>
+                        <li><strong>एकड़ से बीघा:</strong> 1 एकड़ लगभग 4.84 बीघा है (अक्सर त्वरित मानसिक गणित के लिए 5 बीघा के लिए गोल किया जाता है, लेकिन 4.84 सटीक आंकड़ा है)।</li>
+                        <li><strong>हेक्टेयर रूपांतरण:</strong> 1 हेक्टेयर = 2.47 एकड़ = लगभग 12.5 बीघा। चूंकि आधुनिक रिकॉर्ड हेक्टेयर का उपयोग करते हैं, इसलिए इस रूपांतरण को जानना महत्वपूर्ण है।</li>
+                    </ul>
+                    <p><strong>रैखिक माप (करम):</strong> पूरी प्रणाली 'करम' पर टिकी हुई है। हि.प्र. के अधिकांश हिस्सों में, मानक करम 57.15 इंच (लगभग 4.76 फीट) है। हालाँकि, विशिष्ट पुरानी बस्तियों में स्थानीय विविधताएँ (जैसे 54 इंच या 66 इंच) मौजूद हैं, इसलिए हमेशा स्थानीय मानक की जाँच करें।</p>
+                `,
+                "icon": "fa-ruler-combined",
+                "color": "text-green-600",
+                "bg": "bg-green-50",
+                "border": "border-green-600"
+            },
+            {
+                "id": "topic-3",
+                "title": "3. Surveying Instruments & Techniques",
+                "title_hi": "3. सर्वेक्षण उपकरण और तकनीक",
+                "content": `
+                    <p>Accurate land records depend on precise measurement. The Revenue Department employs specific instruments and techniques for cadastral surveys.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Gunter's Chain (Jarib):</strong> This is the primary tool for linear measurement in cadastral surveys. A standard Gunter's chain is 66 feet long and is composed of 100 links. Each link measures 0.66 feet or 7.92 inches. The chain is designed mathematically: 10 square chains equal exactly 1 Acre, simplifying area calculations. It has brass tags (tallies) at every 10 links to help count distances.</li>
+                        <li><strong>Adda (Cross Staff):</strong> A simple yet effective instrument used to set out right angles (90 degrees) to the survey line. This is essential for taking 'offsets'—measuring the perpendicular distance of objects (like a tree or building corner) to the left or right of the main chain line.</li>
+                        <li><strong>Theodolite:</strong> A more advanced optical instrument mounted on a tripod. It is used for measuring precise horizontal and vertical angles. It is indispensable for large-scale surveys and for establishing the primary control points in a survey network.</li>
+                        <li><strong>Triangulation:</strong> The fundamental principle of surveying used to cover large areas. The entire area is divided into a network of connected triangles. Why triangles? Because a triangle is the only geometric shape that cannot be deformed without changing the length of its sides. This provides a rigid framework, ensuring that the map remains accurate over long distances.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>सटीक भूमि रिकॉर्ड सटीक माप पर निर्भर करते हैं। राजस्व विभाग कैडस्ट्राल सर्वेक्षणों के लिए विशिष्ट उपकरणों और तकनीकों का उपयोग करता है।</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>गुंटर चेन (जरीब):</strong> कैडस्ट्राल सर्वेक्षणों में रैखिक माप के लिए यह प्राथमिक उपकरण है। एक मानक गुंटर चेन 66 फीट लंबी होती है और 100 कड़ियों से बनी होती है। प्रत्येक कड़ी 0.66 फीट या 7.92 इंच मापती है। चेन को गणितीय रूप से डिज़ाइन किया गया है: 10 वर्ग चेन ठीक 1 एकड़ के बराबर होती हैं, जिससे क्षेत्रफल की गणना सरल हो जाती है। दूरियों को गिनने में मदद करने के लिए इसमें हर 10 कड़ियों पर पीतल के टैग (टल्ली) होते हैं।</li>
+                        <li><strong>अड्डा (क्रॉस स्टाफ):</strong> सर्वेक्षण रेखा के समकोण (90 डिग्री) को निर्धारित करने के लिए उपयोग किया जाने वाला एक सरल लेकिन प्रभावी उपकरण। यह 'ऑफसेट' लेने के लिए आवश्यक है—मुख्य चेन लाइन के बाईं या दाईं ओर वस्तुओं (जैसे पेड़ या इमारत के कोने) की लंबवत दूरी को मापना।</li>
+                        <li><strong>थियोडोलाइट:</strong> ट्राइपॉड पर लगा एक अधिक उन्नत ऑप्टिकल उपकरण। इसका उपयोग सटीक क्षैतिज और ऊर्ध्वाधर कोणों को मापने के लिए किया जाता है। यह बड़े पैमाने पर सर्वेक्षणों और सर्वेक्षण नेटवर्क में प्राथमिक नियंत्रण बिंदु स्थापित करने के लिए अपरिहार्य है।</li>
+                        <li><strong>त्रिभुजकरण (Triangulation):</strong> बड़े क्षेत्रों को कवर करने के लिए उपयोग किए जाने वाले सर्वेक्षण का मूल सिद्धांत। पूरे क्षेत्र को जुड़े हुए त्रिभुजों के नेटवर्क में विभाजित किया जाता है। त्रिभुज क्यों? क्योंकि त्रिभुज एकमात्र ऐसा ज्यामितीय आकार है जिसे उसकी भुजाओं की लंबाई बदले बिना विकृत नहीं किया जा सकता है। यह एक कठोर ढांचा प्रदान करता है, यह सुनिश्चित करता है कि नक्शा लंबी दूरी तक सटीक बना रहे।</li>
+                    </ul>
+                `,
+                "icon": "fa-compass-drafting",
+                "color": "text-indigo-600",
+                "bg": "bg-indigo-50",
+                "border": "border-indigo-600"
+            },
+            {
+                "id": "topic-4",
+                "title": "4. Administrative Hierarchy",
+                "title_hi": "4. प्रशासनिक पदानुक्रम",
+                "content": `
+                    <p>The Revenue Department is the backbone of general administration. It is structured like a pyramid to ensure effective governance from the state capital down to the village.</p>
+                    <ol class="list-decimal pl-5 space-y-2">
+                        <li><strong>Financial Commissioner (Revenue) (FCR):</strong> The highest revenue authority in the state. The FCR acts as the final appellate court for revenue cases, equivalent to the High Court for revenue matters.</li>
+                        <li><strong>Divisional Commissioner:</strong> The administrative head of a Division (e.g., Kangra, Mandi, Shimla). They supervise the Deputy Commissioners of the districts within their division and hear appeals against the orders of the Collector.</li>
+                        <li><strong>Deputy Commissioner (DC) / Collector:</strong> The 'Kingpin' of district administration. As Collector, they are responsible for land revenue collection, land acquisition, and maintenance of land records. They are also the District Magistrate (DM) responsible for law and order.</li>
+                        <li><strong>Sub-Divisional Magistrate (SDM):</strong> The head of a Sub-Division. In revenue matters, they exercise the powers of an Assistant Collector 1st Grade. They are the primary authority for deciding partition (Takseem) cases and hearing appeals from lower revenue officers.</li>
+                        <li><strong>Tehsildar:</strong> A Revenue Officer in charge of a Tehsil. They deal with mutations, partitions, encroachments, and issue various certificates. They also act as an Assistant Collector 1st Grade.</li>
+                        <li><strong>Naib Tehsildar:</strong> Assists the Tehsildar and is in charge of a Sub-Tehsil. They act as Assistant Collector 2nd Grade and are the primary authority for attesting uncontested mutations.</li>
+                        <li><strong>Kanungo (Field/Office):</strong> The supervisor of Patwaris. The Field Kanungo inspects the work of Patwaris on the spot, verifies 100% of mutation entries, and checks Girdawari. The Office Kanungo (Sadar Kanungo) maintains records at the Tehsil headquarters.</li>
+                        <li><strong>Patwari:</strong> The Village Accountant and the pillar of the revenue system. The Patwari maintains all land records (Jamabandi, Khasra Girdawari), maps, and statistical registers at the village level. They are the first responder for crop damage and disaster reporting.</li>
+                    </ol>
+                `,
+                "content_hi": `
+                    <p>राजस्व विभाग सामान्य प्रशासन की रीढ़ है। राज्य की राजधानी से लेकर गाँव तक प्रभावी शासन सुनिश्चित करने के लिए इसे पिरामिड की तरह संरचित किया गया है।</p>
+                    <ol class="list-decimal pl-5 space-y-2">
+                        <li><strong>वित्तीय आयुक्त (राजस्व) (FCR):</strong> राज्य में सर्वोच्च राजस्व प्राधिकारी। FCR राजस्व मामलों के लिए अंतिम अपीलीय अदालत के रूप में कार्य करता है, जो राजस्व मामलों के लिए उच्च न्यायालय के बराबर है।</li>
+                        <li><strong>मंडलायुक्त:</strong> एक मंडल (जैसे, कांगड़ा, मंडी, शिमला) का प्रशासनिक प्रमुख। वे अपने मंडल के भीतर जिलों के उपायुक्तों की निगरानी करते हैं और कलेक्टर के आदेशों के खिलाफ अपील सुनते हैं।</li>
+                        <li><strong>उपायुक्त (DC) / कलेक्टर:</strong> जिला प्रशासन की 'धुरी'। कलेक्टर के रूप में, वे भू-राजस्व संग्रह, भूमि अधिग्रहण और भूमि रिकॉर्ड के रखरखाव के लिए जिम्मेदार हैं। वे कानून और व्यवस्था के लिए जिम्मेदार जिला मजिस्ट्रेट (DM) भी हैं।</li>
+                        <li><strong>उप-मंडलीय मजिस्ट्रेट (SDM):</strong> एक उप-मंडल का प्रमुख। राजस्व मामलों में, वे सहायक कलेक्टर प्रथम श्रेणी की शक्तियों का प्रयोग करते हैं। वे विभाजन (तक्सीम) के मामलों का निर्णय लेने और निचले राजस्व अधिकारियों से अपील सुनने के लिए प्राथमिक प्राधिकारी हैं।</li>
+                        <li><strong>तहसीलदार:</strong> एक तहसील का प्रभारी राजस्व अधिकारी। वे इंतकाल, विभाजन, अतिक्रमण से निपटते हैं और विभिन्न प्रमाण पत्र जारी करते हैं। वे सहायक कलेक्टर प्रथम श्रेणी के रूप में भी कार्य करते हैं।</li>
+                        <li><strong>नायब तहसीलदार:</strong> तहसीलदार की सहायता करता है और एक उप-तहसील का प्रभारी होता है। वे सहायक कलेक्टर द्वितीय श्रेणी के रूप में कार्य करते हैं और निर्विवाद इंतकाल को सत्यापित करने के लिए प्राथमिक प्राधिकारी हैं।</li>
+                        <li><strong>कानूनगो (फील्ड/ऑफिस):</strong> पटवारियों का पर्यवेक्षक। फील्ड कानूनगो मौके पर पटवारियों के काम का निरीक्षण करता है, 100% इंतकाल प्रविष्टियों का सत्यापन करता है, और गिरदावरी की जाँच करता है। ऑफिस कानूनगो (सदर कानूनगो) तहसील मुख्यालय पर रिकॉर्ड रखता है।</li>
+                        <li><strong>पटवारी:</strong> ग्राम लेखाकार और राजस्व प्रणाली का स्तंभ। पटवारी ग्राम स्तर पर सभी भूमि रिकॉर्ड (जमाबंदी, खसरा गिरदावरी), नक्शे और सांख्यिकीय रजिस्टर रखता है। वे फसल क्षति और आपदा रिपोर्टिंग के लिए पहले उत्तरदाता हैं।</li>
+                    </ol>
+                `,
+                "icon": "fa-sitemap",
+                "color": "text-purple-600",
+                "bg": "bg-purple-50",
+                "border": "border-purple-600"
+            },
+            {
+                "id": "topic-5",
+                "title": "5. HP Land Revenue Act, 1954",
+                "title_hi": "5. हि.प्र. भू-राजस्व अधिनियम, 1954",
+                "content": `
+                    <p>The HP Land Revenue Act, 1954 is the parent statute governing land administration in the state. Every Patwari must master its key provisions.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Section 32 (Record of Rights):</strong> This section mandates the preparation of a Record of Rights (Jamabandi) for each estate. It lists the documents that must be included, such as statements of landowners, tenants, and customs.</li>
+                        <li><strong>Section 34 (Report of Acquisition):</strong> This section imposes a legal duty on any person acquiring a right in land (by inheritance, purchase, mortgage, etc.) to report the acquisition to the Patwari within 3 months. Failure to do so can attract a fine.</li>
+                        <li><strong>Section 35 (Mutation Procedure):</strong> This details the procedure for making mutations. Once a report is received, the Patwari enters it in the register. The Revenue Officer must then inquire into the correctness of the entry in a public assembly and attest it if valid.</li>
+                        <li><strong>Section 47 (Survey Marks):</strong> Empowers Revenue Officers to define boundaries and erect survey marks (boundary pillars). It is the duty of landowners to maintain these marks.</li>
+                        <li><strong>Section 118 (Penalty for Encroachment on Roads):</strong> specifically deals with penalties for encroaching upon public roads and paths recorded in revenue papers.</li>
+                        <li><strong>Section 163 (Prevention of Encroachment):</strong> A powerful tool for protecting government land. It empowers the Revenue Officer (Assistant Collector 1st Grade) to eject encroachers from government land, remove illegal structures, and impose fines proportional to the value of the land.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>हि.प्र. भू-राजस्व अधिनियम, 1954 राज्य में भूमि प्रशासन को नियंत्रित करने वाला मूल कानून है। प्रत्येक पटवारी को इसके प्रमुख प्रावधानों में महारत हासिल करनी चाहिए।</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>धारा 32 (अधिकारों का रिकॉर्ड):</strong> यह धारा प्रत्येक संपदा के लिए अधिकारों का रिकॉर्ड (जमाबंदी) तैयार करना अनिवार्य करती है। यह उन दस्तावेजों को सूचीबद्ध करता है जिन्हें शामिल किया जाना चाहिए, जैसे कि भूस्वामियों, किरायेदारों और रीति-रिवाजों के बयान।</li>
+                        <li><strong>धारा 34 (अधिग्रहण की रिपोर्ट):</strong> यह धारा भूमि में अधिकार प्राप्त करने वाले किसी भी व्यक्ति (विरासत, खरीद, गिरवी आदि द्वारा) पर 3 महीने के भीतर पटवारी को अधिग्रहण की रिपोर्ट करने का कानूनी कर्तव्य लगाती है। ऐसा करने में विफलता पर जुर्माना लग सकता है।</li>
+                        <li><strong>धारा 35 (इंतकाल प्रक्रिया):</strong> यह इंतकाल करने की प्रक्रिया का विवरण देता है। एक बार रिपोर्ट प्राप्त होने के बाद, पटवारी इसे रजिस्टर में दर्ज करता है। राजस्व अधिकारी को तब एक सार्वजनिक सभा में प्रविष्टि की शुद्धता की जांच करनी चाहिए और यदि मान्य हो तो इसे सत्यापित करना चाहिए।</li>
+                        <li><strong>धारा 47 (सर्वेक्षण चिह्न):</strong> राजस्व अधिकारियों को सीमाओं को परिभाषित करने और सर्वेक्षण चिह्न (सीमा स्तंभ) खड़ा करने का अधिकार देता है। इन चिह्नों को बनाए रखना भूस्वामियों का कर्तव्य है।</li>
+                        <li><strong>धारा 118 (सड़कों पर अतिक्रमण के लिए दंड):</strong> विशेष रूप से राजस्व कागजात में दर्ज सार्वजनिक सड़कों और रास्तों पर अतिक्रमण के लिए दंड से संबंधित है।</li>
+                        <li><strong>धारा 163 (अतिक्रमण की रोकथाम):</strong> सरकारी भूमि की सुरक्षा के लिए एक शक्तिशाली उपकरण। यह राजस्व अधिकारी (सहायक कलेक्टर प्रथम श्रेणी) को सरकारी भूमि से अतिक्रमणकारियों को बेदखल करने, अवैध संरचनाओं को हटाने और भूमि के मूल्य के अनुपात में जुर्माना लगाने का अधिकार देता है।</li>
+                    </ul>
+                `,
+                "icon": "fa-gavel",
+                "color": "text-red-600",
+                "bg": "bg-red-50",
+                "border": "border-red-600"
+            },
+            {
+                "id": "topic-6",
+                "title": "6. Judicial & Revenue Procedures",
+                "title_hi": "6. न्यायिक और राजस्व प्रक्रियाएं",
+                "content": `
+                    <p>Revenue officers act as quasi-judicial courts for specific land disputes. The two most common and complex procedures are Partition and Appeals.</p>
+                    <p><strong>Partition (Takseem):</strong></p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Concept:</strong> The legal process of dividing a joint land holding (Khewat) into individual shares so that each owner becomes the exclusive owner of a specific portion.</li>
+                        <li><strong>Procedure:</strong> An application under Section 123 is submitted to the Assistant Collector 1st Grade (Tehsildar). The officer first decides the 'Mode of Partition' (Tarika Takseem)—the rules by which the land will be divided (e.g., maintaining possession, quality of land).</li>
+                        <li><strong>Timeline:</strong> To reduce delays, recent amendments to the HP Land Revenue Act mandate that partition cases should ideally be decided within 6 months.</li>
+                        <li><strong>Instrument of Partition (Sanad Takseem):</strong> The final document issued after partition is complete, which serves as the new title deed.</li>
+                    </ul>
+                    <p><strong>Appeals Hierarchy:</strong></p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>If a party is aggrieved by an order, they can appeal to the higher authority.</li>
+                        <li><strong>1st Step:</strong> Order of Assistant Collector 2nd Grade (Naib Tehsildar) -> Appeal to Collector (SDM/DC).</li>
+                        <li><strong>2nd Step:</strong> Order of Collector -> Appeal to Divisional Commissioner.</li>
+                        <li><strong>3rd Step:</strong> Order of Commissioner -> Appeal to Financial Commissioner.</li>
+                        <li><strong>Limitation:</strong> The standard limitation period for filing an appeal to the Collector is 30 days from the date of the order.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>राजस्व अधिकारी विशिष्ट भूमि विवादों के लिए अर्ध-न्यायिक अदालतों के रूप में कार्य करते हैं। दो सबसे आम और जटिल प्रक्रियाएं विभाजन और अपील हैं।</p>
+                    <p><strong>विभाजन (तक्सीम):</strong></p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>अवधारणा:</strong> एक संयुक्त भूमि जोत (खेवट) को व्यक्तिगत शेयरों में विभाजित करने की कानूनी प्रक्रिया ताकि प्रत्येक मालिक एक विशिष्ट हिस्से का अनन्य स्वामी बन जाए।</li>
+                        <li><strong>प्रक्रिया:</strong> धारा 123 के तहत एक आवेदन सहायक कलेक्टर प्रथम श्रेणी (तहसीलदार) को प्रस्तुत किया जाता है। अधिकारी पहले 'विभाजन का तरीका' (तरीका तक्सीम) तय करता है—वे नियम जिनके द्वारा भूमि विभाजित की जाएगी (जैसे, कब्जा बनाए रखना, भूमि की गुणवत्ता)।</li>
+                        <li><strong>समय सीमा:</strong> देरी को कम करने के लिए, हि.प्र. भू-राजस्व अधिनियम में हाल के संशोधनों में अनिवार्य किया गया है कि विभाजन के मामलों का निर्णय आदर्श रूप से 6 महीने के भीतर किया जाना चाहिए।</li>
+                        <li><strong>विभाजन का साधन (सनद तक्सीम):</strong> विभाजन पूरा होने के बाद जारी अंतिम दस्तावेज, जो नए शीर्षक विलेख के रूप में कार्य करता है।</li>
+                    </ul>
+                    <p><strong>अपील पदानुक्रम:</strong></p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>यदि कोई पक्ष किसी आदेश से व्यथित है, तो वे उच्च प्राधिकारी को अपील कर सकते हैं।</li>
+                        <li><strong>पहला चरण:</strong> सहायक कलेक्टर द्वितीय श्रेणी (नायब तहसीलदार) का आदेश -> कलेक्टर (SDM/DC) को अपील।</li>
+                        <li><strong>दूसरा चरण:</strong> कलेक्टर का आदेश -> मंडलायुक्त को अपील।</li>
+                        <li><strong>तीसरा चरण:</strong> आयुक्त का आदेश -> वित्तीय आयुक्त को अपील।</li>
+                        <li><strong>परिसीमा:</strong> कलेक्टर के पास अपील दायर करने की मानक सीमा आदेश की तारीख से 30 दिन है।</li>
+                    </ul>
+                `,
+                "icon": "fa-scale-balanced",
+                "color": "text-orange-600",
+                "bg": "bg-orange-50",
+                "border": "border-orange-600"
+            },
+            {
+                "id": "topic-7",
+                "title": "7. Record Keeping Nuances",
+                "title_hi": "7. रिकॉर्ड रखने की बारीकियां",
+                "content": `
+                    <p>In revenue records, even small ink marks or notations carry massive legal weight. A Patwari must understand these nuances perfectly.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Red Ink Entry (Lal Syahi):</strong> This is used in the Khasra Girdawari register. If the person actually cultivating a field is different from the person recorded as the cultivator in the Jamabandi, the Patwari notes this discrepancy in Red Ink. This entry is crucial evidence in court cases regarding adverse possession, tenancy rights, or illegal occupation. It signals a deviation from the official record.</li>
+                        <li><strong>Min Numbers (Khasra Min):</strong> The word 'Min' means 'Part'. When a large Khasra number is divided (e.g., due to a sale of a small portion) but the map has not yet been formally updated with new numbers (during Settlement), the divided parts are referred to as 'Min'. For example, if Khasra 50 is divided, the parts might be recorded as '50 Min' (North) and '50 Min' (South). This indicates a temporary division until the next Settlement regularizes it.</li>
+                        <li><strong>Tatima (Supplementary Map):</strong> Since the main village map (Musavi) is hard to update frequently, a 'Tatima' is drawn. It is a hand-drawn sketch map usually on the back of a mutation sheet or separate paper. It shows exactly how a specific field has been physically divided, with measurements of the new boundaries. It is mandatory for registering sale deeds involving part-fields.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>राजस्व रिकॉर्ड में, स्याही के छोटे निशान या नोटेशन भी भारी कानूनी वजन रखते हैं। पटवारी को इन बारीकियों को पूरी तरह से समझना चाहिए।</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>लाल स्याही प्रविष्टि (लाल स्याही):</strong> इसका उपयोग खसरा गिरदावरी रजिस्टर में किया जाता है। यदि खेत जोतने वाला व्यक्ति जमाबंदी में काश्तकार के रूप में दर्ज व्यक्ति से अलग है, तो पटवारी इस विसंगति को लाल स्याही में नोट करता है। यह प्रविष्टि प्रतिकूल कब्जे, किरायेदारी के अधिकार या अवैध कब्जे से संबंधित अदालती मामलों में महत्वपूर्ण सबूत है। यह आधिकारिक रिकॉर्ड से विचलन का संकेत देता है।</li>
+                        <li><strong>मिन नंबर (खसरा मिन):</strong> 'मिन' शब्द का अर्थ है 'भाग'। जब एक बड़ा खसरा नंबर विभाजित होता है (जैसे, एक छोटे हिस्से की बिक्री के कारण) लेकिन नक्शे को अभी तक औपचारिक रूप से नए नंबरों (बंदोबस्त के दौरान) के साथ अपडेट नहीं किया गया है, तो विभाजित भागों को 'मिन' कहा जाता है। उदाहरण के लिए, यदि खसरा 50 विभाजित है, तो भागों को '50 मिन' (उत्तर) और '50 मिन' (दक्षिण) के रूप में दर्ज किया जा सकता है। यह अगले बंदोबस्त द्वारा नियमित किए जाने तक अस्थायी विभाजन को इंगित करता है।</li>
+                        <li><strong>ततीमा (पूरक नक्शा):</strong> चूंकि मुख्य ग्राम मानचित्र (मुसावी) को बार-बार अपडेट करना कठिन है, इसलिए 'ततीमा' तैयार किया जाता है। यह आमतौर पर म्यूटेशन शीट के पीछे या अलग कागज पर हाथ से बनाया गया स्केच नक्शा है। यह दिखाता है कि एक विशिष्ट खेत को भौतिक रूप से कैसे विभाजित किया गया है, जिसमें नई सीमाओं का माप होता है। आंशिक खेतों से जुड़े बिक्री विलेखों को पंजीकृत करने के लिए यह अनिवार्य है।</li>
+                    </ul>
+                `,
+                "icon": "fa-pen-nib",
+                "color": "text-teal-600",
+                "bg": "bg-teal-50",
+                "border": "border-teal-600"
+            },
+            {
+                "id": "topic-8",
+                "title": "8. Consolidation (Chakbandi)",
+                "title_hi": "8. चकबंदी",
+                "content": `
+                    <p>Fragmentation of land holdings is a major issue in hill agriculture. Consolidation (Chakbandi) is the solution to group scattered plots into compact blocks for better farming efficiency.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Governing Act:</strong> The process is governed by the 'HP Holdings (Consolidation and Prevention of Fragmentation) Act, 1971'.</li>
+                        <li><strong>Killabandi:</strong> A key technical feature of consolidation is 'Killabandi'. This involves reshaping irregular, zig-zag fields into standard rectangular plots called 'Killas' (usually 1 Acre or 40x36 Karams). This geometric layout facilitates easier irrigation, mechanization, and record management.</li>
+                        <li><strong>Legal Bar on Civil Courts:</strong> To prevent litigation from stalling the process, the Act provides that once consolidation operations begin in a village, the jurisdiction of Civil Courts regarding land rights is barred. All disputes regarding title or possession must be settled by the Consolidation Officer (CO) or the Settlement Officer (Consolidation), not the regular courts.</li>
+                        <li><strong>Prevention of Fragmentation:</strong> The Act also prevents the creation of 'fragments' (plots smaller than a standard economic size) in the future by restricting the sale or partition of land below a certain limit.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>पहाड़ी कृषि में भूमि जोतों का विखंडन एक प्रमुख मुद्दा है। चकबंदी (चकबंदी) बेहतर खेती दक्षता के लिए बिखरे हुए भूखंडों को कॉम्पैक्ट ब्लॉकों में समूहित करने का समाधान है।</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>शासी अधिनियम:</strong> यह प्रक्रिया 'हि.प्र. जोत (चकबंदी और विखंडन निवारण) अधिनियम, 1971' द्वारा शासित है।</li>
+                        <li><strong>किलाबंदी:</strong> चकबंदी की एक प्रमुख तकनीकी विशेषता 'किलाबंदी' है। इसमें अनियमित, टेढ़े-मेढ़े खेतों को 'किल्ला' (आमतौर पर 1 एकड़ या 40x36 करम) नामक मानक आयताकार भूखंडों में बदलना शामिल है। यह ज्यामितीय लेआउट आसान सिंचाई, यंत्रीकरण और रिकॉर्ड प्रबंधन की सुविधा प्रदान करता है।</li>
+                        <li><strong>सिविल अदालतों पर कानूनी रोक:</strong> मुकदमेबाजी को प्रक्रिया को रोकने से रोकने के लिए, अधिनियम यह प्रावधान करता है कि एक बार जब गाँव में चकबंदी कार्य शुरू हो जाता है, तो भूमि अधिकारों के संबंध में सिविल न्यायालयों का अधिकार क्षेत्र वर्जित हो जाता है। शीर्षक या कब्जे के संबंध में सभी विवादों का निपटारा चकबंदी अधिकारी (CO) या बंदोबस्त अधिकारी (चकबंदी) द्वारा किया जाना चाहिए, न कि नियमित अदालतों द्वारा।</li>
+                        <li><strong>विखंडन की रोकथाम:</strong> अधिनियम भविष्य में एक निश्चित सीमा से नीचे भूमि की बिक्री या विभाजन को प्रतिबंधित करके 'टुकड़ों' (मानक आर्थिक आकार से छोटे भूखंड) के निर्माण को भी रोकता है।</li>
+                    </ul>
+                `,
+                "icon": "fa-object-group",
+                "color": "text-cyan-600",
+                "bg": "bg-cyan-50",
+                "border": "border-cyan-600"
+            },
+            {
+                "id": "topic-9",
+                "title": "9. Common Lands (Shamlat)",
+                "title_hi": "9. साझा भूमि (शामलात)",
+                "content": `
+                    <p>Shamlat Deh refers to the common land of the village, historically owned collectively by the land-owning community (Khewatdars).</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>The Vesting Act 1974:</strong> The 'HP Village Common Lands (Vesting and Utilization) Act, 1974' was a revolutionary step. It abolished the proprietary rights of the village community in Shamlat lands and vested all such rights in the State Government. This effectively nationalized the village commons.</li>
+                        <li><strong>Objectives:</strong> The primary goal was to reclaim common lands that were being encroached upon by powerful landlords and to use them for the broader public good and distribution to the landless poor.</li>
+                        <li><strong>Utilization Policy:</strong> The Act mandates a specific usage pattern for this vested land:
+                            <br>- <strong>50% Reserved:</strong> At least 50% of the land must be retained for common purposes like grazing (Charand), paths, schools, and cremation grounds.
+                            <br>- <strong>50% Allotable Pool:</strong> The remaining land forms a pool to be allotted to landless persons and eligible poor families for agriculture or housing (usually up to 1 acre).</li>
+                        <li><strong>Disputes:</strong> The Collector is the authority to settle disputes regarding whether a piece of land is Shamlat or not.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>शामलात देह का तात्पर्य गाँव की साझा भूमि से है, जिसका स्वामित्व ऐतिहासिक रूप से सामूहिक रूप से भूमि-स्वामित्व वाले समुदाय (खेवटदार) के पास था।</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>निहित अधिनियम 1974:</strong> 'हि.प्र. ग्राम शामलात भूमि (निहित और उपयोग) अधिनियम, 1974' एक क्रांतिकारी कदम था। इसने शामलात भूमि में ग्राम समुदाय के मालिकाना अधिकारों को समाप्त कर दिया और ऐसे सभी अधिकारों को राज्य सरकार में निहित कर दिया। इसने प्रभावी रूप से गाँव के कॉमन्स का राष्ट्रीयकरण कर दिया।</li>
+                        <li><strong>उद्देश्य:</strong> प्राथमिक लक्ष्य उन साझा भूमि को वापस लेना था जिन पर शक्तिशाली जमींदारों द्वारा अतिक्रमण किया जा रहा था और उनका उपयोग व्यापक जनहित और भूमिहीन गरीबों को वितरण के लिए करना था।</li>
+                        <li><strong>उपयोग नीति:</strong> अधिनियम इस निहित भूमि के लिए एक विशिष्ट उपयोग पैटर्न अनिवार्य करता है:
+                            <br>- <strong>50% आरक्षित:</strong> कम से कम 50% भूमि को चराई (चरणद), रास्ते, स्कूल और श्मशान घाट जैसे सामान्य उद्देश्यों के लिए बनाए रखा जाना चाहिए।
+                            <br>- <strong>50% आवंटन योग्य पूल:</strong> शेष भूमि कृषि या आवास (आमतौर पर 1 एकड़ तक) के लिए भूमिहीन व्यक्तियों और पात्र गरीब परिवारों को आवंटित करने के लिए एक पूल बनाती है।</li>
+                        <li><strong>विवाद:</strong> कलेक्टर यह तय करने के लिए प्राधिकारी है कि भूमि का कोई टुकड़ा शामलात है या नहीं।</li>
+                    </ul>
+                `,
+                "icon": "fa-users",
+                "color": "text-pink-600",
+                "bg": "bg-pink-50",
+                "border": "border-pink-600"
+            },
+            {
+                "id": "topic-10",
+                "title": "10. Land Ceiling Act 1972",
+                "title_hi": "10. भूमि सीलिंग अधिनियम 1972",
+                "content": `
+                    <p>To promote social justice and reduce inequality in land ownership, the state restricts the maximum amount of land a family can hold.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>The Act:</strong> 'HP Ceiling on Land Holdings Act, 1972'.</li>
+                        <li><strong>Permissible Area:</strong> The 'Ceiling Limit' for a family (defined as Husband, Wife, and up to 3 minor children) is approximately 10 Acres to 30 Acres. The range exists because land is graded:
+                            <br>- For land with assured irrigation (2 crops/year), the limit is lower (approx 10 acres).
+                            <br>- For barren or difficult land, the limit is higher (up to 30 acres or 70 bighas approx).</li>
+                        <li><strong>Surplus Land:</strong> Any land held by a family in excess of this ceiling limit is legally termed 'Surplus Area'. This surplus land vests in the State Government free from all encumbrances (mortgages/debts).</li>
+                        <li><strong>Redistribution:</strong> The government then distributes this surplus land to landless agricultural labourers and poor tenants, conferring ownership rights on them.</li>
+                        <li><strong>Exemptions:</strong> To protect the economy, certain lands like Tea Estates in Kangra/Mandi and lands held by Religious/Charitable Trusts are exempted from these ceiling limits.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>सामाजिक न्याय को बढ़ावा देने और भूमि स्वामित्व में असमानता को कम करने के लिए, राज्य एक परिवार द्वारा रखी जा सकने वाली भूमि की अधिकतम मात्रा को प्रतिबंधित करता है।</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>अधिनियम:</strong> 'हि.प्र. जोत सीमा अधिनियम, 1972'।</li>
+                        <li><strong>अनुमेय क्षेत्र:</strong> एक परिवार (पति, पत्नी और 3 नाबालिग बच्चों के रूप में परिभाषित) के लिए 'सीलिंग सीमा' लगभग 10 एकड़ से 30 एकड़ है। सीमा इसलिए मौजूद है क्योंकि भूमि को श्रेणीबद्ध किया गया है:
+                            <br>- सुनिश्चित सिंचाई वाली भूमि (2 फसलें/वर्ष) के लिए, सीमा कम है (लगभग 10 एकड़)।
+                            <br>- बंजर या कठिन भूमि के लिए, सीमा अधिक है (30 एकड़ या लगभग 70 बीघा तक)।</li>
+                        <li><strong>अधिशेष भूमि:</strong> किसी परिवार द्वारा इस सीलिंग सीमा से अधिक धारित किसी भी भूमि को कानूनी रूप से 'अधिशेष क्षेत्र' कहा जाता है। यह अधिशेष भूमि सभी ऋणभारों (गिरवी/ऋण) से मुक्त होकर राज्य सरकार में निहित हो जाती है।</li>
+                        <li><strong>पुनर्वितरण:</strong> सरकार तब इस अधिशेष भूमि को भूमिहीन खेतिहर मजदूरों और गरीब किरायेदारों को वितरित करती है, जिससे उन्हें स्वामित्व अधिकार प्रदान किए जाते हैं।</li>
+                        <li><strong>छूट:</strong> अर्थव्यवस्था की रक्षा के लिए, कांगड़ा/मंडी में चाय बागान और धार्मिक/धर्मार्थ ट्रस्टों द्वारा रखी गई भूमि जैसी कुछ भूमि को इन सीलिंग सीमाओं से छूट दी गई है।</li>
+                    </ul>
+                `,
+                "icon": "fa-ban",
+                "color": "text-rose-600",
+                "bg": "bg-rose-50",
+                "border": "border-rose-600"
+            },
+            {
+                "id": "topic-11",
+                "title": "11. Tribal & Customary Rights",
+                "title_hi": "11. जनजातीय और प्रथागत अधिकार",
+                "content": `
+                    <p>Himachal Pradesh has a significant tribal population and distinct customary laws related to land and forests.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>PESA Act 1996:</strong> The 'Provisions of the Panchayats (Extension to Scheduled Areas) Act' applies to tribal districts like Kinnaur and Lahaul-Spiti. It serves as a shield for tribal rights. It mandates that the Gram Sabha (not just the Panchayat) must be consulted before land acquisition for development projects. It also gives the Gram Sabha power to prevent the alienation of tribal land to non-tribals and to restore unlawfully alienated land.</li>
+                        <li><strong>Nautor Rules 1968:</strong> 'Nautor' traditionally meant breaking fresh government waste land for agriculture with the permission of the DC/SDM. It was a primary method for landless hill people to acquire land. However, since the enactment of the Forest Conservation Act 1980 by the Central Govt, the diversion of forest land for non-forest purposes (like agriculture) is strictly regulated, effectively freezing new Nautor grants in most areas.</li>
+                        <li><strong>Bartan Rights:</strong> These are the ancient, recorded customary rights of local villagers in government forests. They include the right to collect timber (TD - Timber Distribution) for house repair, fuel-wood, fodder, and grazing rights. These rights are recorded in the Wajib-ul-Arz of the forest settlement.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>हिमाचल प्रदेश में एक महत्वपूर्ण आदिवासी आबादी है और भूमि और वनों से संबंधित विशिष्ट प्रथागत कानून हैं।</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>पेसा (PESA) अधिनियम 1996:</strong> 'पंचायत के प्रावधान (अनुसूचित क्षेत्रों तक विस्तार) अधिनियम' किन्नौर और लाहौल-स्पीति जैसे आदिवासी जिलों पर लागू होता है। यह आदिवासी अधिकारों के लिए एक ढाल के रूप में कार्य करता है। यह अनिवार्य करता है कि विकास परियोजनाओं के लिए भूमि अधिग्रहण से पहले ग्राम सभा (न केवल पंचायत) से परामर्श किया जाना चाहिए। यह ग्राम सभा को गैर-आदिवासियों को आदिवासी भूमि के अलगाव को रोकने और गैर-कानूनी रूप से अलग की गई भूमि को बहाल करने की शक्ति भी देता है।</li>
+                        <li><strong>नौतोड़ नियम 1968:</strong> 'नौतोड़' का पारंपरिक अर्थ डीसी/एसडीएम की अनुमति से कृषि के लिए नई सरकारी बंजर भूमि को तोड़ना था। यह भूमिहीन पहाड़ी लोगों के लिए भूमि प्राप्त करने का एक प्राथमिक तरीका था। हालाँकि, केंद्र सरकार द्वारा वन संरक्षण अधिनियम 1980 के अधिनियमन के बाद से, गैर-वन उद्देश्यों (जैसे कृषि) के लिए वन भूमि का डायवर्जन सख्ती से विनियमित है, जिससे अधिकांश क्षेत्रों में नए नौतोड़ अनुदान प्रभावी रूप से फ्रीज हो गए हैं।</li>
+                        <li><strong>बर्तन अधिकार:</strong> ये सरकारी जंगलों में स्थानीय ग्रामीणों के प्राचीन, दर्ज प्रथागत अधिकार हैं। इनमें घर की मरम्मत के लिए लकड़ी (TD - इमारती लकड़ी वितरण), ईंधन-लकड़ी, चारा और चराई के अधिकार एकत्र करने का अधिकार शामिल है। ये अधिकार वन बंदोबस्त के वाजिब-उल-अर्ज में दर्ज हैं।</li>
+                    </ul>
+                `,
+                "icon": "fa-feather",
+                "color": "text-amber-600",
+                "bg": "bg-amber-50",
+                "border": "border-amber-600"
+            },
+            {
+                "id": "topic-12",
+                "title": "12. Government Schemes",
+                "title_hi": "12. सरकारी योजनाएं",
+                "content": `
+                    <p>A Patwari acts as the verifying authority for most beneficiary-oriented schemes in the rural sector.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>PM-KISAN (Pradhan Mantri Kisan Samman Nidhi):</strong> This central scheme provides income support of ₹6000 per year (in 3 installments) to landholding farmer families. The Patwari plays a critical role in verifying the land records to confirm that the applicant is a legitimate landowner and not an institutional owner or income tax payer.</li>
+                        <li><strong>Solar Fencing (Mukhyamantri Khet Sanrakshan Yojana):</strong> To combat the widespread menace of monkeys and wild animals destroying crops, the HP Government launched this scheme. It provides a massive 80% to 85% subsidy to farmers for installing solar-powered electric fences. The Patwari verifies the land where the fence is to be installed.</li>
+                        <li><strong>Pradhan Mantri Fasal Bima Yojana (PMFBY):</strong> A comprehensive crop insurance scheme. It covers risks from pre-sowing (prevented sowing) to post-harvest losses (unseasonal rains). The Patwari is responsible for conducting Crop Cutting Experiments (CCEs) - a statistical method to determine the actual yield of a crop in a village, which forms the basis for calculating insurance claims for all farmers in that area.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>एक पटवारी ग्रामीण क्षेत्र में अधिकांश लाभार्थी-उन्मुख योजनाओं के लिए सत्यापन प्राधिकारी के रूप में कार्य करता है।</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>पीएम-किसान (प्रधान मंत्री किसान सम्मान निधि):</strong> यह केंद्रीय योजना भूमिधारक किसान परिवारों को प्रति वर्ष ₹6000 (3 किस्तों में) की आय सहायता प्रदान करती है। आवेदक एक वैध भूस्वामी है और संस्थागत मालिक या आयकर दाता नहीं है, यह पुष्टि करने के लिए भूमि रिकॉर्ड सत्यापित करने में पटवारी महत्वपूर्ण भूमिका निभाता है।</li>
+                        <li><strong>सौर फेंसिंग (मुख्यमंत्री खेत संरक्षण योजना):</strong> बंदरों और जंगली जानवरों द्वारा फसलों को नष्ट करने के व्यापक खतरे से निपटने के लिए, हि.प्र. सरकार ने यह योजना शुरू की। यह किसानों को सौर ऊर्जा से चलने वाली बिजली की बाड़ लगाने के लिए 80% से 85% की भारी सब्सिडी प्रदान करती है। पटवारी उस जमीन का सत्यापन करता है जहां बाड़ लगाई जानी है।</li>
+                        <li><strong>प्रधान मंत्री फसल बीमा योजना (PMFBY):</strong> एक व्यापक फसल बीमा योजना। यह बुवाई से पहले (रोकी गई बुवाई) से लेकर कटाई के बाद के नुकसान (बेमौसम बारिश) तक के जोखिमों को कवर करती है। पटवारी फसल कटाई प्रयोग (CCE) आयोजित करने के लिए जिम्मेदार है - एक गाँव में फसल की वास्तविक उपज निर्धारित करने के लिए एक सांख्यिकीय विधि, जो उस क्षेत्र के सभी किसानों के लिए बीमा दावों की गणना का आधार बनाती है।</li>
+                    </ul>
+                `,
+                "icon": "fa-hand-holding-dollar",
+                "color": "text-emerald-600",
+                "bg": "bg-emerald-50",
+                "border": "border-emerald-600"
+            },
+            {
+                "id": "topic-13",
+                "title": "13. Digital Initiatives",
+                "title_hi": "13. डिजिटल पहल",
+                "content": `
+                    <p>The Land Records Modernization Programme (DILRMP) is transforming how revenue works. HP is a leading state in digitization.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>HimBhoomi:</strong> This is the customized Land Records software developed by NIC for Himachal Pradesh. It serves as the digital repository for the Record of Rights (Jamabandi). All mutations are now entered and processed through this system in many tehsils.</li>
+                        <li><strong>ULPIN (Unique Land Parcel Identification Number):</strong> Described as the 'Aadhaar for Land', ULPIN is a 14-digit alphanumeric code assigned to every land parcel. It is generated based on the precise geo-coordinates (Latitude and Longitude) of the plot's vertices. This ensures a unique, tamper-proof identity for every piece of land across India.</li>
+                        <li><strong>e-District:</strong> An integrated portal for citizen services. Citizens can apply for various revenue certificates (Bonafide Himachali, Caste, Income, Agriculturist) online. The application is routed digitally to the Patwari/Tehsildar dashboard for verification and digital signature, eliminating the need for physical visits.</li>
+                        <li><strong>Bhu-Naksha:</strong> The software used for the digitization and management of cadastral maps (Musavis). It allows these maps to be georeferenced and viewed online. Crucially, it links the map data with the textual ROR data (HimBhoomi), so clicking a plot on the map shows its owner details.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>भूमि रिकॉर्ड आधुनिकीकरण कार्यक्रम (DILRMP) राजस्व कार्यों को बदल रहा है। डिजिटलीकरण में हिमाचल एक अग्रणी राज्य है।</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>हिमभूमि:</strong> यह हिमाचल प्रदेश के लिए एनआईसी द्वारा विकसित अनुकूलित भूमि रिकॉर्ड सॉफ्टवेयर है। यह अधिकारों के रिकॉर्ड (जमाबंदी) के लिए डिजिटल भंडार के रूप में कार्य करता है। कई तहसीलों में अब सभी इंतकाल इसी प्रणाली के माध्यम से दर्ज और संसाधित किए जाते हैं।</li>
+                        <li><strong>ULPIN (विशिष्ट भूमि पार्सल पहचान संख्या):</strong> 'भूमि के लिए आधार' के रूप में वर्णित, ULPIN हर भूमि पार्सल को सौंपा गया 14-अंकीय अल्फ़ान्यूमेरिक कोड है। यह प्लॉट के कोने के सटीक भू-निर्देशांक (अक्षांश और देशांतर) के आधार पर उत्पन्न होता है। यह पूरे भारत में भूमि के प्रत्येक टुकड़े के लिए एक अद्वितीय, छेड़छाड़-रोधी पहचान सुनिश्चित करता है।</li>
+                        <li><strong>ई-डिस्ट्रिक्ट:</strong> नागरिक सेवाओं के लिए एक एकीकृत पोर्टल। नागरिक विभिन्न राजस्व प्रमाण पत्रों (बोनाफाइड हिमाचली, जाति, आय, कृषक) के लिए ऑनलाइन आवेदन कर सकते हैं। आवेदन को सत्यापन और डिजिटल हस्ताक्षर के लिए डिजिटल रूप से पटवारी/तहसीलदार डैशबोर्ड पर भेजा जाता है, जिससे भौतिक यात्राओं की आवश्यकता समाप्त हो जाती है।</li>
+                        <li><strong>भू-नक्शा:</strong> कैडस्ट्राल मानचित्रों (मुसावी) के डिजिटलीकरण और प्रबंधन के लिए उपयोग किया जाने वाला सॉफ़्टवेयर। यह इन मानचित्रों को भू-संदर्भित और ऑनलाइन देखने की अनुमति देता है। महत्वपूर्ण रूप से, यह मानचित्र डेटा को पाठ्य ROR डेटा (हिमभूमि) के साथ जोड़ता है, इसलिए मानचित्र पर किसी प्लॉट पर क्लिक करने से उसका मालिक विवरण दिखाई देता है।</li>
+                    </ul>
+                `,
+                "icon": "fa-laptop-code",
+                "color": "text-blue-500",
+                "bg": "bg-slate-100",
+                "border": "border-blue-500"
+            },
+            {
+                "id": "topic-14",
+                "title": "14. Panchayati Raj System",
+                "title_hi": "14. पंचायती राज व्यवस्था",
+                "content": `
+                    <p>Though a Revenue official, the Patwari works hand-in-glove with the Panchayati Raj Institutions (PRIs). Understanding this interface is key.</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Structure:</strong> Following the 73rd Constitutional Amendment, HP adopted a 3-tier structure:
+                            <br>1. <strong>Gram Panchayat:</strong> At the village level. Headed by the Pradhan.
+                            <br>2. <strong>Panchayat Samiti:</strong> At the Block level (Tehsil level).
+                            <br>3. <strong>Zila Parishad:</strong> At the District level.</li>
+                        <li><strong>Gram Sabha:</strong> The most powerful entity in the system. It consists of ALL registered voters within the Panchayat area (not just elected members). It meets at least 4 times a year. Its approval is mandatory for selecting beneficiaries for schemes (like BPL list, Housing schemes) and for utilizing village funds.</li>
+                        <li><strong>Parivar Register (Family Register):</strong> While the Patwari maintains land records, the Panchayat Secretary maintains the Parivar Register. This document lists every family unit and its members in the Panchayat. The Patwari often relies on the Parivar Register to verify family trees (Shajra Nasb) for issuing Legal Heir certificates.</li>
+                        <li><strong>Role in Revenue:</strong> The Panchayat Pradhan often witnesses mutation attestations. The Panchayat also has powers to remove minor encroachments on public paths under the Panchayati Raj Act.</li>
+                    </ul>
+                `,
+                "content_hi": `
+                    <p>यद्यपि एक राजस्व अधिकारी, पटवारी पंचायती राज संस्थानों (PRIs) के साथ मिलकर काम करता है। इस इंटरफ़ेस को समझना महत्वपूर्ण है।</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>संरचना:</strong> 73वें संवैधानिक संशोधन के बाद, हि.प्र. ने 3-स्तरीय संरचना अपनाई:
+                            <br>1. <strong>ग्राम पंचायत:</strong> ग्राम स्तर पर। प्रधान की अध्यक्षता में।
+                            <br>2. <strong>पंचायत समिति:</strong> ब्लॉक स्तर (तहसील स्तर) पर।
+                            <br>3. <strong>जिला परिषद:</strong> जिला स्तर पर।</li>
+                        <li><strong>ग्राम सभा:</strong> प्रणाली में सबसे शक्तिशाली इकाई। इसमें पंचायत क्षेत्र के भीतर सभी पंजीकृत मतदाता शामिल होते हैं (न केवल निर्वाचित सदस्य)। यह साल में कम से कम 4 बार मिलती है। योजनाओं (जैसे बीपीएल सूची, आवास योजनाएं) के लिए लाभार्थियों का चयन करने और ग्राम निधि का उपयोग करने के लिए इसकी मंजूरी अनिवार्य है।</li>
+                        <li><strong>परिवार रजिस्टर:</strong> जबकि पटवारी भूमि रिकॉर्ड रखता है, पंचायत सचिव परिवार रजिस्टर रखता है। यह दस्तावेज पंचायत में प्रत्येक परिवार इकाई और उसके सदस्यों को सूचीबद्ध करता है। कानूनी वारिस प्रमाण पत्र जारी करने के लिए पटवारी अक्सर वंश वृक्ष (शजरा नसब) को सत्यापित करने के लिए परिवार रजिस्टर पर निर्भर करता है।</li>
+                        <li><strong>राजस्व में भूमिका:</strong> पंचायत प्रधान अक्सर इंतकाल सत्यापन का गवाह बनता है। पंचायती राज अधिनियम के तहत सार्वजनिक रास्तों पर मामूली अतिक्रमण हटाने का अधिकार भी पंचायत के पास है।</li>
+                    </ul>
+                `,
+                "icon": "fa-landmark",
+                "color": "text-slate-700",
+                "bg": "bg-gray-100",
+                "border": "border-slate-700"
+            }
+        ];
+
+        let currentLang = 'en';
+
+        // --- 2. RENDER LOGIC ---
+        function renderPage() {
+            const nav = document.getElementById('topic-nav');
+            const mobileSelect = document.getElementById('mobile-topic-select');
+            const container = document.getElementById('notes-container');
+
+            nav.innerHTML = '';
+            mobileSelect.innerHTML = '<option value="" disabled selected>Select a Topic to Study...</option>';
+            container.innerHTML = '';
+
+            notesData.forEach((note, index) => {
+                // Determine Language Content
+                const title = currentLang === 'hi' && note.title_hi ? note.title_hi : note.title;
+                const content = currentLang === 'hi' && note.content_hi ? note.content_hi : note.content;
+                const fontClass = currentLang === 'hi' ? 'font-hindi' : 'font-sans';
+
+                // 1. Sidebar Nav
+                const navItem = document.createElement('li');
+                // Updated nav item with dynamic ID for scrolling observation
+                navItem.innerHTML = `<a href="#${note.id}" id="nav-${note.id}" class="block px-4 py-2.5 text-[11px] font-bold text-slate-500 rounded-lg hover:bg-slate-50 hover:text-slate-900 transition truncate border-l-4 border-transparent focus:outline-none">${title}</a>`;
+                nav.appendChild(navItem);
+
+                // 2. Mobile Select Option
+                const option = document.createElement('option');
+                option.value = note.id;
+                option.text = `${index + 1}. ${title}`;
+                mobileSelect.appendChild(option);
+
+                // 3. Content Card (Expanded)
+                const card = document.createElement('article');
+                card.id = note.id;
+                // Add 'topic-card' class for intersection observer
+                card.className = "topic-card bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden scroll-mt-32 transition-all duration-500 hover:shadow-md";
+                
+                // --- CUSTOM FONT SIZE LOGIC ---
+                // Applying text-[13px] as specifically requested, with a slightly larger size for Hindi for readability
+                const fontSizeClass = currentLang === 'hi' ? 'text-sm' : 'text-[13px] md:text-sm';
+
+                card.innerHTML = `
+                    <div class="bg-gradient-to-r from-slate-50 to-white px-6 py-4 border-b border-slate-100 flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-xl ${note.bg} ${note.color} flex items-center justify-center flex-shrink-0 shadow-sm">
+                            <i class="fa-solid ${note.icon} text-lg"></i>
+                        </div>
+                        <h2 class="text-lg md:text-xl font-extrabold text-slate-800 font-heading leading-tight flex-grow">${title}</h2>
+                    </div>
+                    <div class="p-6 md:p-8 ${fontSizeClass} text-slate-600 leading-relaxed note-content ${fontClass}">
+                        ${content}
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+
+            // Initialize Observer after rendering
+            setupIntersectionObserver();
+        }
+
+        // --- 3. SCROLL OBSERVER (Active State Logic) ---
+        function setupIntersectionObserver() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '-20% 0px -60% 0px', // Trigger when element is near top
+                threshold: 0
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Remove active class from all links
+                        document.querySelectorAll('#topic-nav a').forEach(link => {
+                            link.className = "block px-4 py-2.5 text-[11px] font-bold text-slate-500 rounded-lg hover:bg-slate-50 hover:text-slate-900 transition truncate border-l-4 border-transparent focus:outline-none";
+                            // Remove inline styles if any from previous active state
+                            link.style.backgroundColor = '';
+                            link.style.color = '';
+                            link.style.borderColor = '';
+                        });
+
+                        // Add active class to current link
+                        const activeId = entry.target.id;
+                        const activeLink = document.getElementById(`nav-${activeId}`);
+                        if (activeLink) {
+                            // Find the color data for this note
+                            const note = notesData.find(n => n.id === activeId);
+                            if (note) {
+                                // Apply dynamic colors
+                                // We need to map Tailwind classes to CSS variables or just use the class logic
+                                // Since we can't easily extract hex from Tailwind class names in JS without a map, 
+                                // we will use a lookup or simple hardcoded style logic based on the class string provided.
+                                // For simplicity, let's use the bg class for background (which is light) and text class for text.
+                                
+                                // Reset base classes
+                                activeLink.className = `block px-4 py-2.5 text-[11px] font-bold rounded-lg transition truncate border-l-4 focus:outline-none ${note.bg} ${note.color} ${note.border}`;
+                            }
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.topic-card').forEach(card => {
+                observer.observe(card);
+            });
+        }
+
+        // --- 4. TOGGLE LANGUAGE ---
+        function toggleLang(lang) {
+            currentLang = lang;
+            const btnEn = document.getElementById('btn-en');
+            const btnHi = document.getElementById('btn-hi');
+            
+            if (lang === 'en') {
+                btnEn.className = "px-3 py-1.5 text-[10px] md:text-xs font-bold rounded-lg bg-slate-900 text-white shadow-sm transition transform active:scale-95 flex items-center gap-1.5";
+                btnHi.className = "px-3 py-1.5 text-[10px] md:text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition transform active:scale-95 flex items-center gap-1.5";
+            } else {
+                btnHi.className = "px-3 py-1.5 text-[10px] md:text-xs font-bold rounded-lg bg-slate-900 text-white shadow-sm transition transform active:scale-95 flex items-center gap-1.5";
+                btnEn.className = "px-3 py-1.5 text-[10px] md:text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition transform active:scale-95 flex items-center gap-1.5";
+            }
+            renderPage();
+        }
+
+        // --- 5. INITIALIZATION ---
+        document.addEventListener('DOMContentLoaded', () => {
+            renderPage();
+            
+            // Setup Breadcrumbs via Global Script
+            if(window.renderBreadcrumb) {
+                renderBreadcrumb('breadcrumb-container', [
+                    { label: 'Home', link: '../index.html' },
+                    { label: 'Technical Guide', link: 'hp-patwari-technical-land-record-and-revenue.html' },
+                    { label: 'Study Notes', link: '#' }
+                ]);
+            }
+
+            // Setup Header/Footer
+            if(window.loadHeaderFooter) {
+                loadHeaderFooter({ type: 'technical', rootPath: '..' });
+            }
+        });
+    </script>
+</body>
+</html>
