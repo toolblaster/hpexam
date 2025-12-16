@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- GLOBAL STYLES & CONFIG -->
     <script src="../../js/tailwind-global-css.js"></script>
-    <!-- Header Footer Script -->
+    <!-- Header Footer Script (Includes Page Header Logic) -->
     <script src="../../js/header-footer.js"></script>
     <!-- Global Scripts (Contains Breadcrumb Logic) -->
     <script src="../../js/global-scripts.js"></script>
@@ -48,35 +48,8 @@
         <!-- Injected by header-footer.js -->
     </nav>
 
-    <!-- Header Section (Compact - Matches Study Notes Style) -->
-    <header class="bg-white border-b border-slate-300 py-3 md:py-4 sticky top-0 z-30 shadow-sm backdrop-blur-md bg-white/95">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Breadcrumb Container -->
-            <div id="breadcrumb-container" class="mb-2 scale-90 origin-top-left"></div>
-
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-3">
-                <div>
-                    <h1 class="text-xl md:text-2xl font-extrabold font-heading text-slate-900 leading-tight">
-                        <span class="gradient-text">HP Patwari Mock Test 1</span>
-                    </h1>
-                    <p class="text-[11px] md:text-xs text-slate-500 mt-1 max-w-2xl font-medium leading-relaxed hidden sm:block">
-                        Specialized MCQ bank covering Land Records, Revenue Acts, and Mensuration logic. Essential practice for HP Revenue Department exams.
-                    </p>
-                    <!-- Mobile-only concise description -->
-                    <p class="text-[10px] text-slate-500 sm:hidden mt-1">
-                        Land Records & Revenue Acts MCQs.
-                    </p>
-                </div>
-                
-                <!-- Mock Description Line (Compact) -->
-                <div class="flex-shrink-0">
-                    <p class="text-[10px] font-bold text-blue-600 font-sans bg-blue-50 inline-block px-2 py-1 rounded border border-blue-100">
-                        <i class="fa-solid fa-graduation-cap mr-1"></i> Mock cum Revision Test
-                    </p>
-                </div>
-            </div>
-        </div>
-    </header>
+    <!-- Page Header (Dynamic Injection) -->
+    <div id="dynamic-page-header"></div>
 
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-6 pb-8 flex-grow">
@@ -340,6 +313,40 @@
     <footer id="global-footer"></footer>
 
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Render Centralized Page Header
+            if(window.renderPageHeader) {
+                renderPageHeader('dynamic-page-header', {
+                    titleHtml: '<span class="gradient-text">HP Patwari Mock Test 1</span>',
+                    subtitle: 'Specialized MCQ bank covering Land Records, Revenue Acts, and Mensuration logic. Essential practice for HP Revenue Department exams.',
+                    mobileSubtitle: 'Land Records & Revenue Acts MCQs.',
+                    rightContent: `
+                        <p class="text-[10px] font-bold text-blue-600 font-sans bg-blue-50 inline-block px-2 py-1 rounded border border-blue-100">
+                            <i class="fa-solid fa-graduation-cap mr-1"></i> Mock cum Revision Test
+                        </p>`
+                });
+            }
+
+            // 2. Render Breadcrumbs (Now into the new header)
+            if(window.renderBreadcrumb) {
+                renderBreadcrumb('breadcrumb-container', [
+                    { label: 'Home', link: '../../index.html' },
+                    { label: 'Technical Guide', link: '../hp-technical-land-record-and-revenue.html' },
+                    { label: 'Mock Test 1', link: '#' }
+                ]);
+            }
+
+            // 3. Load Global Nav/Footer
+            if(window.loadHeaderFooter) {
+                // Root path is '../..' because we are 2 folders deep
+                loadHeaderFooter({ type: 'technical', rootPath: '../..' });
+            }
+
+            // 4. Initialize Quiz
+            switchQuiz('intro');
+        });
+
         // --- QUIZ LOGIC WITH LOCAL STORAGE ---
         let quizQuestions = [];
         let currentQ = 0;
@@ -718,25 +725,6 @@
         function resetQuiz() {
             resetCurrentProgress();
         }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            // Render Breadcrumb Dynamic Logic
-            if(window.renderBreadcrumb) {
-                renderBreadcrumb('breadcrumb-container', [
-                    { label: 'Home', link: '../../index.html' },
-                    { label: 'Technical Guide', link: '../hp-technical-land-record-and-revenue.html' },
-                    { label: 'Mock Test 1', link: '#' }
-                ]);
-            }
-
-            // Check if there's a saved topic preference or default to intro
-            switchQuiz('intro');
-            
-            if(window.loadHeaderFooter) {
-                // Root path is '../..' because we are 2 folders deep: hp-patwari-exam/patwari-mock-test/
-                loadHeaderFooter({ type: 'technical', rootPath: '../..' });
-            }
-        });
     </script>
 </body>
 </html>
