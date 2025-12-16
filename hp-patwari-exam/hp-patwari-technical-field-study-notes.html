@@ -86,6 +86,30 @@
         
         <div id="app-content" class="space-y-6 md:space-y-12">
             
+            <!-- NEW: PROMO CARD FOR VISUAL DIAGRAMS -->
+            <section class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl p-6 shadow-lg relative overflow-hidden group">
+                <div class="absolute right-0 top-0 w-64 h-64 bg-white/10 rounded-full -mr-16 -mt-16 blur-3xl pointer-events-none"></div>
+                
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="text-center md:text-left">
+                        <div class="inline-flex items-center gap-2 bg-blue-500/30 text-blue-50 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider mb-2 border border-blue-400/30">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> New Feature
+                        </div>
+                        <h2 class="text-xl md:text-2xl font-bold text-white mb-2 font-heading">
+                            Visualize the Process
+                        </h2>
+                        <p class="text-blue-100 text-xs md:text-sm max-w-lg leading-relaxed">
+                            Confused about how <strong>Mutations</strong> (Intkaal) or <strong>Partitions</strong> (Takseem) actually happen step-by-step? Check out our new interactive flowcharts.
+                        </p>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <a href="visual-diagrams.html" class="px-6 py-3 bg-white text-blue-700 font-bold text-sm rounded-lg shadow-md hover:bg-blue-50 hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-2">
+                            View Diagrams <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
             <!-- MODULE 1: TERMINOLOGY -->
             <section id="terminology" class="scroll-mt-32 border border-slate-400 rounded-2xl p-4 md:p-6 bg-white shadow-sm">
                 <!-- HEADER WITH TOGGLE & FILTERS -->
@@ -340,7 +364,7 @@
             // 1. Render Dynamic Page Header (Logic moved to exclusive-components.js)
             if(window.renderPageHeader) {
                 renderPageHeader('dynamic-page-header', {
-                    titleHtml: '<span class="gradient-text">HP Land Records</span> & Revenue Guide',
+                    titleHtml: '<span class="gradient-text">HP Revenue & Land Records</span>',
                     subtitle: 'Master critical revenue terminology, calculate land units instantly, and explore the legislative timeline for HP Patwari Exam.',
                     rightContent: `
                         <div class="flex flex-wrap gap-2 justify-start md:justify-end flex-shrink-0">
