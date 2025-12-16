@@ -52,7 +52,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- GLOBAL STYLES & CONFIG -->
     <script src="../js/tailwind-global-css.js"></script>
-    <!-- Header Footer Script -->
+    <!-- Header Footer Script (Includes Page Header) -->
     <script src="../js/header-footer.js"></script>
     <!-- NEW: Global Scripts -->
     <script src="../js/global-scripts.js"></script>
@@ -79,38 +79,11 @@
         <!-- Injected by header-footer.js -->
     </nav>
 
-    <!-- Compact Hero Section (Matches Study Notes Style) -->
-    <header class="bg-white border-b border-slate-300 py-3 md:py-4 sticky top-0 z-30 shadow-sm backdrop-blur-md bg-white/95">
-        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
-            
-            <!-- Breadcrumb Container -->
-            <div id="breadcrumb-container" class="mb-2 scale-90 origin-top-left"></div>
-
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-3">
-                <div>
-                    <h1 class="text-xl md:text-2xl font-extrabold font-heading text-slate-900 leading-tight">
-                        <span class="gradient-text">HP Land Records</span> & Revenue Guide
-                    </h1>
-                    <p class="text-[11px] md:text-xs text-slate-500 mt-1 max-w-2xl font-medium leading-relaxed hidden sm:block">
-                        Master critical revenue terminology, calculate land units instantly, and explore the legislative timeline for HP Patwari Exam.
-                    </p>
-                </div>
-                
-                <!-- Quick Action Links -->
-                <div class="flex flex-wrap gap-2 justify-start md:justify-end flex-shrink-0">
-                    <a href="patwari-mock-test/hp-patwari-mock-test-1-land-and-revenue.html" class="inline-flex items-center text-[10px] font-bold text-white bg-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-700 transition shadow-sm whitespace-nowrap">
-                        <i class="fa-solid fa-pen-nib mr-1.5"></i> Mock Test 1
-                    </a>
-                    <a href="hp-patwari-technical-field-study-notes.html" class="inline-flex items-center text-[10px] font-bold text-slate-700 bg-white border border-slate-300 px-3 py-1.5 rounded-lg hover:bg-slate-50 hover:text-blue-600 transition shadow-sm whitespace-nowrap">
-                        <i class="fa-solid fa-book-open mr-1.5"></i> 14 Topic Notes
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <!-- Page Header (Dynamic Injection) -->
+    <div id="dynamic-page-header"></div>
 
     <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 pt-6 md:pt-8 pb-8 flex-grow">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 md:pt-8 pb-8 flex-grow">
         
         <h1 class="sr-only">Technical Master Guide for HP Land Records</h1>
         
@@ -322,6 +295,87 @@
     <footer id="global-footer"></footer>
 
     <script>
+        async function initApp() {
+            try {
+                // PATHS UPDATED: Replaced '../patwari-json-data' with 'patwari-json-data'
+                const [terms, laws, hierarchy, tools] = await Promise.all([
+                    fetchData('patwari-json-data/terminology_data.json'),
+                    fetchData('patwari-json-data/laws_data.json'),
+                    fetchData('patwari-json-data/hierarchy_data.json'),
+                    fetchData('patwari-json-data/tools_data.json')
+                ]);
+
+                terminologyData = terms;
+                lawsData = laws;
+                lawsData.sort((a, b) => {
+                    const yearA = parseInt(a.year);
+                    const yearB = parseInt(b.year);
+                    const isNumA = !isNaN(yearA);
+                    const isNumB = !isNaN(yearB);
+                    if (isNumA && isNumB) return yearA - yearB; 
+                    else if (isNumA && !isNumB) return -1; 
+                    else if (!isNumA && isNumB) return 1; 
+                    else return a.title.localeCompare(b.title);
+                });
+                hierarchyData = hierarchy;
+                toolsData = tools;
+
+                renderTerms('all');
+                renderLaws();
+                renderHierarchy();
+                renderTools();
+
+                document.getElementById('term-skeleton').classList.add('hidden');
+                document.getElementById('term-grid').classList.remove('hidden');
+                document.getElementById('laws-skeleton').classList.add('hidden');
+                document.getElementById('laws-container').classList.remove('hidden');
+                document.getElementById('hierarchy-skeleton').classList.add('hidden');
+                document.getElementById('hierarchy-container').classList.remove('hidden');
+                document.getElementById('tools-skeleton').classList.add('hidden');
+                document.getElementById('tools-grid').classList.remove('hidden');
+
+            } catch (error) {
+                console.error("Init failed", error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Render Dynamic Page Header
+            if(window.renderPageHeader) {
+                renderPageHeader('dynamic-page-header', {
+                    titleHtml: '<span class="gradient-text">HP Land Records</span> & Revenue Guide',
+                    subtitle: 'Master critical revenue terminology, calculate land units instantly, and explore the legislative timeline for HP Patwari Exam.',
+                    rightContent: `
+                        <div class="flex flex-wrap gap-2 justify-start md:justify-end flex-shrink-0">
+                            <a href="patwari-mock-test/hp-patwari-mock-test-1-land-and-revenue.html" class="inline-flex items-center text-[10px] font-bold text-white bg-blue-600 px-3 py-1.5 rounded-lg hover:bg-blue-700 transition shadow-sm whitespace-nowrap">
+                                <i class="fa-solid fa-pen-nib mr-1.5"></i> Mock Test 1
+                            </a>
+                            <a href="hp-patwari-technical-field-study-notes.html" class="inline-flex items-center text-[10px] font-bold text-slate-700 bg-white border border-slate-300 px-3 py-1.5 rounded-lg hover:bg-slate-50 hover:text-blue-600 transition shadow-sm whitespace-nowrap">
+                                <i class="fa-solid fa-book-open mr-1.5"></i> 14 Topic Notes
+                            </a>
+                        </div>`
+                });
+            }
+
+            // 2. Initialize App Data
+            initApp();
+            
+            // 3. Setup Breadcrumbs
+            if(window.renderBreadcrumb) {
+                renderBreadcrumb('breadcrumb-container', [
+                    { label: 'Home', link: '../index.html' },
+                    { label: 'HP Patwari Exam', link: '#' }, // Current page acts as section root
+                    { label: 'Technical Guide', link: '#' }
+                ]);
+            }
+
+            // 4. Load Nav/Footer
+            if(window.loadHeaderFooter) {
+                loadHeaderFooter({ type: 'technical', rootPath: '..' });
+            }
+        });
+
+        // --- Functions from original file kept below ---
         // --- DATA & CONSTANTS ---
         let terminologyData = []; 
         let lawsData = [];
@@ -591,67 +645,6 @@
                 grid.appendChild(div);
             });
         }
-
-        async function initApp() {
-            try {
-                // PATHS UPDATED: Replaced '../patwari-json-data' with 'patwari-json-data'
-                const [terms, laws, hierarchy, tools] = await Promise.all([
-                    fetchData('patwari-json-data/terminology_data.json'),
-                    fetchData('patwari-json-data/laws_data.json'),
-                    fetchData('patwari-json-data/hierarchy_data.json'),
-                    fetchData('patwari-json-data/tools_data.json')
-                ]);
-
-                terminologyData = terms;
-                lawsData = laws;
-                lawsData.sort((a, b) => {
-                    const yearA = parseInt(a.year);
-                    const yearB = parseInt(b.year);
-                    const isNumA = !isNaN(yearA);
-                    const isNumB = !isNaN(yearB);
-                    if (isNumA && isNumB) return yearA - yearB; 
-                    else if (isNumA && !isNumB) return -1; 
-                    else if (!isNumA && isNumB) return 1; 
-                    else return a.title.localeCompare(b.title);
-                });
-                hierarchyData = hierarchy;
-                toolsData = tools;
-
-                renderTerms('all');
-                renderLaws();
-                renderHierarchy();
-                renderTools();
-
-                document.getElementById('term-skeleton').classList.add('hidden');
-                document.getElementById('term-grid').classList.remove('hidden');
-                document.getElementById('laws-skeleton').classList.add('hidden');
-                document.getElementById('laws-container').classList.remove('hidden');
-                document.getElementById('hierarchy-skeleton').classList.add('hidden');
-                document.getElementById('hierarchy-container').classList.remove('hidden');
-                document.getElementById('tools-skeleton').classList.add('hidden');
-                document.getElementById('tools-grid').classList.remove('hidden');
-
-            } catch (error) {
-                console.error("Init failed", error);
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            initApp();
-            
-            // Breadcrumbs Logic
-            if(window.renderBreadcrumb) {
-                renderBreadcrumb('breadcrumb-container', [
-                    { label: 'Home', link: '../index.html' },
-                    { label: 'HP Patwari Exam', link: '#' }, // Current page acts as section root
-                    { label: 'Technical Guide', link: '#' }
-                ]);
-            }
-
-            if(window.loadHeaderFooter) {
-                loadHeaderFooter({ type: 'technical', rootPath: '..' });
-            }
-        });
     </script>
 </body>
 </html>
