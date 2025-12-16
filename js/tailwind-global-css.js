@@ -10,7 +10,8 @@
  * 5. Skeleton Loading (CLS Prevention)
  * 6. Exam UI Components (New!)
  * 7. GLOBAL BASE STYLES (Centralized CSS replacement)
- * 8. GUIDE PAGE COMPONENTS (New! For Sidebar layouts)
+ * 8. GUIDE PAGE COMPONENTS (Reusable Sidebar)
+ * 9. BADGE COMPONENTS (New! For small tags/labels)
  * ----------------------------------------------------------------------
  */
 
@@ -266,6 +267,25 @@ tailwind.config = {
                 },
                 '.mobile-select-container': {
                      '@apply lg:hidden col-span-1 sticky top-[60px] z-20 bg-slate-50 py-2 -mx-2 px-2 shadow-sm transition-all': {},
+                },
+
+                /* -----------------------------------------------------
+                 * 7. BADGE COMPONENTS (Standardized Tags)
+                 * ----------------------------------------------------- */
+                '.badge': {
+                    '@apply inline-flex items-center justify-center px-2 py-0.5 rounded text-[10px] font-bold border tracking-wide': {},
+                },
+                '.badge-blue': {
+                    '@apply bg-blue-50 text-blue-700 border-blue-100': {},
+                },
+                '.badge-green': {
+                    '@apply bg-green-50 text-green-700 border-green-200': {},
+                },
+                '.badge-slate': {
+                    '@apply bg-slate-100 text-slate-500 border-slate-200': {},
+                },
+                '.badge-purple': {
+                    '@apply bg-purple-50 text-purple-700 border-purple-100': {},
                 }
             });
         }
