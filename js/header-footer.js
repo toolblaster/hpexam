@@ -1,9 +1,21 @@
 /**
  * Header & Footer Component Manager
- * Note: Global layout styles (scroll-padding, etc.) have been moved to css/global-styles.css
  */
 
-// 1. Centralized Tailwind Classes
+// 0. PREVENT CLS: Reserve space
+(function() {
+    const style = document.createElement('style');
+    style.textContent = `
+        #global-nav {
+            min-height: 3.5rem;
+            display: block;
+            width: 100%;
+        }
+    `;
+    document.head.appendChild(style);
+})();
+
+// 1. Centralized Styles
 const GlobalStyles = {
     // Sticky Top with high Z-Index
     nav: "bg-white border-b border-slate-200/80 shadow-[0_1px_2px_rgba(0,0,0,0.03)] nav-height w-full z-50 sticky top-0",
@@ -16,7 +28,7 @@ const GlobalStyles = {
 const AppComponents = {
     footerContent: () => `
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-slate-500 text-[10px] uppercase font-bold tracking-wider font-sans">© 2026 HP Exam Hub</p>
+            <p class="text-slate-500 text-[10px] uppercase font-bold tracking-wider font-sans">© 2026 HP Patwari Exam Hub</p>
         </div>
     `,
 
@@ -24,11 +36,12 @@ const AppComponents = {
     navHomeContent: () => `
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
             <div class="flex justify-between items-center h-full">
-                <a href="./" aria-label="HP Exam Hub Home" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                <a href="./" aria-label="HP Patwari Exam Hub Home" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
                     <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white shadow-sm">
                         <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
                     </div>
-                    <span class="text-xl font-bold text-slate-900 tracking-tight font-heading">HP Exam <span class="text-blue-600">Hub</span></span>
+                    <!-- Updated Branding -->
+                    <span class="text-xl font-bold text-slate-900 tracking-tight font-heading">HP Patwari <span class="text-blue-600">Exam Hub</span></span>
                 </a>
                 
                 <div class="flex items-center gap-4">
