@@ -12,8 +12,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- GLOBAL STYLES & CONFIG -->
     <script src="../js/tailwind-global-css.js"></script>
-    <!-- Header Footer Script (Includes Page Header) -->
+    <!-- Header Footer Script -->
     <script src="../js/header-footer.js"></script>
+    <!-- EXCLUSIVE COMPONENTS (Page Headers) -->
+    <script src="../js/exclusive-components.js"></script>
     <!-- Global Scripts -->
     <script src="../js/global-scripts.js"></script>
 
@@ -45,7 +47,7 @@
         <!-- Injected by header-footer.js -->
     </nav>
 
-    <!-- Page Header (Dynamic Injection) -->
+    <!-- Page Header (Dynamic Injection via exclusive-components.js) -->
     <div id="dynamic-page-header"></div>
 
     <!-- Main Content Grid -->
@@ -205,7 +207,7 @@
                         <li><strong>Deputy Commissioner (DC) / Collector:</strong> The 'Kingpin' of district administration. As Collector, they are responsible for land revenue collection, land acquisition, and maintenance of land records. They are also the District Magistrate (DM) responsible for law and order.</li>
                         <li><strong>Sub-Divisional Magistrate (SDM):</strong> The head of a Sub-Division. In revenue matters, they exercise the powers of an Assistant Collector 1st Grade. They are the primary authority for deciding partition (Takseem) cases and hearing appeals from lower revenue officers.</li>
                         <li><strong>Tehsildar:</strong> A Revenue Officer in charge of a Tehsil. They deal with mutations, partitions, encroachments, and issue various certificates. They also act as an Assistant Collector 1st Grade.</li>
-                        <li><strong>Naib Tehsildar:</strong> Assists the Tehsildar and is in charge of a Sub-Tehsil. They act as Assistant Collector 2nd Grade and are the primary authority for attesting uncontested mutations.</li>
+                        <li><strong>Naib Tehsildar:</strong> Assists the Tehsildar and is in charge of a Sub-Tehsil. They act as Assistant Collector 2nd Grade and is the primary authority for attesting uncontested mutations.</li>
                         <li><strong>Kanungo (Field/Office):</strong> The supervisor of Patwaris. The Field Kanungo inspects the work of Patwaris on the spot, verifies 100% of mutation entries, and checks Girdawari. The Office Kanungo (Sadar Kanungo) maintains records at the Tehsil headquarters.</li>
                         <li><strong>Patwari:</strong> The Village Accountant and the pillar of the revenue system. The Patwari maintains all land records (Jamabandi, Khasra Girdawari), maps, and statistical registers at the village level. They are the first responder for crop damage and disaster reporting.</li>
                     </ol>
@@ -654,7 +656,7 @@
 
         // --- 5. INITIALIZATION ---
         document.addEventListener('DOMContentLoaded', () => {
-            // 1. Render Standard Page Header (First thing)
+            // 1. Render Standard Page Header (Moved to exclusive-components.js)
             if(window.renderPageHeader) {
                 renderPageHeader('dynamic-page-header', {
                     titleHtml: '<span class="gradient-text">Detailed Study Notes</span>',
