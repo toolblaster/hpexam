@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- GLOBAL STYLES & CONFIG -->
     <script src="../js/tailwind-global-css.js"></script>
-    <!-- Header Footer Script -->
+    <!-- Header Footer Script (Includes Page Header) -->
     <script src="../js/header-footer.js"></script>
     <!-- Global Scripts -->
     <script src="../js/global-scripts.js"></script>
@@ -45,32 +45,8 @@
         <!-- Injected by header-footer.js -->
     </nav>
 
-    <!-- Header Section (Compact) -->
-    <header class="bg-white border-b border-slate-300 py-3 md:py-4 sticky top-0 z-30 shadow-sm backdrop-blur-md bg-white/95">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Breadcrumb container (hidden on mobile scroll for more space, or keep very small) -->
-            <div id="breadcrumb-container" class="mb-2 scale-90 origin-top-left"></div>
-
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-3">
-                <div>
-                    <h1 class="text-xl md:text-2xl font-extrabold font-heading text-slate-900 leading-tight">
-                        <span class="gradient-text">Detailed Study Notes</span>
-                    </h1>
-                    <p class="text-[11px] md:text-xs text-slate-500 mt-1 max-w-2xl font-medium leading-relaxed hidden sm:block">
-                        Concise explanations for 14 critical topics. Master theory behind terms.
-                    </p>
-                </div>
-                <div class="flex gap-2">
-                    <button onclick="toggleLang('en')" id="btn-en" class="px-3 py-1.5 text-[10px] md:text-xs font-bold rounded-lg bg-slate-900 text-white shadow-sm transition transform active:scale-95 flex items-center gap-1.5">
-                        <i class="fa-solid fa-language"></i> English
-                    </button>
-                    <button onclick="toggleLang('hi')" id="btn-hi" class="px-3 py-1.5 text-[10px] md:text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition transform active:scale-95 flex items-center gap-1.5">
-                        <i class="fa-solid fa-language"></i> हिन्दी
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
+    <!-- Page Header (Dynamic Injection) -->
+    <div id="dynamic-page-header"></div>
 
     <!-- Main Content Grid -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-grow">
@@ -678,9 +654,27 @@
 
         // --- 5. INITIALIZATION ---
         document.addEventListener('DOMContentLoaded', () => {
+            // 1. Render Standard Page Header (First thing)
+            if(window.renderPageHeader) {
+                renderPageHeader('dynamic-page-header', {
+                    titleHtml: '<span class="gradient-text">Detailed Study Notes</span>',
+                    subtitle: 'Concise explanations for 14 critical topics. Master theory behind terms.',
+                    rightContent: `
+                        <div class="flex gap-2">
+                            <button onclick="toggleLang('en')" id="btn-en" class="px-3 py-1.5 text-[10px] md:text-xs font-bold rounded-lg bg-slate-900 text-white shadow-sm transition transform active:scale-95 flex items-center gap-1.5">
+                                <i class="fa-solid fa-language"></i> English
+                            </button>
+                            <button onclick="toggleLang('hi')" id="btn-hi" class="px-3 py-1.5 text-[10px] md:text-xs font-bold rounded-lg bg-white border border-slate-300 text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition transform active:scale-95 flex items-center gap-1.5">
+                                <i class="fa-solid fa-language"></i> हिन्दी
+                            </button>
+                        </div>`
+                });
+            }
+
+            // 2. Render Page Content
             renderPage();
             
-            // Setup Breadcrumbs via Global Script
+            // 3. Setup Breadcrumbs
             if(window.renderBreadcrumb) {
                 renderBreadcrumb('breadcrumb-container', [
                     { label: 'Home', link: '../index.html' },
@@ -689,7 +683,7 @@
                 ]);
             }
 
-            // Setup Header/Footer
+            // 4. Setup Nav/Footer
             if(window.loadHeaderFooter) {
                 loadHeaderFooter({ type: 'technical', rootPath: '..' });
             }
