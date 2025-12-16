@@ -12,8 +12,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- GLOBAL STYLES & CONFIG -->
     <script src="../../js/tailwind-global-css.js"></script>
-    <!-- Header Footer Script (Includes Page Header Logic) -->
+    <!-- Header Footer Script -->
     <script src="../../js/header-footer.js"></script>
+    <!-- EXCLUSIVE COMPONENTS (Page Headers) -->
+    <script src="../../js/exclusive-components.js"></script>
     <!-- Global Scripts (Contains Breadcrumb Logic) -->
     <script src="../../js/global-scripts.js"></script>
 
@@ -48,7 +50,7 @@
         <!-- Injected by header-footer.js -->
     </nav>
 
-    <!-- Page Header (Dynamic Injection) -->
+    <!-- Page Header (Dynamic Injection via exclusive-components.js) -->
     <div id="dynamic-page-header"></div>
 
     <!-- Main Content -->
@@ -315,7 +317,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             
-            // 1. Render Centralized Page Header
+            // 1. Render Centralized Page Header (Moved to exclusive-components.js)
             if(window.renderPageHeader) {
                 renderPageHeader('dynamic-page-header', {
                     titleHtml: '<span class="gradient-text">HP Patwari Mock Test 1</span>',
