@@ -6,7 +6,7 @@
     
     <!-- SEO Meta Tags -->
     <title>Visual Guide: Revenue Processes Flowcharts</title>
-    <meta name="description" content="Visual flowcharts explaining HP Revenue processes: Mutation attestation, Partition (Takseem), and Demarcation steps. Simplified for Patwari Exam aspirants.">
+    <meta name="description" content="Compact visual flowcharts for HP Revenue processes: Mutation, Partition, Demarcation, Jamabandi, and Hierarchy. Quick reference for Patwari Exam.">
     
     <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,8 +22,13 @@
 
     <!-- Mermaid JS for Diagrams -->
     <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+        import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true, 
+            theme: 'default',
+            securityLevel: 'loose',
+            flowchart: { curve: 'basis', htmlLabels: true } 
+        });
     </script>
 
     <!-- Font Awesome -->
@@ -46,101 +51,239 @@
     <div id="dynamic-page-header"></div>
 
     <!-- Main Content -->
-    <main class="page-container py-8 flex-grow">
+    <main class="page-container py-6 flex-grow">
         
-        <div class="max-w-5xl mx-auto space-y-12">
+        <div class="max-w-7xl mx-auto space-y-6">
 
-            <!-- Intro Card -->
-            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
-                <h2 class="text-lg font-bold text-slate-900 mb-2 font-heading flex items-center gap-2">
-                    <i class="fa-solid fa-project-diagram text-blue-600"></i> Why Visuals Matter?
-                </h2>
-                <p class="text-sm text-slate-600 leading-relaxed">
-                    Revenue processes like Mutation and Partition follow a strict legal hierarchy. Visualizing the flow of files and authority levels helps in memorizing the procedure for exams and understanding the practical workflow in the field.
-                </p>
+            <!-- Intro Card (More Compact) -->
+            <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div>
+                    <h2 class="text-sm font-bold text-slate-900 mb-1 font-heading flex items-center gap-2">
+                        <i class="fa-solid fa-project-diagram text-blue-600"></i> Visual Quick Reference
+                    </h2>
+                    <p class="text-xs text-slate-600 leading-relaxed max-w-2xl">
+                        Simplified flowcharts for rapid revision. Memorize the flow of authority (Patwari to Collector) and key decision points for the exam.
+                    </p>
+                </div>
+                <!-- Legend -->
+                <div class="flex gap-2 text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+                    <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-blue-100 border border-blue-400"></span> Start</span>
+                    <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-slate-50 border border-slate-400"></span> Step</span>
+                    <span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-green-100 border border-green-400"></span> End</span>
+                </div>
             </div>
 
-            <!-- DIAGRAM 1: MUTATION PROCESS -->
-            <section id="mutation-flow" class="scroll-mt-24">
-                <div class="flex items-center gap-3 mb-4">
-                    <span class="badge badge-green">Process 1</span>
-                    <h2 class="text-xl font-bold text-slate-900 font-heading">Mutation (Intkaal) Workflow</h2>
-                </div>
+            <!-- Compact 3-Column Grid for All Diagrams -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 
-                <div class="bg-white p-4 md:p-8 rounded-xl shadow-smooth border border-slate-200 overflow-x-auto">
-                    <div class="mermaid flex justify-center">
-                        graph TD
-                        A["Event Occurs<br>(Sale/Death/Gift)"] -->|Report within 3 Months| B(Patwari)
-                        B -->|Enters in Register No 6<br>and Issues Parat Patwar| C{Kanungo Verification}
-                        C -->|Checks Entry on Spot| D["Revenue Officer<br>(Tehsildar/NT)"]
-                        D -->|"Public Assembly<br>(Jalsa Aam)"| E{Decision}
-                        E -->|Accepted| F[Mutation Attested]
-                        E -->|Rejected| G[Entry Crossed Out]
-                        F -->|Update Jamabandi| H((Final Record))
-                        
-                        style A fill:#eff6ff,stroke:#3b82f6,stroke-width:2px
-                        style F fill:#dcfce7,stroke:#22c55e,stroke-width:2px
-                        style H fill:#f1f5f9,stroke:#64748b,stroke-width:2px
+                <!-- DIAGRAM 1: MUTATION PROCESS -->
+                <section id="mutation-flow" class="scroll-mt-24 h-full flex flex-col">
+                    <div class="flex items-center justify-between mb-2 px-1">
+                        <h2 class="text-xs font-bold text-slate-800 font-heading uppercase tracking-wide">
+                            <span class="w-1.5 h-1.5 inline-block bg-blue-500 rounded-full mr-1"></span> Mutation
+                        </h2>
+                        <span class="text-[9px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded border border-slate-200">Record</span>
                     </div>
-                </div>
-                <div class="mt-3 bg-blue-50 border border-blue-100 p-3 rounded-lg text-xs text-blue-800">
-                    <strong>Key Exam Point:</strong> The Patwari only <em>enters</em> the mutation. The <em>attestation</em> (final approval) is done by a Revenue Officer (Tehsildar/Naib Tehsildar).
-                </div>
-            </section>
+                    
+                    <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 overflow-x-auto flex flex-col flex-grow hover:shadow-md transition-shadow">
+                        <div class="mermaid flex justify-center mb-2">
+                            graph TD
+                            A["Event<br>(Sale/Gift)"] --> B(Patwari)
+                            B -->|Reg No 6| C{Kanungo}
+                            C -->|Verify| D["Rev. Officer"]
+                            D -->|"Jalsa Aam"| E{Decision}
+                            E -->|OK| F[Attested]
+                            E -->|No| G[Rejected]
+                            F --> H((Jamabandi))
+                            
+                            style A fill:#eff6ff,stroke:#3b82f6,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style B fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style C fill:#fff,stroke:#94a3b8,stroke-width:1px,font-size:9px
+                            style D fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style E fill:#fff,stroke:#94a3b8,stroke-width:1px,font-size:9px
+                            style G fill:#fef2f2,stroke:#ef4444,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style F fill:#dcfce7,stroke:#22c55e,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style H fill:#f1f5f9,stroke:#64748b,stroke-width:1px,font-size:9px
+                        </div>
+                        <div class="mt-auto bg-blue-50 border border-blue-100 p-2 rounded text-[9px] text-blue-800 leading-relaxed font-medium">
+                            <i class="fa-solid fa-circle-info mr-1"></i> Patwari only <em>enters</em> mutation. The <em>attestation</em> is strictly by Revenue Officer.
+                        </div>
+                    </div>
+                </section>
 
-            <!-- DIAGRAM 2: PARTITION PROCESS -->
-            <section id="partition-flow" class="scroll-mt-24">
-                <div class="flex items-center gap-3 mb-4">
-                    <span class="badge badge-purple">Process 2</span>
-                    <h2 class="text-xl font-bold text-slate-900 font-heading">Partition (Takseem) Steps</h2>
-                </div>
+                <!-- DIAGRAM 2: PARTITION PROCESS -->
+                <section id="partition-flow" class="scroll-mt-24 h-full flex flex-col">
+                    <div class="flex items-center justify-between mb-2 px-1">
+                        <h2 class="text-xs font-bold text-slate-800 font-heading uppercase tracking-wide">
+                            <span class="w-1.5 h-1.5 inline-block bg-purple-500 rounded-full mr-1"></span> Partition
+                        </h2>
+                        <span class="text-[9px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded border border-slate-200">Legal</span>
+                    </div>
+                    
+                    <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 overflow-x-auto flex flex-col flex-grow hover:shadow-md transition-shadow">
+                        <div class="mermaid flex justify-center mb-2">
+                            graph TD
+                            A["App to<br>AC 1st"] --> B[Notice]
+                            B --> C{Object?}
+                            C -->|Yes| D[Hear]
+                            C -->|No| E["Mode<br>(Tarika)"]
+                            D --> E
+                            E --> F["Naksha<br>Ka/Kha/Ga"]
+                            F --> G["Sanad"]
+                            G --> H((Possession))
+
+                            style A fill:#faf5ff,stroke:#a855f7,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style B fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style C fill:#fff,stroke:#94a3b8,stroke-width:1px,font-size:9px
+                            style D fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style E fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style F fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style G fill:#f3e8ff,stroke:#9333ea,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style H fill:#f1f5f9,stroke:#64748b,stroke-width:1px,font-size:9px
+                        </div>
+                        <div class="mt-auto bg-purple-50 border border-purple-100 p-2 rounded text-[9px] text-purple-800 leading-relaxed font-medium">
+                            <i class="fa-solid fa-gavel mr-1"></i> Civil Courts cannot interfere (Sec 171). Jurisdiction lies with Revenue Courts.
+                        </div>
+                    </div>
+                </section>
+
+                <!-- DIAGRAM 3: HIERARCHY PYRAMID -->
+                <section id="hierarchy-flow" class="scroll-mt-24 h-full flex flex-col">
+                    <div class="flex items-center justify-between mb-2 px-1">
+                        <h2 class="text-xs font-bold text-slate-800 font-heading uppercase tracking-wide">
+                            <span class="w-1.5 h-1.5 inline-block bg-slate-500 rounded-full mr-1"></span> Hierarchy
+                        </h2>
+                        <span class="text-[9px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded border border-slate-200">Admin</span>
+                    </div>
+                    
+                    <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 overflow-x-auto flex flex-col flex-grow hover:shadow-md transition-shadow">
+                        <div class="mermaid flex justify-center">
+                            graph BT
+                            A["Patwari<br>(Village)"] --> B["Kanungo<br>(Circle)"]
+                            B --> C["Naib Teh<br>(Sub-Teh)"]
+                            C --> D["Tehsildar<br>(Tehsil)"]
+                            D --> E["SDM<br>(Sub-Div)"]
+                            E --> F["DC<br>(Dist)"]
+                            F --> G["Div Comm<br>(Div)"]
+                            G --> H(("FC<br>State"))
+
+                            style A fill:#fff1f2,stroke:#e11d48,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style B fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style C fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style D fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style E fill:#fff7ed,stroke:#ea580c,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style F fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style G fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style H fill:#f0f9ff,stroke:#0284c7,stroke-width:2px,font-size:9px
+                        </div>
+                         <div class="mt-auto bg-slate-50 border border-slate-100 p-2 rounded text-[9px] text-slate-600 leading-relaxed font-medium">
+                            <i class="fa-solid fa-sitemap mr-1"></i> Chain of Command: Lowest (Patwari) to Highest (Financial Commissioner).
+                        </div>
+                    </div>
+                </section>
                 
-                <div class="bg-white p-4 md:p-8 rounded-xl shadow-smooth border border-slate-200 overflow-x-auto">
-                    <div class="mermaid flex justify-center">
-                        graph TD
-                        A["Application to<br>AC 1st Grade"] --> B[Notice to All Co-sharers]
-                        B --> C{Objections?}
-                        C -->|Yes| D[Hear and Decide Objections]
-                        C -->|No| E["Mode of Partition<br>(Tarika Takseem)"]
-                        D --> E
-                        E --> F["Preparation of<br>Naksha Ka, Kha, Ga"]
-                        F --> G["Instrument of Partition<br>(Sanad Takseem)"]
-                        G --> H((Possession Given))
-
-                        style A fill:#faf5ff,stroke:#a855f7,stroke-width:2px
-                        style G fill:#f3e8ff,stroke:#9333ea,stroke-width:2px
-                        style H fill:#f1f5f9,stroke:#64748b,stroke-width:2px
+                <!-- DIAGRAM 4: DEMARCATION (Nishan Dehi) -->
+                <section id="demarcation-flow" class="scroll-mt-24 h-full flex flex-col">
+                    <div class="flex items-center justify-between mb-2 px-1">
+                        <h2 class="text-xs font-bold text-slate-800 font-heading uppercase tracking-wide">
+                            <span class="w-1.5 h-1.5 inline-block bg-orange-500 rounded-full mr-1"></span> Demarcation
+                        </h2>
+                        <span class="text-[9px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded border border-slate-200">Field</span>
                     </div>
-                </div>
-                <div class="mt-3 bg-purple-50 border border-purple-100 p-3 rounded-lg text-xs text-purple-800">
-                    <strong>Key Exam Point:</strong> Partition cases are strictly within the jurisdiction of Revenue Courts. Civil Courts cannot interfere once the process starts (Section 171).
-                </div>
-            </section>
+                    
+                    <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 overflow-x-auto flex flex-col flex-grow hover:shadow-md transition-shadow">
+                        <div class="mermaid flex justify-center">
+                            graph TD
+                            A["App to<br>Tehsildar"] --> B[Assign F.K.]
+                            B --> C[Notice<br>Neighbors]
+                            C --> D["Spot Visit<br>(Masavi/Latha)"]
+                            D --> E["Fixed Points<br>(Pucca Points)"]
+                            E --> F["Measurement"]
+                            F --> G["Report<br>Submit"]
+                            G --> H((Final Order))
 
-            <!-- DIAGRAM 3: HIERARCHY PYRAMID -->
-            <section id="hierarchy-flow" class="scroll-mt-24">
-                <div class="flex items-center gap-3 mb-4">
-                    <span class="badge badge-slate">Structure</span>
-                    <h2 class="text-xl font-bold text-slate-900 font-heading">Revenue Administration Hierarchy</h2>
-                </div>
-                
-                <div class="bg-white p-4 md:p-8 rounded-xl shadow-smooth border border-slate-200 overflow-x-auto">
-                    <div class="mermaid flex justify-center">
-                        graph BT
-                        A["Patwari<br>(Village Level)"] --> B["Field Kanungo<br>(Circle Level)"]
-                        B --> C["Naib Tehsildar<br>(Sub-Tehsil)"]
-                        C --> D["Tehsildar<br>(Tehsil)"]
-                        D --> E["SDM / Collector<br>(Sub-Division)"]
-                        E --> F["Deputy Commissioner<br>(District)"]
-                        F --> G["Divisional Commissioner<br>(Division)"]
-                        G --> H(("Financial Commissioner<br>State Level"))
-
-                        style A fill:#fff1f2,stroke:#e11d48,stroke-width:2px
-                        style E fill:#fff7ed,stroke:#ea580c,stroke-width:2px
-                        style H fill:#f0f9ff,stroke:#0284c7,stroke-width:4px
+                            style A fill:#fff7ed,stroke:#ea580c,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style B fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style C fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style D fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style E fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style F fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style G fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style H fill:#f1f5f9,stroke:#64748b,stroke-width:1px,font-size:9px
+                        </div>
+                         <div class="mt-auto bg-orange-50 border border-orange-100 p-2 rounded text-[9px] text-orange-800 leading-relaxed font-medium">
+                            <i class="fa-solid fa-compass-drafting mr-1"></i> Field Kanungo is the primary officer for Demarcation, not Patwari.
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+
+                <!-- DIAGRAM 5: JAMABANDI CYCLE -->
+                <section id="jamabandi-flow" class="scroll-mt-24 h-full flex flex-col">
+                    <div class="flex items-center justify-between mb-2 px-1">
+                        <h2 class="text-xs font-bold text-slate-800 font-heading uppercase tracking-wide">
+                            <span class="w-1.5 h-1.5 inline-block bg-teal-500 rounded-full mr-1"></span> Jamabandi
+                        </h2>
+                        <span class="text-[9px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded border border-slate-200">5-Yearly</span>
+                    </div>
+                    
+                    <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 overflow-x-auto flex flex-col flex-grow hover:shadow-md transition-shadow">
+                        <div class="mermaid flex justify-center">
+                            graph TD
+                            A["5 Years<br>Complete"] --> B[Patwari Writes]
+                            B --> C["Kanungo<br>(100% Check)"]
+                            C --> D["Rev Officer<br>(25% Check)"]
+                            D --> E["Public<br>Attestation"]
+                            E --> F["District<br>Record Room"]
+                            F --> G(("Valid for<br>5 Years"))
+
+                            style A fill:#f0fdfa,stroke:#0d9488,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style B fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style C fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style D fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style E fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style F fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style G fill:#f1f5f9,stroke:#64748b,stroke-width:1px,font-size:9px
+                        </div>
+                         <div class="mt-auto bg-teal-50 border border-teal-100 p-2 rounded text-[9px] text-teal-800 leading-relaxed font-medium">
+                            <i class="fa-solid fa-book-journal-whills mr-1"></i> New Jamabandi is prepared in duplicate (one for Patwari, one for District).
+                        </div>
+                    </div>
+                </section>
+
+                <!-- DIAGRAM 6: CORRECTION (Fard Badar) -->
+                <section id="correction-flow" class="scroll-mt-24 h-full flex flex-col">
+                    <div class="flex items-center justify-between mb-2 px-1">
+                        <h2 class="text-xs font-bold text-slate-800 font-heading uppercase tracking-wide">
+                            <span class="w-1.5 h-1.5 inline-block bg-pink-500 rounded-full mr-1"></span> Correction
+                        </h2>
+                        <span class="text-[9px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded border border-slate-200">Error Fix</span>
+                    </div>
+                    
+                    <div class="bg-white p-3 rounded-lg shadow-sm border border-slate-200 overflow-x-auto flex flex-col flex-grow hover:shadow-md transition-shadow">
+                        <div class="mermaid flex justify-center">
+                            graph TD
+                            A["Clerical<br>Error Found"] --> B["Register<br>Fard Badar"]
+                            B --> C["Patwari<br>Report"]
+                            C --> D["Kanungo<br>Check"]
+                            D --> E["Rev Officer<br>Passes Order"]
+                            E --> F["Entry in<br>Jamabandi"]
+                            F --> G(("Corrected"))
+
+                            style A fill:#fdf2f8,stroke:#db2777,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style B fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style C fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style D fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style E fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style F fill:#fff,stroke:#94a3b8,stroke-width:1px,rx:5,ry:5,font-size:9px
+                            style G fill:#f1f5f9,stroke:#64748b,stroke-width:1px,font-size:9px
+                        </div>
+                         <div class="mt-auto bg-pink-50 border border-pink-100 p-2 rounded text-[9px] text-pink-800 leading-relaxed font-medium">
+                            <i class="fa-solid fa-eraser mr-1"></i> 'Fard Badar' is only for clerical errors. Substantive errors require Mutation or Suit.
+                        </div>
+                    </div>
+                </section>
+
+            </div>
 
         </div>
     </main>
@@ -154,7 +297,7 @@
             if(window.renderPageHeader) {
                 renderPageHeader('dynamic-page-header', {
                     titleHtml: '<span class="gradient-text">Visual Diagrams</span>',
-                    subtitle: 'Simplifying complex revenue processes through flowcharts and hierarchy maps.',
+                    subtitle: 'Compact study charts for revenue workflows.',
                     rightContent: `
                         <a href="hp-technical-land-record-and-revenue.html" class="inline-flex items-center text-[10px] font-bold text-slate-600 bg-white border border-slate-300 px-3 py-1.5 rounded-lg hover:bg-slate-50 hover:text-blue-600 transition shadow-sm whitespace-nowrap">
                             <i class="fa-solid fa-arrow-left mr-1.5"></i> Back to Guide
