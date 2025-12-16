@@ -1,24 +1,11 @@
 /**
  * Header & Footer Component Manager
+ * Note: Global layout styles (scroll-padding, etc.) have been moved to css/global-styles.css
  */
 
-// 0. PREVENT CLS: Reserve space
-(function() {
-    const style = document.createElement('style');
-    style.textContent = `
-        #global-nav {
-            min-height: 3.5rem;
-            display: block;
-            width: 100%;
-        }
-    `;
-    document.head.appendChild(style);
-})();
-
-// 1. Centralized Styles
+// 1. Centralized Tailwind Classes
 const GlobalStyles = {
-    // TWEAK: Changed from 'relative' to 'sticky top-0'.
-    // TWEAK: 'z-50' ensures it stays on top of everything else as you scroll.
+    // Sticky Top with high Z-Index
     nav: "bg-white border-b border-slate-200/80 shadow-[0_1px_2px_rgba(0,0,0,0.03)] nav-height w-full z-50 sticky top-0",
     
     // Footer
