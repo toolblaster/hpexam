@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Visual Guide: Revenue Processes Flowcharts</title>
+    <meta name="description" content="Visual flowcharts explaining HP Revenue processes: Mutation attestation, Partition (Takseem), and Demarcation steps. Simplified for Patwari Exam aspirants.">
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GLOBAL STYLES & CONFIG -->
+    <script src="../js/tailwind-global-css.js"></script>
+
+    <!-- Header Footer Script -->
+    <script src="../js/header-footer.js"></script>
+    <!-- EXCLUSIVE COMPONENTS -->
+    <script src="../js/exclusive-components.js"></script>
+    <!-- Global Scripts -->
+    <script src="../js/global-scripts.js"></script>
+
+    <!-- Mermaid JS for Diagrams -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Noto Sans Devanagari -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen font-sans">
+
+    <!-- Compact Nav (Sticky) -->
+    <nav class="bg-white border-b border-slate-300 shadow-sm nav-height" id="global-nav">
+        <!-- Injected by header-footer.js -->
+    </nav>
+
+    <!-- Page Header (Static - Scrolls Away) -->
+    <div id="dynamic-page-header"></div>
+
+    <!-- Main Content -->
+    <main class="page-container py-8 flex-grow">
+        
+        <div class="max-w-5xl mx-auto space-y-12">
+
+            <!-- Intro Card -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h2 class="text-lg font-bold text-slate-900 mb-2 font-heading flex items-center gap-2">
+                    <i class="fa-solid fa-project-diagram text-blue-600"></i> Why Visuals Matter?
+                </h2>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Revenue processes like Mutation and Partition follow a strict legal hierarchy. Visualizing the flow of files and authority levels helps in memorizing the procedure for exams and understanding the practical workflow in the field.
+                </p>
+            </div>
+
+            <!-- DIAGRAM 1: MUTATION PROCESS -->
+            <section id="mutation-flow" class="scroll-mt-24">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="badge badge-green">Process 1</span>
+                    <h2 class="text-xl font-bold text-slate-900 font-heading">Mutation (Intkaal) Workflow</h2>
+                </div>
+                
+                <div class="bg-white p-4 md:p-8 rounded-xl shadow-smooth border border-slate-200 overflow-x-auto">
+                    <div class="mermaid flex justify-center">
+                        graph TD
+                        A["Event Occurs<br>(Sale/Death/Gift)"] -->|Report within 3 Months| B(Patwari)
+                        B -->|Enters in Register No 6<br>and Issues Parat Patwar| C{Kanungo Verification}
+                        C -->|Checks Entry on Spot| D["Revenue Officer<br>(Tehsildar/NT)"]
+                        D -->|"Public Assembly<br>(Jalsa Aam)"| E{Decision}
+                        E -->|Accepted| F[Mutation Attested]
+                        E -->|Rejected| G[Entry Crossed Out]
+                        F -->|Update Jamabandi| H((Final Record))
+                        
+                        style A fill:#eff6ff,stroke:#3b82f6,stroke-width:2px
+                        style F fill:#dcfce7,stroke:#22c55e,stroke-width:2px
+                        style H fill:#f1f5f9,stroke:#64748b,stroke-width:2px
+                    </div>
+                </div>
+                <div class="mt-3 bg-blue-50 border border-blue-100 p-3 rounded-lg text-xs text-blue-800">
+                    <strong>Key Exam Point:</strong> The Patwari only <em>enters</em> the mutation. The <em>attestation</em> (final approval) is done by a Revenue Officer (Tehsildar/Naib Tehsildar).
+                </div>
+            </section>
+
+            <!-- DIAGRAM 2: PARTITION PROCESS -->
+            <section id="partition-flow" class="scroll-mt-24">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="badge badge-purple">Process 2</span>
+                    <h2 class="text-xl font-bold text-slate-900 font-heading">Partition (Takseem) Steps</h2>
+                </div>
+                
+                <div class="bg-white p-4 md:p-8 rounded-xl shadow-smooth border border-slate-200 overflow-x-auto">
+                    <div class="mermaid flex justify-center">
+                        graph TD
+                        A["Application to<br>AC 1st Grade"] --> B[Notice to All Co-sharers]
+                        B --> C{Objections?}
+                        C -->|Yes| D[Hear and Decide Objections]
+                        C -->|No| E["Mode of Partition<br>(Tarika Takseem)"]
+                        D --> E
+                        E --> F["Preparation of<br>Naksha Ka, Kha, Ga"]
+                        F --> G["Instrument of Partition<br>(Sanad Takseem)"]
+                        G --> H((Possession Given))
+
+                        style A fill:#faf5ff,stroke:#a855f7,stroke-width:2px
+                        style G fill:#f3e8ff,stroke:#9333ea,stroke-width:2px
+                        style H fill:#f1f5f9,stroke:#64748b,stroke-width:2px
+                    </div>
+                </div>
+                <div class="mt-3 bg-purple-50 border border-purple-100 p-3 rounded-lg text-xs text-purple-800">
+                    <strong>Key Exam Point:</strong> Partition cases are strictly within the jurisdiction of Revenue Courts. Civil Courts cannot interfere once the process starts (Section 171).
+                </div>
+            </section>
+
+            <!-- DIAGRAM 3: HIERARCHY PYRAMID -->
+            <section id="hierarchy-flow" class="scroll-mt-24">
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="badge badge-slate">Structure</span>
+                    <h2 class="text-xl font-bold text-slate-900 font-heading">Revenue Administration Hierarchy</h2>
+                </div>
+                
+                <div class="bg-white p-4 md:p-8 rounded-xl shadow-smooth border border-slate-200 overflow-x-auto">
+                    <div class="mermaid flex justify-center">
+                        graph BT
+                        A["Patwari<br>(Village Level)"] --> B["Field Kanungo<br>(Circle Level)"]
+                        B --> C["Naib Tehsildar<br>(Sub-Tehsil)"]
+                        C --> D["Tehsildar<br>(Tehsil)"]
+                        D --> E["SDM / Collector<br>(Sub-Division)"]
+                        E --> F["Deputy Commissioner<br>(District)"]
+                        F --> G["Divisional Commissioner<br>(Division)"]
+                        G --> H(("Financial Commissioner<br>State Level"))
+
+                        style A fill:#fff1f2,stroke:#e11d48,stroke-width:2px
+                        style E fill:#fff7ed,stroke:#ea580c,stroke-width:2px
+                        style H fill:#f0f9ff,stroke:#0284c7,stroke-width:4px
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Global Footer -->
+    <footer id="global-footer"></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Render Page Header
+            if(window.renderPageHeader) {
+                renderPageHeader('dynamic-page-header', {
+                    titleHtml: '<span class="gradient-text">Visual Diagrams</span>',
+                    subtitle: 'Simplifying complex revenue processes through flowcharts and hierarchy maps.',
+                    rightContent: `
+                        <a href="hp-technical-land-record-and-revenue.html" class="inline-flex items-center text-[10px] font-bold text-slate-600 bg-white border border-slate-300 px-3 py-1.5 rounded-lg hover:bg-slate-50 hover:text-blue-600 transition shadow-sm whitespace-nowrap">
+                            <i class="fa-solid fa-arrow-left mr-1.5"></i> Back to Guide
+                        </a>`
+                });
+            }
+
+            // 2. Setup Breadcrumbs
+            if(window.renderBreadcrumb) {
+                renderBreadcrumb('breadcrumb-container', [
+                    { label: 'Home', link: '../index.html' },
+                    { label: 'Technical Guide', link: 'hp-technical-land-record-and-revenue.html' },
+                    { label: 'Visual Diagrams', link: '#' }
+                ]);
+            }
+
+            // 3. Load Nav/Footer
+            if(window.loadHeaderFooter) {
+                loadHeaderFooter({ type: 'technical', rootPath: '..' });
+            }
+        });
+    </script>
+</body>
+</html>
