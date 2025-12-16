@@ -34,6 +34,12 @@ New Guide Components: * .guide-sidebar: Standardizes the sticky sidebar look for
 
 .mobile-select-container: Standardizes the sticky mobile dropdown container.
 
+Badge System:
+
+.badge: Base style for small tags.
+
+.badge-blue, .badge-green, etc.: Color variants.
+
 Utilities (addUtilities):
 
 .scrollbar-hide: Hides scrollbars for clean horizontal scrolling lists.
