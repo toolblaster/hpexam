@@ -8,6 +8,10 @@
  * 4. Future Roadmap: Dark Mode & Font Size preferences
  */
 
+// CENTRALIZED CONFIGURATION
+// Use this for all "Home" links to ensure consistency across the site.
+window.HP_EXAM_ROOT = "https://hpexam.toolblaster.com";
+
 document.addEventListener('DOMContentLoaded', () => {
     initGlobalFeatures();
 });
@@ -56,7 +60,7 @@ function setupBackToTop() {
  * Renders a consistent breadcrumb navigation based on the provided path array.
  * * Usage:
  * renderBreadcrumb('container-id', [
- * { label: 'Home', link: '../index.html' },
+ * { label: 'Home', link: window.HP_EXAM_ROOT },
  * { label: 'Section', link: 'section.html' },
  * { label: 'Current Page', link: '#' }
  * ]);
@@ -79,11 +83,17 @@ window.renderBreadcrumb = function(containerId, items) {
         const isLast = index === items.length - 1;
         const isFirst = index === 0;
         
+        // Fallback for Home link if not explicitly provided or if relative
+        let link = item.link;
+        if (isFirst && item.label === 'Home' && (!link || link === '#' || link.startsWith('.'))) {
+            link = window.HP_EXAM_ROOT;
+        }
+
         if (isFirst) {
             // Home Icon Item
             html += `
             <li class="inline-flex items-center">
-                <a href="${item.link}" class="inline-flex items-center text-slate-500 hover:text-blue-600 transition-colors">
+                <a href="${link}" class="inline-flex items-center text-slate-500 hover:text-blue-600 transition-colors">
                     <i class="fa-solid fa-house mr-1.5"></i> ${item.label}
                 </a>
             </li>`;
@@ -95,7 +105,7 @@ window.renderBreadcrumb = function(containerId, items) {
                     <i class="fa-solid fa-chevron-right text-slate-300 mx-1 text-[8px]"></i>
                     ${isLast 
                         ? `<span class="ml-1 text-blue-600 font-semibold bg-blue-50 px-2 py-0.5 rounded-full border border-blue-100">${item.label}</span>`
-                        : `<a href="${item.link}" class="ml-1 text-slate-400 hover:text-blue-600 transition-colors">${item.label}</a>`
+                        : `<a href="${link}" class="ml-1 text-slate-400 hover:text-blue-600 transition-colors">${item.label}</a>`
                     }
                 </div>
             </li>`;
