@@ -28,7 +28,7 @@ const GlobalStyles = {
 const AppComponents = {
     footerContent: () => `
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-slate-500 text-[10px] uppercase font-bold tracking-wider font-sans">© 2026 HP Patwari Exam Hub</p>
+            <p class="text-slate-500 text-[10px] uppercase font-bold tracking-wider font-sans">© 2026 HP Exam Hub</p>
         </div>
     `,
 
@@ -36,12 +36,11 @@ const AppComponents = {
     navHomeContent: () => `
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
             <div class="flex justify-between items-center h-full">
-                <a href="./" aria-label="HP Patwari Exam Hub Home" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                <a href="./" aria-label="HP Exam Hub Home" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
                     <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white shadow-sm">
                         <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
                     </div>
-                    <!-- Updated Branding -->
-                    <span class="text-xl font-bold text-slate-900 tracking-tight font-heading">HP Patwari <span class="text-blue-600">Exam Hub</span></span>
+                    <span class="text-xl font-bold text-slate-900 tracking-tight font-heading">HP <span class="text-blue-600">Exam Hub</span></span>
                 </a>
                 
                 <div class="flex items-center gap-4">
@@ -66,7 +65,6 @@ const AppComponents = {
                     <span class="text-base font-bold text-slate-900 tracking-tight font-heading">Patwari Technical <span class="text-blue-600">Guide</span></span>
                 </div>
                 
-                <!-- Compact Desktop Menu -->
                 <div class="hidden md:flex space-x-1 items-center bg-slate-100 p-1 rounded-lg">
                     <a href="${rootPath}/hp-patwari-exam/hp-technical-land-record-and-revenue.html#terminology" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Terms</a>
                     <a href="${rootPath}/hp-patwari-exam/hp-technical-land-record-and-revenue.html#measurements" class="text-[11px] font-bold text-slate-600 hover:bg-white hover:text-blue-600 hover:shadow-sm px-3 py-1.5 rounded-md transition font-sans">Calc</a>
@@ -79,7 +77,6 @@ const AppComponents = {
                     </a>
                 </div>
 
-                <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
                     <button id="mobile-menu-btn" aria-label="Toggle navigation menu" class="text-slate-600 p-2 focus:outline-none">
                         <i class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
@@ -88,7 +85,6 @@ const AppComponents = {
             </div>
         </div>
         
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 shadow-lg absolute w-full left-0 top-14 z-40">
             <div class="grid grid-cols-4 p-2 gap-2 text-center">
                 <a href="${rootPath}/hp-patwari-exam/hp-technical-land-record-and-revenue.html#terminology" class="text-[10px] font-bold text-slate-600 bg-slate-50 p-2 rounded font-sans">Terms</a>
