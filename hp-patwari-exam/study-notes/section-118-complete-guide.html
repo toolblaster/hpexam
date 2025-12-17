@@ -3,280 +3,459 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Section 118 Complete Guide - HP Land Laws | HP Exam Guide</title>
-    <meta name="description" content="Comprehensive guide to Section 118 of the HP Tenancy and Land Reforms Act, 1972. Understanding permissions, exemptions, and legal implications.">
+    <title>Section 118 Complete Guide | HP Land Laws | HP Exam Hub</title>
+    <meta name="description" content="Comprehensive guide to Section 118 of HP Tenancy and Land Reforms Act, 1972. Rules for non-agriculturists buying land in Himachal Pradesh.">
     
-    <!-- Scripts -->
-    <script src="../js/tailwind-global-css.js"></script>
+    <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <!-- Global Assets & Scripts -->
+    <script src="../../js/tailwind-global-css.js"></script>
+    <script src="../../js/header-footer.js"></script>
+    <script src="../../js/global-scripts.js"></script>
+    <script src="../../js/exclusive-components.js"></script>
+
+    <!-- Font Awesome & Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .content-section {
-            scroll-margin-top: 100px;
+        /* Base Hindi Styles */
+        .lang-hi, .lang-hi-inline { 
+            display: none; 
+            font-family: 'Noto Sans Devanagari', sans-serif; 
         }
-        .law-highlight {
-            background-color: #fef2f2;
-            border-left: 4px solid #ef4444;
+
+        /* 12.5px Font Size Enforcement for Content */
+        p, li, .prose, .text-content {
+             font-size: 12.5px;
+             line-height: 1.6;
         }
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
-    <!-- Header Container -->
-    <div id="header-container"></div>
-
-    <!-- Main Content -->
-    <main class="flex-grow container mx-auto px-4 py-8 mt-4">
+        /* Ensure language spans inherit the 12.5px size */
+        p .lang-hi, p .lang-hi-inline, 
+        li .lang-hi, li .lang-hi-inline,
+        .prose .lang-hi, .prose .lang-hi-inline,
+        p .lang-en, p .lang-en-inline,
+        li .lang-en, li .lang-en-inline {
+            font-size: 12.5px;
+            line-height: 1.6; 
+        }
         
-        <!-- Breadcrumbs -->
-        <nav class="flex mb-6 text-sm text-gray-500" aria-label="Breadcrumb">
-            <ol class="inline-flex items-center space-x-1 md:space-x-3">
-                <li class="inline-flex items-center">
-                    <a href="../index.html" class="inline-flex items-center hover:text-blue-600">
-                        <i class="lucide-home w-4 h-4 mr-2"></i>
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <div class="flex items-center">
-                        <i class="lucide-chevron-right w-4 h-4 text-gray-400"></i>
-                        <a href="#" class="ml-1 md:ml-2 hover:text-blue-600">HP Land Laws</a>
-                    </div>
-                </li>
-                <li aria-current="page">
-                    <div class="flex items-center">
-                        <i class="lucide-chevron-right w-4 h-4 text-gray-400"></i>
-                        <span class="ml-1 md:ml-2 text-gray-800 font-medium">Section 118 Guide</span>
-                    </div>
-                </li>
-            </ol>
-        </nav>
+        /* Heading Hierarchy Protection - headings should NOT be 12.5px */
+        h1, h2, h3, h4, h5, h6 { font-size: inherit; line-height: inherit; }
+        h1 .lang-hi-inline, h2 .lang-hi-inline, h3 .lang-hi-inline, h4 .lang-hi-inline { font-size: inherit; }
+    </style>
 
-        <div class="flex flex-col lg:flex-row gap-8">
+    <!-- Inject Global Styles from Config -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof TailwindGlobalConfig !== 'undefined') {
+                // This block ensures compatibility if global config defines specific component classes
+            }
+        });
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen font-sans">
+
+    <!-- Global Navigation -->
+    <nav id="global-nav"></nav>
+
+    <!-- Page Header -->
+    <header class="bg-white border-b border-slate-200 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Breadcrumb -->
+            <nav class="flex mb-3" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="../../index.html" class="inline-flex items-center text-[10px] sm:text-xs font-medium text-slate-500 hover:text-blue-600 transition-colors">
+                            <i class="fa-solid fa-home mr-2"></i> Home
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-chevron-right text-slate-300 text-[10px] mx-1"></i>
+                            <a href="../hp-technical-land-record-and-revenue.html" class="ml-1 text-[10px] sm:text-xs font-medium text-slate-500 hover:text-blue-600 transition-colors">
+                                Technical Guide
+                            </a>
+                        </div>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-chevron-right text-slate-300 text-[10px] mx-1"></i>
+                            <span class="ml-1 text-[10px] sm:text-xs font-medium text-blue-600 md:ml-2">
+                                Section 118
+                            </span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
             
-            <!-- Sidebar (Table of Contents) -->
-            <aside class="lg:w-1/4">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 sticky top-24">
-                    <h3 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
-                        <i class="lucide-list w-5 h-5 mr-2 text-blue-600"></i>
-                        Contents
-                    </h3>
-                    <nav class="space-y-2">
-                        <a href="#introduction" class="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-colors text-sm">Introduction</a>
-                        <a href="#core-provision" class="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-colors text-sm">Core Provision</a>
-                        <a href="#who-is-agriculturist" class="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-colors text-sm">Who is an Agriculturist?</a>
-                        <a href="#exemptions" class="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-colors text-sm">Exemptions & Permissions</a>
-                        <a href="#process" class="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-colors text-sm">Application Process</a>
-                        <a href="#restrictions" class="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-colors text-sm">Usage Restrictions</a>
-                        <a href="#violations" class="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-colors text-sm">Violations & Penalties</a>
-                        <a href="#key-judgments" class="block text-gray-600 hover:text-blue-600 hover:bg-blue-50 px-2 py-1 rounded transition-colors text-sm">Key Judgments</a>
-                    </nav>
-                </div>
-            </aside>
-
-            <!-- Main Content Area -->
-            <div class="lg:w-3/4 space-y-8">
-                
-                <!-- Title Section -->
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 border-l-4 border-l-blue-600">
-                    <div class="flex items-center gap-3 mb-4">
-                        <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wide">Major Act</span>
-                        <span class="text-gray-500 text-xs flex items-center">
-                            <i class="lucide-clock w-3 h-3 mr-1"></i> 10 min read
+            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                <div class="max-w-4xl">
+                    <!-- Badges -->
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-100 uppercase tracking-wide">
+                            HP Land Laws
+                        </span>
+                        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-slate-100 text-slate-600 border border-slate-200 uppercase tracking-wide">
+                            Act 1972
                         </span>
                     </div>
-                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Section 118: HP Tenancy & Land Reforms Act, 1972</h1>
-                    <p class="text-lg text-gray-600 leading-relaxed">
-                        A detailed analysis of the most crucial provision regulating land ownership in Himachal Pradesh, designed to protect the interests of local agriculturists while enabling controlled development.
+                    
+                    <!-- Title -->
+                    <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight font-heading mb-1.5">
+                        <span class="lang-en-inline">Section 118 <span class="text-blue-600">Complete Guide</span></span>
+                        <span class="lang-hi-inline">धारा 118 <span class="text-blue-600">संपूर्ण गाइड</span></span>
+                    </h1>
+                    
+                    <!-- Description -->
+                    <p class="text-slate-500 text-sm leading-relaxed max-w-3xl font-medium">
+                        <span class="lang-en">Restrictions, permissions, and penalties for land purchase in Himachal Pradesh under Tenancy & Land Reforms Act.</span>
+                        <span class="lang-hi">किरायेदारी और भूमि सुधार अधिनियम के तहत हिमाचल प्रदेश में भूमि खरीद के लिए प्रतिबंध, अनुमति और दंड।</span>
                     </p>
                 </div>
-
-                <!-- Introduction -->
-                <section id="introduction" class="content-section bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                        <i class="lucide-book-open w-6 h-6 mr-3 text-blue-500"></i>
-                        1. Introduction & Objective
-                    </h2>
-                    <div class="prose max-w-none text-gray-600">
-                        <p class="mb-4">
-                            Section 118 of the Himachal Pradesh Tenancy and Land Reforms Act, 1972, is a protective legislation. Its primary objective is to preserve the limited agricultural land in the hilly terrain of Himachal Pradesh for the bonafide agriculturists of the state.
-                        </p>
-                        <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
-                            <h4 class="font-semibold text-blue-800 mb-2">Key Purpose:</h4>
-                            <ul class="list-disc list-inside space-y-1 text-sm text-blue-700">
-                                <li>Prevent alienation of agricultural land to non-agriculturists.</li>
-                                <li>Check land speculation and skyrocketing prices.</li>
-                                <li>Ensure food security and preserve the agrarian economy.</li>
-                            </ul>
-                        </div>
+                
+                <div class="flex items-center gap-3 mt-2 md:mt-0 self-start md:self-auto">
+                    <!-- Bilingual Toggle -->
+                    <div class="bg-slate-100 p-1 rounded-lg flex items-center border border-slate-200 shadow-inner" role="group" aria-label="Language Toggle">
+                        <button id="btn-en" onclick="setLanguage('en')" class="px-3 py-1.5 text-xs font-bold rounded-md bg-white text-blue-700 shadow-sm border border-slate-200 transition-all hover:text-blue-800">ENG</button>
+                        <button id="btn-hi" onclick="setLanguage('hi')" class="px-3 py-1.5 text-xs font-bold rounded-md text-slate-500 hover:text-slate-800 hover:bg-slate-50 transition-all font-hindi">हिन्दी</button>
                     </div>
-                </section>
 
-                <!-- Core Provision -->
-                <section id="core-provision" class="content-section bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                        <i class="lucide-shield-alert w-6 h-6 mr-3 text-red-500"></i>
-                        2. The Core Provision
-                    </h2>
-                    <div class="law-highlight p-6 rounded-lg mb-6">
-                        <p class="text-lg font-medium text-gray-800 italic">
-                            "No transfer of land including sales in execution of a decree of a civil court or for recovery of arrears of land revenues shall be valid in favour of a person who is not an agriculturist."
-                        </p>
-                    </div>
-                    <p class="text-gray-600 mb-4">
-                        This essentially imposes a blanket ban on the transfer of land to non-agriculturists, with certain specific exceptions provided within the Act itself or through state government permission.
-                    </p>
-                </section>
-
-                <!-- Agriculturist Definition -->
-                <section id="who-is-agriculturist" class="content-section bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                        <i class="lucide-user-check w-6 h-6 mr-3 text-green-500"></i>
-                        3. Who is an 'Agriculturist'?
-                    </h2>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-green-50 p-5 rounded-xl border border-green-100">
-                            <h3 class="font-bold text-green-800 mb-3 text-lg">Defined Under Section 2(2)</h3>
-                            <p class="text-gray-700 text-sm mb-3">
-                                An "Agriculturist" means a landowner who:
-                            </p>
-                            <ul class="list-disc list-inside space-y-2 text-sm text-gray-600">
-                                <li>Cultivates land personally.</li>
-                                <li>Or cultivates through family members/servants.</li>
-                                <li>Or receives rent (in cash or kind).</li>
-                            </ul>
-                        </div>
-                        <div class="bg-yellow-50 p-5 rounded-xl border border-yellow-100">
-                            <h3 class="font-bold text-yellow-800 mb-3 text-lg">Important Nuance</h3>
-                            <p class="text-gray-700 text-sm">
-                                Merely owning land does not automatically make one an agriculturist for the purpose of purchasing more land if that land is not within the state. 
-                                <br><br>
-                                <strong>Crucial:</strong> One must be an agriculturist <em>of Himachal Pradesh</em> to buy agricultural land without permission.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Exemptions -->
-                <section id="exemptions" class="content-section bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                        <i class="lucide-check-circle w-6 h-6 mr-3 text-purple-500"></i>
-                        4. Exemptions & Buying with Permission
-                    </h2>
-                    <p class="text-gray-600 mb-6">
-                        While the general rule is prohibitive, Section 118(2) lists circumstances where non-agriculturists can acquire land, usually requiring permission from the State Government.
-                    </p>
-                    
-                    <div class="space-y-4">
-                        <div class="border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors">
-                            <h3 class="font-bold text-gray-800 mb-2">A. Residential Purpose</h3>
-                            <p class="text-sm text-gray-600">Non-agriculturists can purchase land for building a house. The maximum limit is currently <strong>500 square meters</strong>. Permission is required.</p>
-                        </div>
-                        
-                        <div class="border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors">
-                            <h3 class="font-bold text-gray-800 mb-2">B. Industrial/Commercial Use</h3>
-                            <p class="text-sm text-gray-600">Land can be purchased for setting up industries, tourism units (hotels), hydel projects, educational institutions, etc., subject to the essentiality certificate from the relevant department.</p>
-                        </div>
-
-                        <div class="border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors">
-                            <h3 class="font-bold text-gray-800 mb-2">C. Inherited Land</h3>
-                            <p class="text-sm text-gray-600">Transfer by way of inheritance to legal heirs is generally allowed and does not attract the bar of Section 118.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Process -->
-                <section id="process" class="content-section bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                        <i class="lucide-file-text w-6 h-6 mr-3 text-indigo-500"></i>
-                        5. Application Process (Rule 38A)
-                    </h2>
-                    <div class="relative pl-8 border-l-2 border-indigo-200 space-y-6">
-                        <div class="relative">
-                            <span class="absolute -left-[41px] bg-indigo-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">1</span>
-                            <h4 class="font-semibold text-gray-800">Application (Form LR-XIV)</h4>
-                            <p class="text-sm text-gray-600">Submitted to the Deputy Commissioner (DC) of the district where land is situated.</p>
-                        </div>
-                        <div class="relative">
-                            <span class="absolute -left-[41px] bg-indigo-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">2</span>
-                            <h4 class="font-semibold text-gray-800">Verification</h4>
-                            <p class="text-sm text-gray-600">The DC sends the case to the Tehsildar/Revenue field staff to verify land details (Tatima, Jamabandi) and purpose.</p>
-                        </div>
-                        <div class="relative">
-                            <span class="absolute -left-[41px] bg-indigo-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">3</span>
-                            <h4 class="font-semibold text-gray-800">Recommendation</h4>
-                            <p class="text-sm text-gray-600">The DC forwards the case with recommendations to the State Government (Revenue Department).</p>
-                        </div>
-                        <div class="relative">
-                            <span class="absolute -left-[41px] bg-indigo-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold">4</span>
-                            <h4 class="font-semibold text-gray-800">Cabinet/Government Approval</h4>
-                            <p class="text-sm text-gray-600">The State Government grants or refuses permission. If granted, a specific time frame (usually 2-3 years) is given to put the land to use.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Restrictions -->
-                <section id="restrictions" class="content-section bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                        <i class="lucide-alert-triangle w-6 h-6 mr-3 text-orange-500"></i>
-                        6. Usage Restrictions & 'Vestment'
-                    </h2>
-                    <p class="text-gray-600 mb-4">
-                        Permission under Section 118 is not absolute ownership in the traditional sense; it is conditional.
-                    </p>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <i class="lucide-x-circle w-5 h-5 text-red-500 mr-2 mt-0.5"></i>
-                            <span class="text-sm text-gray-700"><strong>Change of Purpose:</strong> You cannot use land bought for industry to build a personal residence without fresh permission.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="lucide-clock w-5 h-5 text-orange-500 mr-2 mt-0.5"></i>
-                            <span class="text-sm text-gray-700"><strong>Time Limit:</strong> The purpose (e.g., building a factory or house) must be achieved within the stipulated period (e.g., 2 years).</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="lucide-gavel w-5 h-5 text-gray-800 mr-2 mt-0.5"></i>
-                            <span class="text-sm text-gray-700"><strong>Vesting in State:</strong> If the land is not used for the intended purpose within the time limit, or if the provision is violated, the land <span class="text-red-600 font-bold">vests in the State Government</span> free from all encumbrances.</span>
-                        </li>
-                    </ul>
-                </section>
-
-                 <!-- Key Judgments -->
-                 <section id="key-judgments" class="content-section bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-                        <i class="lucide-scale w-6 h-6 mr-3 text-gray-600"></i>
-                        7. Key Judicial Interpretations
-                    </h2>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-bold text-gray-800 text-sm mb-2">Benami Transactions</h4>
-                            <p class="text-xs text-gray-600">Courts have taken a strict view on 'Benami' transactions where non-agriculturists buy land in the name of local agriculturists to bypass Section 118. Such transactions are void.</p>
-                        </div>
-                        <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-bold text-gray-800 text-sm mb-2">Will / Testament</h4>
-                            <p class="text-xs text-gray-600">Transfer via Will to a non-agriculturist stranger (not a legal heir) has often been contested. The consensus is that one cannot defeat the purpose of the Act through a Will to a stranger.</p>
-                        </div>
-                    </div>
-                </section>
-
+                    <!-- Print Button -->
+                    <button onclick="window.print()" class="inline-flex items-center px-3 py-1.5 border border-slate-300 shadow-sm text-xs font-bold rounded-md text-slate-700 bg-white hover:bg-slate-50 hover:text-blue-600 transition-all focus:outline-none">
+                        <i class="fa-solid fa-print mr-2"></i> Print
+                    </button>
+                </div>
             </div>
         </div>
-    </main>
+    </header>
 
-    <!-- Footer Container -->
-    <div id="footer-container"></div>
+    <!-- Main Content Layout -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="w-full lg:w-1/4 lg:flex-shrink-0">
+            <div class="sticky top-24 space-y-6">
+                
+                <!-- Quick Nav Widget -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-slate-50 px-4 py-3 border-b border-slate-200 flex justify-between items-center">
+                        <h3 class="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                            Page Index
+                        </h3>
+                        <i class="fa-solid fa-list-ul text-slate-400 text-xs"></i>
+                    </div>
+                    <ul class="divide-y divide-slate-100 text-sm">
+                        <li><a href="#introduction" class="block px-4 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-blue-700 border-l-2 border-transparent hover:border-blue-600 transition-all font-medium">Introduction</a></li>
+                        <li><a href="#who-is-agriculturist" class="block px-4 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-blue-700 border-l-2 border-transparent hover:border-blue-600 transition-all font-medium">Who is an Agriculturist?</a></li>
+                        <li><a href="#exceptions" class="block px-4 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-blue-700 border-l-2 border-transparent hover:border-blue-600 transition-all font-medium">Exemptions & Inheritance</a></li>
+                        <li><a href="#permissions" class="block px-4 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-blue-700 border-l-2 border-transparent hover:border-blue-600 transition-all font-medium">Permissions (Rule 38A)</a></li>
+                        <li><a href="#benami" class="block px-4 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-blue-700 border-l-2 border-transparent hover:border-blue-600 transition-all font-medium">Benami Transactions</a></li>
+                        <li><a href="#penalties" class="block px-4 py-2.5 text-slate-700 hover:bg-blue-50 hover:text-blue-700 border-l-2 border-transparent hover:border-blue-600 transition-all font-medium">Penalties & Vesting</a></li>
+                    </ul>
+                </div>
 
-    <!-- Initialization Scripts -->
-    <script src="../js/header-footer.js"></script>
-    <script src="../js/exclusive-components.js"></script>
+                <!-- Related Topics Widget -->
+                <div class="bg-blue-50/80 rounded-xl p-5 border border-blue-100">
+                    <h4 class="text-xs font-bold text-blue-900 mb-3 font-heading flex items-center gap-2 uppercase tracking-wide">
+                        Related Topics
+                    </h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="../hp-technical-land-record-and-revenue.html#laws" class="text-xs font-semibold text-blue-700 hover:underline flex items-start gap-2 group">
+                                <i class="fa-solid fa-chevron-right text-[10px] mt-1 text-blue-400"></i>
+                                HP Land Revenue Act 1954
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../hp-patwari-technical-field-study-notes.html" class="text-xs font-semibold text-blue-700 hover:underline flex items-start gap-2 group">
+                                <i class="fa-solid fa-chevron-right text-[10px] mt-1 text-blue-400"></i>
+                                Technical Field Notes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="w-full lg:w-3/4 space-y-6">
+
+            <!-- Introduction -->
+            <section id="introduction" class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden group hover:shadow-md transition-shadow">
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4 border-b border-slate-100 pb-3">
+                        <div class="w-8 h-8 rounded-lg bg-red-50 text-red-600 flex items-center justify-center text-sm shadow-sm flex-shrink-0">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900 font-heading">
+                            <span class="lang-en-inline">What is Section 118?</span><span class="lang-hi-inline">धारा 118 क्या है?</span>
+                        </h2>
+                    </div>
+                    
+                    <div class="prose prose-slate prose-sm max-w-none text-slate-600">
+                        <p class="mb-3 leading-relaxed">
+                            <span class="lang-en"><strong>Section 118</strong> of the <span class="text-slate-900 font-semibold">Himachal Pradesh Tenancy and Land Reforms Act, 1972</span> is a crucial piece of legislation. It overrides other laws (like the Transfer of Property Act) to restrict land transfer within the state.</span>
+                            <span class="lang-hi"><strong>धारा 118</strong> <span class="text-slate-900 font-semibold">हिमाचल प्रदेश किरायेदारी और भूमि सुधार अधिनियम, 1972</span> कानून का एक महत्वपूर्ण हिस्सा है। यह राज्य के भीतर भूमि हस्तांतरण को प्रतिबंधित करने के लिए अन्य कानूनों (जैसे संपत्ति हस्तांतरण अधिनियम) को ओवरराइड करता है।</span>
+                        </p>
+                        <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-4 rounded-r-md">
+                            <p class="text-yellow-900 font-medium m-0">
+                                <i class="fa-solid fa-lightbulb text-yellow-500 mr-2"></i>
+                                <span class="lang-en"><strong>Objective:</strong> To prevent the alienation of agricultural land from the native cultivating population to non-agriculturists or outsiders, thereby preserving the limited agricultural resources.</span>
+                                <span class="lang-hi"><strong>उद्देश्य:</strong> मूल खेती करने वाली आबादी से गैर-कृषकों या बाहरी लोगों को कृषि भूमि के अलगाव को रोकना, जिससे सीमित कृषि संसाधनों को संरक्षित किया जा सके।</span>
+                            </p>
+                        </div>
+                        <p class="leading-relaxed">
+                            <span class="lang-en">It prohibits transfer by way of sale, gift, exchange, lease, or mortgage with possession to a non-agriculturist without the State Government's prior permission.</span>
+                            <span class="lang-hi">यह राज्य सरकार की पूर्व अनुमति के बिना किसी गैर-कृषक को बिक्री, उपहार, विनिमय, पट्टे या कब्जे के साथ गिरवी के माध्यम से हस्तांतरण पर रोक लगाता है।</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Agriculturist Definition -->
+            <section id="who-is-agriculturist" class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden group hover:shadow-md transition-shadow">
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4 border-b border-slate-100 pb-3">
+                        <div class="w-8 h-8 rounded-lg bg-green-50 text-green-600 flex items-center justify-center text-sm shadow-sm flex-shrink-0">
+                            <i class="fa-solid fa-seedling"></i>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900 font-heading">
+                            <span class="lang-en-inline">Who is defined as an "Agriculturist"?</span><span class="lang-hi-inline">"कृषक" किसे माना जाता है?</span>
+                        </h2>
+                    </div>
+
+                    <p class="text-slate-600 text-sm mb-5 font-medium">
+                        <span class="lang-en">The definition is strict. Simply being a resident of Himachal Pradesh does not automatically make one an "Agriculturist" for the purpose of buying agricultural land.</span>
+                        <span class="lang-hi">परिभाषा सख्त है। केवल हिमाचल प्रदेश का निवासी होना ही कृषि भूमि खरीदने के उद्देश्य से किसी को स्वचालित रूप से "कृषक" नहीं बनाता है।</span>
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 hover:border-green-200 transition-colors">
+                            <h3 class="text-xs font-bold text-slate-900 mb-2 flex items-center">
+                                <i class="fa-solid fa-check-circle text-green-500 mr-2"></i> 
+                                <span class="lang-en-inline">Landowner Definition</span><span class="lang-hi-inline">भूस्वामी परिभाषा</span>
+                            </h3>
+                            <p class="text-slate-600 leading-snug">
+                                <span class="lang-en">A person who proves that they held land in HP as a landowner on or before the commencement of the Act.</span>
+                                <span class="lang-hi">एक व्यक्ति जो यह साबित करता है कि उसके पास अधिनियम के शुरू होने पर या उससे पहले एक भूस्वामी के रूप में हि.प्र. में भूमि थी।</span>
+                            </p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 hover:border-green-200 transition-colors">
+                            <h3 class="text-xs font-bold text-slate-900 mb-2 flex items-center">
+                                <i class="fa-solid fa-check-circle text-green-500 mr-2"></i> 
+                                <span class="lang-en-inline">Cultivation Criteria</span><span class="lang-hi-inline">खेती के मानदंड</span>
+                            </h3>
+                            <p class="text-slate-600 leading-snug">
+                                <span class="lang-en">One who cultivates land personally in the state. Personal cultivation implies labor by oneself or family members.</span>
+                                <span class="lang-hi">वह जो राज्य में व्यक्तिगत रूप से भूमि पर खेती करता है। व्यक्तिगत खेती का अर्थ है स्वयं या परिवार के सदस्यों द्वारा श्रम।</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <!-- Exemptions (Now Grouped Correctly) -->
+            <section id="exceptions" class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden group hover:shadow-md transition-shadow">
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4 border-b border-slate-100 pb-3">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center text-sm shadow-sm flex-shrink-0">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900 font-heading">
+                            <span class="lang-en-inline">Exemptions & Inheritance</span><span class="lang-hi-inline">छूट और विरासत</span>
+                        </h2>
+                    </div>
+
+                    <p class="text-slate-600 text-sm mb-4">
+                        <span class="lang-en">Certain transfers do not require permission under Section 118. These are statutory exemptions.</span>
+                        <span class="lang-hi">कुछ हस्तांतरणों को धारा 118 के तहत अनुमति की आवश्यकता नहीं होती है। ये वैधानिक छूट हैं।</span>
+                    </p>
+
+                    <!-- Grouped Grid Layout for Exemptions -->
+                    <div class="space-y-3">
+                         <div class="flex gap-3 p-3 border border-slate-100 rounded-lg hover:border-indigo-300 transition-colors bg-slate-50/50">
+                            <div class="flex-shrink-0 mt-1"><i class="fa-solid fa-users-line text-indigo-500 w-5 text-center"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900"><span class="lang-en-inline">Inheritance</span><span class="lang-hi-inline">विरासत</span></h4>
+                                <p class="text-slate-600 mt-1"><span class="lang-en">Transfer of land by inheritance (succession) to legal heirs is permitted without special permission.</span><span class="lang-hi">कानूनी वारिसों को विरासत (उत्तराधिकार) द्वारा भूमि के हस्तांतरण की विशेष अनुमति के बिना अनुमति है।</span></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-3 p-3 border border-slate-100 rounded-lg hover:border-indigo-300 transition-colors bg-slate-50/50">
+                            <div class="flex-shrink-0 mt-1"><i class="fa-solid fa-building-columns text-indigo-500 w-5 text-center"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900"><span class="lang-en-inline">Cooperative Societies & Banks</span><span class="lang-hi-inline">सहकारी समितियां और बैंक</span></h4>
+                                <p class="text-slate-600 mt-1"><span class="lang-en">Transfer to a Cooperative Land Mortgage Bank or a Cooperative Society for securing loans.</span><span class="lang-hi">ऋण सुरक्षित करने के लिए सहकारी भूमि बंधक बैंक या सहकारी समिति को हस्तांतरण।</span></p>
+                            </div>
+                        </div>
+
+                         <div class="flex gap-3 p-3 border border-slate-100 rounded-lg hover:border-indigo-300 transition-colors bg-slate-50/50">
+                            <div class="flex-shrink-0 mt-1"><i class="fa-solid fa-landmark text-indigo-500 w-5 text-center"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900"><span class="lang-en-inline">Government Bodies</span><span class="lang-hi-inline">सरकारी निकाय</span></h4>
+                                <p class="text-slate-600 mt-1"><span class="lang-en">Land acquired by the State or Central Government or a Statutory Body (like HP Housing Board).</span><span class="lang-hi">राज्य या केंद्र सरकार या एक वैधानिक निकाय (जैसे हि.प्र. आवास बोर्ड) द्वारा अधिग्रहित भूमि।</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Permissions -->
+            <section id="permissions" class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden group hover:shadow-md transition-shadow">
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4 border-b border-slate-100 pb-3">
+                        <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center text-sm shadow-sm flex-shrink-0">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900 font-heading">
+                            <span class="lang-en-inline">Permissions (Rule 38A)</span><span class="lang-hi-inline">अनुमतियाँ (नियम 38A)</span>
+                        </h2>
+                    </div>
+                    <p class="text-slate-600 text-sm mb-5">
+                        <span class="lang-en">Non-agriculturists can purchase land only for specific purposes and after obtaining permission from the Govt under <strong>Rule 38A</strong>.</span>
+                        <span class="lang-hi">गैर-कृषक केवल विशिष्ट उद्देश्यों के लिए और <strong>नियम 38A</strong> के तहत सरकार से अनुमति प्राप्त करने के बाद ही भूमि खरीद सकते हैं।</span>
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex gap-3 p-3 border border-slate-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition-all bg-slate-50/50">
+                            <div class="flex-shrink-0 mt-1"><i class="fa-solid fa-house-user text-blue-500 w-5 text-center"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900"><span class="lang-en-inline">Residential Purpose</span><span class="lang-hi-inline">आवासीय उद्देश्य</span></h4>
+                                <p class="text-slate-600 mt-1"><span class="lang-en">Permission can be granted to buy land for building a residential house.</span><span class="lang-hi">आवासीय घर बनाने के लिए भूमि खरीदने की अनुमति दी जा सकती है।</span></p>
+                                <div class="mt-2 inline-flex items-center px-2 py-1 rounded bg-blue-100 text-blue-800 text-[10px] font-bold"><span class="lang-en-inline">Limit: Usually up to 500 Sq. Meters (approx 4 biswa)</span><span class="lang-hi-inline">सीमा: आमतौर पर 500 वर्ग मीटर तक (लगभग 4 बिस्वा)</span></div>
+                            </div>
+                        </div>
+                        <div class="flex gap-3 p-3 border border-slate-200 rounded-lg hover:border-blue-400 hover:shadow-sm transition-all bg-slate-50/50">
+                            <div class="flex-shrink-0 mt-1"><i class="fa-solid fa-industry text-blue-500 w-5 text-center"></i></div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900"><span class="lang-en-inline">Industrial / Commercial</span><span class="lang-hi-inline">औद्योगिक / व्यावसायिक</span></h4>
+                                <p class="text-slate-600 mt-1"><span class="lang-en">Permission for setting up an industry, tourism unit (hotel), or hydroelectric project.</span><span class="lang-hi">उद्योग, पर्यटन इकाई (होटल), या जलविद्युत परियोजना स्थापित करने के लिए अनुमति।</span></p>
+                                <div class="mt-2 inline-flex items-center px-2 py-1 rounded bg-purple-100 text-purple-800 text-[10px] font-bold"><span class="lang-en-inline">Requires: Essentiality Certificate from Dept</span><span class="lang-hi-inline">आवश्यक: विभाग से अनिवार्यता प्रमाण पत्र</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-6 bg-blue-50/50 p-5 rounded-lg border border-blue-100">
+                        <h4 class="text-xs font-bold text-blue-900 mb-3 uppercase tracking-wider"><span class="lang-en-inline">Application Process (Form LR-XIV)</span><span class="lang-hi-inline">आवेदन प्रक्रिया (प्रपत्र LR-XIV)</span></h4>
+                        <ol class="list-decimal list-outside pl-4 text-xs text-blue-800 space-y-2 font-medium">
+                            <li><span class="lang-en">Apply to DC with Purpose & Eligibility proof.</span><span class="lang-hi">उद्देश्य और पात्रता प्रमाण के साथ डीसी को आवेदन करें।</span></li>
+                            <li><span class="lang-en">Revenue staff (Patwari/Kanungo) verifies Tatima/Jamabandi.</span><span class="lang-hi">राजस्व कर्मचारी (पटवारी/कानूनगो) ततीमा/जमाबंदी की पुष्टि करते हैं।</span></li>
+                            <li><span class="lang-en">The case is processed by State Govt (Cabinet/Revenue Dept).</span><span class="lang-hi">मामले को राज्य सरकार (मंत्रिमंडल/राजस्व विभाग) द्वारा संसाधित किया जाता है।</span></li>
+                            <li><span class="lang-en">Post-approval: Deed registration within 180 days (extendable).</span><span class="lang-hi">अनुमोदन के बाद: 180 दिनों के भीतर विलेख पंजीकरण (विस्तार योग्य)।</span></li>
+                            <li><span class="lang-en">Usage: The land must be put to use for the specific purpose within 2 years.</span><span class="lang-hi">उपयोग: भूमि का उपयोग 2 वर्षों के भीतर विशिष्ट उद्देश्य के लिए किया जाना चाहिए।</span></li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Benami -->
+            <section id="benami" class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden group hover:shadow-md transition-shadow">
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4 border-b border-slate-100 pb-3">
+                        <div class="w-8 h-8 rounded-lg bg-gray-100 text-gray-600 flex items-center justify-center text-sm shadow-sm flex-shrink-0">
+                            <i class="fa-solid fa-user-secret"></i>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900 font-heading">
+                            <span class="lang-en-inline">Benami Transactions</span><span class="lang-hi-inline">बेनामी लेनदेन</span>
+                        </h2>
+                    </div>
+                    <div class="prose prose-slate prose-sm max-w-none text-slate-600">
+                        <p class="mb-3 leading-relaxed">
+                            <span class="lang-en">The act specifically targets "Benami" transactions where a non-agriculturist funds the purchase of land in the name of an agriculturist to circumvent Section 118.</span>
+                            <span class="lang-hi">यह अधिनियम विशेष रूप से "बेनामी" लेनदेन को लक्षित करता है जहां एक गैर-कृषक धारा 118 से बचने के लिए एक कृषक के नाम पर भूमि खरीदने के लिए धन देता है।</span>
+                        </p>
+                        <div class="bg-red-50 border-l-4 border-red-400 p-4 my-4 rounded-r-md">
+                            <p class="text-red-900 font-medium m-0">
+                                <i class="fa-solid fa-triangle-exclamation text-red-500 mr-2"></i>
+                                <span class="lang-en"><strong>Strict Action:</strong> The law empowers the District Collector to hold an inquiry. If a transaction is found to be Benami, the land is vested in the State Government without any compensation.</span>
+                                <span class="lang-hi"><strong>सख्त कार्रवाई:</strong> कानून जिला कलेक्टर को जांच करने का अधिकार देता है। यदि कोई लेनदेन बेनामी पाया जाता है, तो भूमि बिना किसी मुआवजे के राज्य सरकार में निहित हो जाती है।</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Consequences -->
+            <section id="penalties" class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden group hover:shadow-md transition-shadow">
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-4 border-b border-slate-100 pb-3">
+                        <div class="w-8 h-8 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center text-sm shadow-sm flex-shrink-0">
+                            <i class="fa-solid fa-gavel"></i>
+                        </div>
+                        <h2 class="text-lg font-bold text-slate-900 font-heading">
+                            <span class="lang-en-inline">Consequences of Violation</span><span class="lang-hi-inline">उल्लंघन के परिणाम</span>
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                            <h3 class="text-red-800 font-bold text-xs mb-2 flex items-center">
+                                <i class="fa-solid fa-ban mr-2"></i>
+                                <span class="lang-en-inline">Void Transaction</span><span class="lang-hi-inline">शून्य लेनदेन</span>
+                            </h3>
+                            <p class="text-red-700 leading-snug">
+                                <span class="lang-en">Any transfer made in contravention of Section 118 is <strong>void ab initio</strong>. The sale deed will not be recognized by revenue courts.</span>
+                                <span class="lang-hi">धारा 118 के उल्लंघन में किया गया कोई भी हस्तांतरण <strong>शुरू से ही शून्य</strong> (void ab initio) है। राजस्व अदालतों द्वारा बिक्री विलेख (Sale Deed) को मान्यता नहीं दी जाएगी।</span>
+                            </p>
+                        </div>
+                        <div class="bg-orange-50 p-4 rounded-lg border border-orange-100">
+                            <h3 class="text-orange-800 font-bold text-xs mb-2 flex items-center">
+                                <i class="fa-solid fa-right-from-bracket mr-2"></i>
+                                <span class="lang-en-inline">Vesting in State</span><span class="lang-hi-inline">राज्य में निहित होना</span>
+                            </h3>
+                            <p class="text-orange-700 leading-snug">
+                                <span class="lang-en">The land involved, along with any structures built on it, shall <strong>vest in the State Government</strong> free from all encumbrances. The owner loses all rights.</span>
+                                <span class="lang-hi">संबंधित भूमि, उस पर बने किसी भी ढांचे के साथ, सभी भारों से मुक्त होकर <strong>राज्य सरकार में निहित</strong> हो जाएगी। मालिक सभी अधिकार खो देता है।</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Global Footer -->
+    <footer id="global-footer"></footer>
+
+    <!-- LANGUAGE TOGGLE SCRIPT -->
     <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
+        function setLanguage(lang) {
+            // 1. Toggle Button Styles
+            const activeClass = 'px-3 py-1.5 text-xs font-bold rounded-md bg-white text-blue-700 shadow-sm border border-slate-200 transition-all hover:text-blue-800';
+            const inactiveClass = 'px-3 py-1.5 text-xs font-bold rounded-md text-slate-500 hover:text-slate-800 hover:bg-slate-50 transition-all font-hindi';
+            
+            const btnEn = document.getElementById('btn-en');
+            const btnHi = document.getElementById('btn-hi');
+            
+            if(lang === 'en') {
+                btnEn.className = activeClass;
+                btnHi.className = inactiveClass;
+            } else {
+                btnEn.className = inactiveClass;
+                btnHi.className = activeClass.replace('font-bold', 'font-bold font-hindi'); 
+            }
+
+            // 2. Toggle Content Visibility
+            // Block Elements
+            document.querySelectorAll('.lang-en').forEach(el => el.style.display = (lang === 'en' ? 'block' : 'none'));
+            document.querySelectorAll('.lang-hi').forEach(el => el.style.display = (lang === 'hi' ? 'block' : 'none'));
+            
+            // Inline Elements
+            document.querySelectorAll('.lang-en-inline').forEach(el => el.style.display = (lang === 'en' ? 'inline' : 'none'));
+            document.querySelectorAll('.lang-hi-inline').forEach(el => el.style.display = (lang === 'hi' ? 'inline' : 'none'));
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load Shared Header/Footer with correct relative path
+            if(window.loadHeaderFooter) {
+                loadHeaderFooter({ type: 'technical', rootPath: '../..' });
+            }
+            // Initialize Language (Default English)
+            setLanguage('en');
+        });
     </script>
 </body>
 </html>
